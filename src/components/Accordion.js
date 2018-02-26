@@ -23,8 +23,8 @@ const AccordionSection = ({ content }) => {
     <AccordionItem key={i}>
       <AccordionItemTitle className="clearfix">
         <h5 className="float-left">{c.title}</h5>
-        <i className="icon icon-plus float-right mt-1"></i>
-        <i className="icon icon-minus float-right mt-1"></i>
+        <i className="icon icon-plus float-right ml-2 mt-1"></i>
+        <i className="icon icon-minus float-right ml-2 mt-1"></i>
       </AccordionItemTitle>
       <AccordionItemBody>
         <div dangerouslySetInnerHTML={{

@@ -28,20 +28,22 @@ class LandingPage extends React.Component {
           </div>
         </div>
         <div className="LandingPage__Content container grid-lg">
-          <div className="columns">
-            <div className="LandingPage__ContentFAQ column col-sm-12 col-7">
+          <div className="columns clearfix">
+            <div className="LandingPage__ContentFAQ column col-mr-auto col-sm-12 col-7">
               <h3>{c.learnMoreTitle}</h3>
               <Accordion content={c.faq}></Accordion>
             </div>
             <div className="LandingPage__ContentImage1 column col-ml-auto col-sm-12 col-4">
               <Img
-                key={c.heroImage.sizes.src}
                 alt={c.heroImage.title}
-                sizes={{...c.heroImage.sizes, aspectRatio: 4/3}}
+                sizes={c.heroImage.sizes}
               />
             </div>
-            <div className="LandingPage__ContentImage2 column col-ml-auto col-sm-12 col-4">
-              Img 2
+            <div className="LandingPage__ContentImage2 column col-sm-12 col-4">
+              <Img
+                alt={c.secondaryImage.title}
+                sizes={c.secondaryImage.sizes}
+              />
             </div>
           </div>
         </div>
@@ -69,7 +71,10 @@ export const landingPageFragment = graphql`
         heroImage {
           title
           sizes(maxWidth: 613) {
-            ...GatsbyContentfulSizes_noBase64
+            aspectRatio
+            sizes
+            src
+            srcSet
           }
         }
         learnMoreTitle
@@ -91,6 +96,15 @@ export const landingPageFragment = graphql`
         rtcAttribution {
           childMarkdownRemark {
             html
+          }
+        }
+        secondaryImage {
+          title
+          sizes(maxWidth: 613) {
+            aspectRatio
+            sizes
+            src
+            srcSet
           }
         }
       }

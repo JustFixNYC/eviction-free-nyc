@@ -1,3 +1,5 @@
+@import "~spectre.css/src/variables";
+
 $primary: #5764c6;
 $secondary: #eff1fa;
 $dark: #454d5d;
@@ -47,6 +49,8 @@ $body-font-color: lighten($dark-color, 5%);
 $link-color: $primary-color;
 $link-color-dark: darken($link-color, 5%);
 
+$layout-spacing: $unit-4;
+
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
 }
@@ -62,3 +66,10 @@ $link-color-dark: darken($link-color, 5%);
 @mixin for-big-desktop-up {
   @media (min-width: 1800px) { @content; }
 }
+
+$size-xs: 480px;
+$size-sm: 600px;
+$size-md: 900px;
+$size-lg: 1200px;
+$size-xl: 1800px;
+$size-2x: 1440px;

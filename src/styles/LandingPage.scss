@@ -3,18 +3,22 @@
 .LandingPage {
 
   .LandingPage__Hero {
-    height: calc(80vh - 60px);
+    height: calc(70vh - 60px);
     background-color: $bg-color;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .LandingPage__HeroContent {
-      max-width: 60vw;
+      max-width: 50vw;
       text-align: center;
 
       h1 {
         margin-bottom: 3rem;
+      }
+
+      @include for-phone-only() {
+        max-width: 80vw;
       }
     }
   }
@@ -22,6 +26,10 @@
   .LandingPage__Content {
 
     margin-top: 64px;
+    min-height: 600px;
+    margin-bottom: 64px;
+    position: relative;
+
 
     .LandingPage__ContentFAQ {
       order: 2;
@@ -31,17 +39,38 @@
     }
     .LandingPage__ContentImage2 {
       order: 2;
+
+      // hack alert
+      position: absolute;
+      right: 0;
+      top: 300px;
     }
 
     @include for-phone-only() {
       padding: 0;
       margin-top: 0;
 
-      .LandingPage__ContentImage1 {
-        margin-bottom: 32px;
-        margin-left: -0.4rem;
-        margin-right: -0.4rem;
+      .columns {
+        margin-left: 0;
+        margin-right: 0;
       }
+
+      .column {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .LandingPage__ContentFAQ {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+      }
+      .LandingPage__ContentImage2 {
+        position: inherit;
+      }
+
+
     }
 
     @include for-tablet-portrait-up() {
@@ -50,6 +79,7 @@
       }
       .LandingPage__ContentImage1 {
         order: 2;
+        margin-bottom: 32px;
       }
     }
 
