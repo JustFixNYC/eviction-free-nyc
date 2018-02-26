@@ -1,0 +1,48 @@
+$primary: #5764c6;
+$secondary: #eff1fa;
+$dark: #454d5d;
+$gray-dark: #727e96;
+$gray: #acb3c2;
+$gray-light: #e7e9ed;
+$border: #f0f1f4;
+$background: #f8f9fa;
+$light: #fff;
+$success: #32b643;
+$warning: #ffb700;
+$error: #e85600;
+
+$justfix-blue: #0096d7;
+
+
+$primary-color: #970048;
+$primary-color-dark: darken($primary-color, 3%);
+$primary-color-light: lighten($primary-color, 3%);
+$secondary-color: #041e41;
+$secondary-color-dark: darken($secondary-color, 3%);
+$secondary-color-light: lighten($secondary-color, 3%);
+
+// Gray colors
+$dark-color: #454d5d;
+$light-color: #fff;
+$gray-color: #c9c8c7;
+$gray-color-dark: darken($gray-color, 25%);
+$gray-color-light: lighten($gray-color, 20%);
+
+$border-color: lighten($dark-color, 60%);
+$border-color-dark: darken($border-color, 10%);
+$bg-color: lighten($dark-color, 66%);
+$bg-color-dark: darken($bg-color, 3%);
+$bg-color-light: $light-color;
+
+// Control colors
+$success-color: #32b643;
+$warning-color: #ffb700;
+$error-color: #e85600;
+
+// Other colors
+$code-color: #e06870;
+$highlight-color: #ffe9b3;
+$body-bg: $bg-color-light;
+$body-font-color: lighten($dark-color, 5%);
+$link-color: $primary-color;
+$link-color-dark: darken($link-color, 5%);

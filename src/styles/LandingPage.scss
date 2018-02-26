@@ -1,0 +1,23 @@
+@import 'vars';
+
+.LandingPage {
+
+  .LandingPage__Hero {
+    height: calc(100vh - 60px);
+    background-color: $bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .LandingPage__HeroContent {
+      max-width: 60vw;
+      text-align: center;
+
+      h1 {
+        margin-bottom: 3rem;
+      }
+
+
+    }
+  }
+}

@@ -6,12 +6,10 @@ import { IntlProvider } from 'react-intl';
 import Link from "gatsby-link"
 import 'intl';
 
-// Grommet
-import App from 'grommet/components/App';
-import Header from 'grommet/components/Header';
+import Header from '../components/Header';
 
 // Styles
-import '../scss/main.scss';
+import '../styles/main.scss';
 
 import messagesEn from '../data/messages/en-US';
 import messagesEs from '../data/messages/es';
@@ -49,7 +47,7 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
         />
 
         {
-          // <Header langs={langsMenu} />
+          //
           // <div
           //   style={{
           //     margin: `0 auto`,
@@ -64,13 +62,12 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
           // </div>
 
         }
-
-
-
-        <App centered={true}>
-          <Header pad={`medium`}>Eviction Free NYC</Header>
+        <Header langs={langsMenu} />
+        <main>
           {children()}
-        </App>
+        </main>
+
+
 
       </div>
     </IntlProvider>

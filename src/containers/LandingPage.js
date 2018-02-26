@@ -2,10 +2,9 @@ import React from "react";
 import * as PropTypes from "prop-types";
 
 import Link from "gatsby-link";
+import ButtonLink from "../components/ButtonLink";
 
-import Hero from 'grommet/components/Hero';
-import Button from 'grommet/components/Button';
-import Box from 'grommet/components/Box';
+import '../styles/LandingPage.scss';
 
 const propTypes = {
   data: PropTypes.object.isRequired,
@@ -16,15 +15,19 @@ class LandingPage extends React.Component {
     const c = this.props.data.content.edges[0].node;
     console.log(c);
     return (
-      <div>
-        <Hero>
-          <Box align={`center`}>
+      <section className="Page LandingPage">
+        <div className="LandingPage__Hero">
+          <div className="LandingPage__HeroContent">
             <h1>{c.heroTitle}</h1>
-              <Link to={`/page-xxx`} className="grommetux-button grommetux-button--primary grommetux-button--disabled grommetux-button--plain">{c.heroButtonText}</Link>
-          </Box>
+            <ButtonLink to={`/page-xxx`} type="primary">
+              {c.heroButtonText}
+              <i className="icon icon-forward ml-2"></i>
+            </ButtonLink>
+          </div>
+        </div>
 
-        </Hero>
-      </div>
+
+      </section>
 
     );
   }

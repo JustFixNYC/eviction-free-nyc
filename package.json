@@ -15,7 +15,6 @@
     "gatsby-plugin-react-helmet": "^1.0.5",
     "gatsby-source-contentful": "latest",
     "gatsby-transformer-remark": "^1.7.33",
-    "grommet": "1.5.0",
     "intl": "^1.2.5",
     "lodash": "^4.16.4",
     "node-sass": "4.5.2",
@@ -23,6 +22,7 @@
     "react-typography": "^0.15.0",
     "sass-loader": "4.1.1",
     "slash": "^1.0.0",
+    "spectre.css": "^0.5.1",
     "typography": "^0.15.8",
     "typography-breakpoint-constants": "^0.14.0"
   },
