@@ -18,6 +18,7 @@
     "intl": "^1.2.5",
     "lodash": "^4.16.4",
     "node-sass": "4.5.2",
+    "react-accessible-accordion": "^2.0.0",
     "react-intl": "^2.4.0",
     "react-typography": "^0.15.0",
     "sass-loader": "4.1.1",

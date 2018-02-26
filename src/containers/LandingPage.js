@@ -2,7 +2,9 @@ import React from "react";
 import * as PropTypes from "prop-types";
 
 import Link from "gatsby-link";
+import Img from "gatsby-image";
 import ButtonLink from "../components/ButtonLink";
+import Accordion from "../components/Accordion";
 
 import '../styles/LandingPage.scss';
 
@@ -19,10 +21,28 @@ class LandingPage extends React.Component {
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent">
             <h1>{c.heroTitle}</h1>
-            <ButtonLink to={`/page-xxx`} type="primary">
+            <ButtonLink to={`/page-xxx`} type="primary" size="large">
               {c.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
             </ButtonLink>
+          </div>
+        </div>
+        <div className="LandingPage__Content container grid-lg">
+          <div className="columns">
+            <div className="LandingPage__ContentFAQ column col-sm-12 col-7">
+              <h3>{c.learnMoreTitle}</h3>
+              <Accordion content={c.faq}></Accordion>
+            </div>
+            <div className="LandingPage__ContentImage1 column col-ml-auto col-sm-12 col-4">
+              <Img
+                key={c.heroImage.sizes.src}
+                alt={c.heroImage.title}
+                sizes={{...c.heroImage.sizes, aspectRatio: 4/3}}
+              />
+            </div>
+            <div className="LandingPage__ContentImage2 column col-ml-auto col-sm-12 col-4">
+              Img 2
+            </div>
           </div>
         </div>
 
@@ -47,10 +67,9 @@ export const landingPageFragment = graphql`
         heroTitle
         heroButtonText
         heroImage {
+          title
           sizes(maxWidth: 613) {
-            sizes
-            src
-            srcSet
+            ...GatsbyContentfulSizes_noBase64
           }
         }
         learnMoreTitle

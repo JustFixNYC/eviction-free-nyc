@@ -1,0 +1,28 @@
+.Accordion {
+
+  .accordion__item {
+
+    padding: 16px 0;
+
+    h5 {
+      margin-bottom: 0;
+    }
+
+    .accordion__body {
+      margin-top: 8px;
+    }
+
+    .icon-minus {
+      display: none;
+    }
+
+    [aria-selected='true'] {
+      .icon-plus {
+        display: none;
+      }
+      .icon-minus {
+        display: block;
+      }
+    }
+  }
+}

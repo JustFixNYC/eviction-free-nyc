@@ -3,7 +3,7 @@
 .LandingPage {
 
   .LandingPage__Hero {
-    height: calc(100vh - 60px);
+    height: calc(80vh - 60px);
     background-color: $bg-color;
     display: flex;
     justify-content: center;
@@ -16,8 +16,43 @@
       h1 {
         margin-bottom: 3rem;
       }
-
-
     }
+  }
+
+  .LandingPage__Content {
+
+    margin-top: 64px;
+
+    .LandingPage__ContentFAQ {
+      order: 2;
+    }
+    .LandingPage__ContentImage1 {
+      order: 1;
+    }
+    .LandingPage__ContentImage2 {
+      order: 2;
+    }
+
+    @include for-phone-only() {
+      padding: 0;
+      margin-top: 0;
+
+      .LandingPage__ContentImage1 {
+        margin-bottom: 32px;
+        margin-left: -0.4rem;
+        margin-right: -0.4rem;
+      }
+    }
+
+    @include for-tablet-portrait-up() {
+      .LandingPage__ContentFAQ {
+        order: 1;
+      }
+      .LandingPage__ContentImage1 {
+        order: 2;
+      }
+    }
+
+
   }
 }

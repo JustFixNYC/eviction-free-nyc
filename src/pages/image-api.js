@@ -3,6 +3,8 @@ import Img from "gatsby-image"
 
 export default props => {
   const assets = props.data.allContentfulAsset.edges
+
+  console.log(assets)
   return (
     <div>
       <h1>Image API examples</h1>
@@ -24,15 +26,11 @@ export default props => {
           src={resize.src}
           width={resize.width}
           height={resize.height}
-          style={{
-            marginRight: rhythm(1 / 2),
-            marginBottom: rhythm(1 / 2),
-            border: `1px solid tomato`,
-          }}
+          style={{}}
         />
       ))}
       <h4>GraphQL query</h4>
-      <pre style={{ background: `#efeded`, padding: rhythm(3 / 4) }}>
+      <pre style={{}}>
         <code
           dangerouslySetInnerHTML={{
             __html: `{
@@ -74,17 +72,12 @@ export default props => {
             alt={title}
             resolutions={resolutions}
             backgroundColor
-            style={{
-              marginRight: rhythm(1 / 2),
-              marginBottom: rhythm(1 / 2),
-              border: `1px solid tomato`,
-              display: `inline-block`,
-            }}
+            style={{}}
           />
         </div>
       ))}
       <h4>GraphQL query</h4>
-      <pre style={{ background: `#efeded`, padding: rhythm(3 / 4) }}>
+      <pre style={{}}>
         <code
           dangerouslySetInnerHTML={{
             __html: `{
@@ -129,16 +122,12 @@ export default props => {
           <Img
             alt={title}
             resolutions={resizing}
-            style={{
-              marginRight: rhythm(1 / 2),
-              marginBottom: rhythm(1 / 2),
-              border: `1px solid tomato`,
-            }}
+            style={{}}
           />
         </div>
       ))}
       <h4>GraphQL query</h4>
-      <pre style={{ background: `#efeded`, padding: rhythm(3 / 4) }}>
+      <pre style={{}}>
         <code
           dangerouslySetInnerHTML={{
             __html: `{
@@ -177,31 +166,26 @@ export default props => {
           key={sizes.src}
           alt={title}
           sizes={sizes}
-          style={{
-            marginRight: rhythm(1 / 2),
-            marginBottom: rhythm(1 / 2),
-            border: `1px solid tomato`,
-          }}
         />
       ))}
       <h4>GraphQL query</h4>
-      <pre style={{ background: `#efeded`, padding: rhythm(3 / 4) }}>
+      <pre style={{}}>
         <code
           dangerouslySetInnerHTML={{
             __html: `{
-  allContentfulAsset {
-    edges {
-      node {
-        title
-        sizes(maxWidth: 613) {
-          sizes
-          src
-          srcSet
-        }
-      }
-    }
-  }
-}`,
+              allContentfulAsset {
+                edges {
+                  node {
+                    title
+                    sizes(maxWidth: 613) {
+                      sizes
+                      src
+                      srcSet
+                    }
+                  }
+                }
+              }
+            }`,
           }}
         />
       </pre>
@@ -229,16 +213,12 @@ export default props => {
             key={webp.src}
             alt={title}
             resolutions={webp}
-            style={{
-              marginRight: rhythm(1 / 2),
-              marginBottom: rhythm(1 / 2),
-              border: `1px solid tomato`,
-            }}
+            style={{}}
           />
         </div>
       ))}
       <h4>GraphQL query</h4>
-      <pre style={{ background: `#efeded`, padding: rhythm(3 / 4) }}>
+      <pre style={{}}>
         <code
           dangerouslySetInnerHTML={{
             __html: `{

@@ -7,7 +7,7 @@ const propTypes = {
   children: PropTypes.any.isRequired,
 }
 
-const ButtonLink = ({ type, to, children }) => {
+const ButtonLink = ({ type, size, to, children }) => {
 
   let className = 'btn';
   switch(type) {
@@ -16,6 +16,14 @@ const ButtonLink = ({ type, to, children }) => {
       break;
     case 'link':
       className += ' btn-link';
+      break;
+    default:
+      break;
+  }
+
+  switch(size) {
+    case 'large':
+      className += ' btn-lg';
       break;
     default:
       break;

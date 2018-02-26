@@ -1,0 +1,46 @@
+import React from 'react';
+import * as PropTypes from "prop-types";
+
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemTitle,
+    AccordionItemBody,
+} from 'react-accessible-accordion';
+
+import 'react-accessible-accordion/dist/react-accessible-accordion.css';
+import '../styles/Accordion.scss';
+
+const propTypes = {
+  content: PropTypes.any.isRequired
+}
+
+
+
+const AccordionSection = ({ content }) => {
+
+  const items = content.map((c,i) =>
+    <AccordionItem key={i}>
+      <AccordionItemTitle className="clearfix">
+        <h5 className="float-left">{c.title}</h5>
+        <i className="icon icon-plus float-right mt-1"></i>
+        <i className="icon icon-minus float-right mt-1"></i>
+      </AccordionItemTitle>
+      <AccordionItemBody>
+        <div dangerouslySetInnerHTML={{
+          __html: c.content.childMarkdownRemark.html}
+        }></div>
+      </AccordionItemBody>
+    </AccordionItem>
+  );
+
+  return (
+    <Accordion className="Accordion">
+      {items}
+    </Accordion>
+  );
+}
+
+AccordionSection.propTypes = propTypes;
+
+export default AccordionSection;
