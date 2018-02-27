@@ -1,3 +1,5 @@
 module.exports = {
-  'selectLanguage': 'Wählen Sie Ihre Sprache'
+  'en-US': 'Inglés',
+  'es': 'Español',
+  'continue': '(Continue esp)'
 };

@@ -15,13 +15,12 @@ const propTypes = {
 class LandingPage extends React.Component {
   render() {
     const c = this.props.data.content.edges[0].node;
-    console.log(c);
     return (
       <section className="Page LandingPage">
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent">
             <h1>{c.heroTitle}</h1>
-            <ButtonLink to={`/page-xxx`} type="primary" size="large">
+            <ButtonLink to={`/questions`} type="primary" size="large">
               {c.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
             </ButtonLink>

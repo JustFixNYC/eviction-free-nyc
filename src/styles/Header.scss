@@ -9,5 +9,9 @@
 
   a {
     color: #fff;
+
+    &:hover, &:focus {
+      color: #fff;
+    }
   }
 }

@@ -7,7 +7,7 @@ const SelectLanguage = (props) => {
   const links = props.langs.map(lang =>
     <li key={lang.langKey} selected={lang.selected}>
       <Link to={lang.link}>    
-          {lang.langKey}
+          <FormattedMessage id={lang.langKey} />
       </Link>
     </li>
   );

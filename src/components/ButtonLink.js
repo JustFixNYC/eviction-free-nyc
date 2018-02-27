@@ -1,5 +1,6 @@
 import React from 'react';
 import * as PropTypes from "prop-types";
+import { injectIntl } from 'react-intl';
 import Link from 'gatsby-link';
 
 const propTypes = {
@@ -7,9 +8,11 @@ const propTypes = {
   children: PropTypes.any.isRequired,
 }
 
-const ButtonLink = ({ type, size, to, children }) => {
+const ButtonLink = ({ type, size, to, children, intl }) => {
 
-  let className = 'btn';
+  const slug = `/${intl.locale}${to}`;
+
+  let className = 'btn btn-block btn-centered';
   switch(type) {
     case 'primary':
       className += ' btn-primary';
@@ -31,7 +34,7 @@ const ButtonLink = ({ type, size, to, children }) => {
 
 
   return (
-    <Link to={to} className={className}>
+    <Link to={slug} className={className}>
       {children}
     </Link>
   );
@@ -39,4 +42,4 @@ const ButtonLink = ({ type, size, to, children }) => {
 
 ButtonLink.propTypes = propTypes;
 
-export default ButtonLink;
+export default injectIntl(ButtonLink);

@@ -1,0 +1,76 @@
+@import 'vars';
+
+.ScreenerPage {
+
+  max-width: 90vw;
+  margin: 32px auto;
+
+  @include for-tablet-portrait-up() {
+    max-width: 60vw;
+  }
+
+  @include for-desktop-up() {
+    max-width: 40vw;
+  }
+
+  .ScreenerPage__Intro {
+
+    img {
+      display: block;
+      width: 20%;
+      max-width: 100px;
+      margin: 0 auto 32px auto;
+    }
+
+    h4 {
+      margin-bottom: 32px;
+    }
+
+    ul {
+      font-size: 1rem;
+      list-style: none;
+      margin-left: 0;
+
+      li {
+        position: relative;
+        padding-left: 38px;
+
+
+        margin: 16px 0;
+
+        @include for-desktop-up() {
+          margin: 32px 0;
+        }
+      }
+
+      li:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        top: 2px;
+        left: 0;
+      }
+
+      li:nth-child(1) {
+        &:before {
+          background: url('../assets/img/location.svg') no-repeat;
+          background-size: 100%;
+        }
+      }
+      li:nth-child(2) {
+        &:before {
+          background: url('../assets/img/income.svg') no-repeat;
+          background-size: 28px;
+        }
+      }
+      li:nth-child(3) {
+        &:before {
+          background: url('../assets/img/document.svg') no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+}

@@ -10,9 +10,6 @@ import 'intl/locale-data/jsonp/en';
 addLocaleData(en);
 
 const EnLayout = (props) => {
-
- console.log('en-us layout');
-
  return (
     <Layout
       {...props}

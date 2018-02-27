@@ -1,8 +1,11 @@
+@import 'vars';
+
 .Accordion {
 
   .accordion__item {
 
     padding: 16px 0;
+    border-bottom: 1px solid $border-color;
 
     h5 {
       margin-bottom: 0;
@@ -25,7 +28,7 @@
 
       h5 {
         text-decoration: underline;
-      }      
+      }
     }
 
     [aria-selected='true'] {

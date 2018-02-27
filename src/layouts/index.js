@@ -30,8 +30,6 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
     }
   }
 
-  console.log('template wrapper');
-
   return (
     <IntlProvider
       locale={langKey}

@@ -50,6 +50,7 @@ $link-color: $primary-color;
 $link-color-dark: darken($link-color, 5%);
 
 $layout-spacing: $unit-4;
+$border-radius: $unit-1;
 
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
