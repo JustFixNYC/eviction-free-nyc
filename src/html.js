@@ -47,6 +47,7 @@ class Html extends React.Component {
           />
           <title>Gatsby Contentful</title>
           {css}
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuf0Ca1EvxogvbZQKOBl_40y0UWm4Fk30&libraries=places,geometry"></script>
         </head>
         <body>
           <div id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />

@@ -17,6 +17,10 @@
         margin-bottom: 3rem;
       }
 
+      .btn {
+        margin: 32px auto;
+      }
+
       @include for-phone-only() {
         max-width: 80vw;
       }

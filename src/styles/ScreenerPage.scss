@@ -6,11 +6,39 @@
   margin: 32px auto;
 
   @include for-tablet-portrait-up() {
-    max-width: 60vw;
+    max-width: 50vw;
   }
 
   @include for-desktop-up() {
     max-width: 40vw;
+  }
+
+  & > div {
+    text-align: center;
+  }
+
+  .step {
+    margin-bottom: 32px;
+  }
+
+  h4 {
+    display: inline-block;
+    position: relative;
+    padding-left: 42px;
+    margin-bottom: 32px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      top: 0px;
+      left: 0;
+    }
+  }
+
+  p {
   }
 
   .ScreenerPage__Intro {
@@ -23,10 +51,15 @@
     }
 
     h4 {
-      margin-bottom: 32px;
+      padding-left: 0;
+    }
+
+    .btn {
+      margin: 32px auto;
     }
 
     ul {
+      text-align: left;
       font-size: 1rem;
       list-style: none;
       margin-left: 0;
@@ -71,6 +104,31 @@
           background-size: 100%;
         }
       }
+    }
+  }
+
+
+  .ScreenerPage__Location {
+
+    h4:before {
+      background: url('../assets/img/location.svg') no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  .ScreenerPage__Income {
+
+    h4:before {
+      background: url('../assets/img/income.svg') no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  .ScreenerPage__Case {
+
+    h4:before {
+      background: url('../assets/img/document.svg') no-repeat;
+      background-size: 100%;
     }
   }
 }

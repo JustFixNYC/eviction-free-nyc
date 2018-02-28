@@ -1,0 +1,63 @@
+@import 'vars';
+
+.AddressSearch {
+  width: 100%;
+
+  ul {
+    margin: 0;
+    list-style: none;
+    text-align: left;
+
+    // background: #fff;
+    // background-image: none;
+
+    border: 0.05rem solid $border-color;
+    border-top: none;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    // color: #50596c;
+    // display: block;
+    // font-size: 0.8rem;
+    // height: 1.8rem;
+    // line-height: 1rem;
+    // max-width: 100%;
+    // outline: none;
+    // padding: 0.35rem 0.4rem;
+    // position: relative;
+    // width: 100%;
+
+    &.geosuggest__suggests--hidden {
+      display: none;
+    }
+
+    li {
+
+      padding: 0.2rem 0.4rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:hover {
+        background-color: $gray-color-light;
+        cursor: pointer;
+      }
+
+      &.geosuggest__item--active {
+        background-color: $primary-color;
+        color: #fff;
+
+        &:hover {
+          background-color: $primary-color;
+        }
+      }
+    }
+
+    li:first-child {
+
+
+    }
+  }
+}

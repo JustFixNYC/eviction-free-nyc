@@ -26,7 +26,8 @@ $secondary-color-light: lighten($secondary-color, 3%);
 // Gray colors
 $dark-color: #454d5d;
 $light-color: #fff;
-$gray-color: #c9c8c7;
+// $gray-color: #c9c8c7;
+$gray-color: lighten($dark-color, 40%) !default;
 $gray-color-dark: darken($gray-color, 25%);
 $gray-color-light: lighten($gray-color, 20%);
 
