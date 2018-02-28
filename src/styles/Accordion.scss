@@ -1,43 +1,56 @@
 @import 'vars';
 
 .Accordion {
-
   .accordion__item {
-
-    padding: 16px 0;
     border-bottom: 1px solid $border-color;
+  }
+}
+
+.accordion__item {
+
+  padding: 16px 0;
+
+  h5 {
+    margin-bottom: 0;
+    max-width: 80%;
+  }
+
+  .accordion__body {
+    margin-top: 8px;
+
+    ul {
+      margin-left: 0;
+    }
+  }
+
+  // this is the title div
+  & > div:first-child {
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  [role='tab']:focus {
+    outline: none;
+  }
+  [role='tab']:hover {
+    cursor: pointer;
 
     h5 {
-      margin-bottom: 0;
-      max-width: 80%;
+      text-decoration: underline;
     }
+  }
+}
 
-    .accordion__body {
-      margin-top: 8px;
-    }
 
-    .icon-minus {
-      display: none;
-    }
-
-    [role='tab']:focus {
-      outline: none;
-    }
-    [role='tab']:hover {
-      cursor: pointer;
-
-      h5 {
-        text-decoration: underline;
-      }
-    }
-
-    [aria-selected='true'] {
-      .icon-plus {
-        display: none;
-      }
-      .icon-minus {
-        display: block;
-      }
-    }
+.icon-minus {
+  display: none;
+}
+[aria-selected='true'] {
+  .icon-plus {
+    display: none;
+  }
+  .icon-minus {
+    display: block;
   }
 }

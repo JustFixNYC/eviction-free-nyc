@@ -3,6 +3,8 @@ import ReactModal from 'react-modal';
 
 import '../styles/Modal.scss';
 
+ReactModal.setAppElement('#___gatsby');
+
 const Modal = (props) => {
 
   // style overrides are here. new stuff is in ReactModal.scss

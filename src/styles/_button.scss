@@ -1,28 +1,33 @@
 @import 'vars';
 
+@import "~spectre.css/src/mixins";
+
+// make all btns large size
+.btn {
+  font-size: 0.9rem;
+  height: 2rem;
+  padding: 0.45rem 0.6rem;
+  min-width: 100px;
+
+  border-color: $third-color;
+  color: $third-color;
+
+  &:hover, &:focus, &:active, &.active {
+    background-color: $third-color;
+    border-color: $third-color;
+    color: #fff;
+  }
+
+
+}
+
 
 .btn.btn-secondary {
-  background: $secondary-color;
-  border-color: $secondary-color-dark;
-  color: $light-color;
-  &:focus,
-  &:hover {
-    background: darken($secondary-color-dark, 2%);
-    border-color: darken($secondary-color-dark, 5%);
-    color: $light-color;
-  }
-  &:active,
-  &.active {
-    background: darken($secondary-color-dark, 4%);
-    border-color: darken($secondary-color-dark, 7%);
-    color: $light-color;
-  }
-  &.loading {
-    &::after {
-      border-bottom-color: $light-color;
-      border-left-color: $light-color;
-    }
-  }
+  @include button-variant($secondary-color);
+}
+
+.btn.btn-steps {
+  @include button-variant($third-color);
 }
 
 .btn-block {
@@ -31,4 +36,10 @@
 
 .btn-centered {
   margin: 0 auto;
+}
+
+.btn + .btn {
+  margin-left: 32px;
+  margin-bottom: 16px;
+  vertical-align: top;
 }

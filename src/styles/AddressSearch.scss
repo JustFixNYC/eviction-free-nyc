@@ -46,11 +46,11 @@
       }
 
       &.geosuggest__item--active {
-        background-color: $primary-color;
+        background-color: $third-color;
         color: #fff;
 
         &:hover {
-          background-color: $primary-color;
+          background-color: $third-color;
         }
       }
     }

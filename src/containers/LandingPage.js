@@ -20,7 +20,7 @@ class LandingPage extends React.Component {
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent">
             <h1>{c.heroTitle}</h1>
-            <ButtonLink to={`/questions`} type="primary" size="large">
+            <ButtonLink to={`/questions`} type="primary">
               {c.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
             </ButtonLink>
