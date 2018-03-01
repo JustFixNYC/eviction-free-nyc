@@ -5,18 +5,27 @@
 // make all btns large size
 .btn {
   font-size: 0.9rem;
-  height: 2rem;
-  padding: 0.45rem 0.6rem;
+  height: 2.3rem;
+  padding: 0.6rem;
   min-width: 100px;
 
-  border-color: $third-color;
-  color: $third-color;
+  // border-color: $third-color;
+  // color: $third-color;
+  //
+  // &:not(.btn-link) {
+  //   &:hover, &:focus, &:active, &.active {
+  //     background-color: $third-color;
+  //     border-color: $third-color;
+  //     color: #fff;
+  //   }
+  // }
 
-  &:hover, &:focus, &:active, &.active {
-    background-color: $third-color;
-    border-color: $third-color;
-    color: #fff;
+  &.btn-link {
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
   }
+
 
 
 }
@@ -31,7 +40,7 @@
 }
 
 .btn-block {
-  max-width: 250px;
+  max-width: 240px;
 }
 
 .btn-centered {

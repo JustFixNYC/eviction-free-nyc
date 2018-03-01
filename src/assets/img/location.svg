@@ -1,13 +1,18 @@
-
-<svg width="231px" height="213px" viewBox="0 0 231 213" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <g id="location" transform="translate(5.000000, 5.000000)" stroke-width="10.4593">
-            <path d="M172.6,62.7 C172.6,97 110.4,199 110.4,199 C110.4,199 48.2,97 48.2,62.7 C48.2,28.4 76,0.5 110.4,0.5 C144.8,0.5 172.6,28.3 172.6,62.7 Z" id="Shape" stroke="#0B1153"></path>
-            <path d="M220.5,201.9 L0.8,201.9" id="Shape" stroke="#960048"></path>
-            <circle id="Oval" stroke="#960048" cx="110.5" cy="62.1" r="32.9"></circle>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 230 230" enable-background="new 0 0 230 230" xml:space="preserve">
+<g id="Layer_1">
+	<g>
+		
+			<path fill="none" stroke="#0B1153" stroke-width="10.4593" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M177,76.5c0,34.3-62.2,136.3-62.2,136.3s-62.2-102-62.2-136.3s27.8-62.2,62.2-62.2S177,42.1,177,76.5z"/>
+		
+			<line fill="none" stroke="#960048" stroke-width="10.4593" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="224.8" y1="215.7" x2="5.2" y2="215.7"/>
+		
+			<circle fill="none" stroke="#960048" stroke-width="10.4593" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="114.8" cy="75.9" r="32.9"/>
+	</g>
+</g>
+<g id="Layer_2">
+</g>
 </svg>

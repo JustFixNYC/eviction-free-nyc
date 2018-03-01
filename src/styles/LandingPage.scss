@@ -3,28 +3,54 @@
 .LandingPage {
 
   .LandingPage__Hero {
-    height: calc(70vh - 60px);
-    background-color: $bg-color;
+
+    height: calc(100vh - 60px);
+    background-color: $bg-color-dark;
+    // margin-bottom: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     .LandingPage__HeroContent {
       max-width: 50vw;
       text-align: center;
 
-      h1 {
-        margin-bottom: 3rem;
+      .LandingPage__HeroTitle {
+        margin-bottom: 1.5rem;
+
+        @include for-tablet-portrait-up() {
+          margin-bottom: 3rem;
+          font-size: 2rem;
+        }
       }
 
       .btn {
-        margin: 32px auto;
+        margin: 16px auto;
       }
 
       @include for-phone-only() {
         max-width: 80vw;
       }
     }
+
+    @include for-tablet-portrait-up() {
+      height: calc(80vh - 60px);
+    }
+
+    .LandingPage__HeroLearnMore {
+      display: block;
+      position: absolute;
+      bottom: 15px;
+      text-align: center;
+
+      @include for-tablet-portrait-up() {
+        display: none;
+      }
+
+    }
+
+
   }
 
   .LandingPage__Content {

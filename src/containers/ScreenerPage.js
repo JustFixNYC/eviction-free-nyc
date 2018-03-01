@@ -1,5 +1,6 @@
 import React from "react";
 import * as PropTypes from "prop-types";
+// import { formatMessage, FormattedMessage as Trans } from 'react-intl';
 import { FormattedMessage as Trans } from 'react-intl';
 import {
     Accordion,
@@ -170,6 +171,7 @@ class ScreenerPage extends React.Component {
           </ul>
           <h4>{c.addressTitle}</h4>
           <p>{c.addressDescription}</p>
+          {/* <AddressSearch onFormSubmit={this.handleZipcode} placeholder={formatMessage({ id: "addrPlaceholder"})} /> */}
           <AddressSearch onFormSubmit={this.handleZipcode} />
         </div>
 

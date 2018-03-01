@@ -1,16 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="235px" height="234px" viewBox="0 0 235 234" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <title>search</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-        <g id="search" transform="translate(5.000000, 5.000000)" stroke-width="10.4593">
-            <g id="Group" transform="translate(57.000000, 57.000000)" stroke="#960048">
-                <circle id="Oval" cx="55.4" cy="55" r="54.8"></circle>
-                <path d="M94.2,93.8 L108.1,107.6 M126.1,138.1 L108.1,120 C104.7,116.6 104.7,111 108.1,107.5 C111.5,104.1 117.1,104.1 120.6,107.5 L140.4,127.4 M37.5,72.8 C27.6,62.9 27.6,47 37.5,37.1" id="Shape"></path>
-            </g>
-            <circle id="Oval" stroke="#0B1153" cx="112.4" cy="112" r="111.7"></circle>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 230 230" enable-background="new 0 0 230 230" xml:space="preserve">
+<g id="Layer_1">
+	<g>
+		<g>
+			
+				<circle fill="none" stroke="#960048" stroke-width="10.2491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="115" cy="115" r="53.7"/>
+			
+				<line fill="none" stroke="#960048" stroke-width="10.2491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="153" y1="153" x2="166.7" y2="166.6"/>
+			
+				<path fill="none" stroke="#960048" stroke-width="10.2491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M184.3,196.5l-17.7-17.7c-3.4-3.4-3.4-8.8,0-12.2l0,0c3.4-3.4,8.8-3.4,12.2,0l19.4,19.5"/>
+			
+				<path fill="none" stroke="#960048" stroke-width="10.2491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M97.5,132.5c-9.7-9.7-9.7-25.3,0-35"/>
+		</g>
+	</g>
+	
+		<circle fill="none" stroke="#0B1153" stroke-width="10.2491" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="115" cy="115" r="109.5"/>
+</g>
+<g id="Layer_2">
+</g>
 </svg>

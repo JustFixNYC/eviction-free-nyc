@@ -32,6 +32,7 @@ const AddressSearch = (props) => {
         bounds={geosuggestBounds}
         onSuggestSelect={handleGeosuggest}
         inputClassName="form-input"
+        placeholder={props.placeholder}
         />
     </div>
   );

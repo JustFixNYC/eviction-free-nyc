@@ -9,9 +9,9 @@ const Header = (props) => (
     <section className="navbar-section">
       <Link className="navbar-brand" to="/">Eviction Free NYC!</Link>
     </section>
-    <section className="navbar-section">
+    {/* <section className="navbar-section">
       <SelectLanguage langs={props.langs} />
-    </section>
+    </section> */}
   </header>
 )
 

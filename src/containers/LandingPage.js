@@ -19,17 +19,23 @@ class LandingPage extends React.Component {
       <section className="Page LandingPage">
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent">
-            <h1>{c.heroTitle}</h1>
+            <h2 className="LandingPage__HeroTitle">{c.heroTitle}</h2>
             <ButtonLink to={`/questions`} type="primary">
               {c.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
             </ButtonLink>
+            <ButtonLink to={`/es`} type="link">
+              En español
+            </ButtonLink>
+          </div>
+          <div className="LandingPage__HeroLearnMore">
+            <span>{c.learnMoreTitle}</span><br /><i className="icon icon-arrow-down"></i>
           </div>
         </div>
         <div className="LandingPage__Content container grid-lg">
           <div className="columns clearfix">
             <div className="LandingPage__ContentFAQ column col-mr-auto col-sm-12 col-7">
-              <h3>{c.learnMoreTitle}</h3>
+              <h3>{c.learnMoreTitle}:</h3>
               <Accordion content={c.faq}></Accordion>
             </div>
             <div className="LandingPage__ContentImage1 column col-ml-auto col-sm-12 col-4">
