@@ -7,18 +7,17 @@ const propTypes = {
 
 class PageTemplate extends React.Component {
   render() {
-
     const { title, pageContent } = this.props.data.contentfulPage;
 
     return (
-      <div>
-        <h1>{title}</h1>
+      <section className="Page container grid-md">
+        <h2>{title}</h2>
         <div
           dangerouslySetInnerHTML={{
             __html: pageContent.childMarkdownRemark.html,
           }}
         />
-      </div>
+      </section>
     );
   }
 }

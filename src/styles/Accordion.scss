@@ -3,6 +3,10 @@
 .Accordion {
   .accordion__item {
     border-bottom: 1px solid $border-color;
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
 
@@ -33,7 +37,7 @@
   // [role='tab']:focus {
   //   outline: none;
   // }
-  [role='tab']:hover {
+  [role='tab']:hover, [role='button']:hover {
     cursor: pointer;
 
     h5 {
@@ -46,7 +50,7 @@
 .icon-minus {
   display: none;
 }
-[aria-selected='true'] {
+[aria-selected='true'],[aria-expanded='true'] {
   .icon-plus {
     display: none;
   }

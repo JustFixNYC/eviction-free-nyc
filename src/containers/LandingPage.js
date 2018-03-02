@@ -13,8 +13,20 @@ const propTypes = {
 }
 
 class LandingPage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.content = props.data.content.edges[0].node;
+    this.faq = this.content.faq.map(item => ({
+      title: item.title,
+      html: item.content.childMarkdownRemark.html
+    }));
+
+  }
+
+
   render() {
-    const c = this.props.data.content.edges[0].node;
+    const c = this.content;
     return (
       <section className="Page LandingPage">
         <div className="LandingPage__Hero">
@@ -24,19 +36,19 @@ class LandingPage extends React.Component {
               {c.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
             </ButtonLink>
-            <ButtonLink to={`/es`} type="link">
+            {/* <ButtonLink to={`/es`} type="link">
               En español
-            </ButtonLink>
+            </ButtonLink> */}
           </div>
           <div className="LandingPage__HeroLearnMore">
             <span>{c.learnMoreTitle}</span><br /><i className="icon icon-arrow-down"></i>
           </div>
         </div>
-        <div className="LandingPage__Content container grid-lg">
+        <div className="LandingPage__Content container grid-md">
           <div className="columns clearfix">
             <div className="LandingPage__ContentFAQ column col-mr-auto col-sm-12 col-7">
               <h3>{c.learnMoreTitle}:</h3>
-              <Accordion content={c.faq}></Accordion>
+              <Accordion content={this.faq}></Accordion>
             </div>
             <div className="LandingPage__ContentImage1 column col-ml-auto col-sm-12 col-4">
               <Img

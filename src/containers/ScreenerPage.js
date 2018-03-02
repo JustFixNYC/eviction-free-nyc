@@ -1,7 +1,6 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-// import { formatMessage, FormattedMessage as Trans } from 'react-intl';
-import { FormattedMessage as Trans } from 'react-intl';
+import { injectIntl, FormattedMessage as Trans } from 'react-intl';
 import {
     Accordion,
     AccordionItem,
@@ -9,7 +8,7 @@ import {
     AccordionItemBody,
 } from 'react-accessible-accordion';
 
-import { isLocationEligible } from '../utils/logic';
+import { isLocationEligible, determineResultPage } from '../utils/logic';
 import AddressSearch from '../components/AddressSearch';
 import Modal from '../components/Modal';
 
@@ -148,8 +147,9 @@ class ScreenerPage extends React.Component {
   }
 
   render() {
+
     const c = this.props.data.content.edges[0].node;
-    console.log(this.state.user);
+    console.log(c);
     return (
       <section className="Page ScreenerPage">
         <div className={`ScreenerPage__Intro ${this.state.currentPage != 0 ? "d-none" : ""}`}>
@@ -171,8 +171,7 @@ class ScreenerPage extends React.Component {
           </ul>
           <h4>{c.addressTitle}</h4>
           <p>{c.addressDescription}</p>
-          {/* <AddressSearch onFormSubmit={this.handleZipcode} placeholder={formatMessage({ id: "addrPlaceholder"})} /> */}
-          <AddressSearch onFormSubmit={this.handleZipcode} />
+          <AddressSearch onFormSubmit={this.handleZipcode} placeholder={this.props.intl.formatMessage({ id: "addrPlaceholder" })} />
         </div>
 
         <div className={`ScreenerPage__Income ${this.state.currentPage != 2 ? "d-none" : ""}`}>
@@ -183,7 +182,7 @@ class ScreenerPage extends React.Component {
           </ul>
           <h4>{c.incomeTitle}</h4>
           <p>{c.incomeDescription}</p>
-          <ul>
+          <ul className="ScreenerPage__IncomeList">
             {c.incomeList.map((item,idx) =>
               <li key={idx}>{item}</li>
             )}
@@ -191,6 +190,9 @@ class ScreenerPage extends React.Component {
           <p>{c.incomeQuestion}</p>
           <button className="btn btn-steps" onClick={() => this.setIncome(true)}><Trans id="yes" /></button>
           <button className="btn btn-steps" onClick={() => this.setIncome(false)}><Trans id="no" /></button>
+          <br />
+          <br />
+          <p className="text-aside"><i>{c.incomeDisclaimer}</i></p>
         </div>
 
         <div className={`ScreenerPage__Case ${this.state.currentPage != 3 ? "d-none" : ""}`}>
@@ -201,23 +203,25 @@ class ScreenerPage extends React.Component {
           </ul>
           <h4>{c.caseTitle}</h4>
           <p>{c.caseDescription}</p>
-          <button className={`btn ${this.state.user.caseType == 'nonpay' ? "active" : ""}`}
-                  onClick={() => this.setCaseType('nonpay')}>
-              <Trans id="nonpay" />
-          </button>
-          <button className={`btn ${this.state.user.caseType == 'holdover' ? "active" : ""}`}
-                  onClick={() => this.setCaseType('holdover')}>
-              <Trans id="holdover" />
-          </button>
-          <span></span>
-          <button className={`btn ${this.state.user.caseType == 'unsure' ? "active" : ""}`}
-                  onClick={() => this.setCaseType('unsure')}>
-              <Trans id="unsure" />
-          </button>
+          <div className="ScreenerPage__CaseButtons">
+            <button className={`btn btn-default ${this.state.user.caseType == 'nonpay' ? "active" : ""}`}
+                    onClick={() => this.setCaseType('nonpay')}>
+                <Trans id="nonpay" />
+            </button>
+            <button className={`btn btn-default ${this.state.user.caseType == 'holdover' ? "active" : ""}`}
+                    onClick={() => this.setCaseType('holdover')}>
+                <Trans id="holdover" />
+            </button>
+            <button className={`btn btn-default ${this.state.user.caseType == 'unsure' ? "active" : ""}`}
+                    onClick={() => this.setCaseType('general')}>
+                <Trans id="unsure" />
+            </button>
+          </div>
+
           <Accordion>
             <AccordionItem>
               <AccordionItemTitle className="clearfix">
-                <p className="float-left">{c.caseCourtPapersQuestion}</p>
+                <p className="float-left text-bold">{c.caseCourtPapersQuestion}</p>
                 <i className="icon icon-plus float-right ml-2 mt-1"></i>
                 <i className="icon icon-minus float-right ml-2 mt-1"></i>
               </AccordionItemTitle>
@@ -230,7 +234,8 @@ class ScreenerPage extends React.Component {
               </AccordionItemBody>
             </AccordionItem>
           </Accordion>
-          <button className={`btn btn-primary ${this.state.user.caseType ? "" : "disabled"}`}>
+          <button className={`btn btn-primary ${this.state.user.caseType ? "" : "disabled"}`}
+                  onClick={() => determineResultPage(this.state.user, this.props.intl)}>
             <Trans id="submit" />
           </button>
         </div>
@@ -277,7 +282,7 @@ class ScreenerPage extends React.Component {
 
 ScreenerPage.propTypes = propTypes;
 
-export default ScreenerPage;
+export default injectIntl(ScreenerPage);
 
 export const screenerPageFragment = graphql`
   fragment ScreenerPageFragment on ContentfulScreenerPageConnection {

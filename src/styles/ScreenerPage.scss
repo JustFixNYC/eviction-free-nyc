@@ -6,11 +6,11 @@
   margin: 32px auto;
 
   @include for-tablet-portrait-up() {
-    max-width: 50vw;
+    max-width: 40vw;
   }
 
   @include for-desktop-up() {
-    max-width: 40vw;
+    max-width: 30vw;
   }
 
   & > div {
@@ -26,6 +26,10 @@
     position: relative;
     padding-left: 42px;
     margin-bottom: 24px;
+
+    @include for-tablet-portrait-up() {
+      margin-bottom: 16px;
+    }
 
     &:before {
       content: '';
@@ -69,12 +73,15 @@
         position: relative;
         padding-left: 48px;
         line-height: 32px;
-
+        font-weight: 600;
 
         margin: 16px 0;
 
         @include for-desktop-up() {
           margin: 32px 0;
+          &:first-child {
+            margin-top: 16px;
+          }
         }
       }
 
@@ -124,6 +131,44 @@
       background: url('../assets/img/income.svg') no-repeat;
       background-size: 100%;
     }
+
+    ul.ScreenerPage__IncomeList {
+      list-style: none;
+      text-align: left;
+      display: inline-block;
+      margin-top: 0;
+
+      li {
+        position: relative;
+        padding-left: 40px;
+        padding-top: 2px;
+        // line-height: 32px;
+
+
+        margin: 16px 0;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 28px;
+          height: 28px;
+          top: 2px;
+          left: 0;
+        }
+
+        &:nth-child(1):before {
+          background: url('../assets/img/individual.svg') no-repeat;
+          background-size: 100%;
+        }
+        &:nth-child(2):before {
+          background: url('../assets/img/family.svg') no-repeat;
+          background-size: 100%;
+        }
+      }
+
+
+    }
   }
 
   .ScreenerPage__Case {
@@ -133,8 +178,54 @@
       background-size: 100%;
     }
 
+    .ScreenerPage__CaseButtons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .btn {
+        margin-bottom: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+
+        @include for-tablet-portrait-up() {
+          width: 150px;
+        }
+      }
+    }
+
     .accordion {
-      margin: 16px 0;
+      margin: 0 0 16px 0;
+
+      .accordion__body {
+        ul {
+          list-style: none;
+
+          li {
+            position: relative;
+            padding-left: 36px;
+            padding-top: 2px;
+            text-align: left;
+
+            margin: 16px 0;
+
+            &:before {
+              content: '';
+              background: url('../assets/img/attachments.svg') no-repeat;
+              background-size: 100%;
+              display: block;
+              position: absolute;
+              width: 24px;
+              height: 24px;
+              top: 2px;
+              left: 0;
+            }
+          }
+
+        }
+
+
+      }
     }
   }
 }

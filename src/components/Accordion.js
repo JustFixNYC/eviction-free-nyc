@@ -17,7 +17,7 @@ const propTypes = {
 
 
 
-const AccordionSection = ({ content }) => {
+const AccordionSection = ({ content, multiple }) => {
 
   const items = content.map((c,i) =>
     <AccordionItem key={i}>
@@ -28,14 +28,14 @@ const AccordionSection = ({ content }) => {
       </AccordionItemTitle>
       <AccordionItemBody>
         <div dangerouslySetInnerHTML={{
-          __html: c.content.childMarkdownRemark.html}
+          __html: c.html}
         }></div>
       </AccordionItemBody>
     </AccordionItem>
   );
 
   return (
-    <Accordion className="Accordion">
+    <Accordion className="Accordion" accordion={multiple ? false : true}>
       {items}
     </Accordion>
   );

@@ -1,0 +1,69 @@
+@import 'vars';
+
+.HousingCourtPage {
+  margin: 32px auto;
+
+  @include for-tablet-portrait-up() {
+    margin-top: 64px;
+  }
+
+
+
+  .HousingCourtPage_Header {
+    h3 {
+      // margin-top: 40px;
+      margin-bottom: 40px;
+
+      @include for-tablet-portrait-up() {
+        width: 40vw;
+      }
+      @include for-desktop-up() {
+        width: 35vw;
+      }
+    }
+
+    .btn {
+      @include for-phone-only() {
+        display: none;
+      }
+    }
+
+   }
+
+
+  h6 {
+    // background-color: $third-color;
+    // color: #fff;
+    padding: 12px 0;
+    text-transform: uppercase;
+    color: $third-color;
+    font-weight: bold;
+
+    border-bottom: 2px solid $third-color;
+  }
+
+  .Accordion {
+    margin-bottom: 32px;
+
+    // .accordion__item {
+    //   &:hover {
+    //     background-color: $bg-color-dark;
+    //     text-decoration: none;
+    //   }
+    //
+    //   &[aria-selected='true'],&[aria-expanded='true'] {
+    //     background-color: #fff;
+    //   }
+    // }
+
+    .accordion__body {
+
+      @include for-tablet-portrait-up() {
+        width: 80%;
+        margin-left: 32px;
+        // margin: 0 auto;
+      }
+
+    }
+  }
+}

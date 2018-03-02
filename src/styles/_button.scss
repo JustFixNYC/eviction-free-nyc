@@ -9,22 +9,26 @@
   padding: 0.6rem;
   min-width: 100px;
 
-  // border-color: $third-color;
-  // color: $third-color;
-  //
-  // &:not(.btn-link) {
-  //   &:hover, &:focus, &:active, &.active {
-  //     background-color: $third-color;
-  //     border-color: $third-color;
-  //     color: #fff;
-  //   }
-  // }
-
   &.btn-link {
     &:hover, &:focus {
       text-decoration: underline;
     }
   }
+
+
+
+}
+
+.btn.btn-default {
+  border-color: $third-color;
+  color: $third-color;
+
+  &:hover, &:focus, &:active, &.active {
+    background-color: $third-color;
+    border-color: $third-color;
+    color: #fff;
+  }
+
 
 
 

@@ -43,7 +43,16 @@ exports.create = (graphql, createPage) => {
         _.each(CASETYPES, casetype => {
 
           const pagePath = `/${edge.node.node_locale}/${edge.node.boroughKey}/${casetype}`;
-          
+
+          const pageContext = {
+            id: edge.node.id,
+            stepsHoldover: casetype === 'holdover',
+            stepsHoldoverRTC: casetype === 'holdoverrtc',
+            stepsNonpay: casetype === 'nonpay',
+            stepsNonpayRTC: casetype === 'nonpayrtc',
+            stepsGeneral: casetype === 'general'
+          };
+
           // Gatsby uses Redux to manage its internal state.
           // Plugins and sites can use functions like "createPage"
           // to interact with Gatsby.
@@ -54,10 +63,7 @@ exports.create = (graphql, createPage) => {
             // can query data specific to each page.
             path: pagePath,
             component: pageTemplate,
-            context: {
-              id: edge.node.id,
-              type: casetype
-            },
+            context: pageContext,
           });
 
         })

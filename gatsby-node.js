@@ -14,9 +14,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
   return Promise
     .all([
-      generalPages.create(graphql, createPage)
-      // ,
-      // housingCourtPages.create(graphql, createPage)
+      generalPages.create(graphql, createPage),
+      housingCourtPages.create(graphql, createPage)
     ])
     .catch(error => console.log('[Page factories error]', error));
 };
