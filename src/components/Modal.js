@@ -3,7 +3,8 @@ import ReactModal from 'react-modal';
 
 import '../styles/Modal.scss';
 
-ReactModal.setAppElement('#___gatsby');
+// gatsby not building with ref to document...
+// ReactModal.setAppElement(document.getElementById('#___gatsby'));
 
 const Modal = (props) => {
 
@@ -30,6 +31,7 @@ const Modal = (props) => {
       portalClassName="modal"
       overlayClassName="modal-overlay"
       className="modal-container"
+      ariaHideApp={false}
       style={styles}>
       { props.children }
     </ReactModal>

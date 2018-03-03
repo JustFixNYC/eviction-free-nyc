@@ -5,10 +5,13 @@ import '../styles/AddressSearch.scss';
 
 const AddressSearch = (props) => {
 
-  const geosuggestBounds = new window.google.maps.LatLngBounds(
-    new window.google.maps.LatLng(40.477398, -74.259087),
-    new window.google.maps.LatLng(40.917576, -73.700172)
-  );
+  let geosuggestBounds = null;
+  if (typeof window !== `undefined`) {
+    geosuggestBounds = new window.google.maps.LatLngBounds(
+      new window.google.maps.LatLng(40.477398, -74.259087),
+      new window.google.maps.LatLng(40.917576, -73.700172)
+    );
+  }
 
   const handleGeosuggest = (suggest) => {
 

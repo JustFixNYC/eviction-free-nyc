@@ -149,7 +149,7 @@ class ScreenerPage extends React.Component {
   render() {
 
     const c = this.props.data.content.edges[0].node;
-    console.log(c);
+    // console.log(c);
     return (
       <section className="Page ScreenerPage">
         <div className={`ScreenerPage__Intro ${this.state.currentPage != 0 ? "d-none" : ""}`}>
