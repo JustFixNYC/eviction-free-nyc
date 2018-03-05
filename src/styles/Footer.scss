@@ -25,6 +25,17 @@
     //   vertical-align: middle;
     // }
 
+  .Footer_JustFix {
+
+    img {
+      max-width: 125px;
+      position: relative;
+      top: 8px;
+      margin-left: 4px;
+    }
+
+  }
+
 
 
   @include for-phone-only() {
@@ -40,9 +51,16 @@
       margin-top: 16px;
     }
 
-    // & > div {
-    //   margin-bottom: 16px;
-    // }
+    .Footer_JustFix {
+
+      img {
+        max-width: 125px;
+        position: relative;
+        top: 8px;
+        margin-left: 0;
+      }
+
+    }
   }
 
 }

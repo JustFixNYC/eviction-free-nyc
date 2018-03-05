@@ -7,7 +7,9 @@
   .LandingPage__Hero {
 
     height: calc(100vh - 60px);
-    background-color: $bg-color-dark;
+    // background-color: $bg-color-dark;
+
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPklEQVQoU2NkIApwSTESVsclxcDw7RkBhRBFIMPwKEQowqMQVREOhZiKsCjErghNIW5FSArxK4IqJKwIpBAAB04SL75UWDsAAAAASUVORK5CYII=) repeat $bg-color-dark;
     // margin-bottom: 3rem;
     display: flex;
     justify-content: center;

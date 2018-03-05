@@ -1,44 +1,73 @@
 import React from 'react';
 import Geosuggest from 'react-geosuggest';
+import { FormattedMessage as Trans } from 'react-intl';
+
 
 import '../styles/AddressSearch.scss';
 
-const AddressSearch = (props) => {
+class AddressSearch extends React.Component {
+  constructor(props) {
+    super(props);
 
-  let geosuggestBounds = null;
-  if (typeof window !== `undefined`) {
-    geosuggestBounds = new window.google.maps.LatLngBounds(
-      new window.google.maps.LatLng(40.477398, -74.259087),
-      new window.google.maps.LatLng(40.917576, -73.700172)
-    );
-  }
+    this.state = {
+      error: false
+    };
 
-  const handleGeosuggest = (suggest) => {
-
-    if(suggest && suggest.gmaps) {
-      const components = suggest.gmaps.address_components;
-      const zip = components.filter(e => e.types.indexOf('postal_code') !== -1)[0].long_name;
-
-      let boro = components.filter(e => e.types.indexOf('sublocality_level_1') !== -1)[0];
-      if(boro) boro = boro.long_name.toUpperCase();
-      else {
-        console.error('No borough found!!');
-      }
-
-      props.onFormSubmit({ zip, boro });
+    this.geosuggestBounds = null;
+    if (typeof window !== `undefined`) {
+      this.geosuggestBounds = new window.google.maps.LatLngBounds(
+        new window.google.maps.LatLng(40.477398, -74.259087),
+        new window.google.maps.LatLng(40.917576, -73.700172)
+      );
     }
   }
 
-  return (
-    <div className="AddressSearch">
-      <Geosuggest
-        bounds={geosuggestBounds}
-        onSuggestSelect={handleGeosuggest}
-        inputClassName="form-input"
-        placeholder={props.placeholder}
-        />
-    </div>
-  );
+
+
+  handleGeosuggest = (suggest) => {
+
+    if(suggest && suggest.gmaps) {
+      const components = suggest.gmaps.address_components;
+      let zip = components.filter(e => e.types.indexOf('postal_code') !== -1)[0];
+      if(zip) {
+        zip = zip.long_name;
+      } else {
+        this.setState({ error: true });
+      }
+      
+      let boro = components.filter(e => e.types.indexOf('sublocality_level_1') !== -1)[0];
+      if(boro) {
+        boro = boro.long_name.toUpperCase();
+        this.setState({ error: false });
+        this.props.onFormSubmit({ zip, boro });
+      } else if (['MANHATTAN', 'STATEN ISLAND', 'BROOKLYN', 'QUEENS', 'BRONX'].indexOf(boro) === -1) {
+        this.setState({ error: true });
+      } else {
+        console.error('No borough found!!');
+        this.setState({ error: true });
+      }
+
+
+
+
+    }
+  }
+
+  render() {
+    return (
+      <div className="AddressSearch">
+        <Geosuggest
+          bounds={this.geosuggestBounds}
+          onSuggestSelect={this.handleGeosuggest}
+          inputClassName="form-input"
+          placeholder={this.props.placeholder}
+          />
+        {this.state.error && <p className="mt-2 text-bold text-error"><Trans id="addrError" /></p>}
+      </div>
+    );
+  }
+
+
 }
 
 export default AddressSearch;
