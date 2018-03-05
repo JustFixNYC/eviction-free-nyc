@@ -103,18 +103,6 @@ export const landingPageFragment = graphql`
             }
           }
         }
-        rtcLogo {
-          sizes(maxWidth: 613) {
-            sizes
-            src
-            srcSet
-          }
-        }
-        rtcAttribution {
-          childMarkdownRemark {
-            html
-          }
-        }
         secondaryImage {
           title
           sizes(maxWidth: 613) {

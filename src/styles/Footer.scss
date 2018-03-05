@@ -1,0 +1,48 @@
+@import 'vars';
+
+
+.Footer {
+
+  background: $secondary-color;
+  color: #fff;
+  padding: 48px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+    span {
+      max-width: 400px;
+    }
+
+    img {
+      max-width: 72px;
+      margin-right: 32px;
+    }
+
+    // img, span {
+    //   display: inline-block;
+    //   vertical-align: middle;
+    // }
+
+
+
+  @include for-phone-only() {
+    display: block;
+
+    img {
+      max-width: 100px;
+      display: block;
+      margin: 0 auto 16px auto;
+    }
+
+    div {
+      margin-top: 16px;
+    }
+
+    // & > div {
+    //   margin-bottom: 16px;
+    // }
+  }
+
+}

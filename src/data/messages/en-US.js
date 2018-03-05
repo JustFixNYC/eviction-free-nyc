@@ -15,5 +15,7 @@ module.exports = {
   'qualifiedTitle': 'Great news! You are likely eligible for free legal representation.',
   'notQualifiedTitle': 'You may not qualify for a free attorney, but you still have options to get assistance!',
   'doNow': 'Here\'s what you should do now:',
-  'additionalResources': 'Additional Resources:'
+  'additionalResources': 'Additional Resources:',
+  'attribution': 'This resource is made "by tenants for tenants" and is maintained by the <a href="https://www.righttocounselnyc.org/" target="_blank">Right to Counsel NYC Coalition</a>!',
+  'justfixAttribution': 'Made with NYC ♥ by the team at <a href="https://www.justfix.nyc/" target="_blank">JustFix.nyc</a>'
 };

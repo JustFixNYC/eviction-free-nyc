@@ -13,7 +13,8 @@
 // }
 
 .Page {
-  margin: 32px auto;
+  margin: 32px auto 128px auto;
+  min-height: 70vh;
 
   & > h2 {
     margin-bottom: 32px;

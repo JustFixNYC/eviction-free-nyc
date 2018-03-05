@@ -7,6 +7,7 @@ import Link from "gatsby-link"
 import 'intl';
 
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 // Styles
 import '../styles/main.scss';
@@ -64,6 +65,7 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
         <main>
           {children()}
         </main>
+        <Footer />
 
 
 

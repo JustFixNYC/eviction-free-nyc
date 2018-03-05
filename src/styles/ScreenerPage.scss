@@ -3,7 +3,6 @@
 .ScreenerPage {
 
   max-width: 90vw;
-  margin: 32px auto;
 
   @include for-tablet-portrait-up() {
     max-width: 40vw;
