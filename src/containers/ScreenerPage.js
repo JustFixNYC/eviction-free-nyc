@@ -94,9 +94,9 @@ class ScreenerPage extends React.Component {
   }
 
   handleZipcode = ({ zip, boro }) => {
-    console.log('zipcode is', zip);
-    console.log('boro is', boro);
-    console.log(isLocationEligible(zip));
+    // console.log('zipcode is', zip);
+    // console.log('boro is', boro);
+    // console.log(isLocationEligible(zip));
 
     if(isLocationEligible(zip)) {
       this.setState({
@@ -144,6 +144,14 @@ class ScreenerPage extends React.Component {
         caseType: type
       }
     });
+  }
+
+  onScreenerSubmit = () => {
+    try {
+      determineResultPage(this.state.user, this.props.intl);
+    } catch(err) {
+      this.changeStep(0);
+    }
   }
 
   render() {
@@ -235,7 +243,7 @@ class ScreenerPage extends React.Component {
             </AccordionItem>
           </Accordion>
           <button className={`btn btn-primary ${this.state.user.caseType ? "" : "disabled"}`}
-                  onClick={() => determineResultPage(this.state.user, this.props.intl)}>
+                  onClick={() => this.onScreenerSubmit()}>
             <Trans id="submit" />
           </button>
         </div>

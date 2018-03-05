@@ -1,6 +1,7 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
 import { injectIntl, FormattedMessage as Trans } from 'react-intl';
+import { addCallButtons } from '../utils/text';
 
 import Accordion from "../components/Accordion";
 
@@ -43,13 +44,13 @@ class PageTemplate extends React.Component {
 
     this.steps = this.steps.map((step, i) => ({
         title: `${props.intl.formatMessage({ id: 'step' }) } ${i+1}: ${step.title}`,
-        html: step.childContentfulHousingCourtActionStepContentTextNode.childMarkdownRemark.html
+        html: addCallButtons(step.childContentfulHousingCourtActionStepContentTextNode.childMarkdownRemark.html)
     }));
 
     if(contentfulData.additionalResources) {
       this.additionalResources = contentfulData.additionalResources.map((step, i) => ({
           title: step.title,
-          html: step.childContentfulHousingCourtActionStepContentTextNode.childMarkdownRemark.html
+          html: addCallButtons(step.childContentfulHousingCourtActionStepContentTextNode.childMarkdownRemark.html)
       }));
     }
 
