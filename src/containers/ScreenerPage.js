@@ -227,8 +227,8 @@ class ScreenerPage extends React.Component {
               </AccordionItemTitle>
               <AccordionItemBody>
                 <ul>
-                  {c.caseCourtPapersLinks.list.map((item, idx) =>
-                    <li key={idx}><a href={item.url} target="_blank">{item.name}</a></li>
+                  {c.courtPapersLinks.map((item, idx) =>
+                    <li key={idx}><a href={item.file.url} target="_blank">{item.title}</a></li>
                   )}
                 </ul>
               </AccordionItemBody>
@@ -304,12 +304,12 @@ export const screenerPageFragment = graphql`
         caseTitle
         caseDescription
         caseCourtPapersQuestion
-        caseCourtPapersLinks {
-          list {
+        courtPapersLinks {
+          title
+          file {
             url
-            name
           }
-        }
+				}
       }
     }
   }
