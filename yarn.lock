@@ -3309,9 +3309,9 @@ gatsby-module-loader@^1.0.10:
     babel-runtime "^6.26.0"
     loader-utils "^0.2.16"
 
-gatsby-plugin-google-analytics@latest:
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.19.tgz#e9112f01118e0a16eb61f1b39bb0757feba88f2b"
+gatsby-plugin-google-analytics@^1.0.20:
+  version "1.0.20"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.20.tgz#6bd0439985ab45497a3d2400af8d4ab24924d12d"
   dependencies:
     babel-runtime "^6.26.0"
 
@@ -3323,9 +3323,9 @@ gatsby-plugin-i18n@^0.4.1:
     graphql "^0.11.7"
     ptz-i18n "^0.3.0"
 
-gatsby-plugin-offline@latest:
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-1.0.14.tgz#441d2f584e79081bd3a02b2b3b0cb0ff4bd40f54"
+gatsby-plugin-offline@^1.0.15:
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-1.0.15.tgz#26af0e1d1c8ed0c31f92bc6a75484b583550ef5b"
   dependencies:
     babel-runtime "^6.26.0"
     sw-precache "^5.0.0"
