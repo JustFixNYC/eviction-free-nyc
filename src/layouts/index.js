@@ -38,36 +38,18 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
     >
       <div>
         <Helmet
-          title="Gatsby Default Starter"
+          title="Eviction Free NYC"
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Are you facing an eviction? You may have the right to a free lawyer!' },
+            { name: 'keywords', content: 'lawyer, legal aid, housing, tenants, tenants rights, help, assistance, legal services, eviction, evicted' },
           ]}
         />
 
-        {
-          //
-          // <div
-          //   style={{
-          //     margin: `0 auto`,
-          //     marginTop: rhythm(1.5),
-          //     marginBottom: rhythm(1.5),
-          //     maxWidth: 650,
-          //     paddingLeft: rhythm(3 / 4),
-          //     paddingRight: rhythm(3 / 4),
-          //   }}
-          // >
-          //   {children()}
-          // </div>
-
-        }
         <Header langs={langsMenu} />
         <main>
           {children()}
         </main>
         <Footer />
-
-
 
       </div>
     </IntlProvider>

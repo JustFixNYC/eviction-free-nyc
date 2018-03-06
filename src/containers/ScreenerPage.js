@@ -91,6 +91,7 @@ class ScreenerPage extends React.Component {
         window.history.pushState({ step: step }, null, `?step=${step+1}`);
       }
     });
+    if(window) window.scrollTo(0,0);
   }
 
   handleZipcode = ({ zip, boro }) => {
@@ -144,6 +145,7 @@ class ScreenerPage extends React.Component {
         caseType: type
       }
     });
+    this.submitButton.focus();
   }
 
   onScreenerSubmit = () => {
@@ -242,7 +244,8 @@ class ScreenerPage extends React.Component {
               </AccordionItemBody>
             </AccordionItem>
           </Accordion>
-          <button className={`btn btn-primary ${this.state.user.caseType ? "" : "disabled"}`}
+          <button ref={ref => this.submitButton = ref}
+                  className={`btn btn-primary ${this.state.user.caseType ? "" : "disabled"}`}
                   onClick={() => this.onScreenerSubmit()}>
             <Trans id="submit" />
           </button>

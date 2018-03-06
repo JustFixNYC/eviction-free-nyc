@@ -6,7 +6,7 @@
 
   .LandingPage__Hero {
 
-    height: calc(100vh - 60px);
+    height: calc(88vh - 60px);
     // background-color: $bg-color-dark;
 
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPklEQVQoU2NkIApwSTESVsclxcDw7RkBhRBFIMPwKEQowqMQVREOhZiKsCjErghNIW5FSArxK4IqJKwIpBAAB04SL75UWDsAAAAASUVORK5CYII=) repeat $bg-color-dark;
@@ -35,6 +35,8 @@
 
       @include for-phone-only() {
         max-width: 80vw;
+        position: relative;
+        top: -16px;
       }
     }
 
@@ -45,7 +47,7 @@
     .LandingPage__HeroLearnMore {
       display: block;
       position: absolute;
-      bottom: 15px;
+      bottom: 24px;
       text-align: center;
 
       @include for-tablet-portrait-up() {
