@@ -4,13 +4,12 @@ import { injectIntl, FormattedMessage as Trans } from 'react-intl';
 
 import { isLocationEligible, determineResultPage } from '../utils/logic';
 
-import Modal from '../components/Modal';
-
 import StepIntro from '../components/steps/StepIntro';
 import StepLocation from '../components/steps/StepLocation';
 import StepIncome from '../components/steps/StepIncome';
 import StepCasetype from '../components/steps/StepCasetype';
 
+import Modal from '../components/Modal';
 import ModalAreaEligible from '../components/modals/ModalAreaEligible';
 import ModalAreaIneligible from '../components/modals/ModalAreaIneligible';
 import ModalIncomeEligible from '../components/modals/ModalIncomeEligible';

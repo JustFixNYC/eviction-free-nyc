@@ -12,6 +12,8 @@ module.exports = {
   'submit': 'Submit',
   'gotit': 'Got it',
   'addrPlaceholder': 'Enter your address here',
+  'nychaOption': 'I live in NYCHA / Public Housing',
+  'nychaPlaceholder': 'Please select your development',
   'addrError': 'Sorry! Your address was not found. Please try again.',
   'zipTitle': 'Your zipcode',
   'qualifiedTitle': 'Great news! You likely have the right to a free attorney.',

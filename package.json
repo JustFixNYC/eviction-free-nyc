@@ -22,6 +22,7 @@
     "react-geosuggest": "^2.7.0",
     "react-intl": "^2.4.0",
     "react-modal": "^3.3.1",
+    "react-select": "^1.2.1",
     "react-typography": "^0.15.0",
     "sass-loader": "4.1.1",
     "slash": "^1.0.0",

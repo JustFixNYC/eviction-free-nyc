@@ -1,0 +1,1727 @@
+[
+    {
+        "label": "1010 EAST 178TH STREET",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "1162-1176 WASHINGTON AVENUE",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "1471 WATSON AVENUE",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "ADAMS",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BAILEY AVENUE-WEST 193RD STREET",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BAYCHESTER",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BETANCES I",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BETANCES II",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BETANCES II, 13",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BETANCES II, 18",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BETANCES II, 9A",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BETANCES III",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BETANCES III, 13",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BETANCES III, 18",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BETANCES III, 9A",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BETANCES IV",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BETANCES V",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BETANCES VI",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BOSTON ROAD PLAZA",
+        "boro": "BRONX",
+        "value": true
+    },
+    {
+        "label": "BOSTON SECOR",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BOYNTON AVENUE REHAB",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BRONX RIVER",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BRONX RIVER ADDITION",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BRYANT AVENUE-EAST 174TH STREET",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "BUTLER",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "CASTLE HILL",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "CLAREMONT PARKWAY-FRANKLIN AVENUE",
+        "boro": "BRONX",
+        "value": true
+    },
+    {
+        "label": "CLAREMONT REHAB (GROUP 2)",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "CLAREMONT REHAB (GROUP 3)",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "CLAREMONT REHAB (GROUP 4)",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "CLAREMONT REHAB (GROUP 5)",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "CLASON POINT GARDENS",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "COLLEGE AVENUE-EAST 165TH STREET",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "DAVIDSON",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "EAGLE AVENUE-EAST 163RD STREET",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "EAST 152ND STREET-COURTLANDT AVENUE",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "EAST 165TH STREET-BRYANT AVENUE",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "EAST 173RD STREET-VYSE AVENUE",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "EAST 180TH STREET-MONTEREY AVENUE",
+        "boro": "BRONX",
+        "value": true
+    },
+    {
+        "label": "EASTCHESTER GARDENS",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "EDENWALD",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "FOREST",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "FORT INDEPENDENCE STREET-HEATH AVENUE",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "FRANKLIN AVENUE I CONVENTIONAL",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "FRANKLIN AVENUE II CONVENTIONAL",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "FRANKLIN AVENUE III CONVENTIONAL",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "GLEBE AVENUE-WESTCHESTER AVENUE",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "GUN HILL",
+        "boro": "BRONX",
+        "value": true
+    },
+    {
+        "label": "HARRISON AVENUE REHAB (GROUP A)",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "HARRISON AVENUE REHAB (GROUP B)",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "HIGHBRIDGE GARDENS",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "HIGHBRIDGE REHABS (ANDERSON AVENUE)",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "HIGHBRIDGE REHABS (NELSON AVENUE)",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "HOE AVENUE-EAST 173RD STREET",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "HUNTS POINT AVENUE REHAB",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "JACKSON",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "LONGFELLOW AVENUE REHAB",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "MARBLE HILL",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "MCKINLEY",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "MELROSE",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "MIDDLETOWN PLAZA",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "MILL BROOK",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "MILL BROOK EXTENSION",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "MITCHEL",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "MONROE",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "MOORE",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "MORRIS I",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "MORRIS II",
+        "boro": "BRONX",
+        "value": true
+    },
+    {
+        "label": "MORRISANIA",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "MORRISANIA AIR RIGHTS",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "MOTT HAVEN",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "MURPHY",
+        "boro": "BRONX",
+        "value": true
+    },
+    {
+        "label": "PARKSIDE",
+        "boro": "BRONX",
+        "value": true
+    },
+    {
+        "label": "PATTERSON",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "PELHAM PARKWAY",
+        "boro": "BRONX",
+        "value": true
+    },
+    {
+        "label": "PSS GRANDPARENT FAMILY APARTMENTS",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "RANDALL AVENUE-BALCOM AVENUE",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "SACK WERN",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "SAINT MARY'S PARK",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "SEDGWICK",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "SOTOMAYOR HOUSES",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "SOUNDVIEW",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "SOUTH BRONX AREA (SITE 402)",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "STEBBINS AVENUE-HEWITT PLACE",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "TELLER AVENUE-EAST 166TH STREET",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "THROGGS NECK",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "THROGGS NECK ADDITION",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "TWIN PARKS EAST (SITE 9)",
+        "boro": "BRONX",
+        "value": true
+    },
+    {
+        "label": "TWIN PARKS WEST (SITES 1 & 2)",
+        "boro": "BRONX",
+        "value": true
+    },
+    {
+        "label": "UNION AVENUE-EAST 163RD STREET",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "UNION AVENUE-EAST 166TH STREET",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "UNIVERSITY AVENUE REHAB",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "WEBSTER",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "WEST FARMS ROAD REHAB",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "WEST FARMS SQUARE CONVENTIONAL",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "WEST TREMONT AVENUE-SEDGWICK AVENUE AREA",
+        "boro": "BRONX",
+        "value": false
+    },
+    {
+        "label": "104-14 TAPSCOTT STREET",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "303 VERNON AVENUE",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "572 WARREN STREET",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "ALBANY",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "ALBANY II",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "ARMSTRONG I",
+        "boro": "BROOKLYN",
+        "value": true
+    },
+    {
+        "label": "ARMSTRONG II",
+        "boro": "BROOKLYN",
+        "value": true
+    },
+    {
+        "label": "ATLANTIC TERMINAL SITE 4B",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "BAY VIEW",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "BEDFORD-STUYVESANT REHAB",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "BELMONT-SUTTER AREA",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "BERRY STREET-SOUTH 9TH STREET",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "BORINQUEN PLAZA I",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "BORINQUEN PLAZA II",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "BOULEVARD",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "BREUKELEN",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "BREVOORT",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "BROWN",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "BROWNSVILLE",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "BUSHWICK",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "BUSHWICK II (GROUPS A & C)",
+        "boro": "BROOKLYN",
+        "value": true
+    },
+    {
+        "label": "BUSHWICK II (GROUPS B & D)",
+        "boro": "BROOKLYN",
+        "value": true
+    },
+    {
+        "label": "BUSHWICK II CDA (GROUP E)",
+        "boro": "BROOKLYN",
+        "value": true
+    },
+    {
+        "label": "CAREY GARDENS",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "CONEY ISLAND",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "CONEY ISLAND I (SITE 1B)",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "CONEY ISLAND I (SITE 8)",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "CONEY ISLAND I (SITES 4 & 5)",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "COOPER PARK",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "CROWN HEIGHTS",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "CYPRESS HILLS",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "EAST NEW YORK CITY LINE",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "FARRAGUT",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "FENIMORE-LEFFERTS",
+        "boro": "BROOKLYN",
+        "value": true
+    },
+    {
+        "label": "FIORENTINO PLAZA",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "GARVEY (GROUP A)",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "GLENMORE PLAZA",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "GLENWOOD",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "GOWANUS",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "GRAVESEND",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "HABER",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "HOPE GARDENS",
+        "boro": "BROOKLYN",
+        "value": true
+    },
+    {
+        "label": "HOWARD",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "HOWARD AVENUE",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "HOWARD AVENUE-PARK PLACE",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "HUGHES APARTMENTS",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "HYLAN",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "INDEPENDENCE",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "INGERSOLL",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "KINGSBOROUGH",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "KINGSBOROUGH EXTENSION",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "LAFAYETTE",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "LENOX ROAD-ROCKAWAY PARKWAY",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "LINDEN",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "LONG ISLAND BAPTIST HOUSES",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "LOW HOUSES",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "MARCY",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "MARCY AVENUE-GREENE AVENUE SITE A",
+        "boro": "BROOKLYN",
+        "value": true
+    },
+    {
+        "label": "MARCY AVENUE-GREENE AVENUE SITE B",
+        "boro": "BROOKLYN",
+        "value": true
+    },
+    {
+        "label": "MARLBORO",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "NOSTRAND",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "OCEAN HILL APARTMENTS",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "OCEAN HILL-BROWNSVILLE",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "O'DWYER GARDENS",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "PALMETTO GARDENS",
+        "boro": "BROOKLYN",
+        "value": true
+    },
+    {
+        "label": "PARK ROCK REHAB",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "PENNSYLVANIA AVENUE-WORTMAN AVENUE",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "PINK",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "RALPH AVENUE REHAB",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "RED HOOK I",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "RED HOOK II",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "RED HOOK EAST",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "RED HOOK WEST",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "REID APARTMENTS",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "ROOSEVELT I",
+        "boro": "BROOKLYN",
+        "value": true
+    },
+    {
+        "label": "ROOSEVELT II",
+        "boro": "BROOKLYN",
+        "value": true
+    },
+    {
+        "label": "RUTLAND TOWERS",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "SARATOGA VILLAGE",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "SHEEPSHEAD BAY",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "STERLING PLACE REHABS (SAINT JOHNS-STERLING)",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "STERLING PLACE REHABS (STERLING-BUFFALO)",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "STUYVESANT GARDENS I",
+        "boro": "BROOKLYN",
+        "value": true
+    },
+    {
+        "label": "STUYVESANT GARDENS II",
+        "boro": "BROOKLYN",
+        "value": true
+    },
+    {
+        "label": "SUMNER",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "SURFSIDE GARDENS",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "SUTTER AVENUE-UNION STREET",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "TAPSCOTT STREET REHAB",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "TAYLOR STREET-WYTHE AVENUE",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "TILDEN",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "TOMPKINS",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "UNITY PLAZA (SITES 17,24,25A)",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "UNITY PLAZA (SITES 4-27)",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "VAN DYKE I",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "VAN DYKE II",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "VANDALIA AVENUE",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "WEEKSVILLE GARDENS",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "WHITMAN",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "WILLIAMS PLAZA",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "WILLIAMSBURG",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "WOODSON",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "WYCKOFF GARDENS",
+        "boro": "BROOKLYN",
+        "value": false
+    },
+    {
+        "label": "131 SAINT NICHOLAS AVENUE",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "154 WEST 84TH STREET",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "335 EAST 111TH STREET",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "344 EAST 28TH STREET",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "45 ALLEN STREET",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "830 AMSTERDAM AVENUE",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "AMSTERDAM",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "AMSTERDAM ADDITION",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "AUDUBON",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "BARUCH",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "BARUCH HOUSES ADDITION",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "BETHUNE GARDENS",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "BRACETTI PLAZA",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "CAMPOS PLAZA II",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "CARVER",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "CHELSEA",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "CHELSEA ADDITION",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "CLINTON",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "CORSI HOUSES",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "DE HOSTOS APARTMENTS",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "DOUGLASS ADDITION",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "DOUGLASS",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "DOUGLASS I",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "DOUGLASS II",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "DREW-HAMILTON",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "DYCKMAN",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "EAST RIVER",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "ELLIOTT",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "FIRST HOUSES",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "FORT WASHINGTON AVENUE REHAB",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "FULTON",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "GOMPERS",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "GRAMPION",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "GRANT",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "HARBORVIEW TERRACE",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "HARLEM RIVER",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "HARLEM RIVER II",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "HERNANDEZ",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "HOLMES TOWERS",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "ISAACS",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "JEFFERSON",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "JOHNSON",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "KING TOWERS",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "LA GUARDIA",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "LA GUARDIA ADDITION",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "LAVANBURG HOMES",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "LEHMAN VILLAGE",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "LEXINGTON",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "LINCOLN",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "LOWER EAST SIDE I INFILL",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "LOWER EAST SIDE II",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "LOWER EAST SIDE III",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "LOWER EAST SIDE REHAB (GROUP 5)",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "MANHATTANVILLE",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "MANHATTANVILLE REHAB (GROUP 2)",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "MANHATTANVILLE REHAB (GROUP 3)",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "MARSHALL PLAZA",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "MELTZER TOWER",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "METRO NORTH PLAZA",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "MORRIS PARK SENIOR CITIZENS HOME",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "PARK AVENUE-EAST 122ND, 123RD STREETS",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "POLO GROUNDS TOWERS",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "PUBLIC SCHOOL 139 (CONVERSION)",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "RANDOLPH",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "RANGEL",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "REHAB PROGRAM (DOUGLASS REHABS)",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "REHAB PROGRAM (TAFT REHABS)",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "REHAB PROGRAM (WISE REHAB)",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "RIIS",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "RIIS II",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "ROBBINS PLAZA",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "ROBINSON",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "RUTGERS",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "SAINT NICHOLAS",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "SAMUEL (CITY)",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "SAMUEL (MHOP) I",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "SAMUEL (MHOP) II",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "SAMUEL (MHOP) III",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "SEWARD PARK EXTENSION",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "SMITH",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "STANTON STREET",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "STRAUS",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "TAFT",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "THOMAS APARTMENTS",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "TWO BRIDGES URA (SITE 7)",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "UPACA (SITE 5)",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "UPACA (SITE 6)",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "VLADECK",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "VLADECK II",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "WAGNER",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "WALD",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "WASHINGTON",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "WASHINGTON HEIGHTS REHAB (GROUPS 1&2)",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "WASHINGTON HEIGHTS REHAB PHASE III",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "WASHINGTON HEIGHTS REHAB PHASE III",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "WASHINGTON HEIGHTS REHAB PHASE III",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "WASHINGTON HEIGHTS REHAB PHASE IV (C)",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "WASHINGTON HEIGHTS REHAB PHASE IV (D)",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "WHITE",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "WILSON",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "WISE TOWERS",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "WSUR (BROWNSTONES)",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "WSUR (SITE A) 120 WEST 94TH STREET",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "WSUR (SITE B) 74 WEST 92ND STREET",
+        "boro": "MANHATTAN",
+        "value": true
+    },
+    {
+        "label": "WSUR (SITE C) 589 AMSTERDAM AVENUE",
+        "boro": "MANHATTAN",
+        "value": false
+    },
+    {
+        "label": "ASTORIA",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "BAISLEY PARK",
+        "boro": "QUEENS",
+        "value": true
+    },
+    {
+        "label": "BEACH 41ST STREET-BEACH CHANNEL DRIVE",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "BLAND",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "CARLETON MANOR",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "CONLON LIHFE TOWER",
+        "boro": "QUEENS",
+        "value": true
+    },
+    {
+        "label": "FOREST HILLS COOP (108TH STREET-62ND DRIVE)",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "HAMMEL",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "INTERNATIONAL TOWER",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "LATIMER GARDENS",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "LEAVITT STREET-34TH AVENUE",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "OCEAN BAY APARTMENTS (BAYSIDE)",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "OCEAN BAY APARTMENTS (OCEANSIDE)",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "POMONOK",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "QUEENSBRIDGE NORTH",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "QUEENSBRIDGE SOUTH",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "RAVENSWOOD",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "REDFERN",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "REHAB PROGRAM (COLLEGE POINT)",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "SHELTON HOUSE",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "SOUTH JAMAICA I",
+        "boro": "QUEENS",
+        "value": true
+    },
+    {
+        "label": "SOUTH JAMAICA II",
+        "boro": "QUEENS",
+        "value": true
+    },
+    {
+        "label": "WOODSIDE",
+        "boro": "QUEENS",
+        "value": false
+    },
+    {
+        "label": "BERRY",
+        "boro": "STATEN ISLAND",
+        "value": false
+    },
+    {
+        "label": "CASSIDY-LAFAYETTE",
+        "boro": "STATEN ISLAND",
+        "value": false
+    },
+    {
+        "label": "MARINER'S HARBOR",
+        "boro": "STATEN ISLAND",
+        "value": true
+    },
+    {
+        "label": "NEW LANE AREA",
+        "boro": "STATEN ISLAND",
+        "value": false
+    },
+    {
+        "label": "RICHMOND TERRACE",
+        "boro": "STATEN ISLAND",
+        "value": false
+    },
+    {
+        "label": "SOUTH BEACH",
+        "boro": "STATEN ISLAND",
+        "value": false
+    },
+    {
+        "label": "STAPLETON",
+        "boro": "STATEN ISLAND",
+        "value": false
+    },
+    {
+        "label": "TODT HILL",
+        "boro": "STATEN ISLAND",
+        "value": true
+    },
+    {
+        "label": "WEST BRIGHTON I",
+        "boro": "STATEN ISLAND",
+        "value": false
+    },
+    {
+        "label": "WEST BRIGHTON II",
+        "boro": "STATEN ISLAND",
+        "value": false
+    },
+    {
+        "label": "FHA REPOSSESSED HOUSES (GROUP IV)",
+        "boro": "QUEENS",
+        "value": true
+    },
+    {
+        "label": "FHA REPOSSESSED HOUSES (GROUP I)",
+        "boro": "QUEENS",
+        "value": true
+    },
+    {
+        "label": "FHA REPOSSESSED HOUSES (GROUP II)",
+        "boro": "QUEENS",
+        "value": true
+    },
+    {
+        "label": "FHA REPOSSESSED HOUSES (GROUP III)",
+        "boro": "QUEENS",
+        "value": true
+    },
+    {
+        "label": "FHA REPOSSESSED HOUSES (GROUP V)",
+        "boro": "QUEENS",
+        "value": true
+    },
+    {
+        "label": "FHA REPOSSESSED HOUSES (GROUP VI)",
+        "boro": "QUEENS",
+        "value": true
+    },
+    {
+        "label": "FHA REPOSSESSED HOUSES (GROUP VII)",
+        "boro": "QUEENS",
+        "value": true
+    },
+    {
+        "label": "FHA REPOSSESSED HOUSES (GROUP VIII)",
+        "boro": "QUEENS",
+        "value": true
+    },
+    {
+        "label": "FHA REPOSSESSED HOUSES (GROUP IX)",
+        "boro": "QUEENS",
+        "value": true
+    },
+    {
+        "label": "FHA REPOSSESSED HOUSES (GROUP X)",
+        "boro": "QUEENS",
+        "value": true
+    }
+]
