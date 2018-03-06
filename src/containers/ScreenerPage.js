@@ -152,6 +152,7 @@ class ScreenerPage extends React.Component {
     try {
       determineResultPage(this.state.user, this.props.intl);
     } catch(err) {
+      Rollbar.error("Missing a step", this.state.user);
       this.changeStep(0);
     }
   }

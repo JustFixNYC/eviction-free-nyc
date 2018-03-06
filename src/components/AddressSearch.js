@@ -32,18 +32,20 @@ class AddressSearch extends React.Component {
       if(zip) {
         zip = zip.long_name;
       } else {
+        Rollbar.error("Missing zipcode", components);
         this.setState({ error: true });
       }
-      
+
       let boro = components.filter(e => e.types.indexOf('sublocality_level_1') !== -1)[0];
       if(boro) {
         boro = boro.long_name.toUpperCase();
         this.setState({ error: false });
         this.props.onFormSubmit({ zip, boro });
       } else if (['MANHATTAN', 'STATEN ISLAND', 'BROOKLYN', 'QUEENS', 'BRONX'].indexOf(boro) === -1) {
+        Rollbar.error("Address / borough mismatch", components);
         this.setState({ error: true });
       } else {
-        console.error('No borough found!!');
+        Rollbar.error("No borough found", components);
         this.setState({ error: true });
       }
 
