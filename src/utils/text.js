@@ -60,7 +60,7 @@ export default {
       return `<a class="btn btn-success" href="tel:${p1}">${createFormattedTel(p1)}</a>`;
     }
 
-    htmlString = htmlString.replace(/{(.*)}/, replacer);
+    htmlString = htmlString.replace(/{(.*)}/g, replacer);
 
     return htmlString;
   }

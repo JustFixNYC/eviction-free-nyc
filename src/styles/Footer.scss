@@ -27,11 +27,14 @@
 
   .Footer_JustFix {
 
+    text-align: right;
+
     img {
       max-width: 125px;
       position: relative;
       top: 8px;
       margin-left: 4px;
+      margin-right: 0;
     }
 
   }
@@ -40,6 +43,7 @@
 
   @include for-phone-only() {
     display: block;
+    text-align: center;
 
     img {
       max-width: 100px;
@@ -57,7 +61,7 @@
         max-width: 125px;
         position: relative;
         top: 8px;
-        margin-left: 0;
+        margin: 0 auto;
       }
 
     }
