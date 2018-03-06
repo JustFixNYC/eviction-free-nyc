@@ -42,7 +42,7 @@ exports.create = (graphql, createPage) => {
 
         _.each(CASETYPES, casetype => {
 
-          const pagePath = `/${edge.node.node_locale}/${edge.node.boroughKey}/${casetype}`;
+          const pagePath = `/${edge.node.node_locale}/guide/${edge.node.boroughKey}/${casetype}`;
 
           const pageContext = {
             id: edge.node.id,

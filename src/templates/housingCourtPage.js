@@ -15,7 +15,7 @@ class PageTemplate extends React.Component {
   constructor(props) {
     super(props);
 
-    const casetype = props.location.pathname.split('/')[3];
+    const casetype = props.location.pathname.split('/')[4];
 
     this.qualified = casetype.substr(casetype.length - 3) === 'rtc';
 

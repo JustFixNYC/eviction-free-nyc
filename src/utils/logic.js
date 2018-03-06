@@ -24,7 +24,7 @@ export default {
 
 
     // let resultUrl = `${intl.locale}/${user.boro}/${user.caseType}`;
-    let resultUrl = `${boro}/${user.caseType}`;
+    let resultUrl = `/${intl.locale}/guide/${boro}/${user.caseType}`;
 
     if(user.caseType !== 'general' && user.areaEligible && user.incomeEligible) {
       resultUrl += 'rtc';
