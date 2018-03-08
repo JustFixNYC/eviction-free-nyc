@@ -1,14 +1,16 @@
 import React from "react";
 import { injectIntl, FormattedMessage as Trans } from 'react-intl';
 
-const ModalAreaIneligible = ({ content, zip, nextFn }) =>
+const ModalAreaIneligible = ({ content, nycha, zip, nextFn }) =>
   <div>
-    <div className="modal-header">
-      <h5 className="modal-title"><Trans id="zipTitle" /> {zip}</h5>
-    </div>
+    {zip && (
+      <div className="modal-header">
+        <h5 className="modal-title"><Trans id="zipTitle" /> {zip}</h5>
+      </div>
+    )}
     <div className="modal-body">
       <div className="content">
-        {content.addressIneligibleText}
+        {nycha ? content.addressNychaIneligible : content.addressIneligibleText}
       </div>
     </div>
     <div className="modal-footer">

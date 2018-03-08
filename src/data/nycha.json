@@ -1,1727 +1,2072 @@
 [
     {
         "label": "1010 EAST 178TH STREET",
+        "value": "1010 EAST 178TH STREET",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "1162-1176 WASHINGTON AVENUE",
+        "value": "1162-1176 WASHINGTON AVENUE",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "1471 WATSON AVENUE",
+        "value": "1471 WATSON AVENUE",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "ADAMS",
+        "value": "ADAMS",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BAILEY AVENUE-WEST 193RD STREET",
+        "value": "BAILEY AVENUE-WEST 193RD STREET",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BAYCHESTER",
+        "value": "BAYCHESTER",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BETANCES I",
+        "value": "BETANCES I",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BETANCES II",
+        "value": "BETANCES II",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BETANCES II, 13",
+        "value": "BETANCES II, 13",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BETANCES II, 18",
+        "value": "BETANCES II, 18",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BETANCES II, 9A",
+        "value": "BETANCES II, 9A",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BETANCES III",
+        "value": "BETANCES III",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BETANCES III, 13",
+        "value": "BETANCES III, 13",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BETANCES III, 18",
+        "value": "BETANCES III, 18",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BETANCES III, 9A",
+        "value": "BETANCES III, 9A",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BETANCES IV",
+        "value": "BETANCES IV",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BETANCES V",
+        "value": "BETANCES V",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BETANCES VI",
+        "value": "BETANCES VI",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BOSTON ROAD PLAZA",
+        "value": "BOSTON ROAD PLAZA",
         "boro": "BRONX",
-        "value": true
+        "rtc": true
     },
     {
         "label": "BOSTON SECOR",
+        "value": "BOSTON SECOR",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BOYNTON AVENUE REHAB",
+        "value": "BOYNTON AVENUE REHAB",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BRONX RIVER",
+        "value": "BRONX RIVER",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BRONX RIVER ADDITION",
+        "value": "BRONX RIVER ADDITION",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BRYANT AVENUE-EAST 174TH STREET",
+        "value": "BRYANT AVENUE-EAST 174TH STREET",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BUTLER",
+        "value": "BUTLER",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CASTLE HILL",
+        "value": "CASTLE HILL",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CLAREMONT PARKWAY-FRANKLIN AVENUE",
+        "value": "CLAREMONT PARKWAY-FRANKLIN AVENUE",
         "boro": "BRONX",
-        "value": true
+        "rtc": true
     },
     {
         "label": "CLAREMONT REHAB (GROUP 2)",
+        "value": "CLAREMONT REHAB (GROUP 2)",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CLAREMONT REHAB (GROUP 3)",
+        "value": "CLAREMONT REHAB (GROUP 3)",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CLAREMONT REHAB (GROUP 4)",
+        "value": "CLAREMONT REHAB (GROUP 4)",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CLAREMONT REHAB (GROUP 5)",
+        "value": "CLAREMONT REHAB (GROUP 5)",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CLASON POINT GARDENS",
+        "value": "CLASON POINT GARDENS",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "COLLEGE AVENUE-EAST 165TH STREET",
+        "value": "COLLEGE AVENUE-EAST 165TH STREET",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "DAVIDSON",
+        "value": "DAVIDSON",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "EAGLE AVENUE-EAST 163RD STREET",
+        "value": "EAGLE AVENUE-EAST 163RD STREET",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "EAST 152ND STREET-COURTLANDT AVENUE",
+        "value": "EAST 152ND STREET-COURTLANDT AVENUE",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "EAST 165TH STREET-BRYANT AVENUE",
+        "value": "EAST 165TH STREET-BRYANT AVENUE",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "EAST 173RD STREET-VYSE AVENUE",
+        "value": "EAST 173RD STREET-VYSE AVENUE",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "EAST 180TH STREET-MONTEREY AVENUE",
+        "value": "EAST 180TH STREET-MONTEREY AVENUE",
         "boro": "BRONX",
-        "value": true
+        "rtc": true
     },
     {
         "label": "EASTCHESTER GARDENS",
+        "value": "EASTCHESTER GARDENS",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "EDENWALD",
+        "value": "EDENWALD",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "FOREST",
+        "value": "FOREST",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "FORT INDEPENDENCE STREET-HEATH AVENUE",
+        "value": "FORT INDEPENDENCE STREET-HEATH AVENUE",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "FRANKLIN AVENUE I CONVENTIONAL",
+        "value": "FRANKLIN AVENUE I CONVENTIONAL",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "FRANKLIN AVENUE II CONVENTIONAL",
+        "value": "FRANKLIN AVENUE II CONVENTIONAL",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "FRANKLIN AVENUE III CONVENTIONAL",
+        "value": "FRANKLIN AVENUE III CONVENTIONAL",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "GLEBE AVENUE-WESTCHESTER AVENUE",
+        "value": "GLEBE AVENUE-WESTCHESTER AVENUE",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "GUN HILL",
+        "value": "GUN HILL",
         "boro": "BRONX",
-        "value": true
+        "rtc": true
     },
     {
         "label": "HARRISON AVENUE REHAB (GROUP A)",
+        "value": "HARRISON AVENUE REHAB (GROUP A)",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HARRISON AVENUE REHAB (GROUP B)",
+        "value": "HARRISON AVENUE REHAB (GROUP B)",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HIGHBRIDGE GARDENS",
+        "value": "HIGHBRIDGE GARDENS",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HIGHBRIDGE REHABS (ANDERSON AVENUE)",
+        "value": "HIGHBRIDGE REHABS (ANDERSON AVENUE)",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HIGHBRIDGE REHABS (NELSON AVENUE)",
+        "value": "HIGHBRIDGE REHABS (NELSON AVENUE)",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HOE AVENUE-EAST 173RD STREET",
+        "value": "HOE AVENUE-EAST 173RD STREET",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HUNTS POINT AVENUE REHAB",
+        "value": "HUNTS POINT AVENUE REHAB",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "JACKSON",
+        "value": "JACKSON",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LONGFELLOW AVENUE REHAB",
+        "value": "LONGFELLOW AVENUE REHAB",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MARBLE HILL",
+        "value": "MARBLE HILL",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MCKINLEY",
+        "value": "MCKINLEY",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MELROSE",
+        "value": "MELROSE",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MIDDLETOWN PLAZA",
+        "value": "MIDDLETOWN PLAZA",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MILL BROOK",
+        "value": "MILL BROOK",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MILL BROOK EXTENSION",
+        "value": "MILL BROOK EXTENSION",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MITCHEL",
+        "value": "MITCHEL",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MONROE",
+        "value": "MONROE",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MOORE",
+        "value": "MOORE",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MORRIS I",
+        "value": "MORRIS I",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MORRIS II",
+        "value": "MORRIS II",
         "boro": "BRONX",
-        "value": true
+        "rtc": true
     },
     {
         "label": "MORRISANIA",
+        "value": "MORRISANIA",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MORRISANIA AIR RIGHTS",
+        "value": "MORRISANIA AIR RIGHTS",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MOTT HAVEN",
+        "value": "MOTT HAVEN",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MURPHY",
+        "value": "MURPHY",
         "boro": "BRONX",
-        "value": true
+        "rtc": true
     },
     {
         "label": "PARKSIDE",
+        "value": "PARKSIDE",
         "boro": "BRONX",
-        "value": true
+        "rtc": true
     },
     {
         "label": "PATTERSON",
+        "value": "PATTERSON",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "PELHAM PARKWAY",
+        "value": "PELHAM PARKWAY",
         "boro": "BRONX",
-        "value": true
+        "rtc": true
     },
     {
         "label": "PSS GRANDPARENT FAMILY APARTMENTS",
+        "value": "PSS GRANDPARENT FAMILY APARTMENTS",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "RANDALL AVENUE-BALCOM AVENUE",
+        "value": "RANDALL AVENUE-BALCOM AVENUE",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SACK WERN",
+        "value": "SACK WERN",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SAINT MARY'S PARK",
+        "value": "SAINT MARY'S PARK",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SEDGWICK",
+        "value": "SEDGWICK",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SOTOMAYOR HOUSES",
+        "value": "SOTOMAYOR HOUSES",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SOUNDVIEW",
+        "value": "SOUNDVIEW",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SOUTH BRONX AREA (SITE 402)",
+        "value": "SOUTH BRONX AREA (SITE 402)",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "STEBBINS AVENUE-HEWITT PLACE",
+        "value": "STEBBINS AVENUE-HEWITT PLACE",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "TELLER AVENUE-EAST 166TH STREET",
+        "value": "TELLER AVENUE-EAST 166TH STREET",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "THROGGS NECK",
+        "value": "THROGGS NECK",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "THROGGS NECK ADDITION",
+        "value": "THROGGS NECK ADDITION",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "TWIN PARKS EAST (SITE 9)",
+        "value": "TWIN PARKS EAST (SITE 9)",
         "boro": "BRONX",
-        "value": true
+        "rtc": true
     },
     {
         "label": "TWIN PARKS WEST (SITES 1 & 2)",
+        "value": "TWIN PARKS WEST (SITES 1 & 2)",
         "boro": "BRONX",
-        "value": true
+        "rtc": true
     },
     {
         "label": "UNION AVENUE-EAST 163RD STREET",
+        "value": "UNION AVENUE-EAST 163RD STREET",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "UNION AVENUE-EAST 166TH STREET",
+        "value": "UNION AVENUE-EAST 166TH STREET",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "UNIVERSITY AVENUE REHAB",
+        "value": "UNIVERSITY AVENUE REHAB",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WEBSTER",
+        "value": "WEBSTER",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WEST FARMS ROAD REHAB",
+        "value": "WEST FARMS ROAD REHAB",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WEST FARMS SQUARE CONVENTIONAL",
+        "value": "WEST FARMS SQUARE CONVENTIONAL",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WEST TREMONT AVENUE-SEDGWICK AVENUE AREA",
+        "value": "WEST TREMONT AVENUE-SEDGWICK AVENUE AREA",
         "boro": "BRONX",
-        "value": false
+        "rtc": false
     },
     {
         "label": "104-14 TAPSCOTT STREET",
+        "value": "104-14 TAPSCOTT STREET",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "303 VERNON AVENUE",
+        "value": "303 VERNON AVENUE",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "572 WARREN STREET",
+        "value": "572 WARREN STREET",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "ALBANY",
+        "value": "ALBANY",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "ALBANY II",
+        "value": "ALBANY II",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "ARMSTRONG I",
+        "value": "ARMSTRONG I",
         "boro": "BROOKLYN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "ARMSTRONG II",
+        "value": "ARMSTRONG II",
         "boro": "BROOKLYN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "ATLANTIC TERMINAL SITE 4B",
+        "value": "ATLANTIC TERMINAL SITE 4B",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BAY VIEW",
+        "value": "BAY VIEW",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BEDFORD-STUYVESANT REHAB",
+        "value": "BEDFORD-STUYVESANT REHAB",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BELMONT-SUTTER AREA",
+        "value": "BELMONT-SUTTER AREA",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BERRY STREET-SOUTH 9TH STREET",
+        "value": "BERRY STREET-SOUTH 9TH STREET",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BORINQUEN PLAZA I",
+        "value": "BORINQUEN PLAZA I",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BORINQUEN PLAZA II",
+        "value": "BORINQUEN PLAZA II",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BOULEVARD",
+        "value": "BOULEVARD",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BREUKELEN",
+        "value": "BREUKELEN",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BREVOORT",
+        "value": "BREVOORT",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BROWN",
+        "value": "BROWN",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BROWNSVILLE",
+        "value": "BROWNSVILLE",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BUSHWICK",
+        "value": "BUSHWICK",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BUSHWICK II (GROUPS A & C)",
+        "value": "BUSHWICK II (GROUPS A & C)",
         "boro": "BROOKLYN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "BUSHWICK II (GROUPS B & D)",
+        "value": "BUSHWICK II (GROUPS B & D)",
         "boro": "BROOKLYN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "BUSHWICK II CDA (GROUP E)",
+        "value": "BUSHWICK II CDA (GROUP E)",
         "boro": "BROOKLYN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "CAREY GARDENS",
+        "value": "CAREY GARDENS",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CONEY ISLAND",
+        "value": "CONEY ISLAND",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CONEY ISLAND I (SITE 1B)",
+        "value": "CONEY ISLAND I (SITE 1B)",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CONEY ISLAND I (SITE 8)",
+        "value": "CONEY ISLAND I (SITE 8)",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CONEY ISLAND I (SITES 4 & 5)",
+        "value": "CONEY ISLAND I (SITES 4 & 5)",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "COOPER PARK",
+        "value": "COOPER PARK",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CROWN HEIGHTS",
+        "value": "CROWN HEIGHTS",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CYPRESS HILLS",
+        "value": "CYPRESS HILLS",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "EAST NEW YORK CITY LINE",
+        "value": "EAST NEW YORK CITY LINE",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "FARRAGUT",
+        "value": "FARRAGUT",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "FENIMORE-LEFFERTS",
+        "value": "FENIMORE-LEFFERTS",
         "boro": "BROOKLYN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "FIORENTINO PLAZA",
+        "value": "FIORENTINO PLAZA",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "GARVEY (GROUP A)",
+        "value": "GARVEY (GROUP A)",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "GLENMORE PLAZA",
+        "value": "GLENMORE PLAZA",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "GLENWOOD",
+        "value": "GLENWOOD",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "GOWANUS",
+        "value": "GOWANUS",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "GRAVESEND",
+        "value": "GRAVESEND",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HABER",
+        "value": "HABER",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HOPE GARDENS",
+        "value": "HOPE GARDENS",
         "boro": "BROOKLYN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "HOWARD",
+        "value": "HOWARD",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HOWARD AVENUE",
+        "value": "HOWARD AVENUE",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HOWARD AVENUE-PARK PLACE",
+        "value": "HOWARD AVENUE-PARK PLACE",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HUGHES APARTMENTS",
+        "value": "HUGHES APARTMENTS",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HYLAN",
+        "value": "HYLAN",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "INDEPENDENCE",
+        "value": "INDEPENDENCE",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "INGERSOLL",
+        "value": "INGERSOLL",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "KINGSBOROUGH",
+        "value": "KINGSBOROUGH",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "KINGSBOROUGH EXTENSION",
+        "value": "KINGSBOROUGH EXTENSION",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LAFAYETTE",
+        "value": "LAFAYETTE",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LENOX ROAD-ROCKAWAY PARKWAY",
+        "value": "LENOX ROAD-ROCKAWAY PARKWAY",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LINDEN",
+        "value": "LINDEN",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LONG ISLAND BAPTIST HOUSES",
+        "value": "LONG ISLAND BAPTIST HOUSES",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LOW HOUSES",
+        "value": "LOW HOUSES",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MARCY",
+        "value": "MARCY",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MARCY AVENUE-GREENE AVENUE SITE A",
+        "value": "MARCY AVENUE-GREENE AVENUE SITE A",
         "boro": "BROOKLYN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "MARCY AVENUE-GREENE AVENUE SITE B",
+        "value": "MARCY AVENUE-GREENE AVENUE SITE B",
         "boro": "BROOKLYN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "MARLBORO",
+        "value": "MARLBORO",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "NOSTRAND",
+        "value": "NOSTRAND",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "OCEAN HILL APARTMENTS",
+        "value": "OCEAN HILL APARTMENTS",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "OCEAN HILL-BROWNSVILLE",
+        "value": "OCEAN HILL-BROWNSVILLE",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "O'DWYER GARDENS",
+        "value": "O'DWYER GARDENS",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "PALMETTO GARDENS",
+        "value": "PALMETTO GARDENS",
         "boro": "BROOKLYN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "PARK ROCK REHAB",
+        "value": "PARK ROCK REHAB",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "PENNSYLVANIA AVENUE-WORTMAN AVENUE",
+        "value": "PENNSYLVANIA AVENUE-WORTMAN AVENUE",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "PINK",
+        "value": "PINK",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "RALPH AVENUE REHAB",
+        "value": "RALPH AVENUE REHAB",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "RED HOOK I",
+        "value": "RED HOOK I",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "RED HOOK II",
+        "value": "RED HOOK II",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "RED HOOK EAST",
+        "value": "RED HOOK EAST",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "RED HOOK WEST",
+        "value": "RED HOOK WEST",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "REID APARTMENTS",
+        "value": "REID APARTMENTS",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "ROOSEVELT I",
+        "value": "ROOSEVELT I",
         "boro": "BROOKLYN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "ROOSEVELT II",
+        "value": "ROOSEVELT II",
         "boro": "BROOKLYN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "RUTLAND TOWERS",
+        "value": "RUTLAND TOWERS",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SARATOGA VILLAGE",
+        "value": "SARATOGA VILLAGE",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SHEEPSHEAD BAY",
+        "value": "SHEEPSHEAD BAY",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "STERLING PLACE REHABS (SAINT JOHNS-STERLING)",
+        "value": "STERLING PLACE REHABS (SAINT JOHNS-STERLING)",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "STERLING PLACE REHABS (STERLING-BUFFALO)",
+        "value": "STERLING PLACE REHABS (STERLING-BUFFALO)",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "STUYVESANT GARDENS I",
+        "value": "STUYVESANT GARDENS I",
         "boro": "BROOKLYN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "STUYVESANT GARDENS II",
+        "value": "STUYVESANT GARDENS II",
         "boro": "BROOKLYN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "SUMNER",
+        "value": "SUMNER",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SURFSIDE GARDENS",
+        "value": "SURFSIDE GARDENS",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SUTTER AVENUE-UNION STREET",
+        "value": "SUTTER AVENUE-UNION STREET",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "TAPSCOTT STREET REHAB",
+        "value": "TAPSCOTT STREET REHAB",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "TAYLOR STREET-WYTHE AVENUE",
+        "value": "TAYLOR STREET-WYTHE AVENUE",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "TILDEN",
+        "value": "TILDEN",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "TOMPKINS",
+        "value": "TOMPKINS",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "UNITY PLAZA (SITES 17,24,25A)",
+        "value": "UNITY PLAZA (SITES 17,24,25A)",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "UNITY PLAZA (SITES 4-27)",
+        "value": "UNITY PLAZA (SITES 4-27)",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "VAN DYKE I",
+        "value": "VAN DYKE I",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "VAN DYKE II",
+        "value": "VAN DYKE II",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "VANDALIA AVENUE",
+        "value": "VANDALIA AVENUE",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WEEKSVILLE GARDENS",
+        "value": "WEEKSVILLE GARDENS",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WHITMAN",
+        "value": "WHITMAN",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WILLIAMS PLAZA",
+        "value": "WILLIAMS PLAZA",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WILLIAMSBURG",
+        "value": "WILLIAMSBURG",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WOODSON",
+        "value": "WOODSON",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WYCKOFF GARDENS",
+        "value": "WYCKOFF GARDENS",
         "boro": "BROOKLYN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "131 SAINT NICHOLAS AVENUE",
+        "value": "131 SAINT NICHOLAS AVENUE",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "154 WEST 84TH STREET",
+        "value": "154 WEST 84TH STREET",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "335 EAST 111TH STREET",
+        "value": "335 EAST 111TH STREET",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "344 EAST 28TH STREET",
+        "value": "344 EAST 28TH STREET",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "45 ALLEN STREET",
+        "value": "45 ALLEN STREET",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "830 AMSTERDAM AVENUE",
+        "value": "830 AMSTERDAM AVENUE",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "AMSTERDAM",
+        "value": "AMSTERDAM",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "AMSTERDAM ADDITION",
+        "value": "AMSTERDAM ADDITION",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "AUDUBON",
+        "value": "AUDUBON",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BARUCH",
+        "value": "BARUCH",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BARUCH HOUSES ADDITION",
+        "value": "BARUCH HOUSES ADDITION",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BETHUNE GARDENS",
+        "value": "BETHUNE GARDENS",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BRACETTI PLAZA",
+        "value": "BRACETTI PLAZA",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CAMPOS PLAZA II",
+        "value": "CAMPOS PLAZA II",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CARVER",
+        "value": "CARVER",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CHELSEA",
+        "value": "CHELSEA",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CHELSEA ADDITION",
+        "value": "CHELSEA ADDITION",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CLINTON",
+        "value": "CLINTON",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CORSI HOUSES",
+        "value": "CORSI HOUSES",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "DE HOSTOS APARTMENTS",
+        "value": "DE HOSTOS APARTMENTS",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "DOUGLASS ADDITION",
+        "value": "DOUGLASS ADDITION",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "DOUGLASS",
+        "value": "DOUGLASS",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "DOUGLASS I",
+        "value": "DOUGLASS I",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "DOUGLASS II",
+        "value": "DOUGLASS II",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "DREW-HAMILTON",
+        "value": "DREW-HAMILTON",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "DYCKMAN",
+        "value": "DYCKMAN",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "EAST RIVER",
+        "value": "EAST RIVER",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "ELLIOTT",
+        "value": "ELLIOTT",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "FIRST HOUSES",
+        "value": "FIRST HOUSES",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "FORT WASHINGTON AVENUE REHAB",
+        "value": "FORT WASHINGTON AVENUE REHAB",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "FULTON",
+        "value": "FULTON",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "GOMPERS",
+        "value": "GOMPERS",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "GRAMPION",
+        "value": "GRAMPION",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "GRANT",
+        "value": "GRANT",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "HARBORVIEW TERRACE",
+        "value": "HARBORVIEW TERRACE",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HARLEM RIVER",
+        "value": "HARLEM RIVER",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HARLEM RIVER II",
+        "value": "HARLEM RIVER II",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HERNANDEZ",
+        "value": "HERNANDEZ",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HOLMES TOWERS",
+        "value": "HOLMES TOWERS",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "ISAACS",
+        "value": "ISAACS",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "JEFFERSON",
+        "value": "JEFFERSON",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "JOHNSON",
+        "value": "JOHNSON",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "KING TOWERS",
+        "value": "KING TOWERS",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "LA GUARDIA",
+        "value": "LA GUARDIA",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LA GUARDIA ADDITION",
+        "value": "LA GUARDIA ADDITION",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LAVANBURG HOMES",
+        "value": "LAVANBURG HOMES",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LEHMAN VILLAGE",
+        "value": "LEHMAN VILLAGE",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LEXINGTON",
+        "value": "LEXINGTON",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LINCOLN",
+        "value": "LINCOLN",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LOWER EAST SIDE I INFILL",
+        "value": "LOWER EAST SIDE I INFILL",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LOWER EAST SIDE II",
+        "value": "LOWER EAST SIDE II",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LOWER EAST SIDE III",
+        "value": "LOWER EAST SIDE III",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LOWER EAST SIDE REHAB (GROUP 5)",
+        "value": "LOWER EAST SIDE REHAB (GROUP 5)",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MANHATTANVILLE",
+        "value": "MANHATTANVILLE",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "MANHATTANVILLE REHAB (GROUP 2)",
+        "value": "MANHATTANVILLE REHAB (GROUP 2)",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MANHATTANVILLE REHAB (GROUP 3)",
+        "value": "MANHATTANVILLE REHAB (GROUP 3)",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MARSHALL PLAZA",
+        "value": "MARSHALL PLAZA",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MELTZER TOWER",
+        "value": "MELTZER TOWER",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "METRO NORTH PLAZA",
+        "value": "METRO NORTH PLAZA",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MORRIS PARK SENIOR CITIZENS HOME",
+        "value": "MORRIS PARK SENIOR CITIZENS HOME",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "PARK AVENUE-EAST 122ND, 123RD STREETS",
+        "value": "PARK AVENUE-EAST 122ND, 123RD STREETS",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "POLO GROUNDS TOWERS",
+        "value": "POLO GROUNDS TOWERS",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "PUBLIC SCHOOL 139 (CONVERSION)",
+        "value": "PUBLIC SCHOOL 139 (CONVERSION)",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "RANDOLPH",
+        "value": "RANDOLPH",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "RANGEL",
+        "value": "RANGEL",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "REHAB PROGRAM (DOUGLASS REHABS)",
+        "value": "REHAB PROGRAM (DOUGLASS REHABS)",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "REHAB PROGRAM (TAFT REHABS)",
+        "value": "REHAB PROGRAM (TAFT REHABS)",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "REHAB PROGRAM (WISE REHAB)",
+        "value": "REHAB PROGRAM (WISE REHAB)",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "RIIS",
+        "value": "RIIS",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "RIIS II",
+        "value": "RIIS II",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "ROBBINS PLAZA",
+        "value": "ROBBINS PLAZA",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "ROBINSON",
+        "value": "ROBINSON",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "RUTGERS",
+        "value": "RUTGERS",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SAINT NICHOLAS",
+        "value": "SAINT NICHOLAS",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "SAMUEL (CITY)",
+        "value": "SAMUEL (CITY)",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SAMUEL (MHOP) I",
+        "value": "SAMUEL (MHOP) I",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SAMUEL (MHOP) II",
+        "value": "SAMUEL (MHOP) II",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SAMUEL (MHOP) III",
+        "value": "SAMUEL (MHOP) III",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SEWARD PARK EXTENSION",
+        "value": "SEWARD PARK EXTENSION",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SMITH",
+        "value": "SMITH",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "STANTON STREET",
+        "value": "STANTON STREET",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "STRAUS",
+        "value": "STRAUS",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "TAFT",
+        "value": "TAFT",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "THOMAS APARTMENTS",
+        "value": "THOMAS APARTMENTS",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "TWO BRIDGES URA (SITE 7)",
+        "value": "TWO BRIDGES URA (SITE 7)",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "UPACA (SITE 5)",
+        "value": "UPACA (SITE 5)",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "UPACA (SITE 6)",
+        "value": "UPACA (SITE 6)",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "VLADECK",
+        "value": "VLADECK",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "VLADECK II",
+        "value": "VLADECK II",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WAGNER",
+        "value": "WAGNER",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WALD",
+        "value": "WALD",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WASHINGTON",
+        "value": "WASHINGTON",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WASHINGTON HEIGHTS REHAB (GROUPS 1&2)",
+        "value": "WASHINGTON HEIGHTS REHAB (GROUPS 1&2)",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WASHINGTON HEIGHTS REHAB PHASE III",
+        "value": "WASHINGTON HEIGHTS REHAB PHASE III",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WASHINGTON HEIGHTS REHAB PHASE III",
+        "value": "WASHINGTON HEIGHTS REHAB PHASE III",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WASHINGTON HEIGHTS REHAB PHASE III",
+        "value": "WASHINGTON HEIGHTS REHAB PHASE III",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WASHINGTON HEIGHTS REHAB PHASE IV (C)",
+        "value": "WASHINGTON HEIGHTS REHAB PHASE IV (C)",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WASHINGTON HEIGHTS REHAB PHASE IV (D)",
+        "value": "WASHINGTON HEIGHTS REHAB PHASE IV (D)",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WHITE",
+        "value": "WHITE",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WILSON",
+        "value": "WILSON",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WISE TOWERS",
+        "value": "WISE TOWERS",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WSUR (BROWNSTONES)",
+        "value": "WSUR (BROWNSTONES)",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "WSUR (SITE A) 120 WEST 94TH STREET",
+        "value": "WSUR (SITE A) 120 WEST 94TH STREET",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WSUR (SITE B) 74 WEST 92ND STREET",
+        "value": "WSUR (SITE B) 74 WEST 92ND STREET",
         "boro": "MANHATTAN",
-        "value": true
+        "rtc": true
     },
     {
         "label": "WSUR (SITE C) 589 AMSTERDAM AVENUE",
+        "value": "WSUR (SITE C) 589 AMSTERDAM AVENUE",
         "boro": "MANHATTAN",
-        "value": false
+        "rtc": false
     },
     {
         "label": "ASTORIA",
+        "value": "ASTORIA",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BAISLEY PARK",
+        "value": "BAISLEY PARK",
         "boro": "QUEENS",
-        "value": true
+        "rtc": true
     },
     {
         "label": "BEACH 41ST STREET-BEACH CHANNEL DRIVE",
+        "value": "BEACH 41ST STREET-BEACH CHANNEL DRIVE",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BLAND",
+        "value": "BLAND",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CARLETON MANOR",
+        "value": "CARLETON MANOR",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CONLON LIHFE TOWER",
+        "value": "CONLON LIHFE TOWER",
         "boro": "QUEENS",
-        "value": true
+        "rtc": true
     },
     {
         "label": "FOREST HILLS COOP (108TH STREET-62ND DRIVE)",
+        "value": "FOREST HILLS COOP (108TH STREET-62ND DRIVE)",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "HAMMEL",
+        "value": "HAMMEL",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "INTERNATIONAL TOWER",
+        "value": "INTERNATIONAL TOWER",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LATIMER GARDENS",
+        "value": "LATIMER GARDENS",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "LEAVITT STREET-34TH AVENUE",
+        "value": "LEAVITT STREET-34TH AVENUE",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "OCEAN BAY APARTMENTS (BAYSIDE)",
+        "value": "OCEAN BAY APARTMENTS (BAYSIDE)",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "OCEAN BAY APARTMENTS (OCEANSIDE)",
+        "value": "OCEAN BAY APARTMENTS (OCEANSIDE)",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "POMONOK",
+        "value": "POMONOK",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "QUEENSBRIDGE NORTH",
+        "value": "QUEENSBRIDGE NORTH",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "QUEENSBRIDGE SOUTH",
+        "value": "QUEENSBRIDGE SOUTH",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "RAVENSWOOD",
+        "value": "RAVENSWOOD",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "REDFERN",
+        "value": "REDFERN",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "REHAB PROGRAM (COLLEGE POINT)",
+        "value": "REHAB PROGRAM (COLLEGE POINT)",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SHELTON HOUSE",
+        "value": "SHELTON HOUSE",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SOUTH JAMAICA I",
+        "value": "SOUTH JAMAICA I",
         "boro": "QUEENS",
-        "value": true
+        "rtc": true
     },
     {
         "label": "SOUTH JAMAICA II",
+        "value": "SOUTH JAMAICA II",
         "boro": "QUEENS",
-        "value": true
+        "rtc": true
     },
     {
         "label": "WOODSIDE",
+        "value": "WOODSIDE",
         "boro": "QUEENS",
-        "value": false
+        "rtc": false
     },
     {
         "label": "BERRY",
+        "value": "BERRY",
         "boro": "STATEN ISLAND",
-        "value": false
+        "rtc": false
     },
     {
         "label": "CASSIDY-LAFAYETTE",
+        "value": "CASSIDY-LAFAYETTE",
         "boro": "STATEN ISLAND",
-        "value": false
+        "rtc": false
     },
     {
         "label": "MARINER'S HARBOR",
+        "value": "MARINER'S HARBOR",
         "boro": "STATEN ISLAND",
-        "value": true
+        "rtc": true
     },
     {
         "label": "NEW LANE AREA",
+        "value": "NEW LANE AREA",
         "boro": "STATEN ISLAND",
-        "value": false
+        "rtc": false
     },
     {
         "label": "RICHMOND TERRACE",
+        "value": "RICHMOND TERRACE",
         "boro": "STATEN ISLAND",
-        "value": false
+        "rtc": false
     },
     {
         "label": "SOUTH BEACH",
+        "value": "SOUTH BEACH",
         "boro": "STATEN ISLAND",
-        "value": false
+        "rtc": false
     },
     {
         "label": "STAPLETON",
+        "value": "STAPLETON",
         "boro": "STATEN ISLAND",
-        "value": false
+        "rtc": false
     },
     {
         "label": "TODT HILL",
+        "value": "TODT HILL",
         "boro": "STATEN ISLAND",
-        "value": true
+        "rtc": true
     },
     {
         "label": "WEST BRIGHTON I",
+        "value": "WEST BRIGHTON I",
         "boro": "STATEN ISLAND",
-        "value": false
+        "rtc": false
     },
     {
         "label": "WEST BRIGHTON II",
+        "value": "WEST BRIGHTON II",
         "boro": "STATEN ISLAND",
-        "value": false
+        "rtc": false
     },
     {
         "label": "FHA REPOSSESSED HOUSES (GROUP IV)",
+        "value": "FHA REPOSSESSED HOUSES (GROUP IV)",
         "boro": "QUEENS",
-        "value": true
+        "rtc": true
     },
     {
         "label": "FHA REPOSSESSED HOUSES (GROUP I)",
+        "value": "FHA REPOSSESSED HOUSES (GROUP I)",
         "boro": "QUEENS",
-        "value": true
+        "rtc": true
     },
     {
         "label": "FHA REPOSSESSED HOUSES (GROUP II)",
+        "value": "FHA REPOSSESSED HOUSES (GROUP II)",
         "boro": "QUEENS",
-        "value": true
+        "rtc": true
     },
     {
         "label": "FHA REPOSSESSED HOUSES (GROUP III)",
+        "value": "FHA REPOSSESSED HOUSES (GROUP III)",
         "boro": "QUEENS",
-        "value": true
+        "rtc": true
     },
     {
         "label": "FHA REPOSSESSED HOUSES (GROUP V)",
+        "value": "FHA REPOSSESSED HOUSES (GROUP V)",
         "boro": "QUEENS",
-        "value": true
+        "rtc": true
     },
     {
         "label": "FHA REPOSSESSED HOUSES (GROUP VI)",
+        "value": "FHA REPOSSESSED HOUSES (GROUP VI)",
         "boro": "QUEENS",
-        "value": true
+        "rtc": true
     },
     {
         "label": "FHA REPOSSESSED HOUSES (GROUP VII)",
+        "value": "FHA REPOSSESSED HOUSES (GROUP VII)",
         "boro": "QUEENS",
-        "value": true
+        "rtc": true
     },
     {
         "label": "FHA REPOSSESSED HOUSES (GROUP VIII)",
+        "value": "FHA REPOSSESSED HOUSES (GROUP VIII)",
         "boro": "QUEENS",
-        "value": true
+        "rtc": true
     },
     {
         "label": "FHA REPOSSESSED HOUSES (GROUP IX)",
+        "value": "FHA REPOSSESSED HOUSES (GROUP IX)",
         "boro": "QUEENS",
-        "value": true
+        "rtc": true
     },
     {
         "label": "FHA REPOSSESSED HOUSES (GROUP X)",
+        "value": "FHA REPOSSESSED HOUSES (GROUP X)",
         "boro": "QUEENS",
-        "value": true
+        "rtc": true
     }
 ]

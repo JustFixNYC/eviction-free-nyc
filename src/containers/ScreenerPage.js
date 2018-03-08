@@ -6,6 +6,7 @@ import { isLocationEligible, determineResultPage } from '../utils/logic';
 
 import StepIntro from '../components/steps/StepIntro';
 import StepLocation from '../components/steps/StepLocation';
+import StepNychaLocation from '../components/steps/StepNychaLocation';
 import StepIncome from '../components/steps/StepIncome';
 import StepCasetype from '../components/steps/StepCasetype';
 
@@ -30,6 +31,7 @@ class ScreenerPage extends React.Component {
       user: {
         zip: null,
         boro: null,
+        nycha: false,
         areaEligible: null,
         incomeEligible: null,
         caseType: null
@@ -68,15 +70,24 @@ class ScreenerPage extends React.Component {
     if(window) window.scrollTo(0,0);
   }
 
-  closeModalAndGoToNextStep = () => {
+  closeModalAndGoToNextStep = (stepOverride) => {
+    const nextStep = typeof stepOverride == 'number' ? stepOverride : this.state.currentPage + 1;
     this.setState({ modalType: null });
-    this.changeStep(this.state.currentPage + 1);
+    this.changeStep(nextStep);
   }
 
   handleZipcode = ({ zip, boro }) => {
     let areaEligible = isLocationEligible(zip);
     this.setState({
       user: { ...this.state.user, zip: zip, boro: boro, areaEligible: areaEligible },
+      modalType: areaEligible ? 'areaEligible' : 'areaIneligible'
+    });
+  }
+
+  handleNycha = ({ rtc, boro }) => {
+    let areaEligible = rtc;
+    this.setState({
+      user: { ...this.state.user, boro: boro, nycha: true, areaEligible: areaEligible },
       modalType: areaEligible ? 'areaEligible' : 'areaIneligible'
     });
   }
@@ -118,6 +129,12 @@ class ScreenerPage extends React.Component {
         <StepLocation content={c}
           show={this.state.currentPage == 1}
           handleZipcode={this.handleZipcode}
+          handleNycha={() => this.changeStep(4)}
+        />
+
+        <StepNychaLocation content={c}
+          show={this.state.currentPage == 4}
+          handleNycha={this.handleNycha}
         />
 
         <StepIncome content={c}
@@ -138,15 +155,17 @@ class ScreenerPage extends React.Component {
 
           {this.state.modalType === 'areaEligible' &&
             <ModalAreaEligible content={c}
+              nycha={this.state.user.nycha}
               zip={this.state.user.zip}
-              nextFn={this.closeModalAndGoToNextStep}
+              nextFn={() => this.closeModalAndGoToNextStep(2)}
             />
           }
 
           {this.state.modalType === 'areaIneligible' &&
             <ModalAreaIneligible content={c}
+              nycha={this.state.user.nycha}
               zip={this.state.user.zip}
-              nextFn={this.closeModalAndGoToNextStep}
+              nextFn={() => this.closeModalAndGoToNextStep(2)}
             />
           }
 
@@ -182,8 +201,11 @@ export const screenerPageFragment = graphql`
         introSteps
         addressTitle
         addressDescription
+        addressNychaOption
         addressEligibleText
         addressIneligibleText
+        addressNychaEligible
+        addressNychaIneligible
         incomeTitle
         incomeDescription
         incomeList
