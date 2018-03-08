@@ -9,19 +9,27 @@
     height: calc(88vh - 60px);
     // background-color: $bg-color-dark;
 
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPklEQVQoU2NkIApwSTESVsclxcDw7RkBhRBFIMPwKEQowqMQVREOhZiKsCjErghNIW5FSArxK4IqJKwIpBAAB04SL75UWDsAAAAASUVORK5CYII=) repeat $bg-color-dark;
+    // background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPklEQVQoU2NkIApwSTESVsclxcDw7RkBhRBFIMPwKEQowqMQVREOhZiKsCjErghNIW5FSArxK4IqJKwIpBAAB04SL75UWDsAAAAASUVORK5CYII=) repeat $bg-color-dark;
+
+    background: $secondary-color;
+    color: #fff;
+
     // margin-bottom: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     position: relative;
 
     .LandingPage__HeroContent {
       max-width: 50vw;
-      text-align: center;
+      margin-left: 10vw;
+
 
       .LandingPage__HeroTitle {
         margin-bottom: 1.5rem;
+        font-weight: 200;
+        letter-spacing: 1px;
 
         @include for-tablet-portrait-up() {
           margin-bottom: 3rem;
@@ -30,17 +38,25 @@
       }
 
       .btn {
-        margin: 16px auto;
+        margin: 16px 0;
       }
 
       @include for-phone-only() {
         max-width: 80vw;
         position: relative;
         top: -16px;
+        margin-left: 0;
+
+        .btn {
+          margin: 16px auto;
+        }
+
       }
     }
 
     @include for-tablet-portrait-up() {
+      justify-content: flex-start;
+      text-align: left;
       height: calc(80vh - 60px);
     }
 
@@ -48,7 +64,10 @@
       display: block;
       position: absolute;
       bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
       text-align: center;
+      font-weight: normal;
 
       @include for-tablet-portrait-up() {
         display: none;

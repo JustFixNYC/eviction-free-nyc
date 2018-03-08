@@ -12,7 +12,8 @@ const ButtonLink = ({ type, size, to, children, intl }) => {
 
   const slug = `/${intl.locale}${to}`;
 
-  let className = 'btn btn-block btn-centered';
+  // let className = 'btn btn-block btn-centered';
+  let className = 'btn btn-block';
   switch(type) {
     case 'primary':
       className += ' btn-primary';
