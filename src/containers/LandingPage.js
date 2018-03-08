@@ -44,7 +44,7 @@ class LandingPage extends React.Component {
             <span>{c.learnMoreTitle}</span><br /><i className="icon icon-arrow-down"></i>
           </div>
         </div>
-        <div className="LandingPage__Content container grid-md">
+        <div id="faq" className="LandingPage__Content container grid-md">
           <div className="columns clearfix">
             <div className="LandingPage__ContentFAQ column col-mr-auto col-sm-12 col-7">
               <h3>{c.learnMoreTitle}:</h3>
