@@ -61,7 +61,7 @@ class AddressSearch extends React.Component {
         <Geosuggest
           bounds={this.geosuggestBounds}
           onSuggestSelect={this.handleGeosuggest}
-          inputClassName="form-input"
+          inputClassName="form-input input-lg"
           placeholder={this.props.placeholder}
           />
         {this.state.error && <p className="mt-2 text-bold text-error"><Trans id="addrError" /></p>}

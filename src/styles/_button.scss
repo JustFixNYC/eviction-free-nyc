@@ -15,12 +15,16 @@
     }
   }
 
-
+  &.disabled {
+    background-color: $gray-color-dark;
+    border-color: $gray-color-dark;
+  }
 
 }
 
 .btn.btn-default {
   border-color: $third-color;
+  border-width: 2px;
   color: $third-color;
 
   &:hover, &:focus, &:active, &.active {

@@ -20,6 +20,11 @@
       margin-right: 32px;
     }
 
+    a, a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
     // img, span {
     //   display: inline-block;
     //   vertical-align: middle;
@@ -56,6 +61,8 @@
     }
 
     .Footer_JustFix {
+
+      text-align: center;
 
       img {
         max-width: 125px;

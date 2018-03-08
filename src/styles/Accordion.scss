@@ -12,7 +12,7 @@
 
 .accordion__item {
 
-  padding: 24px 0;
+
 
   h5 {
     margin-bottom: 0;
@@ -37,6 +37,10 @@
   // [role='tab']:focus {
   //   outline: none;
   // }
+  [role='tab'], [role='button'] {
+    padding: 24px 0;
+  }
+
   [role='tab']:hover, [role='button']:hover {
     cursor: pointer;
 
@@ -44,17 +48,19 @@
       text-decoration: underline;
     }
   }
-}
 
-
-.icon-minus {
-  display: none;
-}
-[aria-selected='true'],[aria-expanded='true'] {
-  .icon-plus {
+  .icon-minus {
     display: none;
   }
-  .icon-minus {
-    display: block;
+  [aria-selected='true'],[aria-expanded='true'] {
+
+    padding-bottom: 0;
+
+    .icon-plus {
+      display: none;
+    }
+    .icon-minus {
+      display: block;
+    }
   }
 }

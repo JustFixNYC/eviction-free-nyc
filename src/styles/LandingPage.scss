@@ -22,39 +22,50 @@
     position: relative;
 
     .LandingPage__HeroContent {
-      max-width: 50vw;
-      margin-left: 10vw;
+
+      // margin-left: 10vw;
+
+      // phone
+      position: relative;
+      top: -16px;
+
 
 
       .LandingPage__HeroTitle {
+
         margin-bottom: 1.5rem;
         font-weight: 200;
         letter-spacing: 1px;
 
-        @include for-tablet-portrait-up() {
+        @include for-tablet-landscape-up() {
+          max-width: 60%;
           margin-bottom: 3rem;
           font-size: 2rem;
         }
       }
 
       .btn {
-        margin: 16px 0;
+        margin: 16px auto;
       }
 
-      @include for-phone-only() {
-        max-width: 80vw;
-        position: relative;
-        top: -16px;
-        margin-left: 0;
+      @include for-tablet-portrait-up() {
+        max-width: 80%;
+      }
+
+      @include for-tablet-landscape-up() {
+
+        // copied from grid-md
+        max-width: 932px;
+        position: static;
 
         .btn {
-          margin: 16px auto;
+          margin: 16px 0;
         }
 
       }
     }
 
-    @include for-tablet-portrait-up() {
+    @include for-tablet-landscape-up() {
       justify-content: flex-start;
       text-align: left;
       height: calc(80vh - 60px);

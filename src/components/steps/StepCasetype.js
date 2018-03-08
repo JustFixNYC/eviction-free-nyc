@@ -38,7 +38,7 @@ class StepCasetype extends React.Component {
                   onClick={() => this.handleCaseButtonClick('holdover')}>
               <Trans id="holdover" />
           </button>
-          <button className={`btn btn-default ${userCaseType == 'unsure' ? "active" : ""}`}
+          <button className={`btn btn-default ${userCaseType == 'general' ? "active" : ""}`}
                   onClick={() => this.handleCaseButtonClick('general')}>
               <Trans id="unsure" />
           </button>
@@ -61,7 +61,7 @@ class StepCasetype extends React.Component {
           </AccordionItem>
         </Accordion>
         <button ref={ref => this.submitButton = ref}
-                className={`btn btn-primary ${userCaseType ? "" : "disabled"}`}
+                className={`btn btn-block btn-centered btn-primary ${userCaseType ? "" : "disabled"}`}
                 onClick={handleScreenerSubmit}>
           <Trans id="submit" />
         </button>

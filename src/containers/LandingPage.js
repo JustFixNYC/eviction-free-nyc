@@ -30,7 +30,7 @@ class LandingPage extends React.Component {
     return (
       <section className="Page LandingPage">
         <div className="LandingPage__Hero">
-          <div className="LandingPage__HeroContent">
+          <div className="LandingPage__HeroContent  container grid-md">
             <h2 className="LandingPage__HeroTitle">{c.heroTitle}</h2>
             <ButtonLink to={`/questions`} type="primary">
               {c.heroButtonText}
