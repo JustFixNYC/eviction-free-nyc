@@ -42,7 +42,8 @@ export default {
       }
     }
 
-    console.log('url', resultUrl);
+    Rollbar.info("Screener completed", user);
+
     navigateTo(resultUrl);
   }
 }

@@ -64,29 +64,6 @@ class Html extends React.Component {
               `
             }} />
 
-          <script dangerouslySetInnerHTML={{
-            __html: `
-              !function(name,path,ctx){
-                var latest,prev=name!=='Keen'&&window.Keen?window.Keen:false;ctx[name]=ctx[name]||{ready:function(fn){var h=document.getElementsByTagName('head')[0],s=document.createElement('script'),w=window,loaded;s.onload=s.onerror=s.onreadystatechange=function(){if((s.readyState&&!(/^c|loade/.test(s.readyState)))||loaded){return}s.onload=s.onreadystatechange=null;loaded=1;latest=w.Keen;if(prev){w.Keen=prev}else{try{delete w.Keen}catch(e){w.Keen=void 0}}ctx[name]=latest;ctx[name].ready(fn)};s.async=1;s.src=path;h.parentNode.insertBefore(s,h)}}
-              }('KeenAsync','https://d26b395fwzu5fz.cloudfront.net/keen-tracking-1.2.1.min.js',this);
-
-              KeenAsync.ready(function(){
-                // Configure a client instance
-                // This is your actual Project ID and Write Key
-                var client = new KeenAsync({
-                  projectId: '5aa6f18dc9e77c00018edd61',
-                  writeKey: 'F1EFA8804B8AA3CFE16FA0C1EB037CA4957F247AF64C6466B42CA9956B66C20BACA26A4CE3FCEAD67FED952F08185B4968303C3D3DE6514024DD3B956A9C05363B99A02B45F9357E7BEB8894271F1A020FC5E644F6662A1A6458EC92973E7E77'
-                });
-
-                // Record an event
-                client.recordEvent('pageviews', {
-                  title: document.title
-                });
-              });
-            `
-          }} />
-
-
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuf0Ca1EvxogvbZQKOBl_40y0UWm4Fk30&libraries=places,geometry"></script>
           <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
         </head>
