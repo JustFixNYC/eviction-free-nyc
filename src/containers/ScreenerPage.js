@@ -144,7 +144,7 @@ class ScreenerPage extends React.Component {
 
         <StepCasetype content={c}
           show={this.state.currentPage == 3}
-          userCaseType={this.state.user.caseType}
+          user={this.state.user}
           setCaseType={this.setCaseType}
           handleScreenerSubmit={this.handleScreenerSubmit}
         />

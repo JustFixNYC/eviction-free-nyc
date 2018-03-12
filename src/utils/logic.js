@@ -17,19 +17,32 @@ export default {
       throw new Error("Missing a step!");
     }
 
-    let boro = user.boro.toLowerCase();
+    let isElegible = () => user.areaEligible && user.incomeEligible;
 
+    let boro = user.boro.toLowerCase();
     if(boro === 'STATEN ISLAND') boro = 'staten';
 
-
-
-    // let resultUrl = `${intl.locale}/${user.boro}/${user.caseType}`;
-    let resultUrl = `/${intl.locale}/guide/${boro}/${user.caseType}`;
-
-    if(user.caseType !== 'general' && user.areaEligible && user.incomeEligible) {
-      resultUrl += 'rtc';
+    let caseType = user.caseType;
+    if(user.nycha && isElegible() && user.caseType === 'nonpay') {
+      caseType = 'nycha';
     }
 
+    let resultUrl = `/${intl.locale}/guide/${boro}/${caseType}`;
+
+    //  short circuit admin hearing page
+    if(user.nycha && user.caseType === 'other') {
+
+      resultUrl = `/${intl.locale}/guide/admin-hearings`;
+
+    // all other pages
+    } else {
+
+      if(user.caseType !== 'general' && isElegible()) {
+        resultUrl += 'rtc';
+      }
+    }
+
+    console.log('url', resultUrl);
     navigateTo(resultUrl);
   }
 }

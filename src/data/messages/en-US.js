@@ -8,7 +8,8 @@ module.exports = {
   'no': 'No',
   'nonpay': 'Nonpayment',
   'holdover': 'Holdover',
-  'unsure': 'I’m not sure',
+  'general': 'I’m not sure',
+  'other': 'Other',
   'submit': 'Submit',
   'gotit': 'Got it',
   'addrPlaceholder': 'Enter your address here',
@@ -20,5 +21,6 @@ module.exports = {
   'doNow': 'Here\'s what you should do now:',
   'additionalResources': 'Additional Resources:',
   'attribution': 'This resource is made "by tenants for tenants" and is maintained by the <a href="https://www.righttocounselnyc.org/" target="_blank">Right to Counsel NYC Coalition</a>!',
-  'justfixAttribution': 'Made with NYC ♥ by the team at'
+  'justfixAttribution': 'Made with NYC ♥ by the team at',
+  'print': 'Print'
 };

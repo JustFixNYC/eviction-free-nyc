@@ -17,7 +17,7 @@ class NychaSearch extends React.Component {
 
   handleChange = (selectedOption) => {
     this.setState({ selectedOption });
-    this.props.onFormSubmit(selectedOption);
+    if(selectedOption) this.props.onFormSubmit(selectedOption);    
   }
 
   render() {
@@ -31,7 +31,7 @@ class NychaSearch extends React.Component {
         onChange={this.handleChange}
         placeholder={this.props.placeholder}
         options={NychaData}
-        className="label-lg"
+        // className="label-lg"
       />
     );
   }

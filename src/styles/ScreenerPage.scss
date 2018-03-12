@@ -125,6 +125,17 @@
 
     .Select {
       text-align: left;
+      font-size: 0.85rem;
+
+      .Select-input {
+        height: 1.9rem;
+        // padding-top: 0.45rem;
+        // padding-bottom: 0.45rem;
+      }
+
+      .Select-placeholder {
+        line-height: 38px;
+      }
     }
   }
 
@@ -192,7 +203,7 @@
         margin-right: 16px;
 
         @include for-tablet-portrait-up() {
-          width: 150px;
+          // width: 150px;
         }
       }
     }

@@ -8,8 +8,7 @@ import {
     AccordionItemBody,
 } from 'react-accessible-accordion';
 
-
-class StepCasetype extends React.Component {
+class StepcaseType extends React.Component {
 
   handleCaseButtonClick = (type) => {
     this.submitButton.focus();
@@ -18,7 +17,7 @@ class StepCasetype extends React.Component {
 
   render() {
 
-    const { content, show, userCaseType, handleScreenerSubmit } = this.props;
+    const { content, show, user, handleScreenerSubmit } = this.props;
 
     return (
       <div className={`ScreenerPage__Case ${show ? "" : "d-none"}`}>
@@ -29,20 +28,34 @@ class StepCasetype extends React.Component {
         </ul>
         <h4>{content.caseTitle}</h4>
         <p>{content.caseDescription}</p>
-        <div className="ScreenerPage__CaseButtons">
-          <button className={`btn btn-default ${userCaseType == 'nonpay' ? "active" : ""}`}
-                  onClick={() => this.handleCaseButtonClick('nonpay')}>
-              <Trans id="nonpay" />
-          </button>
-          <button className={`btn btn-default ${userCaseType == 'holdover' ? "active" : ""}`}
-                  onClick={() => this.handleCaseButtonClick('holdover')}>
-              <Trans id="holdover" />
-          </button>
-          <button className={`btn btn-default ${userCaseType == 'general' ? "active" : ""}`}
-                  onClick={() => this.handleCaseButtonClick('general')}>
-              <Trans id="unsure" />
-          </button>
-        </div>
+
+        {user.nycha ? (
+          <div className="ScreenerPage__CaseButtons">
+            <button className={`btn btn-default ${user.caseType == 'nonpay' ? "active" : ""}`}
+                    onClick={() => this.handleCaseButtonClick('nonpay')}>
+                <Trans id="nonpay" />
+            </button>
+            <button className={`btn btn-default ${user.caseType == 'other' ? "active" : ""}`}
+                    onClick={() => this.handleCaseButtonClick('other')}>
+                <Trans id="other" />
+            </button>
+          </div>
+        ) : (
+          <div className="ScreenerPage__CaseButtons">
+            <button className={`btn btn-default ${user.caseType == 'nonpay' ? "active" : ""}`}
+                    onClick={() => this.handleCaseButtonClick('nonpay')}>
+                <Trans id="nonpay" />
+            </button>
+            <button className={`btn btn-default ${user.caseType == 'holdover' ? "active" : ""}`}
+                    onClick={() => this.handleCaseButtonClick('holdover')}>
+                <Trans id="holdover" />
+            </button>
+            <button className={`btn btn-default ${user.caseType == 'general' ? "active" : ""}`}
+                    onClick={() => this.handleCaseButtonClick('general')}>
+                <Trans id="general" />
+            </button>
+          </div>
+        )}
 
         <Accordion>
           <AccordionItem>
@@ -61,7 +74,7 @@ class StepCasetype extends React.Component {
           </AccordionItem>
         </Accordion>
         <button ref={ref => this.submitButton = ref}
-                className={`btn btn-block btn-centered btn-primary ${userCaseType ? "" : "disabled"}`}
+                className={`btn btn-block btn-centered btn-primary ${user.caseType ? "" : "disabled"}`}
                 onClick={handleScreenerSubmit}>
           <Trans id="submit" />
         </button>
@@ -70,4 +83,4 @@ class StepCasetype extends React.Component {
   }
 }
 
-export default injectIntl(StepCasetype);
+export default injectIntl(StepcaseType);

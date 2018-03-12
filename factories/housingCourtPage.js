@@ -40,6 +40,10 @@ exports.create = (graphql, createPage) => {
       _.each(result.data.allContentfulHousingCourtPage.edges, edge => {
 
 
+        if(edge.node.boroughKey !== 'adminHearing') {
+
+        }
+
         _.each(CASETYPES, casetype => {
 
           const pagePath = `/${edge.node.node_locale}/guide/${edge.node.boroughKey}/${casetype}`;
@@ -66,7 +70,7 @@ exports.create = (graphql, createPage) => {
             context: pageContext,
           });
 
-        })
+        });
 
       });
 
