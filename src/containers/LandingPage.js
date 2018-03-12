@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage as Trans, injectIntl } from 'react-intl';
 import * as PropTypes from "prop-types";
 
 import Link from "gatsby-link";
@@ -36,9 +37,11 @@ class LandingPage extends React.Component {
               {c.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
             </ButtonLink>
-            {/* <ButtonLink to={`/es`} type="link">
-              En español
-            </ButtonLink> */}
+            <Link to={this.props.intl.locale === 'en-US' ? `/es` : `en-US`}
+                  className="btn btn-block btn-default">
+              <Trans id="langswitch" />
+              <i className="icon icon-forward ml-2"></i>
+            </Link>
           </div>
           <div className="LandingPage__HeroLearnMore">
             <span>{c.learnMoreTitle}</span><br /><i className="icon icon-arrow-down"></i>
@@ -74,7 +77,7 @@ class LandingPage extends React.Component {
 
 LandingPage.propTypes = propTypes;
 
-export default LandingPage;
+export default injectIntl(LandingPage);
 
 export const landingPageFragment = graphql`
   fragment LandingPageFragment on ContentfulLandingPageConnection {

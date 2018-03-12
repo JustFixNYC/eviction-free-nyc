@@ -1,6 +1,7 @@
 module.exports = {
   'en-US': 'Inglés',
   'es': 'Español',
+  'langswitch': 'In english',
   'back': 'Volver',
   'continue': 'Continuar',
   'step': 'Paso',

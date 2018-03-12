@@ -46,6 +46,17 @@
 
       .btn {
         margin: 16px auto;
+
+        &.btn-default {
+          color: #fff;
+          border-color: #fff;
+          background-color: transparent;
+
+          &:hover {
+            color: $secondary-color;
+            background-color: #fff;
+          }
+        }
       }
 
       @include for-tablet-portrait-up() {

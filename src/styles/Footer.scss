@@ -44,7 +44,15 @@
 
   }
 
+  .SelectLanguage {
+    ul {
+      text-align: right;
 
+      li a.selected {
+        text-decoration: none;
+      }
+    }
+  }
 
   @include for-phone-only() {
     display: block;

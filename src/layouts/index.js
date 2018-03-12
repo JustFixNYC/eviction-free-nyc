@@ -49,7 +49,7 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
         <main>
           {children()}
         </main>
-        <Footer />
+        <Footer langs={langsMenu} />
 
       </div>
     </IntlProvider>

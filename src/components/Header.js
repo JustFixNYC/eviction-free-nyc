@@ -1,13 +1,14 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import { injectIntl } from 'react-intl';
 import SelectLanguage from './SelectLanguage';
 
 import '../styles/Header.scss';
 
-const Header = (props) => (
+const Header = ({ intl }) => (
   <header className="Header navbar">
     <section className="navbar-section">
-      <Link className="navbar-brand" to="/">Eviction Free NYC!</Link>
+      <Link className="navbar-brand" to={`/${intl.locale}`}>Eviction Free NYC!</Link>
     </section>
     {/* <section className="navbar-section">
       <SelectLanguage langs={props.langs} />
@@ -15,4 +16,4 @@ const Header = (props) => (
   </header>
 )
 
-export default Header;
+export default injectIntl(Header);
