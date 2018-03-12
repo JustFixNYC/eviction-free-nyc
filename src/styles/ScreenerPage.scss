@@ -123,18 +123,26 @@
       background-size: 100%;
     }
 
+    .geosuggest input {
+      height: 2.3rem;
+    }
+
     .Select {
       text-align: left;
       font-size: 0.85rem;
 
       .Select-input {
-        height: 1.9rem;
+        height: 44px;
         // padding-top: 0.45rem;
         // padding-bottom: 0.45rem;
+
+        input {
+          line-height: 26px;
+        }
       }
 
       .Select-placeholder {
-        line-height: 38px;
+        line-height: 46px;
       }
     }
   }

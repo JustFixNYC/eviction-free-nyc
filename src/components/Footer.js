@@ -13,7 +13,7 @@ const Footer = (props) => (
       <HTMLTrans id="attribution" />
 
       <div className="Footer_JustFix col-ml-auto">
-        <SelectLanguage langs={props.langs} />
+        <SelectLanguage { ...props } />
         <HTMLTrans id="justfixAttribution" />
         <a href="https://www.justfix.nyc/" target="_blank"><img src={justfixLogo} alt={`JustFix.nyc logo`} /></a>
       </div>

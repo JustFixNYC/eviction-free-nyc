@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import { FormattedMessage } from 'react-intl';
 
-const SelectLanguage = (props) => {
-  const links = props.langs.map(lang =>
+const SelectLanguage = ({ langs }) => {
+
+  const links = langs.map(lang =>
     <li key={lang.langKey} selected={lang.selected}>
       <Link to={lang.link} className={lang.selected ? 'selected' : ''}>
           <FormattedMessage id={lang.langKey} />
