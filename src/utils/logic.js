@@ -32,7 +32,7 @@ export default {
     //  short circuit admin hearing page
     if(user.nycha && user.caseType === 'other') {
 
-      resultUrl = `/${intl.locale}/guide/admin-hearings`;
+      resultUrl = `/${intl.locale}/admin-hearings`;
 
     // all other pages
     } else {

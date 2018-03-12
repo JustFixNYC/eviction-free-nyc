@@ -3,7 +3,7 @@ const Promise = require(`bluebird`)
 const path = require(`path`)
 
 const BOROUGHS = ['brooklyn', 'queens', 'manhattan', 'bronx', 'staten'];
-const CASETYPES = ['nonpay', 'nonpayrtc', 'holdover', 'holdoverrtc', 'general'];
+const CASETYPES = ['nonpay', 'nonpayrtc', 'holdover', 'holdoverrtc', 'nychartc', 'general'];
 
 exports.create = (graphql, createPage) => {
 
@@ -54,6 +54,7 @@ exports.create = (graphql, createPage) => {
             stepsHoldoverRTC: casetype === 'holdoverrtc',
             stepsNonpay: casetype === 'nonpay',
             stepsNonpayRTC: casetype === 'nonpayrtc',
+            stepsNychaRTC: casetype === 'nychartc',
             stepsGeneral: casetype === 'general'
           };
 

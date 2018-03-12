@@ -34,6 +34,9 @@ class PageTemplate extends React.Component {
       case 'holdoverrtc':
         this.data.steps = contentfulData.holdoverQualifySteps;
         break;
+      case 'nychartc':
+        this.data.steps = contentfulData.stepsNychaQualifies;
+        break;
       case 'general':
         this.data.steps = contentfulData.stepsGeneral;
         break;
@@ -76,6 +79,7 @@ export const pageQuery = graphql`
   	$stepsHoldoverRTC: Boolean!,
   	$stepsNonpay: Boolean!,
   	$stepsNonpayRTC: Boolean!,
+  	$stepsNychaRTC: Boolean!,
   	$stepsGeneral: Boolean!
   ) {
     allContentfulHousingCourtPage(filter: { id: { eq: $id }}) {
@@ -114,7 +118,7 @@ export const pageQuery = graphql`
               }
             }
           }
-          stepsNychaQualifies @skip(if: true) {
+          stepsNychaQualifies @include(if: $stepsNychaRTC) {
             title
             childContentfulHousingCourtActionStepContentTextNode {
               childMarkdownRemark {
