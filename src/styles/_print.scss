@@ -42,6 +42,24 @@
       opacity: 1.0 !important;
       animation: none !important;
     }
+
+    .navbar-brand {
+      display: inline-block;
+      margin: 0 auto;
+      color: #000;
+    }
+
+    .btn {
+      color: #000 !important;
+    }
+
+    .Footer {
+      color: #000 !important;
+
+      & a {
+        color: #000 !important;
+      }
+    }
   }
 
 

@@ -14,9 +14,9 @@ import '../styles/HousingCourtPage.scss';
 const CourtPage = ({ qualified, steps, additionalResources }) =>
   <section className="Page HousingCourtPage container grid-md">
     <div className="HousingCourtPage_Header clearfix">
-      <h3 className="float-left">
+      <h2 className="float-left">
         <Trans id={qualified ? 'qualifiedTitle' : 'notQualifiedTitle'} />
-      </h3>
+      </h2>
       <button onClick={() => window.print()}
         className="btn btn-default float-right"><Trans id="print" /></button>
     </div>

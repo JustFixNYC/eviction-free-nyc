@@ -10,12 +10,14 @@
 
 
   .HousingCourtPage_Header {
-    h3 {
+    h2 {
       // margin-top: 40px;
       margin-bottom: 40px;
+      font-size: 1.3rem;
 
       @include for-tablet-portrait-up() {
         width: 40vw;
+        font-size: 1.6rem;
       }
       @include for-desktop-up() {
         width: 35vw;
