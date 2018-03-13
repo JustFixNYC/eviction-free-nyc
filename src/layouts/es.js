@@ -3,17 +3,25 @@ import graphql from 'graphql';
 import Layout from './index';
 import { addLocaleData } from 'react-intl';
 
-import messages from '../static/messages/es';
+import messages from '../data/messages/es';
 import es from 'react-intl/locale-data/es';
 import 'intl/locale-data/jsonp/es';
 
 addLocaleData(es);
 
-export default (props) => (
-  <Layout
-    {...props}
-    i18nMessages={messages}
-  />);
+const EsLayout = (props) => {
+
+  // console.log('es layout');
+
+  return (
+    <Layout
+      {...props}
+      i18nMessages={messages}
+    />
+  );
+}
+
+export default EsLayout;
 
 export const pageQuery = graphql`
   query LayoutEs {

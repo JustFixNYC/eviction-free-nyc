@@ -12,8 +12,8 @@ import Footer from '../components/Footer';
 // Styles
 import '../styles/main.scss';
 
-import messagesEn from '../static/messages/en-US';
-import messagesEs from '../static/messages/es';
+import messagesEn from '../data/messages/en-US';
+import messagesEs from '../data/messages/es';
 
 const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
   const url = location.pathname;
@@ -22,7 +22,7 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
   const homeLink = `/${langKey}/`;
   const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url));
 
-  console.log(i18nMessages);
+  // console.log('regular layout', langKey, messagesEs);
 
   // Hack for using dynamic template when params not passed to wrapper.
   if (i18nMessages === undefined) {
@@ -36,6 +36,7 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
   return (
     <IntlProvider
       locale={langKey}
+      key={langKey}
       messages={i18nMessages}
     >
       <div>
