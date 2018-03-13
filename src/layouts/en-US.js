@@ -3,13 +3,15 @@ import React from 'react';
 import Layout from './index';
 import { addLocaleData } from 'react-intl';
 
-import messages from '../data/messages/en-US';
+import messages from '../static/messages/en-US';
 import en from 'react-intl/locale-data/en';
 import 'intl/locale-data/jsonp/en';
 
 addLocaleData(en);
 
 const EnLayout = (props) => {
+
+  console.log('messages', messages);
  return (
     <Layout
       {...props}

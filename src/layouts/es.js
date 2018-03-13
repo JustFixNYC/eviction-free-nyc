@@ -3,7 +3,7 @@ import graphql from 'graphql';
 import Layout from './index';
 import { addLocaleData } from 'react-intl';
 
-import messages from '../data/messages/es';
+import messages from '../static/messages/es';
 import es from 'react-intl/locale-data/es';
 import 'intl/locale-data/jsonp/es';
 
