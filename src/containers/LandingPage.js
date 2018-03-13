@@ -37,7 +37,7 @@ class LandingPage extends React.Component {
               {c.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
             </ButtonLink>
-            <Link to={this.props.intl.locale === 'en-US' ? `/es` : `en-US`}
+            <Link to={this.props.intl.locale === 'en-US' ? `/es` : `/en-US`}
                   className="btn btn-block btn-default">
               <Trans id="langswitch" />
               <i className="icon icon-forward ml-2"></i>
@@ -67,8 +67,6 @@ class LandingPage extends React.Component {
             </div>
           </div>
         </div>
-
-
       </section>
 
     );

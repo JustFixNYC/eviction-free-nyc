@@ -30,15 +30,11 @@ const TemplateWrapper = ({ children, data, location }) => {
   // console.log('regular layout', langKey, messagesEs);
 
   let i18nMessages;
-
-  // Hack for using dynamic template when params not passed to wrapper.
-  // if (i18nMessages === undefined) {
-    if (langKey === 'es') {
-      i18nMessages = messagesEs
-    } else {
-      i18nMessages = messagesEn
-    }
-  // }
+  if (langKey === 'es') {
+    i18nMessages = messagesEs
+  } else {
+    i18nMessages = messagesEn
+  }
 
   return (
     <IntlProvider
