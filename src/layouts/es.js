@@ -11,7 +11,7 @@ addLocaleData(es);
 
 const EsLayout = (props) => {
 
-  // console.log('es layout');
+  console.log('es layout');
 
   return (
     <Layout

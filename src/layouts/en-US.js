@@ -11,7 +11,7 @@ addLocaleData(en);
 
 const EnLayout = (props) => {
 
-  // console.log('en-US layout');
+  console.log('en-US layout');
 
  return (
     <Layout
