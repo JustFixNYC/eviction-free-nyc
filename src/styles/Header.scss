@@ -7,6 +7,11 @@
   background: $secondary-color;
   color: #fff;
 
+  @include for-phone-only() {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
   a {
     color: #fff;
 
