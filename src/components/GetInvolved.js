@@ -60,7 +60,7 @@ const GetInvolved = (props) => (
 {/*
             <script type="text/javascript" defer src="//www.123formbuilder.com/embed/3538714.js" data-role="form" data-default-width="650px"></script> */}
 
-            <a href="https://www.righttocounselnyc.org/join" target="_blank"
+            <a href="https://www.righttocounselnyc.org/join#middle" target="_blank"
               className="btn btn-primary btn-block">
               <Trans id="registrationBtn" />
             </a>
@@ -77,7 +77,7 @@ const GetInvolved = (props) => (
             <label className="form-label">
               <Trans id="eventsTitle" />
             </label>
-            <a href="https://www.righttocounselnyc.org/upcoming_events" target="_blank"
+            <a href="https://www.righttocounselnyc.org/upcoming_events#middle" target="_blank"
               className="btn btn-primary btn-block">
               <Trans id="eventsBtn" />
             </a>

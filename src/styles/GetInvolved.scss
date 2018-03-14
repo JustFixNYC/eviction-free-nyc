@@ -3,7 +3,8 @@
 .GetInvolved {
   width: 100%;
   padding-top: 32px;
-  @include gray-lines-bg;
+  // @include gray-lines-bg;
+  background-color: $bg-color-dark;
   border-top: 1px solid $gray-color-light;
 
   h3 {
