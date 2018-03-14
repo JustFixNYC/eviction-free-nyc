@@ -6,9 +6,10 @@ import { FormattedMessage as Trans } from 'react-intl';
 // Wrap the require in check for window
 // Needed for gatsby builds that don't have references to document
 let ReactPhoneInput;
-if (typeof document !== undefined) {
-  const ReactPhoneInput = require("react-phone-input");
+if (typeof document !== 'undefined') {
+  ReactPhoneInput = require("react-phone-input").default;
 }
+
 import '../styles/SaveToPhone.scss';
 
 class SaveToPhone extends React.Component {
@@ -30,7 +31,7 @@ class SaveToPhone extends React.Component {
 
     let page;
     // Needed for gatsby builds that don't have references to window
-    if (typeof window !== undefined) {
+    if (typeof window !== 'undefined') {
       page = window.location.href;
     }
     const message = `Eviction Free NYC!
@@ -87,7 +88,7 @@ Follow this link for assistance in your eviction case: ${page}
             <div className="column col-md-12 col-6">
               <div className="input-group">
                 {/* See above  */}
-                {ReactPhoneInput !== undefined && (
+                {typeof ReactPhoneInput !== 'undefined' && (
                   <ReactPhoneInput className="input-group" defaultCountry={'us'} value={this.state.phone} onChange={this.handleOnChange} />
                 )}
                 {button}

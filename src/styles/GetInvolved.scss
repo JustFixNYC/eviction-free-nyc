@@ -4,14 +4,25 @@
   width: 100%;
   padding-top: 32px;
   @include gray-lines-bg;
-  // border-top: 1px solid $gray-color;
+  border-top: 1px solid $gray-color;
 
   h3 {
     margin-bottom: 1.0em;
   }
 
-  .column {
-    margin-bottom: 36px;
+  padding-bottom: 24px;
+
+  @include for-tablet-landscape-up() {
+    padding-bottom: 0;
+  }
+
+  .column:not(:first-child) {
+
+    margin-bottom: 16px;
+
+    @include for-tablet-landscape-up() {
+      margin-bottom: 36px;
+    }
   }
 
   .btns-social {
@@ -23,6 +34,16 @@
       &:nth-child(2) {
         background-color: #55acee;
         &:hover { background-color: darken(#55acee, 5%); }
+      }
+
+      margin-bottom: 0;
+
+      span {
+        display: none;
+
+        @include for-tablet-landscape-up() {
+          display: inline;
+        }
       }
     }
   }

@@ -48,7 +48,7 @@
 
 .react-tel-input {
 
-  input[type=tel] {
+  input[type=tel].form-control {
     transition: all .2s ease;
     -webkit-appearance: none;
     -moz-appearance: none;

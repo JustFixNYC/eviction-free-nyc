@@ -28,18 +28,18 @@ const GetInvolved = (props) => (
                 appId={`1023402221142410`}
                 windowOptions={['width=400', 'height=200']}>
                 <img src={fbIcon} className="icon mx-1" alt="Facebook" />
-                Facebook
+                <span>Facebook</span>
               </FacebookButton>
               <TwitterButton className="btn btn-steps"
                 message="If you're being evicted, we can help. Go to Eviction Free NYC today! @RTCNYC @JustFixNYC"
                 windowOptions={['width=400', 'height=200']}>
                 <img src={twitterIcon} className="icon mx-1" alt="Twitter" />
-                Twitter
+                <span>Twitter</span>
               </TwitterButton>
               <EmailButton target="_blank"
                 className="btn btn-steps">
                 <i className="icon icon-mail mx-2" />
-                <Trans id="email" />
+                <span><Trans id="email" /></span>
               </EmailButton>
             </div>
           </div>
