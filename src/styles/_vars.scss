@@ -43,6 +43,10 @@ $link-color-dark: darken($link-color, 5%);
 $layout-spacing: $unit-4;
 $border-radius: $unit-1;
 
+@mixin gray-lines-bg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPklEQVQoU2NkIApwSTESVsclxcDw7RkBhRBFIMPwKEQowqMQVREOhZiKsCjErghNIW5FSArxK4IqJKwIpBAAB04SL75UWDsAAAAASUVORK5CYII=) repeat $bg-color-dark;
+}
+
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
 }

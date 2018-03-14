@@ -48,9 +48,18 @@
     ul {
       text-align: right;
 
-      li a.selected {
+      .btn {
         text-decoration: none;
+        color: #fff;
+        margin-bottom: 8px;
       }
+      .btn-default {
+        background: transparent;
+      }
+
+      // li a.selected {
+      //   text-decoration: none;
+      // }
     }
   }
 

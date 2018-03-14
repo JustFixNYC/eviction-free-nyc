@@ -6,16 +6,14 @@ import { FormattedMessage } from 'react-intl';
 const SelectLanguage = ({ langs }) => {
 
   const links = langs.map(lang =>
-    <li key={lang.langKey} selected={lang.selected}>
-      <Link to={lang.link} className={lang.selected ? 'selected' : ''}>
-          <FormattedMessage id={lang.langKey} />
-      </Link>
-    </li>
+    <Link key={lang.langKey}  to={lang.link} className={`btn btn-sm ${lang.selected ? 'btn-steps' : 'btn-default' }`}>
+        <FormattedMessage id={lang.langKey} />
+    </Link>
   );
 
   return (
     <div className="SelectLanguage">
-      <ul className="list-inline">
+      <ul className="list-inline btn-group">
         {/* <li><FormattedMessage id="selectLanguage" /></li> */}
         {links}
       </ul>

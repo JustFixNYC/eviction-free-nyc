@@ -17,13 +17,13 @@ export default {
       throw new Error("Missing a step!");
     }
 
-    let isElegible = () => user.areaEligible && user.incomeEligible;
+    const isElegible = user.areaEligible && user.incomeEligible;
 
     let boro = user.boro.toLowerCase();
     if(boro === 'STATEN ISLAND') boro = 'staten';
 
     let caseType = user.caseType;
-    if(user.nycha && isElegible() && user.caseType === 'nonpay') {
+    if(user.nycha && isElegible && user.caseType === 'nonpay') {
       caseType = 'nycha';
     }
 
@@ -37,7 +37,7 @@ export default {
     // all other pages
     } else {
 
-      if(user.caseType !== 'general' && isElegible()) {
+      if(user.caseType !== 'general' && isElegible) {
         resultUrl += 'rtc';
       }
     }

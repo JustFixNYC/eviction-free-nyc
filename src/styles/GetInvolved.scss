@@ -1,0 +1,41 @@
+@import "vars";
+
+.GetInvolved {
+  width: 100%;
+  padding-top: 32px;
+  @include gray-lines-bg;
+  border-top: 1px solid $gray-color-dark;
+
+  h3 {
+    margin-bottom: 1.0em;
+  }
+
+  .column {
+    margin-bottom: 36px;
+  }
+
+  .btns-social {
+    .btn {
+      &:nth-child(1) {
+        background-color: #3b5998;
+        &:hover { background-color: darken(#3b5998, 5%); }
+      }
+      &:nth-child(2) {
+        background-color: #55acee;
+        &:hover { background-color: darken(#55acee, 5%); }
+      }
+    }
+  }
+
+  .form-input {
+    height: 2.3rem;
+    border-color: $gray-color-dark;
+  }
+  .form-label {
+    font-weight: bold;
+  }
+
+  .btn-block {
+    max-width: none;
+  }
+}

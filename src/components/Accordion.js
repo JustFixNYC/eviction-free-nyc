@@ -35,7 +35,7 @@ const AccordionSection = ({ content, multiple }) => {
   );
 
   return (
-    <Accordion className="Accordion" accordion={multiple ? false : true}>
+    <Accordion className="Accordion" accordion={!multiple}>
       {items}
     </Accordion>
   );

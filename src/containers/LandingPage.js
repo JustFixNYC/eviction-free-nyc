@@ -51,7 +51,7 @@ class LandingPage extends React.Component {
           <div className="columns clearfix">
             <div className="LandingPage__ContentFAQ column col-mr-auto col-sm-12 col-7">
               <h3>{c.learnMoreTitle}:</h3>
-              <Accordion content={this.faq}></Accordion>
+              <Accordion content={this.faq} />
             </div>
             <div className="LandingPage__ContentImage1 column col-ml-auto col-sm-12 col-4">
               <Img

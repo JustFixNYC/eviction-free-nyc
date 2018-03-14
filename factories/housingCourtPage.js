@@ -39,11 +39,6 @@ exports.create = (graphql, createPage) => {
       // Each edge is a housing court location in a particular language
       _.each(result.data.allContentfulHousingCourtPage.edges, edge => {
 
-
-        if(edge.node.boroughKey !== 'adminHearing') {
-
-        }
-
         _.each(CASETYPES, casetype => {
 
           const pagePath = `/${edge.node.node_locale}/guide/${edge.node.boroughKey}/${casetype}`;
