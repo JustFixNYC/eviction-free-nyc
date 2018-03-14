@@ -5,8 +5,13 @@
   // @include gray-lines-bg;
   // border: 1px solid $gray-color-dark;
   background-color: $bg-color-dark;
-  padding: 16px;
-  padding-top: 24px;
+  border: 1px solid $gray-color-light;
+  padding: 24px 0 16px 0;
+
+  @include for-tablet-landscape-up() {
+    padding: 24px 0.8rem 16px 0.8rem;
+  }
+
   margin-top: 42px;
   margin-bottom: 42px;
 
