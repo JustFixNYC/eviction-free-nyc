@@ -1,0 +1,80 @@
+@import "vars";
+
+.SaveToPhone {
+
+  // @include gray-lines-bg;
+  // border: 1px solid $gray-color-dark;
+  background-color: $bg-color-dark;
+  padding: 16px;
+  padding-top: 24px;
+  margin-top: 42px;
+  margin-bottom: 42px;
+
+  h5 {
+    margin-bottom: 3px;
+  }
+
+  p {
+    // margin-bottom: 0;
+    line-height: 1rem;
+
+    @include for-tablet-landscape-up() {
+      margin-bottom: 0;
+    }
+
+    &.mt-2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .icon {
+    margin-right: 2px;
+    top: -2px;
+
+    &:before {
+      border-top-left-radius: 0.1rem;
+      border-top-right-radius: 0.1rem;
+    }
+    &:after {
+      border-radius: 0.1rem;
+    }
+  }
+
+  .columns {
+    // align-items: center;
+  }
+
+}
+
+.react-tel-input {
+
+  input[type=tel] {
+    transition: all .2s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    background-image: none;
+    border: 0.05rem solid #caced7;
+    border-radius: 0.2rem;
+    color: #50596c;
+    display: block;
+    font-size: 0.8rem;
+    height: 2.3rem;
+    line-height: 1rem;
+    max-width: 100%;
+    outline: none;
+    padding: 0.35rem 0.4rem;
+    position: relative;
+    width: 100%;
+
+    &:focus {
+      box-shadow: 0 0 0 .1rem rgba($third-color, .2);
+      border-color: $third-color;
+    }
+  }
+
+  .flag-dropdown {
+    display: none;
+  }
+}

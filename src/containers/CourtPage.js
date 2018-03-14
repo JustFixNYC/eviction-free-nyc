@@ -4,6 +4,7 @@ import { injectIntl, FormattedMessage as Trans } from 'react-intl';
 import { addCallButtons } from '../utils/text';
 
 import Accordion from "../components/Accordion";
+import SaveToPhone from "../components/SaveToPhone";
 
 import '../styles/HousingCourtPage.scss';
 
@@ -21,6 +22,9 @@ const CourtPage = ({ qualified, steps, additionalResources }) =>
         className="btn btn-default float-right"><Trans id="print" /></button>
     </div>
 
+
+    {/* <SaveToPhone /> */}
+
     <h6><Trans id="doNow" /></h6>
     <Accordion content={steps} multiple />
     {additionalResources && (
@@ -29,6 +33,8 @@ const CourtPage = ({ qualified, steps, additionalResources }) =>
         <Accordion content={additionalResources} multiple />
       </div>
     )}
+
+    <SaveToPhone />
   </section>
 
 

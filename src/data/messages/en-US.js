@@ -30,5 +30,10 @@ module.exports = {
   'registrationTitle': 'Receive email updates:',
   'registrationBtn': 'Register with email',
   'eventsTitle': 'Attend upcoming events:',
-  'eventsBtn': 'Find an event'
+  'eventsBtn': 'Find an event',
+  'saveToPhoneTitle': 'Save this page to your Phone',
+  'saveToPhoneSubtitle': 'Enter your phone number and we\'ll text you a link to bookmark this page.',
+  'saveToPhoneInfo': 'The phone number should start with +1',
+  'success': 'Success',
+  'tryAgain': 'Try Again'
 };
