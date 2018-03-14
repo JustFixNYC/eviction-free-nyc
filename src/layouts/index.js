@@ -2,23 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n';
-import { IntlProvider, addLocaleData } from 'react-intl';
+import { IntlProvider } from 'react-intl';
 import Link from "gatsby-link"
 import 'intl';
+import '../utils/locales';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 // Styles
 import '../styles/main.scss';
-
-import messagesEn from '../data/messages/en-US';
-import messagesEs from '../data/messages/es';
-
-import en from 'react-intl/locale-data/en';
-import es from 'react-intl/locale-data/es';
-
-addLocaleData([...en, ...es]);
 
 const TemplateWrapper = ({ children, data, location }) => {
   const url = location.pathname;
@@ -27,14 +20,10 @@ const TemplateWrapper = ({ children, data, location }) => {
   const homeLink = `/${langKey}/`;
   const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url));
 
-  // console.log('regular layout', langKey, messagesEs);
-
-  let i18nMessages;
-  if (langKey === 'es') {
-    i18nMessages = messagesEs
-  } else {
-    i18nMessages = messagesEn
-  }
+  // get the appropriate message file based on langKey
+  // at the moment this assumes that langKey will provide us
+  // with the appropriate language code
+  const i18nMessages = require(`../data/messages/${langKey}`);
 
   return (
     <IntlProvider
