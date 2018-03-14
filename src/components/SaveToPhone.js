@@ -3,7 +3,13 @@ import Select from 'react-select';
 import APIClient from './APIClient';
 import { FormattedMessage as Trans } from 'react-intl';
 
-import ReactPhoneInput from 'react-phone-input';
+// Wrap the require in check for window
+if (typeof document !== `undefined`) {
+  const ReactPhoneInput = require("react-phone-input");
+  // import ReactPhoneInput from 'react-phone-input';
+}
+
+
 import '../styles/SaveToPhone.scss';
 
 class SaveToPhone extends React.Component {
@@ -23,7 +29,10 @@ class SaveToPhone extends React.Component {
 
   handleOnSubmit = () => {
 
-    const page = window.location.href;
+    let page;
+    if (typeof window !== `undefined`) {
+      page = window.location.href;
+    }
     const message = `Eviction Free NYC!
 
 Follow this link for assistance in your eviction case: ${page}
