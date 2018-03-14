@@ -3,9 +3,10 @@ import Select from 'react-select';
 import APIClient from './APIClient';
 import { FormattedMessage as Trans } from 'react-intl';
 
+let ReactPhoneInput;
 // Wrap the require in check for window
 if (typeof document !== `undefined`) {
-  const ReactPhoneInput = require("react-phone-input");
+  ReactPhoneInput = require("react-phone-input");
   // import ReactPhoneInput from 'react-phone-input';
 }
 
