@@ -2,14 +2,14 @@
 
 .Header {
 
-  padding: 16px 32px;
+  padding: 16px 0.8rem;
   border-bottom: 1px solid $gray-color-dark;
   background: $secondary-color;
   color: #fff;
 
-  @include for-phone-only() {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
+  @include for-tablet-landscape-up() {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   a {
@@ -22,5 +22,22 @@
 
   .navbar-brand {
     font-weight: 300;
+  }
+
+  .btns-social {
+    .btn {
+      min-width: 0;
+      padding: 0.2rem;
+      margin-bottom: 0;
+      color: #fff;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &:hover {
+        color: #fff;
+      }
+    }
   }
 }

@@ -23,5 +23,12 @@ module.exports = {
   'additionalResources': 'Additional Resources:',
   'attribution': 'This resource is made "by tenants for tenants" and is maintained by the <a href="https://www.righttocounselnyc.org/" target="_blank">Right to Counsel NYC Coalition</a>!',
   'justfixAttribution': 'Made with NYC ♥ by the team at',
-  'print': 'Print'
+  'print': 'Print',
+  'getInvolvedTitle': 'Get involved with the Right to Counsel movement!',
+  'shareTitle': 'Share this page with a neighbor:',
+  'email': 'Email',
+  'registrationTitle': 'Receive email updates:',
+  'registrationBtn': 'Register with email',
+  'eventsTitle': 'Attend upcoming events:',
+  'eventsBtn': 'Find an event'
 };

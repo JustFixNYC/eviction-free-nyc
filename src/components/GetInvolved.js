@@ -10,12 +10,16 @@ import twitterIcon from '../assets/img/twitter.svg';
 
 const GetInvolved = (props) => (
   <div className="GetInvolved">
-    <h3 className="text-center">Get involved with the Right to Counsel movement!</h3>
+    <h3 className="text-center">
+      <Trans id="getInvolvedTitle" />
+    </h3>
     <div className="container grid-lg">
       <div className="columns">
         <div className="column col-md-12 col-6">
           <div className="form-group">
-            <label className="form-label" htmlFor="input-example-1">Share this page with a neighbor:</label>
+            <label className="form-label">
+              <Trans id="shareTitle" />
+            </label>
             <div className="btn-group btns-social btn-group-block">
               <FacebookButton className="btn btn-steps"
                 sharer={true}
@@ -33,14 +37,16 @@ const GetInvolved = (props) => (
               <EmailButton target="_blank"
                 className="btn btn-steps">
                 <i className="icon icon-mail mx-2" />
-                Email
+                <Trans id="email" />
               </EmailButton>
             </div>
           </div>
         </div>
         <div className="column col-md-12 col-3">
           <div className="form-group">
-            <label className="form-label" htmlFor="input-example-1">Receive email updates:</label>
+            <label className="form-label">
+              <Trans id="registrationTitle" />
+            </label>
 
 
             {/* <!-- www.123formbuilder.com script begins here --> */}
@@ -54,7 +60,7 @@ const GetInvolved = (props) => (
 
             <a href="https://www.righttocounselnyc.org/join" target="_blank"
               className="btn btn-primary btn-block">
-              Register with Email
+              <Trans id="registrationBtn" />
             </a>
 
 
@@ -66,10 +72,12 @@ const GetInvolved = (props) => (
         </div>
         <div className="column col-md-12 col-3">
           <div className="form-group">
-            <label className="form-label" htmlFor="input-example-1">Attend upcoming events:</label>
+            <label className="form-label">
+              <Trans id="eventsTitle" />
+            </label>
             <a href="https://www.righttocounselnyc.org/upcoming_events" target="_blank"
               className="btn btn-primary btn-block">
-              Find an event
+              <Trans id="eventsBtn" />
             </a>
           </div>
         </div>
