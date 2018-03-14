@@ -16,6 +16,7 @@
     "gatsby-source-contentful": "latest",
     "gatsby-transformer-remark": "^1.7.33",
     "intl": "^1.2.5",
+    "invariant": "^2.2.4",
     "lodash": "^4.16.4",
     "node-sass": "4.5.2",
     "react-accessible-accordion": "^2.0.0",

@@ -3,7 +3,12 @@ import Select from 'react-select';
 import APIClient from './APIClient';
 import { FormattedMessage as Trans } from 'react-intl';
 
-import ReactPhoneInput from 'react-phone-input';
+// Wrap the require in check for window
+// Needed for gatsby builds that don't have references to document
+let ReactPhoneInput;
+if (typeof document !== undefined) {
+  const ReactPhoneInput = require("react-phone-input");
+}
 import '../styles/SaveToPhone.scss';
 
 class SaveToPhone extends React.Component {
@@ -24,7 +29,8 @@ class SaveToPhone extends React.Component {
   handleOnSubmit = () => {
 
     let page;
-    if (typeof window !== `undefined`) {
+    // Needed for gatsby builds that don't have references to window
+    if (typeof window !== undefined) {
       page = window.location.href;
     }
     const message = `Eviction Free NYC!
@@ -54,19 +60,19 @@ Follow this link for assistance in your eviction case: ${page}
     let button;
     switch(this.state.button) {
       case 'init':
-        button = <button className="btn btn-steps input-group-btn" onClick={this.handleOnSubmit}><Trans id="submit" /></button>
+        button = (<button className="btn btn-steps input-group-btn" onClick={this.handleOnSubmit}><Trans id="submit" /></button>);
         break;
       case 'loading':
-        button = <button className="btn btn-steps loading input-group-btn"><Trans id="submit" /></button>
+        button = (<button className="btn btn-steps loading input-group-btn"><Trans id="submit" /></button>);
         break;
       case 'success':
-        button = <button className="btn btn-success input-group-btn"><Trans id="success" /></button>
+        button = (<button className="btn btn-success input-group-btn"><Trans id="success" /></button>);
         break;
       case 'error':
-        button = <button className="btn btn-steps input-group-btn" onClick={this.handleOnSubmit}><Trans id="tryAgain" /></button>
+        button = (<button className="btn btn-steps input-group-btn" onClick={this.handleOnSubmit}><Trans id="tryAgain" /></button>);
         break;
       default:
-        button = <button className="btn btn-steps input-group-btn" onClick={this.handleOnSubmit}><Trans id="submit" /></button>
+        button = (<button className="btn btn-steps input-group-btn" onClick={this.handleOnSubmit}><Trans id="submit" /></button>);
         break;
     }
 
@@ -80,7 +86,10 @@ Follow this link for assistance in your eviction case: ${page}
             </div>
             <div className="column col-md-12 col-6">
               <div className="input-group">
-                <ReactPhoneInput className="input-group" defaultCountry={'us'} value={this.state.phone} onChange={this.handleOnChange} />
+                {/* See above  */}
+                {ReactPhoneInput !== undefined && (
+                  <ReactPhoneInput className="input-group" defaultCountry={'us'} value={this.state.phone} onChange={this.handleOnChange} />
+                )}
                 {button}
               </div>
               {this.state.error ? (
@@ -91,10 +100,7 @@ Follow this link for assistance in your eviction case: ${page}
             </div>
           </div>
         </div>
-
-
       </div>
-
     );
   }
 
