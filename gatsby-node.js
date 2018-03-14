@@ -19,3 +19,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     ])
     .catch(error => console.log('[Page factories error]', error));
 };
+
+exports.modifyWebpackConfig = ({ config, stage }) => {
+  if (stage === "build-html") {
+    config.loader("null", {
+      test: /react-phone-input/,
+      loader: "null-loader",
+    });
+  }
+};

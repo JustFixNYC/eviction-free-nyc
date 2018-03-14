@@ -3,14 +3,7 @@ import Select from 'react-select';
 import APIClient from './APIClient';
 import { FormattedMessage as Trans } from 'react-intl';
 
-let ReactPhoneInput;
-// Wrap the require in check for window
-if (typeof document !== `undefined`) {
-  ReactPhoneInput = require("react-phone-input");
-  // import ReactPhoneInput from 'react-phone-input';
-}
-
-
+import ReactPhoneInput from 'react-phone-input';
 import '../styles/SaveToPhone.scss';
 
 class SaveToPhone extends React.Component {

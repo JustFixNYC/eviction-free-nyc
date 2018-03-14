@@ -10,11 +10,13 @@ import twitterIcon from '../assets/img/twitter.svg';
 
 const GetInvolved = (props) => (
   <div className="GetInvolved">
-    <h3 className="text-center">
-      <Trans id="getInvolvedTitle" />
-    </h3>
     <div className="container grid-lg">
       <div className="columns">
+        <div className="column col-12">
+          <h3 className="text-center">
+            <Trans id="getInvolvedTitle" />
+          </h3>
+        </div>
         <div className="column col-md-12 col-6">
           <div className="form-group">
             <label className="form-label">
