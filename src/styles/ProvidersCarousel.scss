@@ -2,11 +2,22 @@
 
 .ProvidersCarousel {
 
-  margin-top: 20px;
+  // margin-top: 20px;
   margin-bottom: 32px;
 
+  .carousel__slider {
+    margin-left: -0.8rem;
+    margin-right: -0.8rem;
+
+    @include for-tablet-portrait-up() {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+  }
+
   .carousel__slide {
-    min-height: 400px;
+    min-height: 375px;
 
     @include for-tablet-portrait-up() {
       min-height: 400px;

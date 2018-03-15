@@ -33,8 +33,13 @@ const CourtPage = ({ qualified, steps, additionalResources, providers }) => {
       <h6><Trans id="doNow" /></h6>
       <Accordion content={steps} multiple />
 
-      <h6>Available Legal Services</h6>
-      <ProvidersCarousel providers={providers} />
+      {providers && (
+        <div>
+          <h6>Available Legal Services</h6>
+          <ProvidersCarousel providers={providers} />
+        </div>
+      )}
+
 
       {additionalResources && (
         <div>

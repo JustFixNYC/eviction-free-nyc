@@ -40,12 +40,6 @@ const ProvidersCard = ({ provider }) =>
     </div>
     <div className="card-footer">
       <div>
-        {provider.phoneNumber && (
-          <a href={`tel:${provider.phoneNumber}`}
-            className="btn btn-success btn-normal col-mr-auto">
-             {createFormattedTel(provider.phoneNumber)}
-          </a>
-        )}
         {provider.website && (
           <a href={provider.website} target="_blank"
             className="btn btn-link btn-normal col-ml-auto">
@@ -53,6 +47,13 @@ const ProvidersCard = ({ provider }) =>
             Website
           </a>
         )}
+        {provider.phoneNumber && (
+          <a href={`tel:${provider.phoneNumber}`}
+            className="btn btn-success btn-normal col-ml-auto">
+             {createFormattedTel(provider.phoneNumber)}
+          </a>
+        )}
+
       </div>
     </div>
   </div>

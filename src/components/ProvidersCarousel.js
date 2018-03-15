@@ -24,7 +24,7 @@ class ProvidersCarousel extends React.Component {
       <div className="ProvidersCarousel">
         <CarouselProvider
           naturalSlideWidth={100}
-          naturalSlideHeight={80}
+          naturalSlideHeight={70}
           totalSlides={providers.length}
           visibleSlides={visibleSlides}>
 
