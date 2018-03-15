@@ -42,14 +42,14 @@ const ProvidersCard = ({ provider }) =>
       <div>
         {provider.website && (
           <a href={provider.website} target="_blank"
-            className="btn btn-link btn-normal col-ml-auto">
+            className="btn btn-link col-ml-auto">
             <i className="icon icon-link mr-2"></i>
             Website
           </a>
         )}
         {provider.phoneNumber && (
           <a href={`tel:${provider.phoneNumber}`}
-            className="btn btn-success btn-normal col-ml-auto">
+            className="btn btn-success col-ml-auto">
              {createFormattedTel(provider.phoneNumber)}
           </a>
         )}

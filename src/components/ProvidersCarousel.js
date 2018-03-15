@@ -25,6 +25,7 @@ class ProvidersCarousel extends React.Component {
         <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={70}
+          lockOnWindowScroll={true}
           totalSlides={providers.length}
           visibleSlides={visibleSlides}>
 
