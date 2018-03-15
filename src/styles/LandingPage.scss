@@ -38,9 +38,9 @@
         letter-spacing: 1px;
 
         @include for-tablet-landscape-up() {
-          max-width: 60%;
-          margin-bottom: 3rem;
-          font-size: 2rem;
+          max-width: 75%;
+          margin-bottom: 2.25rem;
+          font-size: 2.6rem;
         }
       }
 
