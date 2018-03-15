@@ -17,7 +17,10 @@
   }
 
   .carousel__slide {
-    min-height: 375px;
+    // min-height: 375px;
+
+    height: auto;
+    padding-bottom: 0 !important;
 
     @include for-tablet-portrait-up() {
       min-height: 400px;
@@ -32,6 +35,10 @@
   }
 
   .carousel__inner-slide {
+
+    position: static;
+    height: auto;
+
     &:focus {
       outline: none;
     }
