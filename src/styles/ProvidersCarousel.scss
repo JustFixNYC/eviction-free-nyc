@@ -17,13 +17,16 @@
   }
 
   .carousel__slide {
-    min-height: 375px;
+
+    // min-height: 375px;
+    height: auto;
+    padding-bottom: 0 !important;
 
     @include for-tablet-portrait-up() {
-      min-height: 400px;
+      // min-height: 400px;
     }
     @include for-tablet-landscape-up() {
-      min-height: 0;
+      // min-height: 0;
     }
 
     .carousel__slide-focus-ring {
@@ -32,6 +35,10 @@
   }
 
   .carousel__inner-slide {
+
+    position: static;
+    height: auto;
+
     &:focus {
       outline: none;
     }
