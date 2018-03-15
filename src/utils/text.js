@@ -1,57 +1,61 @@
 
 
-export default {
+// utility function to create friendly looking phone numbers
+function createFormattedTel(tel) {
 
-  addCallButtons(htmlString) {
+  if (!tel) { return ''; }
 
-    // utility function to create friendly looking phone numbers
-    const createFormattedTel = (tel) => {
+  var value = tel.toString().trim().replace(/^\+/, '');
 
-      if (!tel) { return ''; }
+  // handle extensions
+  if(value.charAt(10) === ',') {
+    var ext = value.split(',')[1];
+    value = value.split(',')[0];
+  }
 
-      var value = tel.toString().trim().replace(/^\+/, '');
+  if (value.match(/[^0-9]/)) { return tel; }
 
-      // handle extensions
-      if(value.charAt(10) === ',') {
-        var ext = value.split(',')[1];
-        value = value.split(',')[0];
-      }
+  var country, city, number;
 
-      if (value.match(/[^0-9]/)) { return tel; }
+  switch (value.length) {
+    case 1:
+    case 2:
+    case 3:
+      city = value;
+      break;
+    default:
+      city = value.slice(0, 3);
+      number = value.slice(3);
+  }
 
-      var country, city, number;
-
-      switch (value.length) {
-        case 1:
-        case 2:
-        case 3:
-          city = value;
-          break;
-        default:
-          city = value.slice(0, 3);
-          number = value.slice(3);
-      }
-
-      if(number) {
-        if(number.length>3) {
-          number = number.slice(0, 3) + '-' + number.slice(3,7);
-        }
-        else {
-          number = number;
-        }
-
-        var phone = '(' + city + ') ' + number;
-
-        if(ext) return (phone  + ' ext. ' + ext).trim();
-        else return (phone).trim();
-
-        return ('(' + city + ') ' + number).trim();
-      }
-      else {
-        return '(' + city;
-      }
+  if(number) {
+    if(number.length>3) {
+      number = number.slice(0, 3) + '-' + number.slice(3,7);
+    }
+    else {
+      number = number;
     }
 
+    var phone = '(' + city + ') ' + number;
+
+    if(ext) return (phone  + ' ext. ' + ext).trim();
+    else return (phone).trim();
+
+    return ('(' + city + ') ' + number).trim();
+  }
+  else {
+    return '(' + city;
+  }
+};
+
+
+export default {
+
+  createFormattedTel(tel) {
+    return createFormattedTel(tel)
+  },
+
+  addCallButtons(htmlString) {
 
     // replace the actual capture group with the button
     const replacer = (_, p1) => {

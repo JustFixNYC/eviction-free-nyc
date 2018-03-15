@@ -57,6 +57,7 @@ class PageTemplate extends React.Component {
       }));
     }
 
+    this.data.providers = contentfulData.providers;
 
   }
 
@@ -139,6 +140,23 @@ export const pageQuery = graphql`
             childContentfulHousingCourtActionStepContentTextNode {
               childMarkdownRemark {
                 html
+              }
+            }
+          }
+          providers {
+            title
+            phoneNumber
+            website
+            hours
+            intakeInstructions
+            address
+            logo {
+              resolutions(width: 100, height: 100) {
+                aspectRatio
+                width
+                height
+                src
+                srcSet
               }
             }
           }

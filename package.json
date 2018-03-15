@@ -19,6 +19,7 @@
     "invariant": "^2.2.4",
     "lodash": "^4.16.4",
     "node-sass": "4.5.2",
+    "pure-react-carousel": "^1.11.1",
     "react-accessible-accordion": "^2.0.0",
     "react-geosuggest": "^2.7.0",
     "react-intl": "^2.4.0",

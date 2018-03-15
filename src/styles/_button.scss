@@ -4,14 +4,20 @@
 
 // make all btns large size
 .btn {
-  font-size: 0.9rem;
-  height: 2.3rem;
-  padding: 0.6rem;
+
   min-width: 100px;
+
+  &:not(.btn-normal) {
+    font-size: 0.9rem;
+    height: 2.3rem;
+    padding: 0.6rem;
+  }
 
   &.btn-link {
     &:hover, &:focus {
       text-decoration: underline;
+      outline: none;
+      box-shadow: none;
     }
   }
 

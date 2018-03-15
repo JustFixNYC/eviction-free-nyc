@@ -1,0 +1,79 @@
+@import "vars";
+
+.ProvidersCarousel {
+
+  margin-top: 20px;
+  margin-bottom: 32px;
+
+  .carousel__slide {
+    min-height: 400px;
+
+    @include for-tablet-portrait-up() {
+      min-height: 400px;
+    }
+    @include for-tablet-landscape-up() {
+      min-height: 0;
+    }
+
+    .carousel__slide-focus-ring {
+      display: none !important;
+    }
+  }
+
+  .carousel__inner-slide {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .pagination {
+    justify-content: center;
+
+    .page-item.col-mr-auto { margin-right: auto; }
+    .page-item.col-ml-auto { margin-left: auto; }
+
+    .page-dots {
+      display: none;
+
+      @include for-tablet-portrait-up() {
+        display: list-item;
+      }
+     }
+
+    .btn.carousel__dot--selected {
+      color: $primary-color;
+      opacity: 1.0;
+    }
+
+    .btn {
+      padding: 0;
+      min-width: 0;
+      vertical-align: middle;
+      color: $body-font-color;
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      &.btn-dir {
+        font-size: 1rem;
+
+        .icon {
+          height: 0.9rem;
+        }
+
+        &:hover, &:focus {
+          text-decoration: none;
+        }
+
+        &:hover {
+          color: $primary-color;
+
+          .icon {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
