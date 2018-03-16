@@ -36,7 +36,7 @@ const CourtPage = ({ qualified, steps, additionalResources, providers }) => {
       {providers && (
         <div>
           <h6>Available Legal Services</h6>
-          <ProvidersCarousel providers={providers} />
+          {/* <ProvidersCarousel providers={providers} /> */}
         </div>
       )}
 
