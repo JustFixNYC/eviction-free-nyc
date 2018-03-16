@@ -20,6 +20,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     .catch(error => console.log('[Page factories error]', error));
 };
 
+exports.modifyBabelrc = ({ babelrc }) => ({
+  ...babelrc,
+  plugins: babelrc.plugins.concat(['transform-regenerator']),
+});
+
 exports.modifyWebpackConfig = ({ config, stage }) => {
   if (stage === "build-html") {
     config.loader("null", {

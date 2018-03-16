@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Marcus Ericsson <mericsson@gmail.com> (mericsson.com)",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "extract-text-webpack-plugin": "1.0.1",
     "gatsby": "^1.9.202",
     "gatsby-image": "^1.0.5",
@@ -43,5 +44,8 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "start": "gatsby serve"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-regenerator": "^6.26.0"
   }
 }
