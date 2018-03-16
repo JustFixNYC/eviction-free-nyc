@@ -17,19 +17,24 @@ const propTypes = {
 
 
 
-const AccordionSection = ({ content, multiple }) => {
+const AccordionSection = ({ content, multiple, steps }) => {
 
   const items = content.map((c,i) =>
     <AccordionItem key={i}>
       <AccordionItemTitle className="clearfix">
-        <h5 className="float-left">{c.title}</h5>
+        <span className="Accordion__title float-left">
+          {steps && (
+            <h4>STEP {i+1}</h4>
+          )}
+          <h5>{c.title}</h5>
+        </span>
         <i className="icon icon-plus float-right ml-2 mt-1"></i>
         <i className="icon icon-minus float-right ml-2 mt-1"></i>
       </AccordionItemTitle>
       <AccordionItemBody>
         <div dangerouslySetInnerHTML={{
-          __html: c.html}
-        }></div>
+          __html: c.html
+        }}></div>
       </AccordionItemBody>
     </AccordionItem>
   );

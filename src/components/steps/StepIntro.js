@@ -7,7 +7,7 @@ import searchIcon from '../../assets/img/search.svg';
 const StepIntro = ({ content, show, stepFn }) =>
   <div className={`ScreenerPage__Intro ${show ? "" : "d-none"}`}>
     <img src={searchIcon} alt="search" />
-    <h4>{content.introTitle}</h4>
+    <h4 dangerouslySetInnerHTML={{ __html: content.introTitle }} />
     <ul>
       {content.introSteps.map((step,i) =>
         <li key={i}>{step}</li>

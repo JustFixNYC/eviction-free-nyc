@@ -7,7 +7,7 @@
 
   min-width: 100px;
 
-  &:not(.btn-normal) {
+  &:not(.btn-normal):not(.btn-sm) {
     font-size: 0.9rem;
     height: 2.3rem;
     padding: 0.6rem;

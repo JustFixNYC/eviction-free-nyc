@@ -35,5 +35,10 @@ module.exports = {
   'saveToPhoneSubtitle': 'Enter your phone number and we\'ll text you a link to bookmark this page.',
   'saveToPhoneInfo': 'The number should start with +1. <b>Your phone number will never be saved or used outside of this message.</b>',
   'success': 'Success',
-  'tryAgain': 'Try Again'
+  'tryAgain': 'Try Again',
+  'connectLSP': 'Connect with an attorney before your court date:',
+  'next': 'Next',
+  'website': 'Website',
+  'evictionFreeNYC': 'Eviction Free NYC',
+  'textMessageContent': 'Follow this link for assistance in your eviction case'
 };

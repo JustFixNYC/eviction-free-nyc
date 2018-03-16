@@ -1,6 +1,7 @@
 import React from 'react';
 import Img from "gatsby-image";
 import { createFormattedTel } from '../utils/text';
+import { FormattedMessage as Trans } from 'react-intl';
 
 import '../styles/ProvidersCard.scss';
 
@@ -44,7 +45,7 @@ const ProvidersCard = ({ provider }) =>
           <a href={provider.website} target="_blank"
             className="btn btn-link col-ml-auto">
             <i className="icon icon-link mr-2"></i>
-            Website
+            <Trans id="website" />
           </a>
         )}
         {provider.phoneNumber && (

@@ -46,7 +46,7 @@ class PageTemplate extends React.Component {
     }
 
     this.data.steps = this.data.steps.map((step, i) => ({
-        title: `${props.intl.formatMessage({ id: 'step' }) } ${i+1}: ${step.title}`,
+        title: step.title,
         html: addCallButtons(step.childContentfulHousingCourtActionStepContentTextNode.childMarkdownRemark.html)
     }));
 

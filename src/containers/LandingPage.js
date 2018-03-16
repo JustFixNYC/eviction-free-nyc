@@ -33,6 +33,7 @@ class LandingPage extends React.Component {
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent  container grid-md">
             <h2 className="LandingPage__HeroTitle">{c.heroTitle}</h2>
+            <h4 className="LandingPage__HeroSubtitle">{c.heroSubTitle}</h4>
             <ButtonLink to={`/questions`} type="primary">
               {c.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
@@ -85,6 +86,7 @@ export const landingPageFragment = graphql`
         node_locale
         pageTitle
         heroTitle
+        heroSubTitle
         heroButtonText
         heroImage {
           title

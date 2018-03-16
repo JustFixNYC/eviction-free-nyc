@@ -9,6 +9,14 @@ import {
 } from 'react-accessible-accordion';
 
 class StepcaseType extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      unsure: false
+    };
+  }
+
 
   handleCaseButtonClick = (type) => {
     this.submitButton.focus();
@@ -51,14 +59,14 @@ class StepcaseType extends React.Component {
                 <Trans id="holdover" />
             </button>
             <button className={`btn btn-default ${user.caseType == 'general' ? "active" : ""}`}
-                    onClick={() => this.handleCaseButtonClick('general')}>
+                    onClick={() => { this.setState({ unsure: true }); this.handleCaseButtonClick('general'); }}>
                 <Trans id="general" />
             </button>
           </div>
         )}
 
         <Accordion>
-          <AccordionItem>
+          <AccordionItem expanded={this.state.unsure}>
             <AccordionItemTitle className="clearfix">
               <p className="float-left text-bold">{content.caseCourtPapersQuestion}</p>
               <i className="icon icon-plus float-right ml-2 mt-1"></i>

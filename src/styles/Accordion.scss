@@ -12,12 +12,21 @@
 
 .accordion__item {
 
-
-
-  h5 {
-    margin-bottom: 0;
+  .Accordion__title {
     max-width: 80%;
+
+    h4 {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: lighten($body-font-color, 30%);
+    }
+
+    h5 {
+      margin-bottom: 0;
+    }
   }
+
+
 
   .accordion__body {
     margin-top: 16px;
