@@ -1,7 +1,7 @@
 const _ = require(`lodash`);
 const Promise = require(`bluebird`);
 const path = require(`path`);
-// const generateBabelConfig = require("gatsby/dist/utils/babel-config");
+const generateBabelConfig = require("gatsby/dist/utils/babel-config");
 
 const generalPages = require(`./factories/generalPage`)
 const housingCourtPages = require(`./factories/housingCourtPage`)
