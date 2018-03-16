@@ -1,6 +1,7 @@
-const _ = require(`lodash`)
-const Promise = require(`bluebird`)
-const path = require(`path`)
+const _ = require(`lodash`);
+const Promise = require(`bluebird`).
+const path = require(`path`);
+const generateBabelConfig = require("gatsby/dist/utils/babel-config");
 
 const generalPages = require(`./factories/generalPage`)
 const housingCourtPages = require(`./factories/housingCourtPage`)
@@ -24,6 +25,15 @@ exports.modifyBabelrc = ({ babelrc }) => ({
   ...babelrc,
   plugins: babelrc.plugins.concat(['transform-regenerator']),
 });
+
+// exports.modifyWebpackConfig = ({ config, stage }) => {
+//   const program = {
+//     directory: __dirname,
+//     browserslist: ["> 1%", "last 2 versions", "IE >= 10"],
+//   };
+//
+//   return generateBabelConfig(program, stage);
+// };
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
   if (stage === "build-html") {
