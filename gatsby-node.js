@@ -26,14 +26,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 //   plugins: babelrc.plugins.concat(['transform-regenerator']),
 // });
 
-// exports.modifyWebpackConfig = ({ config, stage }) => {
-//   const program = {
-//     directory: __dirname,
-//     browserslist: ["> 1%", "last 2 versions", "IE >= 10"],
-//   };
-//
-//   return generateBabelConfig(program, stage);
-// };
+exports.modifyWebpackConfig = ({ config, stage }) => {
+  const program = {
+    directory: __dirname,
+    browserslist: ["> 1%", "last 2 versions", "IE >= 10"],
+  };
+
+  return generateBabelConfig(program, stage);
+};
 
 // exports.modifyWebpackConfig = ({ config, stage }) => {
 //   if (stage === "build-html") {
