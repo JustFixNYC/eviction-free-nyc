@@ -1,7 +1,7 @@
 const _ = require(`lodash`);
-const Promise = require(`bluebird`).
+const Promise = require(`bluebird`);
 const path = require(`path`);
-const generateBabelConfig = require("gatsby/dist/utils/babel-config");
+// const generateBabelConfig = require("gatsby/dist/utils/babel-config");
 
 const generalPages = require(`./factories/generalPage`)
 const housingCourtPages = require(`./factories/housingCourtPage`)
@@ -21,10 +21,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     .catch(error => console.log('[Page factories error]', error));
 };
 
-exports.modifyBabelrc = ({ babelrc }) => ({
-  ...babelrc,
-  plugins: babelrc.plugins.concat(['transform-regenerator']),
-});
+// exports.modifyBabelrc = ({ babelrc }) => ({
+//   ...babelrc,
+//   plugins: babelrc.plugins.concat(['transform-regenerator']),
+// });
 
 // exports.modifyWebpackConfig = ({ config, stage }) => {
 //   const program = {
@@ -35,11 +35,11 @@ exports.modifyBabelrc = ({ babelrc }) => ({
 //   return generateBabelConfig(program, stage);
 // };
 
-exports.modifyWebpackConfig = ({ config, stage }) => {
-  if (stage === "build-html") {
-    config.loader("null", {
-      test: /react-phone-input/,
-      loader: "null-loader",
-    });
-  }
-};
+// exports.modifyWebpackConfig = ({ config, stage }) => {
+//   if (stage === "build-html") {
+//     config.loader("null", {
+//       test: /react-phone-input/,
+//       loader: "null-loader",
+//     });
+//   }
+// };
