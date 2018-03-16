@@ -1,6 +1,8 @@
 import React from "react"
 import * as PropTypes from "prop-types"
 
+import favicon from "./assets/img/favicon.ico";
+
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
   try {
@@ -46,6 +48,7 @@ class Html extends React.Component {
             content="width=device-width, initial-scale=1.0"
           />
           <title>Eviction Free NYC!</title>
+          <link rel="shortcut icon" href={favicon} />
           {css}
 
           <script dangerouslySetInnerHTML={{

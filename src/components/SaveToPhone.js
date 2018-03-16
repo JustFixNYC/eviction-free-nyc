@@ -1,7 +1,7 @@
 import React from 'react';
 import Select from 'react-select';
 import APIClient from './APIClient';
-import { FormattedMessage as Trans } from 'react-intl';
+import { FormattedMessage as Trans, FormattedHTMLMessage as HTMLTrans } from 'react-intl';
 
 // Wrap the require in check for window
 // Needed for gatsby builds that don't have references to document
@@ -96,7 +96,7 @@ Follow this link for assistance in your eviction case: ${page}
               {this.state.error ? (
                 <p className="mt-2 text-bold text-error "><sup>{this.state.error}</sup></p>
               ) : (
-                <p className="mt-2"><sup><i><Trans id="saveToPhoneInfo" /></i></sup></p>
+                <p className="mt-2"><sup><i><HTMLTrans id="saveToPhoneInfo" /></i></sup></p>
               )}
             </div>
           </div>

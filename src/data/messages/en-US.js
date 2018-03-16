@@ -33,7 +33,7 @@ module.exports = {
   'eventsBtn': 'Find an event',
   'saveToPhoneTitle': 'Save this page to your Phone',
   'saveToPhoneSubtitle': 'Enter your phone number and we\'ll text you a link to bookmark this page.',
-  'saveToPhoneInfo': 'The phone number should start with +1',
+  'saveToPhoneInfo': 'The number should start with +1. <b>Your phone number will never be saved or used outside of this message.</b>',
   'success': 'Success',
   'tryAgain': 'Try Again'
 };
