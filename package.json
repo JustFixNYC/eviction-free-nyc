@@ -47,7 +47,7 @@
   },
   "browserlist": [
     "> 1%",
-    "IE >= 9",
+    "IE > 10",
     "last 2 versions"
   ],
   "devDependencies": {}
