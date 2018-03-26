@@ -2037,7 +2037,7 @@ core-js@^1.0.0, core-js@^1.2.6:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
-core-js@^2.4.0, core-js@^2.5.0, core-js@^2.5.3:
+core-js@^2.4.0, core-js@^2.5.0:
   version "2.5.3"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.3.tgz#8acc38345824f16d8365b7c9b4259168e8ed603e"
 
@@ -3334,12 +3334,6 @@ gatsby-module-loader@^1.0.10:
   dependencies:
     babel-runtime "^6.26.0"
     loader-utils "^0.2.16"
-
-gatsby-plugin-core-js@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-core-js/-/gatsby-plugin-core-js-1.0.2.tgz#482df2dde363aa6ba65d317cf9463c5a67557980"
-  dependencies:
-    core-js "^2.5.3"
 
 gatsby-plugin-google-analytics@^1.0.20:
   version "1.0.20"

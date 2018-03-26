@@ -10,7 +10,6 @@
     "gatsby": "^1.9.202",
     "gatsby-image": "^1.0.5",
     "gatsby-link": "^1.6.37",
-    "gatsby-plugin-core-js": "^1.0.2",
     "gatsby-plugin-google-analytics": "^1.0.20",
     "gatsby-plugin-i18n": "^0.4.1",
     "gatsby-plugin-offline": "^1.0.15",
@@ -46,5 +45,10 @@
     "build": "gatsby build",
     "start": "gatsby serve"
   },
+  "browserlist": [
+    "> 1%",
+    "IE >= 9",
+    "last 2 versions"
+  ],
   "devDependencies": {}
 }

@@ -7,7 +7,6 @@ module.exports = {
     languages
   },
   plugins: [
-    `gatsby-plugin-core-js`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-contentful`,
