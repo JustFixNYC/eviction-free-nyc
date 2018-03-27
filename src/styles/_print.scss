@@ -37,6 +37,11 @@
       page-break-after:avoid;
     }
 
+    .HousingCourtPage > div:not(.Accordion) {
+      page-break-inside:avoid;
+      page-break-after:avoid;
+    }
+
     .accordion__body {
       display: block !important;
       opacity: 1.0 !important;
@@ -60,6 +65,37 @@
         color: #000 !important;
       }
     }
+
+    .navbar-btns-social,
+    .SaveToPhone,
+    .GetInvolved,
+    .SelectLanguage {
+      display: none !important;
+    }
+
+    .ProvidersCarousel {
+
+      .pagination {
+        display: none !important;
+      }
+
+      .carousel__slider {
+
+        margin-top: 24px;
+
+        ul {
+          width: 100% !important;
+
+          li {
+            width: 50% !important;
+            float: none !important;
+            display: inline-block;
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+
   }
 
 

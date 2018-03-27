@@ -14,7 +14,7 @@ const Header = ({ intl }) => (
     <section className="navbar-section">
       <Link className="navbar-brand" to={`/${intl.locale}`}>Eviction Free NYC!</Link>
     </section>
-    <section className="navbar-section">
+    <section className="navbar-section navbar-btns-social">
       <div className="btn-group btns-social">
         <FacebookButton className="btn btn-link"
           sharer={true}
