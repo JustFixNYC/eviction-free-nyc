@@ -1,5 +1,6 @@
 import React from 'react';
 import * as PropTypes from "prop-types";
+import { FormattedMessage as Trans } from 'react-intl';
 
 import {
     Accordion,
@@ -24,7 +25,7 @@ const AccordionSection = ({ content, multiple, steps }) => {
       <AccordionItemTitle className="clearfix">
         <span className="Accordion__title float-left">
           {steps && (
-            <h4>STEP {i+1}</h4>
+            <h4><Trans id="step" /> {i+1}</h4>
           )}
           <h5>{c.title}</h5>
         </span>

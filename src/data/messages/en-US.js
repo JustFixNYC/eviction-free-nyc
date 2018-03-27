@@ -25,7 +25,7 @@ module.exports = {
   'justfixAttribution': 'Made with NYC ♥ by the team at',
   'print': 'Print',
   'getInvolvedTitle': 'Get involved with the Right to Counsel movement!',
-  'shareTitle': 'Share this page with a neighbor:',
+  'shareTitle': 'Share this page with your neighbors:',
   'email': 'Email',
   'registrationTitle': 'Receive email updates:',
   'registrationBtn': 'Register with email',

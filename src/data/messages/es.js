@@ -23,5 +23,22 @@ module.exports = {
   'additionalResources': 'Recursos adicionales:',
   'attribution': 'Este recurso está hecho "por inquilinos y para inquilinos" y es mantenido por el <a href="https://www.righttocounselnyc.org/" target="_blank">Right to Counsel NYC Coalition</a>!',
   'justfixAttribution': 'Hecho por',
-  'print': 'Imprimir'
+  'print': 'Imprimir',
+  'getInvolvedTitle': '¡Sea parte activa del movimiento por el Derecho a la Representación Legal!',
+  'shareTitle': 'Comparta esta página con un vecino',
+  'email': 'Correo',
+  'registrationTitle': 'Reciba información por correo:',
+  'registrationBtn': 'Inscríbase con su correo',
+  'eventsTitle': 'Asista a próximos eventos:',
+  'eventsBtn': 'Busque un evento',
+  'saveToPhoneTitle': 'Guarde esta página en su teléfono',
+  'saveToPhoneSubtitle': 'Introduzca su número de teléfono y le enviaremos un texto con un enlace para que añada esta página a sus favoritos.',
+  'saveToPhoneInfo': 'El número debe empezar con +1. <b>Su número de teléfono nunca será guardado o usado fuera de este mensaje.</b>',
+  'success': 'Éxito',
+  'tryAgain': 'Inténtelo de nuevo',
+  'connectLSP': 'Comuníquese con un abogado antes de su cita en la corte:',
+  'next': 'Próximo',
+  'website': 'Sitio web',
+  'evictionFreeNYC': 'NYC libre de desalojos',
+  'textMessageContent': 'Siga este enlace para buscar ayuda en su caso de desalojo'
 };
