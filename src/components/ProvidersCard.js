@@ -8,12 +8,14 @@ import '../styles/ProvidersCard.scss';
 const ProvidersCard = ({ provider }) =>
   <div className="ProvidersCard card">
     <div className="card-header">
-      <div className="card-image">
-        <Img
-          alt="Provider logo"
-          sizes={provider.logo.resolutions}
-        />
-      </div>
+      {provider.logo && (
+        <div className="card-image">
+          <Img
+            alt="Provider logo"
+            sizes={provider.logo.resolutions}
+          />
+        </div>
+      )}
       <div className="card-title">
         <h5>{provider.title}</h5>
       </div>

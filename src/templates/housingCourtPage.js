@@ -57,7 +57,7 @@ class PageTemplate extends React.Component {
       }));
     }
 
-    this.data.providers = contentfulData.providers;
+    this.data.providers = this.data.qualified ? contentfulData.providers.filter(p => p.acceptsRtcCases) : contentfulData.providers;
 
   }
 
@@ -145,6 +145,7 @@ export const pageQuery = graphql`
           }
           providers {
             title
+            acceptsRtcCases
             phoneNumber
             website
             hours
