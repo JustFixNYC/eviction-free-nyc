@@ -57,7 +57,7 @@ const TemplateWrapper = ({ children, data, location }) => {
         	<meta property="og:title" content="Are you facing an eviction? You may have the right to a free lawyer!" />
         	<meta property="og:description" content="Eviction Free NYC will help you learn how to respond to an eviction notice and connect with available resources." />
         	<meta property="og:url" content="https://www.evictionfreenyc.org" />
-        	<meta property="og:image" content={`https://rtc-app.netlify.com${metaPhoto}`} />
+        	<meta property="og:image" content={`https://www.evictionfreenyc.org${metaPhoto}`} />
         	<meta property="og:type" content="website" />
 
         	{/* <!-- Twitter META --> */}
@@ -65,7 +65,7 @@ const TemplateWrapper = ({ children, data, location }) => {
         	<meta name="twitter:title" content="Are you facing an eviction? You may have the right to a free lawyer!" />
         	<meta name="twitter:description" content="Eviction Free NYC will help you learn how to respond to an eviction notice and connect with available resources." />
         	<meta name="twitter:url" content="https://www.evictionfreenyc.org" />
-        	<meta name="twitter:image" content={`https://rtc-app.netlify.com${metaPhoto}`} />
+        	<meta name="twitter:image" content={`https://www.evictionfreenyc.org${metaPhoto}`} />
 
         </Helmet>
 
