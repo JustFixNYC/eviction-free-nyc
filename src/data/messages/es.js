@@ -21,7 +21,7 @@ module.exports = {
   'notQualifiedTitle': 'Es posible que usted no sea elegible para un abogado gratis, ¡pero hay más opciones para buscar asistencia!',
   'doNow': 'Esto es lo que usted debe saber:',
   'additionalResources': 'Recursos adicionales:',
-  'attribution': 'Este recurso está hecho "por inquilinos y para inquilinos" y es mantenido por el <a href="https://www.righttocounselnyc.org/" target="_blank">Right to Counsel NYC Coalition</a>!<br /><br /><a href="https://docs.google.com/forms/d/e/1FAIpQLSfovU5BDMZHaX-EKQmSyVyKdrPvp9y0VuIBx_NlMQHB0NkNng/viewform?usp=sf_link" target="_blank">Danos su opinión.</a>',
+  'attribution': 'Este recurso está hecho "por inquilinos y para inquilinos" y es mantenido por el <a href="https://www.righttocounselnyc.org/" target="_blank">Right to Counsel NYC Coalition</a>.<br /><br /><a href="https://docs.google.com/forms/d/e/1FAIpQLSfovU5BDMZHaX-EKQmSyVyKdrPvp9y0VuIBx_NlMQHB0NkNng/viewform?usp=sf_link" target="_blank">Danos su opinión!</a>',
   'justfixAttribution': 'Hecho por',
   'print': 'Imprimir',
   'getInvolvedTitle': '¡Sea parte activa del movimiento por el Derecho a la Representación Legal!',
