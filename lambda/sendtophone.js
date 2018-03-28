@@ -12,7 +12,7 @@ const twilioClient = require('twilio')(twilioAccountSid, twilioAuthToken);
 // Required in responses for CORS support to work
 const headers = {'Access-Control-Allow-Origin': '*'};
 
-export function handler(event, context, callback) {
+exports.handler = function(event, context, callback) {
 
   console.log("testing");
 
