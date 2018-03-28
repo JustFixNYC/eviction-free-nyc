@@ -31,6 +31,8 @@ class AdminHearingPage extends React.Component {
       }));
     }
 
+    this.data.providers = contentfulData.providers;
+
   }
 
 
@@ -63,6 +65,24 @@ export const adminHearingPageFragment = graphql`
               childMarkdownRemark {
                 html
               }
+          }
+        }
+        providers {
+          title
+          acceptsRtcCases
+          phoneNumber
+          website
+          hours
+          intakeInstructions
+          address
+          logo {
+            resolutions(width: 100, height: 100) {
+              aspectRatio
+              width
+              height
+              src
+              srcSet
+            }
           }
         }
       }
