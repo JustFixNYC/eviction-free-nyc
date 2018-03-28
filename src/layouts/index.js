@@ -53,7 +53,7 @@ const TemplateWrapper = ({ children, data, location }) => {
 
         	{/* <!-- Facebook META --> */}
         	<meta property="fb:app_id" content="1023402221142410" />
-        	<meta property="og:site_name" content="Spotify Stranger Things Character Match" />
+        	<meta property="og:site_name" content="Eviction Free NYC" />
         	<meta property="og:title" content="Are you facing an eviction? You may have the right to a free lawyer!" />
         	<meta property="og:description" content="Eviction Free NYC will help you learn how to respond to an eviction notice and connect with available resources." />
         	<meta property="og:url" content="https://www.evictionfreenyc.org" />
