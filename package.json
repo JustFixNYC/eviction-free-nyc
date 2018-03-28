@@ -29,9 +29,11 @@
     "react-select": "^1.2.1",
     "react-social": "^1.10.0",
     "react-typography": "^0.15.0",
+    "request": "^2.85.0",
     "sass-loader": "4.1.1",
     "slash": "^1.0.0",
     "spectre.css": "^0.5.1",
+    "twilio": "^3.14.0",
     "typography": "^0.15.8",
     "typography-breakpoint-constants": "^0.14.0"
   },
