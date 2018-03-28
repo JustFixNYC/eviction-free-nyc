@@ -58,6 +58,11 @@
     //   }
     // }
 
+    .embedly-card {
+      max-width: 350px;
+      // margin: 0 auto;
+    }
+
     .accordion__body {
 
       @include for-tablet-portrait-up() {
