@@ -3,6 +3,11 @@
 .AddressSearch {
   width: 100%;
 
+  .form-input:focus {
+    box-shadow: 0 0 0 .1rem rgba($third-color, .2);
+    border-color: $third-color;
+  }
+
   ul {
     margin: 0;
     list-style: none;
