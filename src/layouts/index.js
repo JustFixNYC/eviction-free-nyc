@@ -10,6 +10,8 @@ import '../utils/locales';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+import metaPhoto from '../assets/img/EFNYC_photo.jpg';
+
 // Styles
 import '../styles/main.scss';
 
@@ -32,13 +34,40 @@ const TemplateWrapper = ({ children, data, location }) => {
       messages={i18nMessages}
     >
       <div>
-        <Helmet
-          title="Eviction Free NYC"
-          meta={[
-            { name: 'description', content: 'Are you facing an eviction? You may have the right to a free lawyer!' },
-            { name: 'keywords', content: 'lawyer, legal aid, housing, tenants, tenants rights, help, assistance, legal services, eviction, evicted' },
-          ]}
-        />
+
+        {/*
+          // title="Eviction Free NYC"
+          // meta={[
+          //   { name: 'description', content: 'Are you facing an eviction? You may have the right to a free lawyer!' },
+          //   { name: 'keywords', content: 'lawyer, legal aid, housing, tenants, tenants rights, help, assistance, legal services, eviction, evicted' },
+          // ]}
+
+           */}
+        <Helmet>
+          <title>Eviction Free NYC</title>
+
+
+          {/* <!-- Semantic META --> */}
+        	<meta name="keywords" content="lawyer, legal aid, housing, tenants, tenants rights, help, assistance, legal services, eviction, evicte" />
+        	<meta name="description" content="Are you facing an eviction? You may have the right to a free lawyer! Eviction Free NYC will help you learn how to respond to an eviction notice and connect with available resources." />
+
+        	{/* <!-- Facebook META --> */}
+        	<meta property="fb:app_id" content="1023402221142410" />
+        	<meta property="og:site_name" content="Spotify Stranger Things Character Match" />
+        	<meta property="og:title" content="Are you facing an eviction? You may have the right to a free lawyer!" />
+        	<meta property="og:description" content="Eviction Free NYC will help you learn how to respond to an eviction notice and connect with available resources." />
+        	<meta property="og:url" content="https://www.evictionfreenyc.org" />
+        	<meta property="og:image" content={metaPhoto} />
+        	<meta property="og:type" content="website" />
+
+        	{/* <!-- Twitter META --> */}
+        	<meta name="twitter:card" content="summary_large_image" />
+        	<meta name="twitter:title" content="Are you facing an eviction? You may have the right to a free lawyer!" />
+        	<meta name="twitter:description" content="Eviction Free NYC will help you learn how to respond to an eviction notice and connect with available resources." />
+        	<meta name="twitter:url" content="https://www.evictionfreenyc.org" />
+        	<meta name="twitter:image" content={metaPhoto} />
+
+        </Helmet>
 
         <Header langs={langsMenu} />
         <main>
