@@ -14,6 +14,8 @@ const headers = {'Access-Control-Allow-Origin': '*'};
 
 export function handler(event, context, callback) {
 
+  console.log("testing");
+
   // Try to actually send the message
   const sms = {
     to: event.body.to,
