@@ -6,13 +6,18 @@ import { FacebookButton, TwitterButton, EmailButton } from 'react-social';
 
 import '../styles/Header.scss';
 
+import rtcLogo from '../assets/img/RTC_logo_scales.svg';
 import fbIcon from '../assets/img/fb.svg';
 import twitterIcon from '../assets/img/twitter.svg';
 
 const Header = ({ intl }) => (
   <header className="Header navbar">
     <section className="navbar-section">
-      <Link className="navbar-brand" to={`/${intl.locale}`}>Eviction Free NYC!</Link>
+
+      <Link className="navbar-brand" to={`/${intl.locale}`}>
+        <img src={rtcLogo} />
+        <span>Eviction Free NYC!</span>
+      </Link>
     </section>
     <section className="navbar-section navbar-btns-social">
       <div className="btn-group btns-social">

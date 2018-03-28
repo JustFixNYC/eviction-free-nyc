@@ -22,12 +22,23 @@
 
   .navbar-brand {
     font-weight: 300;
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 35px;
+      margin-right: 8px;
+    }
+  }
+
+  .navbar-btns-social {
+    max-width: 125px;
   }
 
   .btns-social {
     .btn {
       min-width: 0;
-      padding: 0.2rem;
+      padding: 0.2rem !important;
       margin-bottom: 0;
       color: #fff;
 
