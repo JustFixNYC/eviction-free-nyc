@@ -154,42 +154,44 @@
       background-size: 100%;
     }
 
-    ul.ScreenerPage__IncomeList {
-      list-style: none;
-      text-align: left;
-      display: inline-block;
-      margin-top: 0;
+    // ul.ScreenerPage__IncomeList {
+    //   list-style: none;
+    //   text-align: left;
+    //   display: inline-block;
+    //   margin-top: 0;
+    //
+    //   li {
+    //     position: relative;
+    //     padding-left: 40px;
+    //     padding-top: 2px;
+    //     // line-height: 32px;
+    //
+    //
+    //     margin: 16px 0;
+    //
+    //     &:before {
+    //       content: '';
+    //       display: block;
+    //       position: absolute;
+    //       width: 28px;
+    //       height: 28px;
+    //       top: 2px;
+    //       left: 0;
+    //     }
+    //
+    //     &:nth-child(1):before {
+    //       background: url('../assets/img/individual.svg') no-repeat;
+    //       background-size: 100%;
+    //     }
+    //     &:nth-child(2):before {
+    //       background: url('../assets/img/family.svg') no-repeat;
+    //       background-size: 100%;
+    //     }
+    //   }
+    // }
 
-      li {
-        position: relative;
-        padding-left: 40px;
-        padding-top: 2px;
-        // line-height: 32px;
-
-
-        margin: 16px 0;
-
-        &:before {
-          content: '';
-          display: block;
-          position: absolute;
-          width: 28px;
-          height: 28px;
-          top: 2px;
-          left: 0;
-        }
-
-        &:nth-child(1):before {
-          background: url('../assets/img/individual.svg') no-repeat;
-          background-size: 100%;
-        }
-        &:nth-child(2):before {
-          background: url('../assets/img/family.svg') no-repeat;
-          background-size: 100%;
-        }
-      }
-
-
+    table {
+      margin-bottom: 1.5rem;
     }
   }
 

@@ -11,11 +11,27 @@ const StepIncome = ({ content, show, setIncome }) =>
     </ul>
     <h4>{content.incomeTitle}</h4>
     <p>{content.incomeDescription}</p>
-    <ul className="ScreenerPage__IncomeList">
+    {/* <ul className="ScreenerPage__IncomeList">
       {content.incomeList.map((item,idx) =>
         <li key={idx}>{item}</li>
       )}
-    </ul>
+    </ul> */}
+    <table className="table table-striped">
+      <thead>
+        <tr>
+          <th><Trans id="householdSize" /></th>
+          <th><Trans id="income" /></th>
+        </tr>
+      </thead>
+      <tbody>
+        {content.incomeList.map((item,idx) =>
+          <tr key={idx}>
+            <td>{idx + 1}</td>
+            <td>{item}</td>
+          </tr>
+        )}
+      </tbody>
+    </table>
     <p>{content.incomeQuestion}</p>
     <button className="btn btn-steps" onClick={() => setIncome(true)}><Trans id="yes" /></button>
     <button className="btn btn-steps" onClick={() => setIncome(false)}><Trans id="no" /></button>

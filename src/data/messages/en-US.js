@@ -17,6 +17,8 @@ module.exports = {
   'nychaPlaceholder': 'Please select your development',
   'addrError': 'Sorry! Your address was not found. Please try again.',
   'zipTitle': 'Your zipcode',
+  'householdSize': 'Household Size',
+  'income': 'Annual Income',
   'qualifiedTitle': 'Great news! You likely have the right to a free attorney.',
   'notQualifiedTitle': 'You may not yet have the right to a free attorney, but you still have options to get assistance!',
   'doNow': 'Here\'s what you should do now:',

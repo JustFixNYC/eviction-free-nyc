@@ -17,6 +17,8 @@ module.exports = {
   'nychaPlaceholder': 'Seleccione su desarrollo',
   'addrError': '¡Perdón! No encontramos su dirección. Por favor inténtelo de nuevo.',
   'zipTitle': 'Su código postal',
+  'householdSize': 'Tamaño de hogar',
+  'income': 'Ingresos anuales',
   'qualifiedTitle': '¡Buenas noticias! Es probable que usted sea elegible para representación legal gratis.',
   'notQualifiedTitle': 'Es posible que usted no sea elegible para un abogado gratis, ¡pero hay más opciones para buscar asistencia!',
   'doNow': 'Esto es lo que usted debe saber:',
