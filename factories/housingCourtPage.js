@@ -2,7 +2,6 @@ const _ = require(`lodash`)
 const Promise = require(`bluebird`)
 const path = require(`path`)
 
-const BOROUGHS = ['brooklyn', 'queens', 'manhattan', 'bronx', 'staten'];
 const CASETYPES = ['nonpay', 'nonpayrtc', 'holdover', 'holdoverrtc', 'nychartc', 'general'];
 
 exports.create = (graphql, createPage) => {

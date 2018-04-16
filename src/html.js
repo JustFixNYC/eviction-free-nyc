@@ -50,7 +50,7 @@ class Html extends React.Component {
           <title>Eviction Free NYC!</title>
           <link rel="shortcut icon" href={favicon} />
           {css}
-
+          
           <script dangerouslySetInnerHTML={{
               __html: `
                 var _rollbarConfig = {
