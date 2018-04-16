@@ -6,6 +6,7 @@
   "author": "Marcus Ericsson <mericsson@gmail.com> (mericsson.com)",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "es6-promise": "^4.2.4",
     "extract-text-webpack-plugin": "1.0.1",
     "gatsby": "^1.9.202",
     "gatsby-image": "^1.0.5",
@@ -18,9 +19,9 @@
     "gatsby-transformer-remark": "^1.7.37",
     "intl": "^1.2.5",
     "invariant": "^2.2.4",
+    "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.16.4",
     "node-sass": "4.5.2",
-    "promise-polyfill": "^7.1.2",
     "pure-react-carousel": "^1.11.1",
     "react-accessible-accordion": "^2.0.0",
     "react-geosuggest": "^2.7.0",
@@ -36,8 +37,7 @@
     "spectre.css": "^0.5.1",
     "twilio": "^3.14.0",
     "typography": "^0.15.8",
-    "typography-breakpoint-constants": "^0.14.0",
-    "whatwg-fetch": "^2.0.4"
+    "typography-breakpoint-constants": "^0.14.0"
   },
   "keywords": [
     "gatsby"

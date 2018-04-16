@@ -1,3 +1,3 @@
 import 'babel-polyfill';
-import 'promise-polyfill/src/polyfill';
-import 'whatwg-fetch';
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
