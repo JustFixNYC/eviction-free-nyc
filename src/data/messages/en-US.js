@@ -23,7 +23,7 @@ module.exports = {
   'notQualifiedTitle': 'You may not yet have the right to a free attorney, but you still have options to get assistance!',
   'doNow': 'Here\'s what you should do now:',
   'additionalResources': 'Additional Resources:',
-  'attribution': 'This resource is made "by tenants for tenants" and is maintained by the <a href="https://www.righttocounselnyc.org/" target="_blank">Right to Counsel NYC Coalition</a>.<br /><br /><a href="https://docs.google.com/forms/d/e/1FAIpQLSfovU5BDMZHaX-EKQmSyVyKdrPvp9y0VuIBx_NlMQHB0NkNng/viewform?usp=sf_link" target="_blank">Send us Feedback!</a>',
+  'attribution': 'This resource is made "by tenants for tenants" and is maintained by the <a href="https://www.righttocounselnyc.org/" target="_blank">Right to Counsel NYC Coalition</a>.<br /><br /><a href="https://docs.google.com/forms/d/e/1FAIpQLSfovU5BDMZHaX-EKQmSyVyKdrPvp9y0VuIBx_NlMQHB0NkNng/viewform?usp=sf_link" target="_blank">Click here</a> to provide feedback about the website.',
   'justfixAttribution': 'Made with NYC ♥ by the team at',
   'print': 'Print',
   'getInvolvedTitle': 'Get involved with the Right to Counsel movement!',
@@ -40,6 +40,8 @@ module.exports = {
   'tryAgain': 'Try Again',
   'connectLSP': 'Connect with an attorney before your court date:',
   'next': 'Next',
+  'more': 'View more',
+  'prev': 'Previous',
   'website': 'Website',
   'evictionFreeNYC': 'Eviction Free NYC',
   'textMessageContent': 'Follow this link for assistance in your eviction case'

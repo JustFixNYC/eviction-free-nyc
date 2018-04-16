@@ -45,8 +45,8 @@ class ProvidersCarousel extends React.Component {
           <ul className="pagination">
             <li className="page-item col-mr-auto">
               <ButtonBack className="btn btn-link btn-dir">
-                <i className="icon icon-back mr-2"></i>
-                <Trans id="back" />
+                <i className="icon icon-arrow-left mr-2"></i>
+                <Trans id="prev" />
               </ButtonBack>
             </li>
             {providers.map((_,i) =>
@@ -56,8 +56,8 @@ class ProvidersCarousel extends React.Component {
             )}
             <li className="page-item col-ml-auto">
               <ButtonNext className="btn btn-link btn-dir">
-                <Trans id="next" />
-                <i className="icon icon-forward ml-2"></i>
+                <Trans id="more" />
+                <i className="icon icon-arrow-right ml-2"></i>
               </ButtonNext>
             </li>
           </ul>
