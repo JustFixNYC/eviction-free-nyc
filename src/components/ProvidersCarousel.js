@@ -1,5 +1,5 @@
 import React from 'react';
-import { isMobile } from '../utils/browser';
+import { isMobile, isIE } from '../utils/browser';
 import shuffle from 'lodash/shuffle';
 import ProvidersCard from './ProvidersCard';
 import { FormattedMessage as Trans } from 'react-intl';
@@ -20,6 +20,18 @@ class ProvidersCarousel extends React.Component {
   render() {
     let visibleSlides = isMobile() ? 1 : 2;
     const providers = this.providers;
+
+    if(isIE()) {
+      return (
+        <ul className='ProvidersCarousel--IE'>
+          {providers.map((provider,idx) =>
+            <li key={idx}>
+              <ProvidersCard provider={provider} />
+            </li>
+          )}
+        </ul>
+      );
+    }
 
     return (
       <div className="ProvidersCarousel">

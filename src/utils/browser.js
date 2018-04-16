@@ -30,5 +30,11 @@ export default {
         document.getElementsByTagName('body')[0].clientWidth;
     }
     return width <= 599;
+  },
+
+  isIE() {
+    if(typeof window != 'undefined') {
+      return /MSIE \d|Trident.*rv:/.test(window.navigator.userAgent);
+    }
   }
 };
