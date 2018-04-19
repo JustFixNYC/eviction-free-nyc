@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-example-using-contentful",
+  "name": "eviction-free-nyc",
   "private": true,
-  "description": "Gatsby example site using the Contentful source plugin",
+  "description": "Eviction Free NYC!",
   "version": "1.0.0",
-  "author": "Marcus Ericsson <mericsson@gmail.com> (mericsson.com)",
+  "author": "Dan Kass <dan@justfix.nyc>",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "es6-promise": "^4.2.4",
@@ -42,7 +42,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
+  "license": "GNU General Public License v3.0",
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
