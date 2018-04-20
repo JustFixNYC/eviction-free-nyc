@@ -1,5 +1,7 @@
 'use strict';
 
+// NOTE: this isn't currently functional; we're using the serverless CLI instead
+
 // Load environment variables
 const twilioAccountSid = process.env.TWILIO_ACCOUNT_SID;
 const twilioAuthToken = process.env.TWILIO_AUTH_TOKEN;
