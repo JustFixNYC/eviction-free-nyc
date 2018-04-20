@@ -1,6 +1,8 @@
 const languages = require('./src/data/languages');
 const autoprefixer = require('autoprefixer');
 
+// Contentful access token is exposed as its read-only!
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby with Contentful`,
