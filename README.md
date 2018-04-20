@@ -25,7 +25,7 @@ or
 ```
 yarn install
 ```
-then simple use the Gatsby CLI to start your dev environment!
+then simply use the Gatsby CLI to start your dev environment!
 ```
 gatsby develop
 ```
