@@ -23,7 +23,7 @@ npm install
 ```
 or
 ```
-yarn add
+yarn install
 ```
 then simple use the Gatsby CLI to start your dev environment!
 ```
