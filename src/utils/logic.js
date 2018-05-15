@@ -40,6 +40,11 @@ export default {
       if(user.caseType !== 'general' && !user.nycha && isElegible) {
         resultUrl += 'rtc';
       }
+
+    }
+
+    if(user.zip) {
+      resultUrl += `?zip=${user.zip}`
     }
 
     Rollbar.info("Screener completed", user);

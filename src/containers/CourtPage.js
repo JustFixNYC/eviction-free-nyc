@@ -3,10 +3,12 @@ import Helmet from 'react-helmet';
 import * as PropTypes from "prop-types";
 import { injectIntl, FormattedMessage as Trans } from 'react-intl';
 import { addCallButtons } from '../utils/text';
+import { getParameterByName } from '../utils/browser';
 
 import Accordion from "../components/Accordion";
 import SaveToPhone from "../components/SaveToPhone";
 import ProvidersCarousel from "../components/ProvidersCarousel";
+import ContentfulClient from "../components/ContentfulClient";
 
 import '../styles/HousingCourtPage.scss';
 
@@ -14,7 +16,13 @@ import '../styles/HousingCourtPage.scss';
 //   qualified: PropTypes.object.isRequired,
 // }
 
-const CourtPage = ({ qualified, steps, additionalResources, providers }) => {
+const CourtPage = ({ qualified, steps, additionalResources, providers, intl }) => {
+
+  const userZip = getParameterByName('zip');
+
+  ContentfulClient.fetchCommunityGroups(userZip, intl.locale)
+    .then((response) => console.log(response.items))
+    .catch(console.error);
 
   return (
     <section className="Page HousingCourtPage container grid-md">

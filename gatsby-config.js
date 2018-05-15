@@ -1,7 +1,9 @@
 const languages = require('./src/data/languages');
 const autoprefixer = require('autoprefixer');
 
-// Contentful access token is exposed as its read-only!
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 module.exports = {
   siteMetadata: {
@@ -13,8 +15,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `p7o2rk07b5kj`,
-        accessToken: `85707e698ac8df8816c56effecbbcf050ffc2a1f8646e0675b1e7def94f257c1`,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_TOKEN,
       },
     },
     {

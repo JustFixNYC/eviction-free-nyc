@@ -64,7 +64,7 @@ class PageTemplate extends React.Component {
 
   render() {
     return (
-      <CourtPage { ...this.data } />
+      <CourtPage { ...this.data } intl={this.props.intl} />
     );
   }
 }

@@ -6,6 +6,8 @@
   "author": "Dan Kass <dan@justfix.nyc>",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "contentful": "^6.1.0",
+    "dotenv": "^5.0.1",
     "es6-promise": "^4.2.4",
     "extract-text-webpack-plugin": "1.0.1",
     "gatsby": "^1.9.202",
