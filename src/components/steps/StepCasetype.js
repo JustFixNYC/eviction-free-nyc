@@ -43,6 +43,10 @@ class StepcaseType extends React.Component {
                     onClick={() => this.handleCaseButtonClick('nonpay')}>
                 <Trans id="nonpay" />
             </button>
+            <button className={`btn btn-default ${user.caseType == 'holdover' ? "active" : ""}`}
+                    onClick={() => this.handleCaseButtonClick('holdover')}>
+                <Trans id="holdover" />
+            </button>
             <button className={`btn btn-default ${user.caseType == 'other' ? "active" : ""}`}
                     onClick={() => this.handleCaseButtonClick('other')}>
                 <Trans id="other" />

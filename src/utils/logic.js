@@ -23,9 +23,9 @@ export default {
     if(boro === 'STATEN ISLAND') boro = 'staten';
 
     let caseType = user.caseType;
-    if(user.nycha && isElegible && user.caseType === 'nonpay') {
-      caseType = 'nycha';
-    }
+    // if(user.nycha && isElegible && user.caseType === 'nonpay') {
+    //   caseType = 'nycha';
+    // }
 
     let resultUrl = `/${intl.locale}/guide/${boro}/${caseType}`;
 
@@ -37,7 +37,7 @@ export default {
     // all other pages
     } else {
 
-      if(user.caseType !== 'general' && isElegible) {
+      if(user.caseType !== 'general' && !user.nycha && isElegible) {
         resultUrl += 'rtc';
       }
     }

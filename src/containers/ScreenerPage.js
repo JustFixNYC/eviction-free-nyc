@@ -76,6 +76,11 @@ class ScreenerPage extends React.Component {
     this.changeStep(nextStep);
   }
 
+  skipIncomeStep = (income) => {
+    this.setState({ user: { ...this.state.user, incomeEligible: income } });
+    this.closeModalAndGoToNextStep(3);
+  }
+
   handleZipcode = ({ zip, boro }) => {
     let areaEligible = isLocationEligible(zip);
     this.setState({
@@ -95,8 +100,15 @@ class ScreenerPage extends React.Component {
   setIncome = (choice) => {
     this.setState({
       user: { ...this.state.user, incomeEligible: choice },
-      modalType: choice ? 'incomeEligible' : 'incomeIneligible'
+      modalType: choice ? null : 'incomeIneligible'
+    }, () => {
+      // For incomeEligible tenants, we want to skip the modal and
+      // just go to the caseType step
+      if(!this.state.modalType) {
+        this.changeStep(3);
+      }
     });
+
   }
 
   setCaseType = (type) => {
@@ -157,7 +169,17 @@ class ScreenerPage extends React.Component {
             <ModalAreaEligible content={c}
               nycha={this.state.user.nycha}
               zip={this.state.user.zip}
-              nextFn={() => this.closeModalAndGoToNextStep(2)}
+              nextFn={() => {
+                // Special handling here
+                // If they are NYCHA, we shouldn't ask about income
+                // Even if they are areaEligible
+                if(this.state.user.nycha) {
+                  this.skipIncomeStep(true);
+                } else {
+                  this.closeModalAndGoToNextStep(2);
+                }
+
+              }}
             />
           }
 
@@ -165,7 +187,7 @@ class ScreenerPage extends React.Component {
             <ModalAreaIneligible content={c}
               nycha={this.state.user.nycha}
               zip={this.state.user.zip}
-              nextFn={() => this.closeModalAndGoToNextStep(2)}
+              nextFn={() => this.skipIncomeStep(false)}
             />
           }
 
