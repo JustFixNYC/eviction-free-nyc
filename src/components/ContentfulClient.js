@@ -8,8 +8,9 @@ const client = createClient({
 function fetchCommunityGroups(zipcode, locale) {
   return client.getEntries({
     content_type: 'communityGroup',
-    locale: locale,
-    'fields.zipcodes[in]': zipcode
+    locale: locale
+    // ,
+    // 'fields.zipcodes[in]': zipcode
   });
 }
 

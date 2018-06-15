@@ -2,13 +2,18 @@ import React from "react";
 import Helmet from 'react-helmet';
 import * as PropTypes from "prop-types";
 import { injectIntl, FormattedMessage as Trans } from 'react-intl';
+import {
+    AccordionItem,
+    AccordionItemTitle,
+    AccordionItemBody,
+} from 'react-accessible-accordion';
 import { addCallButtons } from '../utils/text';
 import { getParameterByName } from '../utils/browser';
 
 import Accordion from "../components/Accordion";
 import SaveToPhone from "../components/SaveToPhone";
 import ProvidersCarousel from "../components/ProvidersCarousel";
-import ContentfulClient from "../components/ContentfulClient";
+import CommunityGroups from "../components/CommunityGroups";
 
 import '../styles/HousingCourtPage.scss';
 
@@ -19,10 +24,6 @@ import '../styles/HousingCourtPage.scss';
 const CourtPage = ({ qualified, steps, additionalResources, providers, intl }) => {
 
   const userZip = getParameterByName('zip');
-
-  ContentfulClient.fetchCommunityGroups(userZip, intl.locale)
-    .then((response) => console.log(response.items))
-    .catch(console.error);
 
   return (
     <section className="Page HousingCourtPage container grid-md">
@@ -57,7 +58,20 @@ const CourtPage = ({ qualified, steps, additionalResources, providers, intl }) =
       {additionalResources && (
         <div>
           <h6><Trans id="additionalResources" /></h6>
-          <Accordion content={additionalResources} multiple />
+          <Accordion content={additionalResources} multiple>
+            <AccordionItem key={additionalResources.length}>
+              <AccordionItemTitle className="clearfix">
+                <span className="Accordion__title float-left">
+                  <h5>Connect with a Local Community Group</h5>
+                </span>
+                <i className="icon icon-plus float-right ml-2 mt-1"></i>
+                <i className="icon icon-minus float-right ml-2 mt-1"></i>
+              </AccordionItemTitle>
+              <AccordionItemBody  className="accordion__body accordion__body--groups">
+                <CommunityGroups zip={userZip} intl={intl} />
+              </AccordionItemBody>
+            </AccordionItem>
+          </Accordion>
         </div>
       )}
 

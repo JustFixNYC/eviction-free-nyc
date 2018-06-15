@@ -18,7 +18,7 @@ const propTypes = {
 
 
 
-const AccordionSection = ({ content, multiple, steps }) => {
+const AccordionSection = ({ content, multiple, steps, children }) => {
 
   const items = content.map((c,i) =>
     <AccordionItem key={i}>
@@ -42,6 +42,8 @@ const AccordionSection = ({ content, multiple, steps }) => {
 
   return (
     <Accordion className="Accordion" accordion={!multiple}>
+      {/* this assumes a single child, i think */}
+      {children}
       {items}
     </Accordion>
   );

@@ -44,5 +44,9 @@ module.exports = {
   'prev': 'Previous',
   'website': 'Website',
   'evictionFreeNYC': 'Eviction Free NYC',
-  'textMessageContent': 'Follow this link for assistance in your eviction case'
+  'textMessageContent': 'Follow this link for assistance in your eviction case',
+  'groupsLookMore': 'Looking for more? Search the Tenant Assistance Directory',
+  'groupsEmpty': 'There are no tenant organizing groups currently working in your area.',
+  'groupsEmptySubtitle': 'Search the Tenant Assistance Directory for other support.',
+  'groupsSearch': 'Enter your zipcode to find a local community group!'
 };

@@ -63,7 +63,7 @@
       // margin: 0 auto;
     }
 
-    .accordion__body {
+    .accordion__body:not(.accordion__body--groups) {
 
       @include for-tablet-portrait-up() {
         width: 80%;
