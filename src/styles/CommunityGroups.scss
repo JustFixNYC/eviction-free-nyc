@@ -6,7 +6,11 @@
 
     padding-top: 24px;
     padding-bottom: 24px;
-    border-top: 1px solid $border-color;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $border-color;
+    }
+
 
     .tile-icon {
       min-width: 90px;
@@ -14,8 +18,21 @@
         max-width: 75px;
         margin-right: 16px;
       }
+      @include for-phone-only() {
+        display: none;
+      }
     }
 
+    .tile-subtitle {
+      .icon {
+        top: -2px;
+      }
+
+      a {
+        color: #acb3c2;
+        text-decoration: underline;
+      }
+    }
 
 
     .tile-content {
@@ -33,6 +50,19 @@
 
       .btn + .btn {
         margin-left: 16px;
+      }
+
+      .btn--website {
+        min-width: 0;
+        @include for-phone-only() {
+
+          .icon {
+            margin-right: 0;
+          }
+          span {
+            display: none;
+          }
+        }
       }
     }
   }
