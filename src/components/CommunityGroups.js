@@ -1,12 +1,12 @@
 import React from 'react';
-import { FormattedMessage as Trans } from 'react-intl';
+import { injectIntl, FormattedMessage as Trans } from 'react-intl';
 import { createFormattedTel } from '../utils/text';
 
 import ContentfulClient from "./ContentfulClient";
 
 import '../styles/CommunityGroups.scss';
 
-export default class CommunityGroups extends React.Component {
+class CommunityGroups extends React.Component {
   constructor(props) {
     super(props);
 
@@ -50,8 +50,6 @@ export default class CommunityGroups extends React.Component {
 
 
   render() {
-
-    console.log(this.state.groups);
 
     return (
       <div className="CommunityGroups">
@@ -139,3 +137,4 @@ export default class CommunityGroups extends React.Component {
     );
   }
 }
+export default injectIntl(CommunityGroups);

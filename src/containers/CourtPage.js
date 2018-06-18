@@ -68,7 +68,7 @@ const CourtPage = ({ qualified, steps, additionalResources, providers, intl }) =
                 <i className="icon icon-minus float-right ml-2 mt-1"></i>
               </AccordionItemTitle>
               <AccordionItemBody  className="accordion__body accordion__body--groups">
-                <CommunityGroups zip={userZip} intl={intl} />
+                <CommunityGroups zip={userZip} />
               </AccordionItemBody>
             </AccordionItem>
           </Accordion>
