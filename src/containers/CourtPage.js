@@ -62,7 +62,7 @@ const CourtPage = ({ qualified, steps, additionalResources, providers, intl }) =
             <AccordionItem key={additionalResources.length}>
               <AccordionItemTitle className="clearfix">
                 <span className="Accordion__title float-left">
-                  <h5>Connect with a Local Community Group</h5>
+                  <h5><Trans id="groupsTitle" /></h5>
                 </span>
                 <i className="icon icon-plus float-right ml-2 mt-1"></i>
                 <i className="icon icon-minus float-right ml-2 mt-1"></i>

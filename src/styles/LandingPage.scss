@@ -77,6 +77,17 @@
         }
       }
 
+      .LandingPage__LangSwitches {
+
+
+        @include for-tablet-portrait-up() {
+          display: flex;
+          .btn + .btn {
+            margin-left: 16px;
+          }
+        }
+      }
+
       @include for-tablet-portrait-up() {
         max-width: 80%;
       }

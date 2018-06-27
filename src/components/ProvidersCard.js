@@ -46,7 +46,7 @@ const ProvidersCard = ({ provider }) =>
         {provider.website && (
           <a href={provider.website} target="_blank"
             className="btn btn-link col-ml-auto">
-            <i className="icon icon-link mr-2"></i>
+            <i className="icon icon-share mr-2"></i>
             <Trans id="website" />
           </a>
         )}

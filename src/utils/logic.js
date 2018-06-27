@@ -20,7 +20,7 @@ export default {
     const isElegible = user.areaEligible && user.incomeEligible;
 
     let boro = user.boro.toLowerCase();
-    if(boro === 'STATEN ISLAND') boro = 'staten';
+    if(boro === 'STATEN ISLAND' || boro === 'staten island') boro = 'staten';
 
     let caseType = user.caseType;
     // if(user.nycha && isElegible && user.caseType === 'nonpay') {

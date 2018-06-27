@@ -5,7 +5,7 @@ const ModalAreaEligible = ({ content, nycha, zip, nextFn }) =>
   <div>
     {zip && (
       <div className="modal-header">
-        <h5 className="modal-title"><Trans id="zipTitle" /> {zip}</h5>
+        <h5 className="modal-title"><Trans id="zipTitle" />: {zip}</h5>
       </div>
     )}
     <div className="modal-body">

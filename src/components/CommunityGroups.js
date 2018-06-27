@@ -86,7 +86,7 @@ class CommunityGroups extends React.Component {
                     {group.website && (
                       <a href={group.website} target="_blank"
                         className="btn btn-default btn--website">
-                         <i className="icon icon-link mr-2"></i>
+                         <i className="icon icon-share mr-2"></i>
                          <Trans id="website" />
                       </a>
                     )}
@@ -101,7 +101,7 @@ class CommunityGroups extends React.Component {
               <div className="tile-action">
                 <a href="http://findhelp.justfix.nyc/" target="_blank"
                   className="btn btn-default">
-                   <i className="icon icon-link mr-2"></i>
+                   <i className="icon icon-share mr-2"></i>
                    <Trans id="website" />
                 </a>
               </div>
