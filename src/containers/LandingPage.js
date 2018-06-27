@@ -17,6 +17,9 @@ class LandingPage extends React.Component {
   constructor(props) {
     super(props);
 
+    this.allLangs = props.data.langs.siteMetadata.languages.langs;
+    this.otherLangs = this.allLangs.filter(l => l !== props.intl.locale);
+    
     this.content = props.data.content.edges[0].node;
     this.faq = this.content.faq.map(item => ({
       title: item.title,
@@ -50,11 +53,15 @@ class LandingPage extends React.Component {
               {c.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
             </ButtonLink>
-            <Link to={this.props.intl.locale === 'en-US' ? `/es` : `/en-US`}
-                  className="btn btn-block btn-default">
-              <Trans id="langswitch" />
-              <i className="icon icon-forward ml-2"></i>
-            </Link>
+            <div className="LandingPage__LangSwitches">
+              {this.otherLangs.map((lang, idx) => (
+                <Link to={`/${lang}`} key={idx}
+                      className="btn btn-block btn-default">
+                  <Trans id={`switch_${lang}`} />
+                  <i className="icon icon-forward ml-2"></i>
+                </Link>
+              ))}
+            </div>
           </div>
           <div className="LandingPage__HeroLearnMore">
             <span>{c.learnMoreTitle}</span><br /><i className="icon icon-arrow-down"></i>

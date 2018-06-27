@@ -1,7 +1,7 @@
 export default from '../containers/LandingPage';
 
 export const pageQuery = graphql`
-  query LandingPageEsQuery {
+  query LandingPageFrQuery {
     langs: site {
       siteMetadata {
         languages {
@@ -9,7 +9,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    content: allContentfulLandingPage(filter: { node_locale: { eq: "es" } }) {
+    content: allContentfulLandingPage(filter: { node_locale: { eq: "fr" } }) {
       ...LandingPageFragment
     }
   }

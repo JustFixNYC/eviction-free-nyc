@@ -1,7 +1,10 @@
 module.exports = {
   'en-US': 'Inglés',
   'es': 'Español',
-  'langswitch': 'In english',
+  'fr': 'Francés',
+  'switch_es': 'En español',
+  'switch_en-US': 'In english',
+  'switch_fr': 'En francés',
   'back': 'Volver',
   'continue': 'Continuar',
   'step': 'Paso',
