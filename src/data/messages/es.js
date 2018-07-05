@@ -47,5 +47,10 @@ module.exports = {
   'prev': 'Anterior',
   'website': 'Sitio web',
   'evictionFreeNYC': 'NYC libre de desalojos',
-  'textMessageContent': 'Siga este enlace para buscar ayuda en su caso de desalojo'
+  'textMessageContent': 'Siga este enlace para buscar ayuda en su caso de desalojo',
+  'groupsTitle': 'Contacte a un Grupo Comunitario Local',
+  'groupsLookMore': '¿Necesita algo más? Haga una búsqueda en el Directorio de Ayuda al Inquilino',
+  'groupsEmpty': 'Actualmente, no hay ningún grupo que esté organizando inquilinos en su área.',
+  'groupsEmptySubtitle': 'Haga una búsqueda en el Directorio de Ayuda al Inquilino para otro tipo de apoyo.',
+  'groupsSearch': '¡Introduzca su código postal para buscar un grupo comunitario local!'
 };
