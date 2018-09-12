@@ -50,6 +50,7 @@ module.exports = {
   'website': 'Sit entènèt',
   'evictionFreeNYC': 'Yon NYC San Degèpisman!',
   'textMessageContent': 'Swiv “link” sa pou aistans pou ka degèpisman ou an',
+  'groupsTitle': 'Konekte Ak Yon òganizasyon ki nan zònn ou!',
   'groupsLookMore': 'Ou bezwen plis enfòmasyon? Chache nan Lis Oganizasyon Pou Lokatè Yo.',
   'groupsEmpty': 'Pa gen ankenn òganizasyon lokatè ki ap travay kounye a nan zònn ou an.',
   'groupsEmptySubtitle': 'Chèche nan lis asosyasyon lokatè yo pou ka jwenn lòt asistans.',

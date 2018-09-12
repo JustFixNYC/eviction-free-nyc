@@ -50,7 +50,7 @@ module.exports = {
   'website': 'Site Internet',
   'evictionFreeNYC': 'New York libre d’expulsion',
   'textMessageContent': 'Suivez ce lien afin d\’obtenir de l\'aide dans votre affaire d\'expulsion',
-  'groupsTitle': 'Entrez en contact avec votre groupe communautaire local',
+  'groupsTitle': 'Contactez votre groupe communautaire local',
   'groupsLookMore': 'Vous souhaitez trouver d’autres informations ? Recherchez dans le Répertoire d\’Assistance aux Locataires (Tenant Assistance Directory en anglais).',
   'groupsEmpty': 'Aucun groupe d\'organisation de locataires ne travaille actuellement dans votre quartier.',
   'groupsEmptySubtitle': 'Effectuez une recherche dans le Répertoire d\'Assistance aux Locataires (Tenant Assistance Directory) pour d\'autres services.',
