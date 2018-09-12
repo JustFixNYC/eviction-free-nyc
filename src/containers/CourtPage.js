@@ -17,10 +17,6 @@ import CommunityGroups from "../components/CommunityGroups";
 
 import '../styles/HousingCourtPage.scss';
 
-// const propTypes = {
-//   qualified: PropTypes.object.isRequired,
-// }
-
 const CourtPage = ({ qualified, steps, additionalResources, providers, intl }) => {
 
   const userZip = getParameterByName('zip');
@@ -79,10 +75,6 @@ const CourtPage = ({ qualified, steps, additionalResources, providers, intl }) =
     </section>
   );
 }
-
-
-
-// CourtPage.propTypes = propTypes;
 
 export default CourtPage;
 
