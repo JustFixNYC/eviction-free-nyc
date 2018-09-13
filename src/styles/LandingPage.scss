@@ -74,6 +74,16 @@
             color: $secondary-color;
             background-color: #fff;
           }
+
+          // language buttons on mobile
+          @include for-phone-only() {
+            font-size: 0.8rem;
+            padding: .4em;
+            height: 1.9rem;
+            width: 40%;
+            display: inline-block;
+            margin: 8px;
+          }
         }
       }
 
@@ -119,9 +129,14 @@
       transform: translateX(-50%);
       text-align: center;
       font-weight: normal;
+      line-height: 1.2;
 
       @include for-tablet-portrait-up() {
         display: none;
+      }
+
+      @media (max-height: 600px) {
+        bottom: 10px;
       }
 
     }

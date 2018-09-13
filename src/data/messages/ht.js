@@ -20,7 +20,7 @@ module.exports = {
   'gotit': 'Ou konpran',
   'addrPlaceholder': 'Mete adrès ou',
   'nychaPlaceholder': 'Seleksyone devlopman ou abite ya',
-  'addrError': 'Pardon! Votre adresse n\'a pas été trouvée. Veuillez réessayer.',
+  'addrError': 'Nou regrèt! Nou pa jwenn adrès ou. Eseye ankò.',
   'zipTitle': '“Zip code” ou',
   'householdSize': 'Kantite mounn ki nan kay la',
   'income': 'Kantite lajan ou touche',

@@ -19,7 +19,7 @@ class LandingPage extends React.Component {
 
     this.allLangs = props.data.langs.siteMetadata.languages.langs;
     this.otherLangs = this.allLangs.filter(l => l !== props.intl.locale);
-    
+
     this.content = props.data.content.edges[0].node;
     this.faq = this.content.faq.map(item => ({
       title: item.title,
@@ -64,7 +64,7 @@ class LandingPage extends React.Component {
             </div>
           </div>
           <div className="LandingPage__HeroLearnMore">
-            <span>{c.learnMoreTitle}</span><br /><i className="icon icon-arrow-down"></i>
+            <div>{c.learnMoreTitle}</div><i className="icon icon-arrow-down"></i>
           </div>
         </div>
         <div id="faq" className="LandingPage__Content container grid-md">
