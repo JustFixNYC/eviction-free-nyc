@@ -37,15 +37,16 @@ module.exports = {
           })
         ]
       }
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-67069242-4",
-        // Puts tracking script in the head instead of the body
-        head: false
-      }
-    },
+    }
+    // ,
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: "UA-67069242-4",
+    //     // Puts tracking script in the head instead of the body
+    //     head: false
+    //   }
+    // },
     // `gatsby-plugin-offline`
   ]
 };

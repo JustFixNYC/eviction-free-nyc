@@ -50,7 +50,7 @@ class Html extends React.Component {
           <title>Eviction Free NYC!</title>
           <link rel="shortcut icon" href={favicon} />
           {css}
-          
+
           <script dangerouslySetInnerHTML={{
               __html: `
                 var _rollbarConfig = {
@@ -69,6 +69,18 @@ class Html extends React.Component {
 
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuf0Ca1EvxogvbZQKOBl_40y0UWm4Fk30&libraries=places,geometry"></script>
           <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+          {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67069242-4"></script>
+          <script dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-67069242-4');
+            `
+          }} />
         </head>
         <body>
           <div id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />

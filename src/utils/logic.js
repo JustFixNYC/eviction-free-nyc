@@ -17,13 +17,13 @@ export default {
       throw new Error("Missing a step!");
     }
 
-    const isElegible = user.areaEligible && user.incomeEligible;
+    const isEligible = user.areaEligible && user.incomeEligible;
 
     let boro = user.boro.toLowerCase();
     if(boro === 'STATEN ISLAND' || boro === 'staten island') boro = 'staten';
 
     let caseType = user.caseType;
-    // if(user.nycha && isElegible && user.caseType === 'nonpay') {
+    // if(user.nycha && isEligible && user.caseType === 'nonpay') {
     //   caseType = 'nycha';
     // }
 
@@ -37,7 +37,7 @@ export default {
     // all other pages
     } else {
 
-      if(user.caseType !== 'general' && !user.nycha && isElegible) {
+      if(user.caseType !== 'general' && !user.nycha && isEligible) {
         resultUrl += 'rtc';
       }
 
@@ -48,6 +48,16 @@ export default {
     }
 
     Rollbar.info("Screener completed", user);
+
+    // tracking
+    window.gtag('event', 'scr-completed');
+    if(isEligible) {
+      window.gtag('event', 'scr-completed-eligible');
+    }
+    if(user.nycha) {
+      window.gtag('event', 'scr-completed-nycha');
+    }
+
 
     navigateTo(resultUrl);
   }

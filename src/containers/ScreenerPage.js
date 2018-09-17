@@ -39,6 +39,7 @@ class ScreenerPage extends React.Component {
       showModal: false,
       modalType: null
     };
+
   }
 
   componentDidMount() {
@@ -54,6 +55,8 @@ class ScreenerPage extends React.Component {
         }
       }
     }
+
+    window.gtag('event', 'scr-started');
   }
 
   componentWillUnmount() {
