@@ -2,7 +2,7 @@ import React from "react";
 import * as PropTypes from "prop-types";
 import { injectIntl, FormattedMessage as Trans } from 'react-intl';
 
-import { isLocationEligible, determineResultPage } from '../utils/logic';
+import { isLocationEligible, isNychaEligible, determineResultPage } from '../utils/logic';
 
 import StepIntro from '../components/steps/StepIntro';
 import StepLocation from '../components/steps/StepLocation';
@@ -92,8 +92,8 @@ class ScreenerPage extends React.Component {
     });
   }
 
-  handleNycha = ({ rtc, boro }) => {
-    let areaEligible = rtc;
+  handleNycha = ({ rtc, boro, zips }) => {
+    let areaEligible = isNychaEligible(zips) || rtc;
     this.setState({
       user: { ...this.state.user, boro: boro, nycha: true, areaEligible: areaEligible },
       modalType: areaEligible ? 'areaEligible' : 'areaIneligible'
