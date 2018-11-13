@@ -1,0 +1,10 @@
+version: '2'
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app:delegated
+      - node_modules:/app/node_modules
+    working_dir: /app
+volumes:
+  node_modules:
