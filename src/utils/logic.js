@@ -10,9 +10,7 @@ export default {
   },
 
   isNychaEligible(zipArray) {
-    console.log(zipArray);
     const overlap = _.intersection(zipArray, ZIPCODES);
-    console.log(overlap);
     return overlap.length > 0;
   },
 
