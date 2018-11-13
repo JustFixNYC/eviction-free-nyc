@@ -2,12 +2,29 @@
 
 This site was built in conjunction with the [Right to Counsel Coalition](https://www.righttocounselnyc.org/) as a new resource for NYC tenants to navigate the new RTC law, learn how to respond to an eviction notice, and access legal aid services.
 
+This site is built on top of [GatsbyJS](https://www.gatsbyjs.org/). 
+
 ![product shots](https://i.imgur.com/TVZV2Qe.jpg)
 
 
 ### Getting the site up-and-running
 
-This site is built on top of [GatsbyJS](https://www.gatsbyjs.org/). Once you clone the repo, make sure that you have `node >= v6` and `npm >= v3` running. In a terminal window, type `node --version` and hit ENTER, then `npm --version` and hit ENTER to get this info. You'll then need to install gatsby:
+Before installing anything, you will want to check out the
+repository and create an `.env.development` file from the
+template:
+
+```
+cp .env.development.sample .env.development
+```
+
+Now edit `.env.development` as needed.
+
+You can now develop using either the local installation of
+node on your computer, or via Docker.
+
+#### Option 1: Developing with your local installation of node
+
+Make sure that you have `node >= v6` and `npm >= v3` running. In a terminal window, type `node --version` and hit ENTER, then `npm --version` and hit ENTER to get this info. You'll then need to install gatsby:
 
 ```
 npm install --global gatsby-cli
@@ -29,6 +46,20 @@ then simply use the Gatsby CLI to start your dev environment!
 ```
 gatsby develop
 ```
+
+#### Option 2: Developing with Docker
+
+Get [Docker][] and run:
+
+```
+docker-compose run app yarn
+docker-compose up
+```
+
+Then visit http://localhost:8000/ in your browser and you
+should be good to go.
+
+[Docker]: https://docker.com/
 
 ### Deploying
 
