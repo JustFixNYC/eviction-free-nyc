@@ -87,7 +87,7 @@ class ScreenerPage extends React.Component {
   handleZipcode = ({ zip, boro }) => {
     let areaEligible = isLocationEligible(zip);
     this.setState({
-      user: { ...this.state.user, zip: zip, boro: boro, areaEligible: areaEligible },
+      user: { ...this.state.user, zip: zip, boro: boro, nycha: false, areaEligible: areaEligible },
       modalType: areaEligible ? 'areaEligible' : 'areaIneligible'
     });
   }
@@ -95,7 +95,7 @@ class ScreenerPage extends React.Component {
   handleNycha = ({ rtc, boro, zips }) => {
     let areaEligible = isNychaEligible(zips) || rtc;
     this.setState({
-      user: { ...this.state.user, boro: boro, nycha: true, areaEligible: areaEligible },
+      user: { ...this.state.user, zip: null, boro: boro, nycha: true, areaEligible: areaEligible },
       modalType: areaEligible ? 'areaEligible' : 'areaIneligible'
     });
   }
