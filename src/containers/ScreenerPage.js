@@ -92,8 +92,8 @@ class ScreenerPage extends React.Component {
     });
   }
 
-  handleNycha = ({ rtc, boro, zips }) => {
-    let areaEligible = isNychaEligible(zips) || rtc;
+  handleNycha = ({ zips, boro }) => {
+    let areaEligible = isNychaEligible(zips);
     this.setState({
       user: { ...this.state.user, zip: null, boro: boro, nycha: true, areaEligible: areaEligible },
       modalType: areaEligible ? 'areaEligible' : 'areaIneligible'

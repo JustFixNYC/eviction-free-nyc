@@ -3,7 +3,6 @@
     "label": "1010 EAST 178TH STREET",
     "value": "1010 EAST 178TH STREET",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10460
     ]
@@ -12,7 +11,6 @@
     "label": "1162-1176 WASHINGTON AVENUE",
     "value": "1162-1176 WASHINGTON AVENUE",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -21,7 +19,6 @@
     "label": "1471 WATSON AVENUE",
     "value": "1471 WATSON AVENUE",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10472
     ]
@@ -30,7 +27,6 @@
     "label": "ADAMS",
     "value": "ADAMS",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10455
     ]
@@ -39,7 +35,6 @@
     "label": "BAILEY AVENUE-WEST 193RD STREET",
     "value": "BAILEY AVENUE-WEST 193RD STREET",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10463
     ]
@@ -48,7 +43,6 @@
     "label": "BAYCHESTER",
     "value": "BAYCHESTER",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10466
     ]
@@ -57,7 +51,6 @@
     "label": "BETANCES I",
     "value": "BETANCES I",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10454
     ]
@@ -66,7 +59,6 @@
     "label": "BETANCES II",
     "value": "BETANCES II",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10454
     ]
@@ -75,7 +67,6 @@
     "label": "BETANCES II, 13",
     "value": "BETANCES II, 13",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10454
     ]
@@ -84,7 +75,6 @@
     "label": "BETANCES II, 18",
     "value": "BETANCES II, 18",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10454
     ]
@@ -93,7 +83,6 @@
     "label": "BETANCES II, 9A",
     "value": "BETANCES II, 9A",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10454
     ]
@@ -102,7 +91,6 @@
     "label": "BETANCES III",
     "value": "BETANCES III",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10454
     ]
@@ -111,7 +99,6 @@
     "label": "BETANCES III, 13",
     "value": "BETANCES III, 13",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10454
     ]
@@ -120,7 +107,6 @@
     "label": "BETANCES III, 18",
     "value": "BETANCES III, 18",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10454
     ]
@@ -129,7 +115,6 @@
     "label": "BETANCES III, 9A",
     "value": "BETANCES III, 9A",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10454
     ]
@@ -138,7 +123,6 @@
     "label": "BETANCES IV",
     "value": "BETANCES IV",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10455,
       10454
@@ -148,7 +132,6 @@
     "label": "BETANCES V",
     "value": "BETANCES V",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10455,
       10454
@@ -158,7 +141,6 @@
     "label": "BETANCES VI",
     "value": "BETANCES VI",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10455
     ]
@@ -167,7 +149,6 @@
     "label": "BOSTON ROAD PLAZA",
     "value": "BOSTON ROAD PLAZA",
     "boro": "BRONX",
-    "rtc": true,
     "zips": [
       10467
     ]
@@ -176,7 +157,6 @@
     "label": "BOSTON SECOR",
     "value": "BOSTON SECOR",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10475
     ]
@@ -185,7 +165,6 @@
     "label": "BOYNTON AVENUE REHAB",
     "value": "BOYNTON AVENUE REHAB",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10472
     ]
@@ -194,7 +173,6 @@
     "label": "BRONX RIVER",
     "value": "BRONX RIVER",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10472
     ]
@@ -203,7 +181,6 @@
     "label": "BRONX RIVER ADDITION",
     "value": "BRONX RIVER ADDITION",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10472
     ]
@@ -212,7 +189,6 @@
     "label": "BRYANT AVENUE-EAST 174TH STREET",
     "value": "BRYANT AVENUE-EAST 174TH STREET",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10460
     ]
@@ -221,7 +197,6 @@
     "label": "BUTLER",
     "value": "BUTLER",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -230,7 +205,6 @@
     "label": "CASTLE HILL",
     "value": "CASTLE HILL",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10473
     ]
@@ -239,7 +213,6 @@
     "label": "CLAREMONT PARKWAY-FRANKLIN AVENUE",
     "value": "CLAREMONT PARKWAY-FRANKLIN AVENUE",
     "boro": "BRONX",
-    "rtc": true,
     "zips": [
       10457,
       10456
@@ -249,7 +222,6 @@
     "label": "CLAREMONT REHAB (GROUP 2)",
     "value": "CLAREMONT REHAB (GROUP 2)",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -258,7 +230,6 @@
     "label": "CLAREMONT REHAB (GROUP 3)",
     "value": "CLAREMONT REHAB (GROUP 3)",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -267,7 +238,6 @@
     "label": "CLAREMONT REHAB (GROUP 4)",
     "value": "CLAREMONT REHAB (GROUP 4)",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -276,7 +246,6 @@
     "label": "CLAREMONT REHAB (GROUP 5)",
     "value": "CLAREMONT REHAB (GROUP 5)",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -285,7 +254,6 @@
     "label": "CLASON POINT GARDENS",
     "value": "CLASON POINT GARDENS",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10473
     ]
@@ -294,7 +262,6 @@
     "label": "COLLEGE AVENUE-EAST 165TH STREET",
     "value": "COLLEGE AVENUE-EAST 165TH STREET",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -303,7 +270,6 @@
     "label": "DAVIDSON",
     "value": "DAVIDSON",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10459
     ]
@@ -312,7 +278,6 @@
     "label": "EAGLE AVENUE-EAST 163RD STREET",
     "value": "EAGLE AVENUE-EAST 163RD STREET",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -321,7 +286,6 @@
     "label": "EAST 152ND STREET-COURTLANDT AVENUE",
     "value": "EAST 152ND STREET-COURTLANDT AVENUE",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10455
     ]
@@ -330,7 +294,6 @@
     "label": "EAST 165TH STREET-BRYANT AVENUE",
     "value": "EAST 165TH STREET-BRYANT AVENUE",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10459
     ]
@@ -339,7 +302,6 @@
     "label": "EAST 173RD STREET-VYSE AVENUE",
     "value": "EAST 173RD STREET-VYSE AVENUE",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10460
     ]
@@ -348,7 +310,6 @@
     "label": "EAST 180TH STREET-MONTEREY AVENUE",
     "value": "EAST 180TH STREET-MONTEREY AVENUE",
     "boro": "BRONX",
-    "rtc": true,
     "zips": [
       10457
     ]
@@ -357,7 +318,6 @@
     "label": "EASTCHESTER GARDENS",
     "value": "EASTCHESTER GARDENS",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10469
     ]
@@ -366,7 +326,6 @@
     "label": "EDENWALD",
     "value": "EDENWALD",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10466
     ]
@@ -375,7 +334,6 @@
     "label": "FOREST",
     "value": "FOREST",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -384,7 +342,6 @@
     "label": "FORT INDEPENDENCE STREET-HEATH AVENUE",
     "value": "FORT INDEPENDENCE STREET-HEATH AVENUE",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10463
     ]
@@ -393,7 +350,6 @@
     "label": "FRANKLIN AVENUE I CONVENTIONAL",
     "value": "FRANKLIN AVENUE I CONVENTIONAL",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -402,7 +358,6 @@
     "label": "FRANKLIN AVENUE II CONVENTIONAL",
     "value": "FRANKLIN AVENUE II CONVENTIONAL",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -411,7 +366,6 @@
     "label": "FRANKLIN AVENUE III CONVENTIONAL",
     "value": "FRANKLIN AVENUE III CONVENTIONAL",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -420,7 +374,6 @@
     "label": "GLEBE AVENUE-WESTCHESTER AVENUE",
     "value": "GLEBE AVENUE-WESTCHESTER AVENUE",
     "boro": "BRONX",
-    "rtc": true,
     "zips": [
       10462
     ]
@@ -429,7 +382,6 @@
     "label": "GUN HILL",
     "value": "GUN HILL",
     "boro": "BRONX",
-    "rtc": true,
     "zips": [
       10467
     ]
@@ -438,7 +390,6 @@
     "label": "HARRISON AVENUE REHAB (GROUP A)",
     "value": "HARRISON AVENUE REHAB (GROUP A)",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10453
     ]
@@ -447,7 +398,6 @@
     "label": "HARRISON AVENUE REHAB (GROUP B)",
     "value": "HARRISON AVENUE REHAB (GROUP B)",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10453
     ]
@@ -456,7 +406,6 @@
     "label": "HIGHBRIDGE GARDENS",
     "value": "HIGHBRIDGE GARDENS",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10452
     ]
@@ -465,7 +414,6 @@
     "label": "HIGHBRIDGE REHABS (ANDERSON AVENUE)",
     "value": "HIGHBRIDGE REHABS (ANDERSON AVENUE)",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10452
     ]
@@ -474,7 +422,6 @@
     "label": "HIGHBRIDGE REHABS (NELSON AVENUE)",
     "value": "HIGHBRIDGE REHABS (NELSON AVENUE)",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10452
     ]
@@ -483,7 +430,6 @@
     "label": "HOE AVENUE-EAST 173RD STREET",
     "value": "HOE AVENUE-EAST 173RD STREET",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10460
     ]
@@ -492,7 +438,6 @@
     "label": "HUNTS POINT AVENUE REHAB",
     "value": "HUNTS POINT AVENUE REHAB",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10474
     ]
@@ -501,7 +446,6 @@
     "label": "JACKSON",
     "value": "JACKSON",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10451
     ]
@@ -510,7 +454,6 @@
     "label": "LONGFELLOW AVENUE REHAB",
     "value": "LONGFELLOW AVENUE REHAB",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10459
     ]
@@ -519,7 +462,6 @@
     "label": "MARBLE HILL",
     "value": "MARBLE HILL",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10463
     ]
@@ -528,7 +470,6 @@
     "label": "MCKINLEY",
     "value": "MCKINLEY",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -537,7 +478,6 @@
     "label": "MELROSE",
     "value": "MELROSE",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10451
     ]
@@ -546,7 +486,6 @@
     "label": "MIDDLETOWN PLAZA",
     "value": "MIDDLETOWN PLAZA",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10461
     ]
@@ -555,7 +494,6 @@
     "label": "MILL BROOK",
     "value": "MILL BROOK",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10454
     ]
@@ -564,7 +502,6 @@
     "label": "MILL BROOK EXTENSION",
     "value": "MILL BROOK EXTENSION",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10454
     ]
@@ -573,7 +510,6 @@
     "label": "MITCHEL",
     "value": "MITCHEL",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10454
     ]
@@ -582,7 +518,6 @@
     "label": "MONROE",
     "value": "MONROE",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10473
     ]
@@ -591,7 +526,6 @@
     "label": "MOORE",
     "value": "MOORE",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10455
     ]
@@ -600,7 +534,6 @@
     "label": "MORRIS I",
     "value": "MORRIS I",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -609,7 +542,6 @@
     "label": "MORRIS II",
     "value": "MORRIS II",
     "boro": "BRONX",
-    "rtc": true,
     "zips": [
       10456,
       10457
@@ -619,7 +551,6 @@
     "label": "MORRISANIA",
     "value": "MORRISANIA",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -628,7 +559,6 @@
     "label": "MORRISANIA AIR RIGHTS",
     "value": "MORRISANIA AIR RIGHTS",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10451
     ]
@@ -637,7 +567,6 @@
     "label": "MOTT HAVEN",
     "value": "MOTT HAVEN",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10454
     ]
@@ -646,7 +575,6 @@
     "label": "MURPHY",
     "value": "MURPHY",
     "boro": "BRONX",
-    "rtc": true,
     "zips": [
       10457
     ]
@@ -655,7 +583,6 @@
     "label": "PARKSIDE",
     "value": "PARKSIDE",
     "boro": "BRONX",
-    "rtc": true,
     "zips": [
       10467
     ]
@@ -664,7 +591,6 @@
     "label": "PATTERSON",
     "value": "PATTERSON",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10451
     ]
@@ -673,7 +599,6 @@
     "label": "PELHAM PARKWAY",
     "value": "PELHAM PARKWAY",
     "boro": "BRONX",
-    "rtc": true,
     "zips": [
       10467,
       10469
@@ -683,7 +608,6 @@
     "label": "PSS GRANDPARENT FAMILY APARTMENTS",
     "value": "PSS GRANDPARENT FAMILY APARTMENTS",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10459
     ]
@@ -692,7 +616,6 @@
     "label": "RANDALL AVENUE-BALCOM AVENUE",
     "value": "RANDALL AVENUE-BALCOM AVENUE",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10465
     ]
@@ -701,7 +624,6 @@
     "label": "SACK WERN",
     "value": "SACK WERN",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10473
     ]
@@ -710,7 +632,6 @@
     "label": "SAINT MARY'S PARK",
     "value": "SAINT MARY'S PARK",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10455
     ]
@@ -719,7 +640,6 @@
     "label": "SEDGWICK",
     "value": "SEDGWICK",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10453
     ]
@@ -728,7 +648,6 @@
     "label": "SOTOMAYOR HOUSES",
     "value": "SOTOMAYOR HOUSES",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10472
     ]
@@ -737,7 +656,6 @@
     "label": "SOUNDVIEW",
     "value": "SOUNDVIEW",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10473
     ]
@@ -746,7 +664,6 @@
     "label": "SOUTH BRONX AREA (SITE 402)",
     "value": "SOUTH BRONX AREA (SITE 402)",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -755,7 +672,6 @@
     "label": "STEBBINS AVENUE-HEWITT PLACE",
     "value": "STEBBINS AVENUE-HEWITT PLACE",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10459
     ]
@@ -764,7 +680,6 @@
     "label": "TELLER AVENUE-EAST 166TH STREET",
     "value": "TELLER AVENUE-EAST 166TH STREET",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -773,7 +688,6 @@
     "label": "THROGGS NECK",
     "value": "THROGGS NECK",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10465
     ]
@@ -782,7 +696,6 @@
     "label": "THROGGS NECK ADDITION",
     "value": "THROGGS NECK ADDITION",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10465
     ]
@@ -791,7 +704,6 @@
     "label": "TWIN PARKS EAST (SITE 9)",
     "value": "TWIN PARKS EAST (SITE 9)",
     "boro": "BRONX",
-    "rtc": true,
     "zips": [
       10457
     ]
@@ -800,7 +712,6 @@
     "label": "TWIN PARKS WEST (SITES 1 & 2)",
     "value": "TWIN PARKS WEST (SITES 1 & 2)",
     "boro": "BRONX",
-    "rtc": true,
     "zips": [
       10458,
       10457
@@ -810,7 +721,6 @@
     "label": "UNION AVENUE-EAST 163RD STREET",
     "value": "UNION AVENUE-EAST 163RD STREET",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10459
     ]
@@ -819,7 +729,6 @@
     "label": "UNION AVENUE-EAST 166TH STREET",
     "value": "UNION AVENUE-EAST 166TH STREET",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10459
     ]
@@ -828,7 +737,6 @@
     "label": "UNIVERSITY AVENUE REHAB",
     "value": "UNIVERSITY AVENUE REHAB",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10453
     ]
@@ -837,7 +745,6 @@
     "label": "WEBSTER",
     "value": "WEBSTER",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10456
     ]
@@ -846,7 +753,6 @@
     "label": "WEST FARMS ROAD REHAB",
     "value": "WEST FARMS ROAD REHAB",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10459
     ]
@@ -855,7 +761,6 @@
     "label": "WEST FARMS SQUARE CONVENTIONAL",
     "value": "WEST FARMS SQUARE CONVENTIONAL",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10459
     ]
@@ -864,7 +769,6 @@
     "label": "WEST TREMONT AVENUE-SEDGWICK AVENUE AREA",
     "value": "WEST TREMONT AVENUE-SEDGWICK AVENUE AREA",
     "boro": "BRONX",
-    "rtc": false,
     "zips": [
       10453
     ]
@@ -873,7 +777,6 @@
     "label": "104-14 TAPSCOTT STREET",
     "value": "104-14 TAPSCOTT STREET",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -882,7 +785,6 @@
     "label": "303 VERNON AVENUE",
     "value": "303 VERNON AVENUE",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11206
     ]
@@ -891,7 +793,6 @@
     "label": "572 WARREN STREET",
     "value": "572 WARREN STREET",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11217
     ]
@@ -900,7 +801,6 @@
     "label": "ALBANY",
     "value": "ALBANY",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11213
     ]
@@ -909,7 +809,6 @@
     "label": "ALBANY II",
     "value": "ALBANY II",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11213
     ]
@@ -918,7 +817,6 @@
     "label": "ARMSTRONG I",
     "value": "ARMSTRONG I",
     "boro": "BROOKLYN",
-    "rtc": true,
     "zips": [
       11216
     ]
@@ -927,7 +825,6 @@
     "label": "ARMSTRONG II",
     "value": "ARMSTRONG II",
     "boro": "BROOKLYN",
-    "rtc": true,
     "zips": [
       11216
     ]
@@ -936,7 +833,6 @@
     "label": "ATLANTIC TERMINAL SITE 4B",
     "value": "ATLANTIC TERMINAL SITE 4B",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11238
     ]
@@ -945,7 +841,6 @@
     "label": "BAY VIEW",
     "value": "BAY VIEW",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11236
     ]
@@ -954,7 +849,6 @@
     "label": "BEDFORD-STUYVESANT REHAB",
     "value": "BEDFORD-STUYVESANT REHAB",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11206
     ]
@@ -963,7 +857,6 @@
     "label": "BELMONT-SUTTER AREA",
     "value": "BELMONT-SUTTER AREA",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11207
     ]
@@ -972,7 +865,6 @@
     "label": "BERRY STREET-SOUTH 9TH STREET",
     "value": "BERRY STREET-SOUTH 9TH STREET",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11249
     ]
@@ -981,7 +873,6 @@
     "label": "BORINQUEN PLAZA I",
     "value": "BORINQUEN PLAZA I",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11206
     ]
@@ -990,7 +881,6 @@
     "label": "BORINQUEN PLAZA II",
     "value": "BORINQUEN PLAZA II",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11206
     ]
@@ -999,7 +889,6 @@
     "label": "BOULEVARD",
     "value": "BOULEVARD",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11207
     ]
@@ -1008,7 +897,6 @@
     "label": "BREUKELEN",
     "value": "BREUKELEN",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11236,
       11207
@@ -1018,7 +906,6 @@
     "label": "BREVOORT",
     "value": "BREVOORT",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11233
     ]
@@ -1027,7 +914,6 @@
     "label": "BROWN",
     "value": "BROWN",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11233
     ]
@@ -1036,7 +922,6 @@
     "label": "BROWNSVILLE",
     "value": "BROWNSVILLE",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1045,7 +930,6 @@
     "label": "BUSHWICK",
     "value": "BUSHWICK",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11206
     ]
@@ -1054,7 +938,6 @@
     "label": "BUSHWICK II (GROUPS A & C)",
     "value": "BUSHWICK II (GROUPS A & C)",
     "boro": "BROOKLYN",
-    "rtc": true,
     "zips": [
       11221,
       11237,
@@ -1065,7 +948,6 @@
     "label": "BUSHWICK II (GROUPS B & D)",
     "value": "BUSHWICK II (GROUPS B & D)",
     "boro": "BROOKLYN",
-    "rtc": true,
     "zips": [
       11221
     ]
@@ -1074,7 +956,6 @@
     "label": "BUSHWICK II CDA (GROUP E)",
     "value": "BUSHWICK II CDA (GROUP E)",
     "boro": "BROOKLYN",
-    "rtc": true,
     "zips": [
       11237,
       11221
@@ -1084,7 +965,6 @@
     "label": "CAREY GARDENS",
     "value": "CAREY GARDENS",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11224
     ]
@@ -1093,7 +973,6 @@
     "label": "CONEY ISLAND",
     "value": "CONEY ISLAND",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11224
     ]
@@ -1102,7 +981,6 @@
     "label": "CONEY ISLAND I (SITE 1B)",
     "value": "CONEY ISLAND I (SITE 1B)",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11224
     ]
@@ -1111,7 +989,6 @@
     "label": "CONEY ISLAND I (SITE 8)",
     "value": "CONEY ISLAND I (SITE 8)",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11224
     ]
@@ -1120,7 +997,6 @@
     "label": "CONEY ISLAND I (SITES 4 & 5)",
     "value": "CONEY ISLAND I (SITES 4 & 5)",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11224
     ]
@@ -1129,7 +1005,6 @@
     "label": "COOPER PARK",
     "value": "COOPER PARK",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11211,
       11222
@@ -1139,7 +1014,6 @@
     "label": "CROWN HEIGHTS",
     "value": "CROWN HEIGHTS",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11233
     ]
@@ -1148,7 +1022,6 @@
     "label": "CYPRESS HILLS",
     "value": "CYPRESS HILLS",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11208
     ]
@@ -1157,7 +1030,6 @@
     "label": "EAST NEW YORK CITY LINE",
     "value": "EAST NEW YORK CITY LINE",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11208
     ]
@@ -1166,7 +1038,6 @@
     "label": "FARRAGUT",
     "value": "FARRAGUT",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11201
     ]
@@ -1175,7 +1046,6 @@
     "label": "FENIMORE-LEFFERTS",
     "value": "FENIMORE-LEFFERTS",
     "boro": "BROOKLYN",
-    "rtc": true,
     "zips": [
       11225,
       11203
@@ -1185,7 +1055,6 @@
     "label": "FIORENTINO PLAZA",
     "value": "FIORENTINO PLAZA",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11207
     ]
@@ -1194,7 +1063,6 @@
     "label": "GARVEY (GROUP A)",
     "value": "GARVEY (GROUP A)",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1203,7 +1071,6 @@
     "label": "GLENMORE PLAZA",
     "value": "GLENMORE PLAZA",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1212,7 +1079,6 @@
     "label": "GLENWOOD",
     "value": "GLENWOOD",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11234,
       11236
@@ -1222,7 +1088,6 @@
     "label": "GOWANUS",
     "value": "GOWANUS",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11217
     ]
@@ -1231,7 +1096,6 @@
     "label": "GRAVESEND",
     "value": "GRAVESEND",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11224
     ]
@@ -1240,7 +1104,6 @@
     "label": "HABER",
     "value": "HABER",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11224
     ]
@@ -1249,7 +1112,6 @@
     "label": "HOPE GARDENS",
     "value": "HOPE GARDENS",
     "boro": "BROOKLYN",
-    "rtc": true,
     "zips": [
       11221,
       11237
@@ -1259,7 +1121,6 @@
     "label": "HOWARD",
     "value": "HOWARD",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1268,7 +1129,6 @@
     "label": "HOWARD AVENUE",
     "value": "HOWARD AVENUE",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1277,7 +1137,6 @@
     "label": "HOWARD AVENUE-PARK PLACE",
     "value": "HOWARD AVENUE-PARK PLACE",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11233
     ]
@@ -1286,7 +1145,6 @@
     "label": "HUGHES APARTMENTS",
     "value": "HUGHES APARTMENTS",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1295,7 +1153,6 @@
     "label": "HYLAN",
     "value": "HYLAN",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11206
     ]
@@ -1304,7 +1161,6 @@
     "label": "INDEPENDENCE",
     "value": "INDEPENDENCE",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11249
     ]
@@ -1313,7 +1169,6 @@
     "label": "INGERSOLL",
     "value": "INGERSOLL",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11205,
       11201
@@ -1323,7 +1178,6 @@
     "label": "KINGSBOROUGH",
     "value": "KINGSBOROUGH",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11233
     ]
@@ -1332,7 +1186,6 @@
     "label": "KINGSBOROUGH EXTENSION",
     "value": "KINGSBOROUGH EXTENSION",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11233
     ]
@@ -1341,7 +1194,6 @@
     "label": "LAFAYETTE",
     "value": "LAFAYETTE",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11205,
       11238
@@ -1351,7 +1203,6 @@
     "label": "LENOX ROAD-ROCKAWAY PARKWAY",
     "value": "LENOX ROAD-ROCKAWAY PARKWAY",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1360,7 +1211,6 @@
     "label": "LINDEN",
     "value": "LINDEN",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11207
     ]
@@ -1369,7 +1219,6 @@
     "label": "LONG ISLAND BAPTIST HOUSES",
     "value": "LONG ISLAND BAPTIST HOUSES",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11207
     ]
@@ -1378,7 +1227,6 @@
     "label": "LOW HOUSES",
     "value": "LOW HOUSES",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1387,7 +1235,6 @@
     "label": "MARCY",
     "value": "MARCY",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11206
     ]
@@ -1396,7 +1243,6 @@
     "label": "MARCY AVENUE-GREENE AVENUE SITE A",
     "value": "MARCY AVENUE-GREENE AVENUE SITE A",
     "boro": "BROOKLYN",
-    "rtc": true,
     "zips": [
       11216
     ]
@@ -1405,7 +1251,6 @@
     "label": "MARCY AVENUE-GREENE AVENUE SITE B",
     "value": "MARCY AVENUE-GREENE AVENUE SITE B",
     "boro": "BROOKLYN",
-    "rtc": true,
     "zips": [
       11216
     ]
@@ -1414,7 +1259,6 @@
     "label": "MARLBORO",
     "value": "MARLBORO",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11223
     ]
@@ -1423,7 +1267,6 @@
     "label": "NOSTRAND",
     "value": "NOSTRAND",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11229,
       11235
@@ -1433,7 +1276,6 @@
     "label": "OCEAN HILL APARTMENTS",
     "value": "OCEAN HILL APARTMENTS",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11233
     ]
@@ -1442,7 +1284,6 @@
     "label": "OCEAN HILL-BROWNSVILLE",
     "value": "OCEAN HILL-BROWNSVILLE",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11233
     ]
@@ -1451,7 +1292,6 @@
     "label": "O'DWYER GARDENS",
     "value": "O'DWYER GARDENS",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11224
     ]
@@ -1460,7 +1300,6 @@
     "label": "PALMETTO GARDENS",
     "value": "PALMETTO GARDENS",
     "boro": "BROOKLYN",
-    "rtc": true,
     "zips": [
       11221
     ]
@@ -1469,7 +1308,6 @@
     "label": "PARK ROCK REHAB",
     "value": "PARK ROCK REHAB",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11213
     ]
@@ -1478,7 +1316,6 @@
     "label": "PENNSYLVANIA AVENUE-WORTMAN AVENUE",
     "value": "PENNSYLVANIA AVENUE-WORTMAN AVENUE",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11207
     ]
@@ -1487,7 +1324,6 @@
     "label": "PINK",
     "value": "PINK",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11208
     ]
@@ -1496,7 +1332,6 @@
     "label": "RALPH AVENUE REHAB",
     "value": "RALPH AVENUE REHAB",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1505,7 +1340,6 @@
     "label": "RED HOOK I",
     "value": "RED HOOK I",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11231
     ]
@@ -1514,7 +1348,6 @@
     "label": "RED HOOK II",
     "value": "RED HOOK II",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11231
     ]
@@ -1523,7 +1356,6 @@
     "label": "RED HOOK EAST",
     "value": "RED HOOK EAST",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11231
     ]
@@ -1532,7 +1364,6 @@
     "label": "RED HOOK WEST",
     "value": "RED HOOK WEST",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11231
     ]
@@ -1541,7 +1372,6 @@
     "label": "REID APARTMENTS",
     "value": "REID APARTMENTS",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11203
     ]
@@ -1550,7 +1380,6 @@
     "label": "ROOSEVELT I",
     "value": "ROOSEVELT I",
     "boro": "BROOKLYN",
-    "rtc": true,
     "zips": [
       11221,
       11206
@@ -1560,7 +1389,6 @@
     "label": "ROOSEVELT II",
     "value": "ROOSEVELT II",
     "boro": "BROOKLYN",
-    "rtc": true,
     "zips": [
       11206,
       11221
@@ -1570,7 +1398,6 @@
     "label": "RUTLAND TOWERS",
     "value": "RUTLAND TOWERS",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1579,7 +1406,6 @@
     "label": "SARATOGA VILLAGE",
     "value": "SARATOGA VILLAGE",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11233
     ]
@@ -1588,7 +1414,6 @@
     "label": "SHEEPSHEAD BAY",
     "value": "SHEEPSHEAD BAY",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11229,
       11235
@@ -1598,7 +1423,6 @@
     "label": "STERLING PLACE REHABS (SAINT JOHNS-STERLING)",
     "value": "STERLING PLACE REHABS (SAINT JOHNS-STERLING)",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11213,
       11233
@@ -1608,7 +1432,6 @@
     "label": "STERLING PLACE REHABS (STERLING-BUFFALO)",
     "value": "STERLING PLACE REHABS (STERLING-BUFFALO)",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11213
     ]
@@ -1617,7 +1440,6 @@
     "label": "STUYVESANT GARDENS I",
     "value": "STUYVESANT GARDENS I",
     "boro": "BROOKLYN",
-    "rtc": true,
     "zips": [
       11221
     ]
@@ -1626,7 +1448,6 @@
     "label": "STUYVESANT GARDENS II",
     "value": "STUYVESANT GARDENS II",
     "boro": "BROOKLYN",
-    "rtc": true,
     "zips": [
       11221
     ]
@@ -1635,7 +1456,6 @@
     "label": "SUMNER",
     "value": "SUMNER",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11206
     ]
@@ -1644,7 +1464,6 @@
     "label": "SURFSIDE GARDENS",
     "value": "SURFSIDE GARDENS",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11224
     ]
@@ -1653,7 +1472,6 @@
     "label": "SUTTER AVENUE-UNION STREET",
     "value": "SUTTER AVENUE-UNION STREET",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1662,7 +1480,6 @@
     "label": "TAPSCOTT STREET REHAB",
     "value": "TAPSCOTT STREET REHAB",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1671,7 +1488,6 @@
     "label": "TAYLOR STREET-WYTHE AVENUE",
     "value": "TAYLOR STREET-WYTHE AVENUE",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11249
     ]
@@ -1680,7 +1496,6 @@
     "label": "TILDEN",
     "value": "TILDEN",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1689,7 +1504,6 @@
     "label": "TOMPKINS",
     "value": "TOMPKINS",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11206
     ]
@@ -1698,7 +1512,6 @@
     "label": "UNITY PLAZA (SITES 17,24,25A)",
     "value": "UNITY PLAZA (SITES 17,24,25A)",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11207
     ]
@@ -1707,7 +1520,6 @@
     "label": "UNITY PLAZA (SITES 4-27)",
     "value": "UNITY PLAZA (SITES 4-27)",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11207
     ]
@@ -1716,7 +1528,6 @@
     "label": "VAN DYKE I",
     "value": "VAN DYKE I",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1725,7 +1536,6 @@
     "label": "VAN DYKE II",
     "value": "VAN DYKE II",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1734,7 +1544,6 @@
     "label": "VANDALIA AVENUE",
     "value": "VANDALIA AVENUE",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11239
     ]
@@ -1743,7 +1552,6 @@
     "label": "WEEKSVILLE GARDENS",
     "value": "WEEKSVILLE GARDENS",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11213
     ]
@@ -1752,7 +1560,6 @@
     "label": "WHITMAN",
     "value": "WHITMAN",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11205
     ]
@@ -1761,7 +1568,6 @@
     "label": "WILLIAMS PLAZA",
     "value": "WILLIAMS PLAZA",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11211
     ]
@@ -1770,7 +1576,6 @@
     "label": "WILLIAMSBURG",
     "value": "WILLIAMSBURG",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11206
     ]
@@ -1779,7 +1584,6 @@
     "label": "WOODSON",
     "value": "WOODSON",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11212
     ]
@@ -1788,7 +1592,6 @@
     "label": "WYCKOFF GARDENS",
     "value": "WYCKOFF GARDENS",
     "boro": "BROOKLYN",
-    "rtc": false,
     "zips": [
       11217
     ]
@@ -1797,7 +1600,6 @@
     "label": "131 SAINT NICHOLAS AVENUE",
     "value": "131 SAINT NICHOLAS AVENUE",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10026
     ]
@@ -1806,7 +1608,6 @@
     "label": "154 WEST 84TH STREET",
     "value": "154 WEST 84TH STREET",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10024
     ]
@@ -1815,7 +1616,6 @@
     "label": "335 EAST 111TH STREET",
     "value": "335 EAST 111TH STREET",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10029
     ]
@@ -1824,7 +1624,6 @@
     "label": "344 EAST 28TH STREET",
     "value": "344 EAST 28TH STREET",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10016
     ]
@@ -1833,7 +1632,6 @@
     "label": "45 ALLEN STREET",
     "value": "45 ALLEN STREET",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -1842,7 +1640,6 @@
     "label": "830 AMSTERDAM AVENUE",
     "value": "830 AMSTERDAM AVENUE",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10025
     ]
@@ -1851,7 +1648,6 @@
     "label": "AMSTERDAM",
     "value": "AMSTERDAM",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10023
     ]
@@ -1860,7 +1656,6 @@
     "label": "AMSTERDAM ADDITION",
     "value": "AMSTERDAM ADDITION",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10023
     ]
@@ -1869,7 +1664,6 @@
     "label": "AUDUBON",
     "value": "AUDUBON",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10032
     ]
@@ -1878,7 +1672,6 @@
     "label": "BARUCH",
     "value": "BARUCH",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -1887,7 +1680,6 @@
     "label": "BARUCH HOUSES ADDITION",
     "value": "BARUCH HOUSES ADDITION",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -1896,7 +1688,6 @@
     "label": "BETHUNE GARDENS",
     "value": "BETHUNE GARDENS",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10032
     ]
@@ -1905,7 +1696,6 @@
     "label": "BRACETTI PLAZA",
     "value": "BRACETTI PLAZA",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10009
     ]
@@ -1914,7 +1704,6 @@
     "label": "CAMPOS PLAZA II",
     "value": "CAMPOS PLAZA II",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10009
     ]
@@ -1923,7 +1712,6 @@
     "label": "CARVER",
     "value": "CARVER",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10029
     ]
@@ -1932,7 +1720,6 @@
     "label": "CHELSEA",
     "value": "CHELSEA",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10001
     ]
@@ -1941,7 +1728,6 @@
     "label": "CHELSEA ADDITION",
     "value": "CHELSEA ADDITION",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10001
     ]
@@ -1950,7 +1736,6 @@
     "label": "CLINTON",
     "value": "CLINTON",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10029
     ]
@@ -1959,7 +1744,6 @@
     "label": "CORSI HOUSES",
     "value": "CORSI HOUSES",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10029,
       10035
@@ -1969,7 +1753,6 @@
     "label": "DE HOSTOS APARTMENTS",
     "value": "DE HOSTOS APARTMENTS",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10025
     ]
@@ -1978,7 +1761,6 @@
     "label": "DOUGLASS ADDITION",
     "value": "DOUGLASS ADDITION",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10025
     ]
@@ -1987,7 +1769,6 @@
     "label": "DOUGLASS",
     "value": "DOUGLASS",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10025
     ]
@@ -1996,7 +1777,6 @@
     "label": "DOUGLASS I",
     "value": "DOUGLASS I",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10025
     ]
@@ -2005,7 +1785,6 @@
     "label": "DOUGLASS II",
     "value": "DOUGLASS II",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10025
     ]
@@ -2014,7 +1793,6 @@
     "label": "DREW-HAMILTON",
     "value": "DREW-HAMILTON",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10030
     ]
@@ -2023,7 +1801,6 @@
     "label": "DYCKMAN",
     "value": "DYCKMAN",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10034
     ]
@@ -2032,7 +1809,6 @@
     "label": "EAST RIVER",
     "value": "EAST RIVER",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10029
     ]
@@ -2041,7 +1817,6 @@
     "label": "ELLIOTT",
     "value": "ELLIOTT",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10001
     ]
@@ -2050,7 +1825,6 @@
     "label": "FIRST HOUSES",
     "value": "FIRST HOUSES",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10009
     ]
@@ -2059,7 +1833,6 @@
     "label": "FORT WASHINGTON AVENUE REHAB",
     "value": "FORT WASHINGTON AVENUE REHAB",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10032
     ]
@@ -2068,7 +1841,6 @@
     "label": "FULTON",
     "value": "FULTON",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10011
     ]
@@ -2077,7 +1849,6 @@
     "label": "GOMPERS",
     "value": "GOMPERS",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -2086,7 +1857,6 @@
     "label": "GRAMPION",
     "value": "GRAMPION",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10026
     ]
@@ -2095,7 +1865,6 @@
     "label": "GRANT",
     "value": "GRANT",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10027
     ]
@@ -2104,7 +1873,6 @@
     "label": "HARBORVIEW TERRACE",
     "value": "HARBORVIEW TERRACE",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10019
     ]
@@ -2113,7 +1881,6 @@
     "label": "HARLEM RIVER",
     "value": "HARLEM RIVER",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10039
     ]
@@ -2122,7 +1889,6 @@
     "label": "HARLEM RIVER II",
     "value": "HARLEM RIVER II",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10039
     ]
@@ -2131,7 +1897,6 @@
     "label": "HERNANDEZ",
     "value": "HERNANDEZ",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -2140,7 +1905,6 @@
     "label": "HOLMES TOWERS",
     "value": "HOLMES TOWERS",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10128
     ]
@@ -2149,7 +1913,6 @@
     "label": "ISAACS",
     "value": "ISAACS",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10128
     ]
@@ -2158,7 +1921,6 @@
     "label": "JEFFERSON",
     "value": "JEFFERSON",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10029
     ]
@@ -2167,7 +1929,6 @@
     "label": "JOHNSON",
     "value": "JOHNSON",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10029
     ]
@@ -2176,7 +1937,6 @@
     "label": "KING TOWERS",
     "value": "KING TOWERS",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10026
     ]
@@ -2185,7 +1945,6 @@
     "label": "LA GUARDIA",
     "value": "LA GUARDIA",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -2194,7 +1953,6 @@
     "label": "LA GUARDIA ADDITION",
     "value": "LA GUARDIA ADDITION",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -2203,7 +1961,6 @@
     "label": "LAVANBURG HOMES",
     "value": "LAVANBURG HOMES",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -2212,7 +1969,6 @@
     "label": "LEHMAN VILLAGE",
     "value": "LEHMAN VILLAGE",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10029
     ]
@@ -2221,7 +1977,6 @@
     "label": "LEXINGTON",
     "value": "LEXINGTON",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10029
     ]
@@ -2230,7 +1985,6 @@
     "label": "LINCOLN",
     "value": "LINCOLN",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10037
     ]
@@ -2239,7 +1993,6 @@
     "label": "LOWER EAST SIDE I INFILL",
     "value": "LOWER EAST SIDE I INFILL",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -2248,7 +2001,6 @@
     "label": "LOWER EAST SIDE II",
     "value": "LOWER EAST SIDE II",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10009
     ]
@@ -2257,7 +2009,6 @@
     "label": "LOWER EAST SIDE III",
     "value": "LOWER EAST SIDE III",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10009
     ]
@@ -2266,7 +2017,6 @@
     "label": "LOWER EAST SIDE REHAB (GROUP 5)",
     "value": "LOWER EAST SIDE REHAB (GROUP 5)",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10009
     ]
@@ -2275,7 +2025,6 @@
     "label": "MANHATTANVILLE",
     "value": "MANHATTANVILLE",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10027
     ]
@@ -2293,7 +2042,6 @@
     "label": "MANHATTANVILLE REHAB (GROUP 3)",
     "value": "MANHATTANVILLE REHAB (GROUP 3)",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10027,
       10031
@@ -2303,7 +2051,6 @@
     "label": "MARSHALL PLAZA",
     "value": "MARSHALL PLAZA",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10032
     ]
@@ -2312,7 +2059,6 @@
     "label": "MELTZER TOWER",
     "value": "MELTZER TOWER",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10009
     ]
@@ -2321,7 +2067,6 @@
     "label": "METRO NORTH PLAZA",
     "value": "METRO NORTH PLAZA",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10029
     ]
@@ -2330,7 +2075,6 @@
     "label": "MORRIS PARK SENIOR CITIZENS HOME",
     "value": "MORRIS PARK SENIOR CITIZENS HOME",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10035
     ]
@@ -2339,7 +2083,6 @@
     "label": "PARK AVENUE-EAST 122ND, 123RD STREETS",
     "value": "PARK AVENUE-EAST 122ND, 123RD STREETS",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10035
     ]
@@ -2348,7 +2091,6 @@
     "label": "POLO GROUNDS TOWERS",
     "value": "POLO GROUNDS TOWERS",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10039
     ]
@@ -2357,7 +2099,6 @@
     "label": "PUBLIC SCHOOL 139 (CONVERSION)",
     "value": "PUBLIC SCHOOL 139 (CONVERSION)",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10030
     ]
@@ -2366,7 +2107,6 @@
     "label": "RANDOLPH",
     "value": "RANDOLPH",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10026
     ]
@@ -2375,7 +2115,6 @@
     "label": "RANGEL",
     "value": "RANGEL",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10039
     ]
@@ -2384,7 +2123,6 @@
     "label": "REHAB PROGRAM (DOUGLASS REHABS)",
     "value": "REHAB PROGRAM (DOUGLASS REHABS)",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10025
     ]
@@ -2393,7 +2131,6 @@
     "label": "REHAB PROGRAM (TAFT REHABS)",
     "value": "REHAB PROGRAM (TAFT REHABS)",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10026
     ]
@@ -2402,7 +2139,6 @@
     "label": "REHAB PROGRAM (WISE REHAB)",
     "value": "REHAB PROGRAM (WISE REHAB)",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10025
     ]
@@ -2411,7 +2147,6 @@
     "label": "RIIS",
     "value": "RIIS",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10009
     ]
@@ -2420,7 +2155,6 @@
     "label": "RIIS II",
     "value": "RIIS II",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10009
     ]
@@ -2429,7 +2163,6 @@
     "label": "ROBBINS PLAZA",
     "value": "ROBBINS PLAZA",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10021
     ]
@@ -2438,7 +2171,6 @@
     "label": "ROBINSON",
     "value": "ROBINSON",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10035
     ]
@@ -2447,7 +2179,6 @@
     "label": "RUTGERS",
     "value": "RUTGERS",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -2456,7 +2187,6 @@
     "label": "SAINT NICHOLAS",
     "value": "SAINT NICHOLAS",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10027
     ]
@@ -2465,7 +2195,6 @@
     "label": "SAMUEL (CITY)",
     "value": "SAMUEL (CITY)",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10030,
       10037,
@@ -2476,7 +2205,6 @@
     "label": "SAMUEL (MHOP) I",
     "value": "SAMUEL (MHOP) I",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10030
     ]
@@ -2485,7 +2213,6 @@
     "label": "SAMUEL (MHOP) II",
     "value": "SAMUEL (MHOP) II",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10030
     ]
@@ -2494,7 +2221,6 @@
     "label": "SAMUEL (MHOP) III",
     "value": "SAMUEL (MHOP) III",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10030
     ]
@@ -2503,7 +2229,6 @@
     "label": "SEWARD PARK EXTENSION",
     "value": "SEWARD PARK EXTENSION",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -2512,7 +2237,6 @@
     "label": "SMITH",
     "value": "SMITH",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10038
     ]
@@ -2521,7 +2245,6 @@
     "label": "STANTON STREET",
     "value": "STANTON STREET",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -2530,7 +2253,6 @@
     "label": "STRAUS",
     "value": "STRAUS",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10016
     ]
@@ -2539,7 +2261,6 @@
     "label": "TAFT",
     "value": "TAFT",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10029
     ]
@@ -2548,7 +2269,6 @@
     "label": "THOMAS APARTMENTS",
     "value": "THOMAS APARTMENTS",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10024
     ]
@@ -2557,7 +2277,6 @@
     "label": "TWO BRIDGES URA (SITE 7)",
     "value": "TWO BRIDGES URA (SITE 7)",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -2566,7 +2285,6 @@
     "label": "UPACA (SITE 5)",
     "value": "UPACA (SITE 5)",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10035
     ]
@@ -2575,7 +2293,6 @@
     "label": "UPACA (SITE 6)",
     "value": "UPACA (SITE 6)",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10035
     ]
@@ -2584,7 +2301,6 @@
     "label": "VLADECK",
     "value": "VLADECK",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -2593,7 +2309,6 @@
     "label": "VLADECK II",
     "value": "VLADECK II",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10002
     ]
@@ -2602,7 +2317,6 @@
     "label": "WAGNER",
     "value": "WAGNER",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10035
     ]
@@ -2611,7 +2325,6 @@
     "label": "WALD",
     "value": "WALD",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10009,
       10002
@@ -2621,7 +2334,6 @@
     "label": "WASHINGTON",
     "value": "WASHINGTON",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10029
     ]
@@ -2630,7 +2342,6 @@
     "label": "WASHINGTON HEIGHTS REHAB (GROUPS 1&2)",
     "value": "WASHINGTON HEIGHTS REHAB (GROUPS 1&2)",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10033
     ]
@@ -2639,7 +2350,6 @@
     "label": "WASHINGTON HEIGHTS REHAB PHASE III",
     "value": "WASHINGTON HEIGHTS REHAB PHASE III",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10032
     ]
@@ -2648,7 +2358,6 @@
     "label": "WASHINGTON HEIGHTS REHAB PHASE IV (C)",
     "value": "WASHINGTON HEIGHTS REHAB PHASE IV (C)",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10033
     ]
@@ -2657,7 +2366,6 @@
     "label": "WASHINGTON HEIGHTS REHAB PHASE IV (D)",
     "value": "WASHINGTON HEIGHTS REHAB PHASE IV (D)",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10033
     ]
@@ -2666,7 +2374,6 @@
     "label": "WHITE",
     "value": "WHITE",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10029
     ]
@@ -2675,7 +2382,6 @@
     "label": "WILSON",
     "value": "WILSON",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10029
     ]
@@ -2684,7 +2390,6 @@
     "label": "WISE TOWERS",
     "value": "WISE TOWERS",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10024
     ]
@@ -2693,7 +2398,6 @@
     "label": "WSUR (BROWNSTONES)",
     "value": "WSUR (BROWNSTONES)",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10024,
       10025
@@ -2703,7 +2407,6 @@
     "label": "WSUR (SITE A) 120 WEST 94TH STREET",
     "value": "WSUR (SITE A) 120 WEST 94TH STREET",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10025
     ]
@@ -2712,7 +2415,6 @@
     "label": "WSUR (SITE B) 74 WEST 92ND STREET",
     "value": "WSUR (SITE B) 74 WEST 92ND STREET",
     "boro": "MANHATTAN",
-    "rtc": true,
     "zips": [
       10025,
       10024
@@ -2722,7 +2424,6 @@
     "label": "WSUR (SITE C) 589 AMSTERDAM AVENUE",
     "value": "WSUR (SITE C) 589 AMSTERDAM AVENUE",
     "boro": "MANHATTAN",
-    "rtc": false,
     "zips": [
       10024
     ]
@@ -2731,7 +2432,6 @@
     "label": "ASTORIA",
     "value": "ASTORIA",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11102
     ]
@@ -2740,7 +2440,6 @@
     "label": "BAISLEY PARK",
     "value": "BAISLEY PARK",
     "boro": "QUEENS",
-    "rtc": true,
     "zips": [
       11434
     ]
@@ -2749,7 +2448,6 @@
     "label": "BEACH 41ST STREET-BEACH CHANNEL DRIVE",
     "value": "BEACH 41ST STREET-BEACH CHANNEL DRIVE",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11691
     ]
@@ -2758,7 +2456,6 @@
     "label": "BLAND",
     "value": "BLAND",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11354
     ]
@@ -2767,7 +2464,6 @@
     "label": "CARLETON MANOR",
     "value": "CARLETON MANOR",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11692
     ]
@@ -2776,7 +2472,6 @@
     "label": "CONLON LIHFE TOWER",
     "value": "CONLON LIHFE TOWER",
     "boro": "QUEENS",
-    "rtc": true,
     "zips": [
       11433
     ]
@@ -2785,7 +2480,6 @@
     "label": "FOREST HILLS COOP (108TH STREET-62ND DRIVE)",
     "value": "FOREST HILLS COOP (108TH STREET-62ND DRIVE)",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11375
     ]
@@ -2794,7 +2488,6 @@
     "label": "HAMMEL",
     "value": "HAMMEL",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11693
     ]
@@ -2803,7 +2496,6 @@
     "label": "INTERNATIONAL TOWER",
     "value": "INTERNATIONAL TOWER",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11432
     ]
@@ -2812,7 +2504,6 @@
     "label": "LATIMER GARDENS",
     "value": "LATIMER GARDENS",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11354
     ]
@@ -2821,7 +2512,6 @@
     "label": "LEAVITT STREET-34TH AVENUE",
     "value": "LEAVITT STREET-34TH AVENUE",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11354
     ]
@@ -2830,7 +2520,6 @@
     "label": "OCEAN BAY APARTMENTS (BAYSIDE)",
     "value": "OCEAN BAY APARTMENTS (BAYSIDE)",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11691,
       11692
@@ -2840,7 +2529,6 @@
     "label": "OCEAN BAY APARTMENTS (OCEANSIDE)",
     "value": "OCEAN BAY APARTMENTS (OCEANSIDE)",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11692,
       11691
@@ -2850,7 +2538,6 @@
     "label": "POMONOK",
     "value": "POMONOK",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11367,
       11365
@@ -2860,7 +2547,6 @@
     "label": "QUEENSBRIDGE NORTH",
     "value": "QUEENSBRIDGE NORTH",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11101
     ]
@@ -2869,7 +2555,6 @@
     "label": "QUEENSBRIDGE SOUTH",
     "value": "QUEENSBRIDGE SOUTH",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11101
     ]
@@ -2878,7 +2563,6 @@
     "label": "RAVENSWOOD",
     "value": "RAVENSWOOD",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11106
     ]
@@ -2887,7 +2571,6 @@
     "label": "REDFERN",
     "value": "REDFERN",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11691
     ]
@@ -2896,7 +2579,6 @@
     "label": "REHAB PROGRAM (COLLEGE POINT)",
     "value": "REHAB PROGRAM (COLLEGE POINT)",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11356
     ]
@@ -2905,7 +2587,6 @@
     "label": "SHELTON HOUSE",
     "value": "SHELTON HOUSE",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11432
     ]
@@ -2914,7 +2595,6 @@
     "label": "SOUTH JAMAICA I",
     "value": "SOUTH JAMAICA I",
     "boro": "QUEENS",
-    "rtc": true,
     "zips": [
       11433
     ]
@@ -2923,7 +2603,6 @@
     "label": "SOUTH JAMAICA II",
     "value": "SOUTH JAMAICA II",
     "boro": "QUEENS",
-    "rtc": true,
     "zips": [
       11433
     ]
@@ -2932,7 +2611,6 @@
     "label": "WOODSIDE",
     "value": "WOODSIDE",
     "boro": "QUEENS",
-    "rtc": false,
     "zips": [
       11377
     ]
@@ -2941,7 +2619,6 @@
     "label": "BERRY",
     "value": "BERRY",
     "boro": "STATEN ISLAND",
-    "rtc": false,
     "zips": [
       10306
     ]
@@ -2950,7 +2627,6 @@
     "label": "CASSIDY-LAFAYETTE",
     "value": "CASSIDY-LAFAYETTE",
     "boro": "STATEN ISLAND",
-    "rtc": false,
     "zips": [
       10301
     ]
@@ -2959,7 +2635,6 @@
     "label": "MARINER'S HARBOR",
     "value": "MARINER'S HARBOR",
     "boro": "STATEN ISLAND",
-    "rtc": true,
     "zips": [
       10303
     ]
@@ -2968,7 +2643,6 @@
     "label": "NEW LANE AREA",
     "value": "NEW LANE AREA",
     "boro": "STATEN ISLAND",
-    "rtc": false,
     "zips": [
       10305
     ]
@@ -2977,7 +2651,6 @@
     "label": "RICHMOND TERRACE",
     "value": "RICHMOND TERRACE",
     "boro": "STATEN ISLAND",
-    "rtc": false,
     "zips": [
       10301
     ]
@@ -2986,7 +2659,6 @@
     "label": "SOUTH BEACH",
     "value": "SOUTH BEACH",
     "boro": "STATEN ISLAND",
-    "rtc": false,
     "zips": [
       10305
     ]
@@ -2995,7 +2667,6 @@
     "label": "STAPLETON",
     "value": "STAPLETON",
     "boro": "STATEN ISLAND",
-    "rtc": false,
     "zips": [
       10304
     ]
@@ -3004,7 +2675,6 @@
     "label": "TODT HILL",
     "value": "TODT HILL",
     "boro": "STATEN ISLAND",
-    "rtc": true,
     "zips": [
       10314
     ]
@@ -3013,7 +2683,6 @@
     "label": "WEST BRIGHTON I",
     "value": "WEST BRIGHTON I",
     "boro": "STATEN ISLAND",
-    "rtc": true,
     "zips": [
       10310
     ]
@@ -3022,7 +2691,6 @@
     "label": "WEST BRIGHTON II",
     "value": "WEST BRIGHTON II",
     "boro": "STATEN ISLAND",
-    "rtc": true,
     "zips": [
       10310
     ]
@@ -3031,7 +2699,6 @@
     "label": "FHA REPOSSESSED HOUSES (GROUP IV)",
     "value": "FHA REPOSSESSED HOUSES (GROUP IV)",
     "boro": "QUEENS",
-    "rtc": true,
     "zips": [
       10473,
       11419,
@@ -3046,7 +2713,6 @@
     "label": "FHA REPOSSESSED HOUSES (GROUP I)",
     "value": "FHA REPOSSESSED HOUSES (GROUP I)",
     "boro": "QUEENS",
-    "rtc": true,
     "zips": [
       11435,
       11423,
@@ -3064,7 +2730,6 @@
     "label": "FHA REPOSSESSED HOUSES (GROUP II)",
     "value": "FHA REPOSSESSED HOUSES (GROUP II)",
     "boro": "QUEENS",
-    "rtc": true,
     "zips": [
       10473,
       11433,
@@ -3080,7 +2745,6 @@
     "label": "FHA REPOSSESSED HOUSES (GROUP III)",
     "value": "FHA REPOSSESSED HOUSES (GROUP III)",
     "boro": "QUEENS",
-    "rtc": true,
     "zips": [
       10469,
       11412,
@@ -3096,7 +2760,6 @@
     "label": "FHA REPOSSESSED HOUSES (GROUP V)",
     "value": "FHA REPOSSESSED HOUSES (GROUP V)",
     "boro": "QUEENS",
-    "rtc": true,
     "zips": [
       11207,
       11435,
@@ -3115,7 +2778,6 @@
     "label": "FHA REPOSSESSED HOUSES (GROUP VI)",
     "value": "FHA REPOSSESSED HOUSES (GROUP VI)",
     "boro": "QUEENS",
-    "rtc": true,
     "zips": [
       11433,
       11412,
@@ -3128,7 +2790,6 @@
     "label": "FHA REPOSSESSED HOUSES (GROUP VII)",
     "value": "FHA REPOSSESSED HOUSES (GROUP VII)",
     "boro": "QUEENS",
-    "rtc": true,
     "zips": [
       11412,
       11429,
@@ -3142,7 +2803,6 @@
     "label": "FHA REPOSSESSED HOUSES (GROUP VIII)",
     "value": "FHA REPOSSESSED HOUSES (GROUP VIII)",
     "boro": "QUEENS",
-    "rtc": true,
     "zips": [
       11412,
       11429,
@@ -3156,7 +2816,6 @@
     "label": "FHA REPOSSESSED HOUSES (GROUP IX)",
     "value": "FHA REPOSSESSED HOUSES (GROUP IX)",
     "boro": "QUEENS",
-    "rtc": true,
     "zips": [
       11217,
       11205,
@@ -3170,7 +2829,6 @@
     "label": "FHA REPOSSESSED HOUSES (GROUP X)",
     "value": "FHA REPOSSESSED HOUSES (GROUP X)",
     "boro": "QUEENS",
-    "rtc": true,
     "zips": [
       11435,
       11433,
