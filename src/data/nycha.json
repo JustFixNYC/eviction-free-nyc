@@ -420,7 +420,7 @@
     "label": "GLEBE AVENUE-WESTCHESTER AVENUE",
     "value": "GLEBE AVENUE-WESTCHESTER AVENUE",
     "boro": "BRONX",
-    "rtc": false,
+    "rtc": true,
     "zips": [
       "10462"
     ]
@@ -2284,7 +2284,7 @@
     "label": "MANHATTANVILLE REHAB (GROUP 2)",
     "value": "MANHATTANVILLE REHAB (GROUP 2)",
     "boro": "MANHATTAN",
-    "rtc": false,
+    "rtc": true,
     "zips": [
       "10031"
     ]
@@ -2293,7 +2293,7 @@
     "label": "MANHATTANVILLE REHAB (GROUP 3)",
     "value": "MANHATTANVILLE REHAB (GROUP 3)",
     "boro": "MANHATTAN",
-    "rtc": false,
+    "rtc": true,
     "zips": [
       "10027",
       "10031"
@@ -3013,7 +3013,7 @@
     "label": "WEST BRIGHTON I",
     "value": "WEST BRIGHTON I",
     "boro": "STATEN ISLAND",
-    "rtc": false,
+    "rtc": true,
     "zips": [
       "10310"
     ]
@@ -3022,7 +3022,7 @@
     "label": "WEST BRIGHTON II",
     "value": "WEST BRIGHTON II",
     "boro": "STATEN ISLAND",
-    "rtc": false,
+    "rtc": true,
     "zips": [
       "10310"
     ]
