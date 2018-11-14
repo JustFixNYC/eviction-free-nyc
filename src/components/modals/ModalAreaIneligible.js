@@ -10,7 +10,7 @@ const ModalAreaIneligible = ({ content, nycha, zip, nextFn }) =>
     )}
     <div className="modal-body">
       <div className="content">
-        {nycha ? content.addressNychaIneligible : content.addressIneligibleText}
+        {content.addressIneligibleText}
       </div>
     </div>
     <div className="modal-footer">
