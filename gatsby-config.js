@@ -1,9 +1,20 @@
 const languages = require('./src/data/languages');
 const autoprefixer = require('autoprefixer');
 
+const ENV_PATH = `.env.${process.env.NODE_ENV}`;
+
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: ENV_PATH,
 });
+
+if (!process.env.CONTENTFUL_SPACE_ID ||
+    !process.env.CONTENTFUL_TOKEN) {
+  console.log(
+    `Please define CONTENTFUL_SPACE_ID and ` +
+    `CONTENTFUL_TOKEN in ${ENV_PATH}.`
+  );
+  process.exit(1);
+}
 
 module.exports = {
   siteMetadata: {

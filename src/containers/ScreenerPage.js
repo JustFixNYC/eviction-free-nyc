@@ -2,7 +2,7 @@ import React from "react";
 import * as PropTypes from "prop-types";
 import { injectIntl, FormattedMessage as Trans } from 'react-intl';
 
-import { isLocationEligible, determineResultPage } from '../utils/logic';
+import { isLocationEligible, isNychaEligible, determineResultPage } from '../utils/logic';
 
 import StepIntro from '../components/steps/StepIntro';
 import StepLocation from '../components/steps/StepLocation';
@@ -87,15 +87,15 @@ class ScreenerPage extends React.Component {
   handleZipcode = ({ zip, boro }) => {
     let areaEligible = isLocationEligible(zip);
     this.setState({
-      user: { ...this.state.user, zip: zip, boro: boro, areaEligible: areaEligible },
+      user: { ...this.state.user, zip: zip, boro: boro, nycha: false, areaEligible: areaEligible },
       modalType: areaEligible ? 'areaEligible' : 'areaIneligible'
     });
   }
 
-  handleNycha = ({ rtc, boro }) => {
-    let areaEligible = rtc;
+  handleNycha = ({ zips, boro }) => {
+    let areaEligible = isNychaEligible(zips);
     this.setState({
-      user: { ...this.state.user, boro: boro, nycha: true, areaEligible: areaEligible },
+      user: { ...this.state.user, zip: null, boro: boro, nycha: true, areaEligible: areaEligible },
       modalType: areaEligible ? 'areaEligible' : 'areaIneligible'
     });
   }

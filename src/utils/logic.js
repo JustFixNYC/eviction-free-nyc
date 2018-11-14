@@ -1,11 +1,17 @@
 import { ZIPCODES } from '../data/zipcodes';
 import { navigateTo } from 'gatsby-link';
+import { array } from 'lodash';
 
 export default {
 
   isLocationEligible(zipString) {
     const zip = parseInt(zipString, 10);
     return ZIPCODES.indexOf(zip) !== -1;
+  },
+
+  isNychaEligible(zipArray) {
+    const overlap = _.intersection(zipArray, ZIPCODES);
+    return overlap.length > 0;
   },
 
   determineResultPage(user, intl)  {
@@ -37,7 +43,7 @@ export default {
     // all other pages
     } else {
 
-      if(user.caseType !== 'general' && !user.nycha && isEligible) {
+      if(user.caseType !== 'general' && isEligible) {
         resultUrl += 'rtc';
       }
 
