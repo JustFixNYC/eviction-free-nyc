@@ -44,7 +44,7 @@ const TemplateWrapper = ({ children, data, location }) => {
 
            */}
         <Helmet>
-          <title>Eviction Free NYC</title>
+          <title>Respond to an Eviction Notice and Get Free Legal Help | Eviction Free NYC!</title>
 
 
           {/* <!-- Semantic META --> */}

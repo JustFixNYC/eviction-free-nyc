@@ -47,7 +47,7 @@ class Html extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
-          <title>Eviction Free NYC!</title>
+          <title>Respond to an Eviction Notice and Get Free Legal Help | Eviction Free NYC!</title>
           <link rel="shortcut icon" href={favicon} />
           {css}
 
