@@ -1,5 +1,43 @@
 @import 'vars';
 
+// This is a TERRIBLE HACK. The embedded Google Map
+// in step 1 of the housing court page, which has
+// a map of the housing court location, won't load
+// unless the browser thinks it needs to be visible.
+// This is fine when the map is collapsed behind
+// an accordion on the screen.
+//
+// However, when the user decides to print the page,
+// the print stylesheet kicks in, which displays the
+// content of all the accordions, including the map.
+// But there's a problem, because the print version
+// is rendered as soon as this stylesheet is applied,
+// without waiting for any content inside the
+// accordion to load: the result is that the map
+// doesn't appear at all, or appears in a partially
+// loaded state.
+//
+// So instead of setting `display: none` on the
+// map accordion's collapsed content by default,
+// we'll have it display, but in an off-screen
+// area that users can't see (screen-readers
+// shouldn't be able to see it either because
+// `aria-hidden="true"` is set). This will ensure
+// the map is already loaded if/when the user decides
+// to print.
+@media screen {
+  section.HousingCourtPage
+  #accordion__body-0.accordion__body--hidden {
+    display: block;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+}
+
 .Accordion {
   .accordion__item {
     border-bottom: 1px solid $border-color;

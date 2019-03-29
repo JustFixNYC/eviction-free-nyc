@@ -14,6 +14,11 @@
       margin-right: 0;
     }
 
+    @media print {
+      .carousel__slider-tray {
+        transform: translateX(0px) !important;
+      }
+    }
   }
 
   .carousel__slide {
