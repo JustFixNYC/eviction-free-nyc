@@ -26,6 +26,11 @@ export default {
     const isEligible = user.areaEligible && user.incomeEligible;
 
     let boro = user.boro.toLowerCase();
+
+    console.log(boro);
+    // seems like google changed the autocomplete response for Bronx addrs
+    if(boro === 'the bronx') boro = 'bronx';
+
     if(boro === 'STATEN ISLAND' || boro === 'staten island') boro = 'staten';
 
     let caseType = user.caseType;
