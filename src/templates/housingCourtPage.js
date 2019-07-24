@@ -16,9 +16,13 @@ class PageTemplate extends React.Component {
     const casetype = props.location.pathname.split('/')[4];
 
     this.data = {};
-
+    
     this.data.qualified = casetype.substr(casetype.length - 3) === 'rtc';
 
+    this.data.notQualified = !(this.data.qualified);
+
+    this.data.qualifiedAdmin = false;
+    
     const contentfulData = props.data.allContentfulHousingCourtPage.edges[0].node;
 
     switch(casetype) {

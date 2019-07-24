@@ -17,6 +17,10 @@ class AdminHearingPage extends React.Component {
 
     this.data.qualified = false;
 
+    this.data.notQualified = false;
+
+    this.data.qualifiedAdmin = true;
+
     const contentfulData = props.data.content.edges[0].node;
 
     this.data.steps = contentfulData.stepsGeneral.map((step, i) => ({
