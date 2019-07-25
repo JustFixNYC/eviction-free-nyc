@@ -7,6 +7,7 @@ import CourtPage from "./CourtPage";
 
 const propTypes = {
   data: PropTypes.object.isRequired,
+  qualifiedType: PropTypes.oneOf(['qualified', 'notQualified', 'qualifiedAdmin']),
 }
 
 class AdminHearingPage extends React.Component {
@@ -14,8 +15,8 @@ class AdminHearingPage extends React.Component {
     super(props);
 
     this.data = {};
-
-    this.data.qualified = false;
+    
+    this.data.qualifiedType = 'qualifiedAdmin';
 
     const contentfulData = props.data.content.edges[0].node;
 

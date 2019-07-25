@@ -54,5 +54,6 @@ module.exports = {
   'groupsLookMore': 'Vous souhaitez trouver d’autres informations ? Recherchez dans le Répertoire d\’Assistance aux Locataires (Tenant Assistance Directory en anglais).',
   'groupsEmpty': 'Aucun groupe d\'organisation de locataires ne travaille actuellement dans votre quartier.',
   'groupsEmptySubtitle': 'Effectuez une recherche dans le Répertoire d\'Assistance aux Locataires (Tenant Assistance Directory) pour d\'autres services.',
-  'groupsSearch': 'Indiquez votre code postal pour trouver un groupe communautaire local !'
+  'groupsSearch': 'Indiquez votre code postal pour trouver un groupe communautaire local !',
+  'titleOverride': 'Si le chef de famille dans votre a 62 ans ou plus, et vous avez une audience administrative à NYCHA, vous avez le droit à un avocat.  Si non, vous avez encore autres options pour obtenir de l\'aide.'
 };

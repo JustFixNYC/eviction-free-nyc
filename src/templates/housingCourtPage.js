@@ -7,6 +7,7 @@ import CourtPage from "../containers/CourtPage";
 
 const propTypes = {
   data: PropTypes.object.isRequired,
+  qualifiedType: PropTypes.oneOf(['qualified', 'notQualified', 'qualifiedAdmin']),
 }
 
 class PageTemplate extends React.Component {
@@ -16,8 +17,12 @@ class PageTemplate extends React.Component {
     const casetype = props.location.pathname.split('/')[4];
 
     this.data = {};
-
-    this.data.qualified = casetype.substr(casetype.length - 3) === 'rtc';
+    
+    if (casetype.substr(casetype.length - 3) === 'rtc') {
+      this.data.qualifiedType = 'qualified';
+    } else {
+      this.data.qualifiedType = 'notQualified';
+    }
 
     const contentfulData = props.data.allContentfulHousingCourtPage.edges[0].node;
 

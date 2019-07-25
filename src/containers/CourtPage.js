@@ -17,8 +17,9 @@ import CommunityGroups from "../components/CommunityGroups";
 
 import '../styles/HousingCourtPage.scss';
 
-const CourtPage = ({ qualified, steps, additionalResources, providers, intl }) => {
+const CourtPage = ({ qualifiedType, steps, additionalResources, providers, intl }) => {
 
+  
   const userZip = getParameterByName('zip');
 
   return (
@@ -32,7 +33,13 @@ const CourtPage = ({ qualified, steps, additionalResources, providers, intl }) =
 
       <div className="HousingCourtPage_Header clearfix">
         <h2 className="float-left">
-          <Trans id={qualified ? 'qualifiedTitle' : 'notQualifiedTitle'} />
+        {
+          {
+            'qualified': <Trans id={'qualifiedTitle'}/>,
+            'notQualified': <Trans id={'notQualifiedTitle'}/>,
+            'qualifiedAdmin': <Trans id={'titleOverride'}/>
+          }[qualifiedType]
+        }
         </h2>
         <button onClick={() => window.print()}
           className="btn btn-default float-right"><Trans id="print" /></button>
