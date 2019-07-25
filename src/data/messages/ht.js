@@ -54,5 +54,6 @@ module.exports = {
   'groupsLookMore': 'Ou bezwen plis enfòmasyon? Chache nan Lis Oganizasyon Pou Lokatè Yo.',
   'groupsEmpty': 'Pa gen ankenn òganizasyon lokatè ki ap travay kounye a nan zònn ou an.',
   'groupsEmptySubtitle': 'Chèche nan lis asosyasyon lokatè yo pou ka jwenn lòt asistans.',
-  'groupsSearch': 'Rantre “zip code” ou pou yon jwen òganizasyon ki nan zònn ou!'
+  'groupsSearch': 'Rantre “zip code” ou pou yon jwen òganizasyon ki nan zònn ou!',
+  'titleOverride': 'Si\'w gen pou ale nan yon jijman administratif (administrative hearing) nan NYCHA epi si moun ki tèt kay la nan apatman\'w lan gen 62 zan oubyen plis ke 62 zan, ou gen dwa genyen yon avoka.  Otreman, menm si ou pa kalifye, ou ka toujou jwenn èd.'
 };

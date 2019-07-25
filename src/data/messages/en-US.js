@@ -54,5 +54,6 @@ module.exports = {
   'groupsLookMore': 'Looking for more? Search the Tenant Assistance Directory',
   'groupsEmpty': 'There are no tenant organizing groups currently working in your area.',
   'groupsEmptySubtitle': 'Search the Tenant Assistance Directory for other support.',
-  'groupsSearch': 'Enter your zipcode to find a local community group!'
+  'groupsSearch': 'Enter your zipcode to find a local community group!',
+  'titleOverride': 'If the head of household in your apartment is 62 years or older, and you have an administrative hearing at NYCHA, you have the right to an attorney. Otherwise, you still have options to get assistance.'
 };

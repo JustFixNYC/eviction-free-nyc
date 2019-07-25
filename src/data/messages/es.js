@@ -54,5 +54,6 @@ module.exports = {
   'groupsLookMore': '¿Necesita algo más? Haga una búsqueda en el Directorio de Ayuda al Inquilino',
   'groupsEmpty': 'Actualmente, no hay ningún grupo que esté organizando inquilinos en su área.',
   'groupsEmptySubtitle': 'Haga una búsqueda en el Directorio de Ayuda al Inquilino para otro tipo de apoyo.',
-  'groupsSearch': '¡Introduzca su código postal para buscar un grupo comunitario local!'
+  'groupsSearch': '¡Introduzca su código postal para buscar un grupo comunitario local!',
+  'titleOverride': 'Si la cabeza de familia en su apartamento tiene 62 anos o mas y usted tiene una audiencia administrativa en NYCHA, usted tiene el derecho a un abogado. Si no es asi, usted tiene otras opciones para obtener ayuda.'
 };
