@@ -17,7 +17,7 @@ import CommunityGroups from "../components/CommunityGroups";
 
 import '../styles/HousingCourtPage.scss';
 
-const CourtPage = ({ qualified, notQualified, qualifiedAdmin, steps, additionalResources, providers, intl }) => {
+const CourtPage = ({ qualifiedType, steps, additionalResources, providers, intl }) => {
 
   
   const userZip = getParameterByName('zip');
@@ -33,9 +33,13 @@ const CourtPage = ({ qualified, notQualified, qualifiedAdmin, steps, additionalR
 
       <div className="HousingCourtPage_Header clearfix">
         <h2 className="float-left">
-          <Trans id={qualified ? 'qualifiedTitle' : ' '} />
-          <Trans id={notQualified ? 'notQualifiedTitle' : ' '} />
-          <Trans id ={qualifiedAdmin ? 'If the head of household in your apartment is 62 years or older, and you have an administrative hearing at NYCHA, you have the right to an attorney. Otherwise, you still have options to get assistance.' : ' '} />
+        {
+          {
+            '1': <Trans id={'qualifiedTitle'}/>,
+            '2': <Trans id={'notQualifiedTitle'}/>,
+            '3': <Trans id={'titleOverride'}/>
+          }[qualifiedType]
+        }
         </h2>
         <button onClick={() => window.print()}
           className="btn btn-default float-right"><Trans id="print" /></button>
