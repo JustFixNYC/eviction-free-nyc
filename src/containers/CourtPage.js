@@ -35,9 +35,9 @@ const CourtPage = ({ qualifiedType, steps, additionalResources, providers, intl 
         <h2 className="float-left">
         {
           {
-            '1': <Trans id={'qualifiedTitle'}/>,
-            '2': <Trans id={'notQualifiedTitle'}/>,
-            '3': <Trans id={'titleOverride'}/>
+            'qualified': <Trans id={'qualifiedTitle'}/>,
+            'notQualified': <Trans id={'notQualifiedTitle'}/>,
+            'qualifiedAdmin': <Trans id={'titleOverride'}/>
           }[qualifiedType]
         }
         </h2>
