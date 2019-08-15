@@ -122,7 +122,8 @@ class ScreenerPage extends React.Component {
 
   handleScreenerSubmit = () => {
     try {
-      determineResultPage(this.state.user, this.props.intl);
+      let resultsURL = determineResultPage(this.state.user, this.props.intl);
+      navigateTo(resultsURL);
     } catch(err) {
       Rollbar.error("Missing a step", this.state.user);
       this.changeStep(0);

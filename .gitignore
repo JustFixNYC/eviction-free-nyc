@@ -8,3 +8,6 @@ public/
 yarn-error.log
 .env.development
 .env.production
+
+#Ignore lambda functions build output
+/lambda
