@@ -57,15 +57,21 @@ export default {
       resultUrl += `?zip=${user.zip}`
     }
 
-    Rollbar.info("Screener completed", user);
+    if(typeof window !== 'undefined') {
+      if(Rollbar !== undefined) {
+        Rollbar.info("Screener completed", user);
+      }
 
-    // tracking
-    window.gtag('event', 'scr-completed');
-    if(isEligible) {
-      window.gtag('event', 'scr-completed-eligible');
-    }
-    if(user.nycha) {
-      window.gtag('event', 'scr-completed-nycha');
+      // tracking
+      if(window && window.gtag) {
+        window.gtag('event', 'scr-completed');
+        if(isEligible) {
+          window.gtag('event', 'scr-completed-eligible');
+        }
+        if(user.nycha) {
+          window.gtag('event', 'scr-completed-nycha');
+        }
+      }
     }
 
 

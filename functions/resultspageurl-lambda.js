@@ -2,11 +2,14 @@
 'use strict'
 
 const axios = require('axios');
-var logic = require('../util/logic');
+// const logic = require('../src/utils/logic');
+
+import logic from '../src/utils/logic';
+// import { isLocationEligible, isNychaEligible, determineResultPage } from '../src/utils/logic';
 
 
 exports.handler = (event, context, callback) => {
-  
+
   const parsedBody = JSON.parse(event.body);
 
 
@@ -20,7 +23,7 @@ exports.handler = (event, context, callback) => {
   var RTC_areaEligible = logic.isLocationEligible(parsedBody.zip); //weird
 
   var user = {
-    zip: parsedBody.zip, 
+    zip: parsedBody.zip,
     boro: parsedBody.boro,
     nycha: parsedBody.nycha,
     areaEligible: RTC_areaEligible,
@@ -28,29 +31,45 @@ exports.handler = (event, context, callback) => {
     caseType: parsedBody.caseType,
   };
 
-  var result_URL = logic.determineResultPage(user, intl);
-  
 
-  axios({
-    method: 'post',
-    url: 'https://enhzjnt8yq1mm.x.pipedream.net',
-    data: { zip: parsedBody.zip, 
-            boro: parsedBody.boro,
-            nycha: parsedBody.nycha,
-            areaEligible: RTC_areaEligible,
-            incomeEligible: parsedBody.incomeEligible,
-            caseType: parsedBody.caseType,
-            URL: result_URL
-          }
-  })
-  .then(response => {
+  try {
+    let resultsURL = logic.determineResultPage(user, intl);
+
     callback(null, {
       statusCode: 200,
-      body: 'Yay!',
-    })
-  })
-  .catch(err => {
-    console.log(err)
-    callback(new Error('something went wrong'))
-  })
+      body: JSON.stringify({
+        result_url: resultsURL
+      })
+    });
+
+  } catch(err) {
+
+    callback(err);
+  }
+
+  
+
+
+  // axios({
+  //   method: 'post',
+  //   url: 'https://enhzjnt8yq1mm.x.pipedream.net',
+  //   data: { zip: parsedBody.zip,
+  //           boro: parsedBody.boro,
+  //           nycha: parsedBody.nycha,
+  //           areaEligible: RTC_areaEligible,
+  //           incomeEligible: parsedBody.incomeEligible,
+  //           caseType: parsedBody.caseType,
+  //           URL: result_URL
+  //         }
+  // })
+  // .then(response => {
+  //   callback(null, {
+  //     statusCode: 200,
+  //     body: 'Yay!',
+  //   })
+  // })
+  // .catch(err => {
+  //   console.log(err)
+  //   callback(new Error('something went wrong'))
+  // })
 }
