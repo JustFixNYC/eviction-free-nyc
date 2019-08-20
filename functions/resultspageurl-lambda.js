@@ -30,37 +30,37 @@ exports.handler = (event, context, callback) => {
   let resultsURL = logic.determineResultPage(user, intl);
 
 
-  // try {
-  //   let resultsURL = logic.determineResultPage(user, intl);
+  try {
+    let resultsURL = logic.determineResultPage(user, intl);
 
-  //   callback(null, {
-  //     statusCode: 200,
-  //     data: {
-  //         result_url: resultsURL
-  //     }
-  //   });
-
-  // } catch(err) {
-
-  //   callback(err);
-  // }
-
-
-  axios({
-    method: 'post',
-    url: 'https://enhzjnt8yq1mm.x.pipedream.net',
-    data: { 
-            URL: resultsURL
-          }
-  })
-  .then(response => {
     callback(null, {
       statusCode: 200,
-      body: 'Yay!',
-    })
-  })
-  .catch(err => {
-    console.log(err)
-    callback(new Error('something went wrong'))
-  })
+      data: {
+          result_url: resultsURL
+      }
+    });
+
+  } catch(err) {
+
+    callback(err);
+  }
+
+
+  // axios({
+  //   method: 'post',
+  //   url: 'https://enhzjnt8yq1mm.x.pipedream.net',
+  //   data: { 
+  //           URL: resultsURL
+  //         }
+  // })
+  // .then(response => {
+  //   callback(null, {
+  //     statusCode: 200,
+  //     body: 'Yay!',
+  //   })
+  // })
+  // .catch(err => {
+  //   console.log(err)
+  //   callback(new Error('something went wrong'))
+  // })
 }
