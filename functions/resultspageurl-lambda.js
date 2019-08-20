@@ -32,9 +32,9 @@ exports.handler = (event, context, callback) => {
 
     callback(null, {
       statusCode: 200,
-      body: {
-          result_url: resultsURL
-      }
+      body: JSON.stringify({
+        result_url: resultsURL
+      })
     });
 
   } catch(err) {
@@ -42,6 +42,7 @@ exports.handler = (event, context, callback) => {
     callback(err);
   }
 
+  // let resultsURL = logic.determineResultPage(user, intl);
 
   // axios({
   //   method: 'post',
