@@ -15,24 +15,15 @@ exports.handler = (event, context, callback) => {
       locale: parsedBody.locale,
   };
 
-  if (parsedBody.areaEligible === 'true') {
-    areaEligible === true;
-  } else {
-    areaEligible === false;
-  }
-
-  if (parsedBody.incomeEligible === 'true') {
-    incomeEligible === true;
-  } else {
-    incomeEligible === false;
-  }
+  var areaEligible_bool = 'true' ? true : false;
+  var incomeEligible_bool = 'true' ? true : false;
 
   var user = {
     zip: parsedBody.zip,
     boro: parsedBody.boro,
     nycha: parsedBody.nycha,
-    areaEligible: areaEligible,
-    incomeEligible: incomeEligible,
+    areaEligible: areaEligible_bool,
+    incomeEligible: incomeEligible_bool,
     caseType: parsedBody.caseType
   };
 
