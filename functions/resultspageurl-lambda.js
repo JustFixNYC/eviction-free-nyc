@@ -14,17 +14,16 @@ exports.handler = (event, context, callback) => {
   const intl = {
       locale: parsedBody.locale,
   };
-
-
-  var RTC_areaEligible = logic.isLocationEligible(parsedBody.zip);
+  
+  //var RTC_areaEligible = logic.isLocationEligible(parsedBody.zip);
 
   var user = {
     zip: parsedBody.zip,
     boro: parsedBody.boro,
     nycha: parsedBody.nycha,
-    areaEligible: RTC_areaEligible,
+    areaEligible: parsedBody.areaEligible,
     incomeEligible: parsedBody.incomeEligible,
-    caseType: parsedBody.caseType,
+    caseType: parsedBody.caseType
   };
 
   try {
@@ -41,24 +40,4 @@ exports.handler = (event, context, callback) => {
 
     callback(err);
   }
-
-  // let resultsURL = logic.determineResultPage(user, intl);
-
-  // axios({
-  //   method: 'post',
-  //   url: 'https://enhzjnt8yq1mm.x.pipedream.net',
-  //   data: { 
-  //           URL: resultsURL
-  //         }
-  // })
-  // .then(response => {
-  //   callback(null, {
-  //     statusCode: 200,
-  //     body: 'Yay!',
-  //   })
-  // })
-  // .catch(err => {
-  //   console.log(err)
-  //   callback(new Error('something went wrong'))
-  // })
 }
