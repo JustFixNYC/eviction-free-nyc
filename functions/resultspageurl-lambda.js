@@ -14,15 +14,13 @@ exports.handler = (event, context, callback) => {
   const intl = {
       locale: parsedBody.locale,
   };
-  
-  //var RTC_areaEligible = logic.isLocationEligible(parsedBody.zip);
 
   var user = {
     zip: parsedBody.zip,
     boro: parsedBody.boro,
     nycha: parsedBody.nycha,
-    areaEligible: parsedBody.areaEligible,
-    incomeEligible: parsedBody.incomeEligible,
+    areaEligible: JSON.parse(parsedBody.areaEligible),
+    incomeEligible: JSON.parse(parsedBody.incomeEligible),
     caseType: parsedBody.caseType
   };
 
