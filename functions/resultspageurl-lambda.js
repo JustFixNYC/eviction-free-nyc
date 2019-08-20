@@ -15,15 +15,12 @@ exports.handler = (event, context, callback) => {
       locale: parsedBody.locale,
   };
 
-  var areaEligible_bool = 'true' ? true : false;
-  var incomeEligible_bool = 'true' ? true : false;
-
   var user = {
     zip: parsedBody.zip,
     boro: parsedBody.boro,
     nycha: parsedBody.nycha,
-    areaEligible: areaEligible_bool,
-    incomeEligible: incomeEligible_bool,
+    areaEligible: JSON.parse(parsedBody.areaEligible),
+    incomeEligible: JSON.parse(parsedBody.incomeEligible),
     caseType: parsedBody.caseType
   };
 
