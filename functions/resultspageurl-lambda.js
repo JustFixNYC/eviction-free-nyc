@@ -24,7 +24,7 @@ exports.handler = (event, context, callback) => {
     nycha: parsedBody.nycha,
     areaEligible: RTC_areaEligible,
     incomeEligible: parsedBody.incomeEligible,
-    caseType: parsedBody.caseType,
+    caseType: parsedBody.caseType.toLowerCase(),
   };
 
   try {
