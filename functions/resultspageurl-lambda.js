@@ -27,15 +27,12 @@ exports.handler = (event, context, callback) => {
     caseType: parsedBody.caseType,
   };
 
-  let resultsURL = logic.determineResultPage(user, intl);
-
-
   try {
     let resultsURL = logic.determineResultPage(user, intl);
 
     callback(null, {
       statusCode: 200,
-      data: {
+      body: {
           result_url: resultsURL
       }
     });
