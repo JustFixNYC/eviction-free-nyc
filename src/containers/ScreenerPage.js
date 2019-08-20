@@ -3,6 +3,7 @@ import * as PropTypes from "prop-types";
 import { injectIntl, FormattedMessage as Trans } from 'react-intl';
 
 import { isLocationEligible, isNychaEligible, determineResultPage } from '../utils/logic';
+import { navigateTo } from 'gatsby-link';
 
 import StepIntro from '../components/steps/StepIntro';
 import StepLocation from '../components/steps/StepLocation';
