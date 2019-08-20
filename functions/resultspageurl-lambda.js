@@ -14,15 +14,25 @@ exports.handler = (event, context, callback) => {
   const intl = {
       locale: parsedBody.locale,
   };
-  
-  //var RTC_areaEligible = logic.isLocationEligible(parsedBody.zip);
+
+  if (parsedBody.areaEligible === 'true') {
+    areaEligible === true;
+  } else {
+    areaEligible === false;
+  }
+
+  if (parsedBody.incomeEligible === 'true') {
+    incomeEligible === true;
+  } else {
+    incomeEligible === false;
+  }
 
   var user = {
     zip: parsedBody.zip,
     boro: parsedBody.boro,
     nycha: parsedBody.nycha,
-    areaEligible: parsedBody.areaEligible,
-    incomeEligible: parsedBody.incomeEligible,
+    areaEligible: areaEligible,
+    incomeEligible: incomeEligible,
     caseType: parsedBody.caseType
   };
 
