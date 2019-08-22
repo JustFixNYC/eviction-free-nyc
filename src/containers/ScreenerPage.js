@@ -3,6 +3,7 @@ import * as PropTypes from "prop-types";
 import { injectIntl, FormattedMessage as Trans } from 'react-intl';
 
 import { isLocationEligible, isNychaEligible, determineResultPage } from '../utils/logic';
+import { navigateTo } from 'gatsby-link';
 
 import StepIntro from '../components/steps/StepIntro';
 import StepLocation from '../components/steps/StepLocation';
@@ -122,7 +123,8 @@ class ScreenerPage extends React.Component {
 
   handleScreenerSubmit = () => {
     try {
-      determineResultPage(this.state.user, this.props.intl);
+      let resultsURL = determineResultPage(this.state.user, this.props.intl);
+      navigateTo(resultsURL);
     } catch(err) {
       Rollbar.error("Missing a step", this.state.user);
       this.changeStep(0);

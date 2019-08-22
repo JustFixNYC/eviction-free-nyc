@@ -23,6 +23,7 @@
     "invariant": "^2.2.4",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.16.4",
+    "netlify-lambda": "^1.6.0",
     "node-sass": "4.5.2",
     "pure-react-carousel": "^1.12.1",
     "react-accessible-accordion": "^2.0.0",
@@ -49,7 +50,11 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "start": "gatsby serve"
+    "prod": "npm run build; npm run build:lambda",
+    "start": "gatsby serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:lambda": "netlify-lambda serve functions",
+    "build:lambda": "netlify-lambda build functions"
   },
   "browserlist": [
     "> 1%",
