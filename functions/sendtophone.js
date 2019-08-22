@@ -1,4 +1,4 @@
-'use strict';
+/* 'use strict';
 
 // NOTE: this isn't currently functional; we're using the serverless CLI instead
 
@@ -55,4 +55,4 @@ exports.handler = function(event, context, callback) {
 
     callback(null, successResponse);
   });
-};
+}; */
