@@ -1,3 +1,3 @@
-FROM node:12
+FROM node:10
 
 RUN npm install --global gatsby-cli
