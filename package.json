@@ -3,7 +3,7 @@
   "private": true,
   "description": "Eviction Free NYC!",
   "version": "1.0.0",
-  "author": "Dan Kass <dan@justfix.nyc>",
+  "author": "JustFix.nyc (hello@justfix.nyc)",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "contentful": "^6.1.0",
