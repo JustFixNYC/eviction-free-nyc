@@ -80,3 +80,7 @@ We use BrowserStack Live to make sure that our sites work across browsers, opera
 ## License
 
 JustFix.nyc uses the GNU General Public License v3.0 Open-Source License. See `LICENSE.md` file for the full text.
+
+## Code of Conduct
+
+Read about JustFix's code of conduct as an organization on our [Mission page](https://www.justfix.nyc/our-mission/), as well as on the Right to Counsel's [About page](https://www.righttocounselnyc.org/about)
