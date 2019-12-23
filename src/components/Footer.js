@@ -19,6 +19,9 @@ const Footer = (props) => (
         <SelectLanguage { ...props } />
         <HTMLTrans id="justfixAttribution" />
         <a href="https://www.justfix.nyc/" target="_blank"><img src={justfixLogo} alt={`JustFix.nyc logo`} /></a>
+        <a href="https://www.netlify.com" target="_blank" className="hide-sm">
+          <img src="https://www.netlify.com/img/global/badges/netlify-light.svg" width="75" />
+        </a>
       </div>
     </footer>    
   </div>
