@@ -89,7 +89,7 @@ Follow this link for assistance in your eviction case: ${page}
               <div className="input-group">
                 {/* See above  */}
                 {typeof ReactPhoneInput !== 'undefined' && (
-                  <PhoneInput className="input-group" country={'us'} value={this.state.phone} onChange={this.handleOnChange} />
+                  <ReactPhoneInput className="input-group" country={'us'} value={this.state.phone} onChange={this.handleOnChange} />
                 )}
                 {button}
               </div>
