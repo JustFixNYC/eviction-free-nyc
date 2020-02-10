@@ -10,6 +10,8 @@ import rtcLogo from '../assets/img/RTC_logo_scales.svg';
 import fbIcon from '../assets/img/fb.svg';
 import twitterIcon from '../assets/img/twitter.svg';
 
+const isDemoSite = process.env.GATSBY_DEMO_SITE === '1';
+
 const Header = ({ intl }) => (
   <header className="Header navbar">
     <section className="navbar-section">
@@ -18,6 +20,8 @@ const Header = ({ intl }) => (
         <img src={rtcLogo} />
         <span>Eviction Free NYC!</span>
       </Link>
+      {isDemoSite && 
+        <span className="label label-rounded label-warning ml-2 text-uppercase">Demo Site</span>}
     </section>
     <section className="navbar-section navbar-btns-social">
       <div className="btn-group btns-social">
