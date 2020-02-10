@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "caniuse-db": "^1.0.30000652",
     "contentful": "^6.1.0",
     "dotenv": "^5.0.1",
     "es6-promise": "^4.2.4",
