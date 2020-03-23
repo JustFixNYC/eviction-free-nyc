@@ -13,17 +13,6 @@ const propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-const MoratoriumWarning = () => (
-  <div className="toast toast-warning text-left">
-    NOTE: An Eviction Moratorium is in place in NY State due to the Covid-19 public health crisis. 
-    This means you cannot be evicted <span className="text-bold">for any reason</span>. 
-    All courts that hear eviction cases are closed. 
-    {' '}<a className="text-bold" href="https://www.righttocounselnyc.org/moratorium_faq" target="_blank" rel="noopener noreferrer">
-      Learn more
-    </a>
-  </div>
-);
-
 class LandingPage extends React.Component {
   constructor(props) {
     super(props);
@@ -58,7 +47,9 @@ class LandingPage extends React.Component {
       <section className="Page LandingPage">
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent  container grid-md">
-            <MoratoriumWarning />
+            <div className="LandingPage__WarningBanner toast toast-warning text-left" dangerouslySetInnerHTML={{
+              __html: c.moratoriumBanner.childMarkdownRemark.html
+            }} />
             <h2 className="LandingPage__HeroTitle">{c.heroTitle}</h2>
             <h4 className="LandingPage__HeroSubtitle">{c.heroSubTitle}</h4>
             <ButtonLink to={`/questions`} type="primary">
@@ -116,6 +107,11 @@ export const landingPageFragment = graphql`
         id
         node_locale
         pageTitle
+        moratoriumBanner {
+          childMarkdownRemark {
+            html
+          }
+        }
         heroTitle
         heroSubTitle
         heroButtonText
