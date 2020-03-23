@@ -27,7 +27,7 @@
     "intl": "^1.2.5",
     "invariant": "^2.2.4",
     "isomorphic-fetch": "^2.2.1",
-    "lodash": "^4.16.4",
+    "lodash": "^4.17.13",
     "netlify-lambda": "^1.6.0",
     "node-sass": "4.5.2",
     "prop-types": "^15.7.2",
