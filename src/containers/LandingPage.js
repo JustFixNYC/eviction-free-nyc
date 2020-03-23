@@ -14,7 +14,7 @@ const propTypes = {
 }
 
 const MoratoriumWarning = () => (
-  <div className="toast toast-warning my-2">
+  <div className="toast toast-warning text-left">
     NOTE: An Eviction Moratorium is in place in NY State due to the Covid-19 public health crisis. All courts that hear eviction cases are closed. 
     This means you cannot be evicted <span className="text-bold">for any reason</span>. 
     To learn more, go to the Right to Counsel Coalition’s Eviction <a className="text-bold" href="https://www.righttocounselnyc.org/moratorium_faq" target="_blank" rel="noopener noreferrer">
@@ -58,7 +58,7 @@ class LandingPage extends React.Component {
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent  container grid-md">
             <MoratoriumWarning />
-            <h2 className="LandingPage__HeroTitle mt-2">{c.heroTitle}</h2>
+            <h2 className="LandingPage__HeroTitle">{c.heroTitle}</h2>
             <h4 className="LandingPage__HeroSubtitle">{c.heroSubTitle}</h4>
             <ButtonLink to={`/questions`} type="primary">
               {c.heroButtonText}
@@ -73,9 +73,9 @@ class LandingPage extends React.Component {
                 </Link>
               ))}
             </div>
-          </div>
-          <div className="LandingPage__HeroLearnMore">
-            <div>{c.learnMoreTitle}</div><i className="icon icon-arrow-down"></i>
+            <div className="LandingPage__HeroLearnMore">
+              <div>{c.learnMoreTitle}</div><i className="icon icon-arrow-down"></i>
+            </div>
           </div>
         </div>
         <div id="faq" className="LandingPage__Content container grid-md">
