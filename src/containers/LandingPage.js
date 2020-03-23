@@ -15,11 +15,12 @@ const propTypes = {
 
 const MoratoriumWarning = () => (
   <div className="toast toast-warning text-left">
-    NOTE: An Eviction Moratorium is in place in NY State due to the Covid-19 public health crisis. All courts that hear eviction cases are closed. 
+    NOTE: An Eviction Moratorium is in place in NY State due to the Covid-19 public health crisis. 
     This means you cannot be evicted <span className="text-bold">for any reason</span>. 
-    To learn more, go to the Right to Counsel Coalition’s Eviction <a className="text-bold" href="https://www.righttocounselnyc.org/moratorium_faq" target="_blank" rel="noopener noreferrer">
-      Moratorium FAQs
-    </a> page or call the Housing Court Answers hotline at 212-562-4795.
+    All courts that hear eviction cases are closed. 
+    {' '}<a className="text-bold" href="https://www.righttocounselnyc.org/moratorium_faq" target="_blank" rel="noopener noreferrer">
+      Learn more
+    </a>
   </div>
 );
 
