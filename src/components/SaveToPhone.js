@@ -7,7 +7,7 @@ import { FormattedMessage as Trans, FormattedHTMLMessage as HTMLTrans } from 're
 // Needed for gatsby builds that don't have references to document
 let ReactPhoneInput;
 if (typeof document !== 'undefined') {
-  ReactPhoneInput = require("react-phone-input").default;
+  ReactPhoneInput = require("react-phone-input-2").default;
 }
 
 import '../styles/SaveToPhone.scss';
@@ -89,7 +89,7 @@ Follow this link for assistance in your eviction case: ${page}
               <div className="input-group">
                 {/* See above  */}
                 {typeof ReactPhoneInput !== 'undefined' && (
-                  <ReactPhoneInput className="input-group" defaultCountry={'us'} value={this.state.phone} onChange={this.handleOnChange} />
+                  <ReactPhoneInput className="input-group" country={'us'} value={this.state.phone} onChange={this.handleOnChange} />
                 )}
                 {button}
               </div>

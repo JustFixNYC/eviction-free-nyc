@@ -24,21 +24,13 @@ node on your computer, or via Docker.
 
 #### Option 1: Developing with your local installation of node
 
-Make sure that you have `node >= v10` and `npm >= v6` running. In a terminal window, type `node --version` and hit ENTER, then `npm --version` and hit ENTER to get this info. You'll then need to install gatsby:
+Make sure that you have `node >= v10` and `yarn >= 1.17` running. In a terminal window, type `node --version` and hit ENTER, then `yarn --version` and hit ENTER to get this info. You'll then need to install gatsby:
 
-```
-npm install --global gatsby-cli
-```
-alternatively in [yarn](https://yarnpkg.com/en/):
 ```
 yarn global add gatsby-cli
 ```
 
 Once your environment is setup, you'll need to download libraries (make sure you're in the root directory):
-```
-npm install
-```
-or
 ```
 yarn install
 ```
