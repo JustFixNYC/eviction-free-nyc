@@ -6,7 +6,7 @@
 
   .LandingPage__Hero {
 
-    height: calc(88vh - 60px);
+    min-height: calc(98vh - 60px);
     // background-color: $bg-color-dark;
 
     // background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPklEQVQoU2NkIApwSTESVsclxcDw7RkBhRBFIMPwKEQowqMQVREOhZiKsCjErghNIW5FSArxK4IqJKwIpBAAB04SL75UWDsAAAAASUVORK5CYII=) repeat $bg-color-dark;
@@ -118,7 +118,7 @@
     @include for-tablet-landscape-up() {
       justify-content: flex-start;
       text-align: left;
-      height: calc(80vh - 60px);
+      min-height: calc(90vh - 60px);
     }
 
     .LandingPage__HeroLearnMore {
