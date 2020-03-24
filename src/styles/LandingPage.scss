@@ -5,12 +5,7 @@
   margin-top: 0;
 
   .LandingPage__Hero {
-
-    height: calc(88vh - 60px);
-    // background-color: $bg-color-dark;
-
-    // background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAPklEQVQoU2NkIApwSTESVsclxcDw7RkBhRBFIMPwKEQowqMQVREOhZiKsCjErghNIW5FSArxK4IqJKwIpBAAB04SL75UWDsAAAAASUVORK5CYII=) repeat $bg-color-dark;
-
+    padding: 0.75rem 0;
     background: $secondary-color;
     color: #fff;
 
@@ -23,12 +18,7 @@
 
     .LandingPage__HeroContent {
 
-      // margin-left: 10vw;
-
-      // phone
-      position: relative;
-      top: -16px;
-
+      margin-bottom: 0.5rem;
 
       h2, h4 {
         font-weight: 200;
@@ -39,11 +29,15 @@
         }
       }
 
+      .LandingPage__WarningBanner {
+        p {
+          margin: 0;
+        }
+      }
+
       .LandingPage__HeroTitle {
 
-
-
-        margin-bottom: 1rem;
+        margin: 1rem 0;
         font-size: 2.1rem;
 
         @include for-phone-only() {
@@ -89,7 +83,6 @@
 
       .LandingPage__LangSwitches {
 
-
         @include for-tablet-portrait-up() {
           display: flex;
           .btn + .btn {
@@ -118,30 +111,20 @@
     @include for-tablet-landscape-up() {
       justify-content: flex-start;
       text-align: left;
-      height: calc(80vh - 60px);
+      padding: 2.5rem 0 1rem 0;
     }
 
     .LandingPage__HeroLearnMore {
-      display: block;
-      position: absolute;
-      bottom: 24px;
-      left: 50%;
-      transform: translateX(-50%);
       text-align: center;
       font-weight: normal;
       line-height: 1.2;
+      margin-top: 1rem;
 
       @include for-tablet-portrait-up() {
         display: none;
       }
 
-      @media (max-height: 600px) {
-        bottom: 10px;
-      }
-
     }
-
-
   }
 
   .LandingPage__Content {
