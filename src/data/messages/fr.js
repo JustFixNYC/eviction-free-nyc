@@ -5,7 +5,7 @@ module.exports = {
   'ht': 'Kreyol',
   'switch_es': 'En español',
   'switch_en-US': 'In english',
-  'switch_fr': 'En francés',
+  'switch_fr': 'En français',
   'switch_ht': 'Nan kreyol',
   'back': 'Retour à la page précédente',
   'continue': 'Continuez',
