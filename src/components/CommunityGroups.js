@@ -94,26 +94,10 @@ class CommunityGroups extends React.Component {
                 </div>
               </div>
             )}
-            <div className="tile" key={this.state.groups.length}>
-              <div className="tile-content">
-                <p className="tile-title h5"><Trans id="groupsLookMore" /></p>
-              </div>
-              <div className="tile-action">
-                <a href="http://findhelp.justfix.nyc/" target="_blank"
-                  className="btn btn-default">
-                   <i className="icon icon-share mr-2"></i>
-                   <Trans id="website" />
-                </a>
-              </div>
-            </div>
           </div>
         ) : this.state.contentfulResponse ? (
           <div className="empty">
             <p className="empty-title h5"><Trans id="groupsEmpty" /></p>
-            <p className="empty-subtitle"><Trans id="groupsEmptySubtitle" /></p>
-            <div className="empty-action">
-              <a className="btn btn-steps" href="http://findhelp.justfix.nyc/" target="_blank"><Trans id="website" /></a>
-            </div>
           </div>
         ) : (
           <div className="empty">

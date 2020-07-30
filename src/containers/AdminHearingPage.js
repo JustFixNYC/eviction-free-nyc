@@ -25,13 +25,6 @@ class AdminHearingPage extends React.Component {
         html: addCallButtons(step.childContentfulHousingCourtActionStepContentTextNode.childMarkdownRemark.html)
     }));
 
-    if(contentfulData.additionalResources) {
-      this.data.additionalResources = contentfulData.additionalResources.map((step, i) => ({
-          title: step.title,
-          html: addCallButtons(step.childContentfulHousingCourtActionStepContentTextNode.childMarkdownRemark.html)
-      }));
-    }
-
     this.data.providers = contentfulData.providers;
 
   }
