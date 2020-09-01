@@ -30,6 +30,7 @@
     "lodash": "^4.16.4",
     "netlify-lambda": "^1.6.0",
     "node-sass": "4.5.2",
+    "prettier": "^2.1.1",
     "prop-types": "^15.7.2",
     "pure-react-carousel": "^1.12.1",
     "react": "^16.12.0",
@@ -60,9 +61,12 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
+    "prettier": "prettier",
+    "prettier:check": "prettier \"**/*.{ts,tsx,js,scss}\" --check",
+    "prettier:fix": "prettier \"**/*.{ts,tsx,js,scss}\" --write",
     "prod": "npm run build; npm run build:lambda",
     "start": "gatsby serve",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "yarn prettier:check",
     "start:lambda": "netlify-lambda serve functions",
     "build:lambda": "netlify-lambda build functions"
   },
