@@ -1,18 +1,15 @@
 // tinker time !! :~)
-'use strict'
+"use strict";
 
-const axios = require('axios');
+const axios = require("axios");
 
-import logic from '../src/utils/logic';
-
+import logic from "../src/utils/logic";
 
 exports.handler = (event, context, callback) => {
-
   const parsedBody = JSON.parse(event.body);
 
-
   const intl = {
-      locale: parsedBody.locale,
+    locale: parsedBody.locale,
   };
 
   var user = {
@@ -21,7 +18,7 @@ exports.handler = (event, context, callback) => {
     nycha: parsedBody.nycha,
     areaEligible: JSON.parse(parsedBody.areaEligible),
     incomeEligible: JSON.parse(parsedBody.incomeEligible),
-    caseType: parsedBody.caseType
+    caseType: parsedBody.caseType,
   };
 
   try {
@@ -30,12 +27,10 @@ exports.handler = (event, context, callback) => {
     callback(null, {
       statusCode: 200,
       body: JSON.stringify({
-        result_url: resultsURL
-      })
+        result_url: resultsURL,
+      }),
     });
-
-  } catch(err) {
-
+  } catch (err) {
     callback(err);
   }
-}
+};

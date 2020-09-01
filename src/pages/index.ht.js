@@ -1,4 +1,4 @@
-export default from '../containers/LandingPage';
+export default from "../containers/LandingPage";
 
 export const pageQuery = graphql`
   query LandingPageHtQuery {
@@ -13,4 +13,4 @@ export const pageQuery = graphql`
       ...LandingPageFragment
     }
   }
-`
+`;

@@ -1,10 +1,9 @@
-@import 'vars';
+@import "vars";
 
 @import "~spectre.css/src/mixins";
 
 // make all btns large size
 .btn {
-
   min-width: 100px;
 
   &:not(.btn-normal):not(.btn-sm) {
@@ -14,7 +13,8 @@
   }
 
   &.btn-link {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       text-decoration: underline;
       outline: none;
       box-shadow: none;
@@ -25,7 +25,6 @@
     background-color: $gray-color-dark;
     border-color: $gray-color-dark;
   }
-
 }
 
 .btn.btn-default {
@@ -33,7 +32,10 @@
   border-width: 2px;
   color: $third-color;
 
-  &:hover, &:focus, &:active, &.active {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     background-color: $third-color;
     border-color: $third-color;
     color: #fff;
@@ -43,7 +45,6 @@
     box-shadow: 0 0 0 0.1rem rgba(3, 77, 166, 0.2);
   }
 }
-
 
 .btn.btn-secondary {
   @include button-variant($secondary-color);

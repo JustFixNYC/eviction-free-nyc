@@ -1,10 +1,10 @@
-import React from 'react';
-import Select from 'react-select';
-import { FormattedMessage as Trans } from 'react-intl';
+import React from "react";
+import Select from "react-select";
+import { FormattedMessage as Trans } from "react-intl";
 
-import 'react-select/dist/react-select.css';
+import "react-select/dist/react-select.css";
 
-import NychaData from '../data/nycha.json';
+import NychaData from "../data/nycha.json";
 
 class NychaSearch extends React.Component {
   constructor(props) {
@@ -12,13 +12,13 @@ class NychaSearch extends React.Component {
 
     this.state = {
       selectedOption: null,
-    }
+    };
   }
 
   handleChange = (selectedOption) => {
     this.setState({ selectedOption });
-    if(selectedOption) this.props.onFormSubmit(selectedOption);    
-  }
+    if (selectedOption) this.props.onFormSubmit(selectedOption);
+  };
 
   render() {
     const { selectedOption } = this.state;
@@ -35,8 +35,6 @@ class NychaSearch extends React.Component {
       />
     );
   }
-
-
 }
 
 export default NychaSearch;

@@ -1,6 +1,9 @@
 /* eslint-disable no-undef */
 function sendSMS(phone, message) {
-  return post('https://qamwoc4zg5.execute-api.us-east-1.amazonaws.com/dev/api/sendSms', { to: phone, message: message });
+  return post(
+    "https://qamwoc4zg5.execute-api.us-east-1.amazonaws.com/dev/api/sendSms",
+    { to: phone, message: message }
+  );
 }
 
 function get(url) {
@@ -11,14 +14,14 @@ function get(url) {
 
 function post(url, body, cb) {
   return fetch(url, {
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      method: 'POST',
-      mode: 'cors',
-      body: JSON.stringify(body)
-    })
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    method: "POST",
+    mode: "cors",
+    body: JSON.stringify(body),
+  })
     .then(checkStatus)
     .then(parseJSON);
 }
@@ -39,6 +42,6 @@ function parseJSON(response) {
 }
 
 const Client = {
-  sendSMS
+  sendSMS,
 };
 export default Client;

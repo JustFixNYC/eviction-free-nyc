@@ -1,0 +1,5 @@
+# Yikes! Don't go in there!
+node_modules
+public
+functions-build
+.cache

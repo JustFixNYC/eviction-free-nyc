@@ -1,5 +1,5 @@
 import React from "react";
-import { FormattedMessage as Trans, injectIntl } from 'react-intl';
+import { FormattedMessage as Trans, injectIntl } from "react-intl";
 import * as PropTypes from "prop-types";
 
 import Link from "gatsby-link";
@@ -7,41 +7,39 @@ import Img from "gatsby-image";
 import ButtonLink from "../components/ButtonLink";
 import Accordion from "../components/Accordion";
 
-var widont = require('widont');
+var widont = require("widont");
 
-import '../styles/LandingPage.scss';
+import "../styles/LandingPage.scss";
 
 const propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
 class LandingPage extends React.Component {
   constructor(props) {
     super(props);
 
     this.allLangs = props.data.langs.siteMetadata.languages.langs;
-    this.otherLangs = this.allLangs.filter(l => l !== props.intl.locale);
+    this.otherLangs = this.allLangs.filter((l) => l !== props.intl.locale);
 
     this.content = props.data.content.edges[0].node;
-    this.faq = this.content.faq.map(item => ({
+    this.faq = this.content.faq.map((item) => ({
       title: item.title,
-      html: this.addGetStartedButton(item.content.childMarkdownRemark.html)
+      html: this.addGetStartedButton(item.content.childMarkdownRemark.html),
     }));
-
   }
 
   addGetStartedButton = (html) => {
     const locale = this.props.intl.locale;
     const buttonText = this.content.heroButtonText;
-    return html += `
+    return (html += `
       <a class="btn btn-block btn-primary" href="/${locale}/questions">
         ${buttonText}
         <i class="icon icon-forward ml-2"></i>
       </a>
       <br />
-    `;
-  }
-
+    `);
+  };
 
   render() {
     const c = this.content;
@@ -49,9 +47,15 @@ class LandingPage extends React.Component {
       <section className="Page LandingPage">
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent  container grid-md">
-            <div className="LandingPage__WarningBanner toast toast-warning text-left" dangerouslySetInnerHTML={{
-              __html: widont(c.moratoriumBanner.childMarkdownRemark.html,'html')
-            }} />
+            <div
+              className="LandingPage__WarningBanner toast toast-warning text-left"
+              dangerouslySetInnerHTML={{
+                __html: widont(
+                  c.moratoriumBanner.childMarkdownRemark.html,
+                  "html"
+                ),
+              }}
+            />
             <h2 className="LandingPage__HeroTitle">{c.heroTitle}</h2>
             <h4 className="LandingPage__HeroSubtitle">{c.heroSubTitle}</h4>
             <ButtonLink to={`/questions`} type="primary">
@@ -60,15 +64,19 @@ class LandingPage extends React.Component {
             </ButtonLink>
             <div className="LandingPage__LangSwitches">
               {this.otherLangs.map((lang, idx) => (
-                <Link to={`/${lang}`} key={idx}
-                      className="btn btn-block btn-default">
+                <Link
+                  to={`/${lang}`}
+                  key={idx}
+                  className="btn btn-block btn-default"
+                >
                   <Trans id={`switch_${lang}`} />
                   <i className="icon icon-forward ml-2"></i>
                 </Link>
               ))}
             </div>
             <div className="LandingPage__HeroLearnMore">
-              <div>{c.learnMoreTitle}</div><i className="icon icon-arrow-down"></i>
+              <div>{c.learnMoreTitle}</div>
+              <i className="icon icon-arrow-down"></i>
             </div>
           </div>
         </div>
@@ -79,10 +87,7 @@ class LandingPage extends React.Component {
               <Accordion content={this.faq} />
             </div>
             <div className="LandingPage__ContentImage1 column col-ml-auto col-sm-12 col-4">
-              <Img
-                alt={c.heroImage.title}
-                sizes={c.heroImage.sizes}
-              />
+              <Img alt={c.heroImage.title} sizes={c.heroImage.sizes} />
             </div>
             <div className="LandingPage__ContentImage2 column col-sm-12 col-4">
               <Img
@@ -93,7 +98,6 @@ class LandingPage extends React.Component {
           </div>
         </div>
       </section>
-
     );
   }
 }
@@ -147,4 +151,4 @@ export const landingPageFragment = graphql`
       }
     }
   }
-`
+`;

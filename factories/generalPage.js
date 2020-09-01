@@ -1,10 +1,9 @@
-const _ = require(`lodash`)
-const Promise = require(`bluebird`)
-const path = require(`path`)
+const _ = require(`lodash`);
+const Promise = require(`bluebird`);
+const path = require(`path`);
 // const graphql = require(`graphql`)
 
 exports.create = (graphql, createPage) => {
-
   const pageTemplate = path.resolve(`./src/templates/page.js`);
 
   return new Promise((resolve, reject) => {
@@ -26,16 +25,13 @@ exports.create = (graphql, createPage) => {
           }
         }
       `
-    )
-    .then(result => {
-
+    ).then((result) => {
       if (result.errors) {
         reject(result.errors);
       }
 
       // Create Page pages
-      _.each(result.data.allContentfulPage.edges, edge => {
-
+      _.each(result.data.allContentfulPage.edges, (edge) => {
         const pagePath = `/${edge.node.node_locale}/${edge.node.url}/`;
 
         // Gatsby uses Redux to manage its internal state.
@@ -49,13 +45,12 @@ exports.create = (graphql, createPage) => {
           path: pagePath,
           component: pageTemplate,
           context: {
-            id: edge.node.id
+            id: edge.node.id,
           },
         });
-
       });
 
       resolve();
     });
   });
-}
+};

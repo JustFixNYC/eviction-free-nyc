@@ -1,12 +1,12 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import { FormattedMessage as Trans } from 'react-intl';
-import { FacebookButton, TwitterButton, EmailButton } from 'react-social';
+import React from "react";
+import Link from "gatsby-link";
+import { FormattedMessage as Trans } from "react-intl";
+import { FacebookButton, TwitterButton, EmailButton } from "react-social";
 
-import '../styles/GetInvolved.scss';
+import "../styles/GetInvolved.scss";
 
-import fbIcon from '../assets/img/fb.svg';
-import twitterIcon from '../assets/img/twitter.svg';
+import fbIcon from "../assets/img/fb.svg";
+import twitterIcon from "../assets/img/twitter.svg";
 
 const GetInvolved = (props) => (
   <div className="GetInvolved">
@@ -23,23 +23,28 @@ const GetInvolved = (props) => (
               <Trans id="shareTitle" />
             </label>
             <div className="btn-group btns-social btn-group-block">
-              <FacebookButton className="btn btn-steps"
+              <FacebookButton
+                className="btn btn-steps"
                 sharer={true}
                 appId={`1023402221142410`}
-                windowOptions={['width=400', 'height=200']}>
+                windowOptions={["width=400", "height=200"]}
+              >
                 <img src={fbIcon} className="icon mx-1" alt="Facebook" />
                 <span>Facebook</span>
               </FacebookButton>
-              <TwitterButton className="btn btn-steps"
+              <TwitterButton
+                className="btn btn-steps"
                 message="If you're being evicted, we can help. Go to Eviction Free NYC today! @RTCNYC @JustFixNYC"
-                windowOptions={['width=400', 'height=200']}>
+                windowOptions={["width=400", "height=200"]}
+              >
                 <img src={twitterIcon} className="icon mx-1" alt="Twitter" />
                 <span>Twitter</span>
               </TwitterButton>
-              <EmailButton target="_blank"
-                className="btn btn-steps">
+              <EmailButton target="_blank" className="btn btn-steps">
                 <i className="icon icon-mail mx-2" />
-                <span><Trans id="email" /></span>
+                <span>
+                  <Trans id="email" />
+                </span>
               </EmailButton>
             </div>
           </div>
@@ -50,21 +55,21 @@ const GetInvolved = (props) => (
               <Trans id="registrationTitle" />
             </label>
 
-
             {/* <!-- www.123formbuilder.com script begins here --> */}
             {/* <iframe allowTransparency="true" style={{minHeight:"300px", height:"inherit", overflow:"auto"}} width="100%" src="http://www.123formbuilder.com/my-contact-form-3538714.html">
             <p>Your browser does not support iframes. The contact form cannot be displayed. Please use another contact method (phone, fax etc)</p>
             </iframe> */}
 
-
-{/*
+            {/*
             <script type="text/javascript" defer src="//www.123formbuilder.com/embed/3538714.js" data-role="form" data-default-width="650px"></script> */}
 
-            <a href="https://www.righttocounselnyc.org/join#middle" target="_blank"
-              className="btn btn-primary btn-block">
+            <a
+              href="https://www.righttocounselnyc.org/join#middle"
+              target="_blank"
+              className="btn btn-primary btn-block"
+            >
               <Trans id="registrationBtn" />
             </a>
-
 
             {/* <div className="input-group">
               <input type="text" className="form-input" placeholder="Enter your email" />
@@ -77,8 +82,11 @@ const GetInvolved = (props) => (
             <label className="form-label">
               <Trans id="eventsTitle" />
             </label>
-            <a href="https://www.righttocounselnyc.org/upcoming_events#middle" target="_blank"
-              className="btn btn-primary btn-block">
+            <a
+              href="https://www.righttocounselnyc.org/upcoming_events#middle"
+              target="_blank"
+              className="btn btn-primary btn-block"
+            >
               <Trans id="eventsBtn" />
             </a>
           </div>
@@ -86,6 +94,6 @@ const GetInvolved = (props) => (
       </div>
     </div>
   </div>
-)
+);
 
 export default GetInvolved;

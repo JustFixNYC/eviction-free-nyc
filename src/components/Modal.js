@@ -1,27 +1,26 @@
-import React from 'react';
-import ReactModal from 'react-modal';
+import React from "react";
+import ReactModal from "react-modal";
 
-import '../styles/Modal.scss';
+import "../styles/Modal.scss";
 
 // gatsby not building with ref to document...
 // ReactModal.setAppElement(document.getElementById('#___gatsby'));
 
 const Modal = (props) => {
-
   // style overrides are here. new stuff is in ReactModal.scss
   const styles = {
-    overlay : {
-      position          : 'fixed',
-      top               : 0,
-      left              : 0,
-      right             : 0,
-      bottom            : 0,
-      backgroundColor   : 'rgba(225, 225, 225, 0.75)'
+    overlay: {
+      position: "fixed",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: "rgba(225, 225, 225, 0.75)",
     },
-    content : {
-      WebkitOverflowScrolling    : 'touch',
-      width                      : `${props.width ? props.width : 40}vw`
-    }
+    content: {
+      WebkitOverflowScrolling: "touch",
+      width: `${props.width ? props.width : 40}vw`,
+    },
   };
 
   return (
@@ -32,8 +31,9 @@ const Modal = (props) => {
       overlayClassName="modal-overlay"
       className="modal-container"
       ariaHideApp={false}
-      style={styles}>
-      { props.children }
+      style={styles}
+    >
+      {props.children}
     </ReactModal>
   );
 };

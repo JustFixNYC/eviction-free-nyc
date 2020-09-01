@@ -1,7 +1,6 @@
-@import 'vars';
+@import "vars";
 
 .ScreenerPage {
-
   max-width: 90vw;
 
   @include for-tablet-portrait-up() {
@@ -31,7 +30,7 @@
     }
 
     &:before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 34px;
@@ -45,7 +44,6 @@
   }
 
   .ScreenerPage__Intro {
-
     img {
       display: block;
       width: 20%;
@@ -85,7 +83,7 @@
       }
 
       li:before {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         width: 32px;
@@ -96,30 +94,28 @@
 
       li:nth-child(1) {
         &:before {
-          background: url('../assets/img/location.svg') no-repeat;
+          background: url("../assets/img/location.svg") no-repeat;
           background-size: 100%;
         }
       }
       li:nth-child(2) {
         &:before {
-          background: url('../assets/img/income.svg') no-repeat;
+          background: url("../assets/img/income.svg") no-repeat;
           background-size: 28px;
         }
       }
       li:nth-child(3) {
         &:before {
-          background: url('../assets/img/document.svg') no-repeat;
+          background: url("../assets/img/document.svg") no-repeat;
           background-size: 100%;
         }
       }
     }
   }
 
-
   .ScreenerPage__Location {
-
     h4:before {
-      background: url('../assets/img/location.svg') no-repeat;
+      background: url("../assets/img/location.svg") no-repeat;
       background-size: 100%;
     }
 
@@ -148,9 +144,8 @@
   }
 
   .ScreenerPage__Income {
-
     h4:before {
-      background: url('../assets/img/income.svg') no-repeat;
+      background: url("../assets/img/income.svg") no-repeat;
       background-size: 100%;
     }
 
@@ -196,9 +191,8 @@
   }
 
   .ScreenerPage__Case {
-
     h4:before {
-      background: url('../assets/img/document.svg') no-repeat;
+      background: url("../assets/img/document.svg") no-repeat;
       background-size: 100%;
     }
 
@@ -234,8 +228,8 @@
             margin: 16px 0;
 
             &:before {
-              content: '';
-              background: url('../assets/img/attachments.svg') no-repeat;
+              content: "";
+              background: url("../assets/img/attachments.svg") no-repeat;
               background-size: 100%;
               display: block;
               position: absolute;
@@ -245,10 +239,7 @@
               left: 0;
             }
           }
-
         }
-
-
       }
     }
   }

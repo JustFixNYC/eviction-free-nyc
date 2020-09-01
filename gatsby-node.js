@@ -3,8 +3,8 @@ const Promise = require(`bluebird`);
 const path = require(`path`);
 const generateBabelConfig = require("gatsby/dist/utils/babel-config");
 
-const generalPages = require(`./factories/generalPage`)
-const housingCourtPages = require(`./factories/housingCourtPage`)
+const generalPages = require(`./factories/generalPage`);
+const housingCourtPages = require(`./factories/housingCourtPage`);
 
 // Implement the Gatsby API “createPages”. This is
 // called after the Gatsby bootstrap is finished so you have
@@ -12,11 +12,9 @@ const housingCourtPages = require(`./factories/housingCourtPage`)
 // create pages.
 //
 exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
-  return Promise
-    .all([
-      generalPages.create(graphql, createPage),
-      housingCourtPages.create(graphql, createPage)
-    ])
-    .catch(error => console.log('[Page factories error]', error));
+  const { createPage } = boundActionCreators;
+  return Promise.all([
+    generalPages.create(graphql, createPage),
+    housingCourtPages.create(graphql, createPage),
+  ]).catch((error) => console.log("[Page factories error]", error));
 };
