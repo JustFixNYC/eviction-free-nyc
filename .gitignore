@@ -11,3 +11,4 @@ yarn-error.log
 
 #Ignore lambda functions build output
 /lambda
+functions-build
