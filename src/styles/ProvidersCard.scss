@@ -1,8 +1,6 @@
 @import "vars";
 
 .ProvidersCard {
-
-
   border-color: $border-color-dark;
 
   margin-left: 16px;
@@ -54,7 +52,6 @@
   }
 
   .card-body {
-
     padding-top: 0;
     padding-bottom: 0;
 
@@ -66,7 +63,6 @@
   }
 
   .card-footer {
-
     margin-top: 0.8rem;
     padding-top: 0;
 
@@ -95,8 +91,5 @@
         }
       }
     }
-
   }
-
-
 }

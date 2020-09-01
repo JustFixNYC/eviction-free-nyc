@@ -1,39 +1,44 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-import { injectIntl, FormattedMessage as Trans } from 'react-intl';
-import { addCallButtons } from '../utils/text';
+import { injectIntl, FormattedMessage as Trans } from "react-intl";
+import { addCallButtons } from "../utils/text";
 
 import CourtPage from "./CourtPage";
 
 const propTypes = {
   data: PropTypes.object.isRequired,
-  qualifiedType: PropTypes.oneOf(['qualified', 'notQualified', 'qualifiedAdmin']),
-}
+  qualifiedType: PropTypes.oneOf([
+    "qualified",
+    "notQualified",
+    "qualifiedAdmin",
+  ]),
+};
 
 class AdminHearingPage extends React.Component {
   constructor(props) {
     super(props);
 
     this.data = {};
-    
-    this.data.qualifiedType = 'qualifiedAdmin';
+
+    this.data.qualifiedType = "qualifiedAdmin";
 
     const contentfulData = props.data.content.edges[0].node;
 
     this.data.steps = contentfulData.stepsGeneral.map((step, i) => ({
-        title: `${props.intl.formatMessage({ id: 'step' }) } ${i+1}: ${step.title}`,
-        html: addCallButtons(step.childContentfulHousingCourtActionStepContentTextNode.childMarkdownRemark.html)
+      title: `${props.intl.formatMessage({ id: "step" })} ${i + 1}: ${
+        step.title
+      }`,
+      html: addCallButtons(
+        step.childContentfulHousingCourtActionStepContentTextNode
+          .childMarkdownRemark.html
+      ),
     }));
 
     this.data.providers = contentfulData.providers;
-
   }
 
-
   render() {
-    return (
-      <CourtPage { ...this.data } />
-    );
+    return <CourtPage {...this.data} />;
   }
 }
 
@@ -46,19 +51,19 @@ export const adminHearingPageFragment = graphql`
     edges {
       node {
         stepsGeneral {
-        	title
-            childContentfulHousingCourtActionStepContentTextNode {
-              childMarkdownRemark {
-                html
-              }
+          title
+          childContentfulHousingCourtActionStepContentTextNode {
+            childMarkdownRemark {
+              html
+            }
           }
         }
         additionalResources {
-        	title
-            childContentfulHousingCourtActionStepContentTextNode {
-              childMarkdownRemark {
-                html
-              }
+          title
+          childContentfulHousingCourtActionStepContentTextNode {
+            childMarkdownRemark {
+              html
+            }
           }
         }
         providers {
@@ -82,4 +87,4 @@ export const adminHearingPageFragment = graphql`
       }
     }
   }
-`
+`;

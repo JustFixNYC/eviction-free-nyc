@@ -1,4 +1,4 @@
-export default from '../containers/ScreenerPage';
+export default from "../containers/ScreenerPage";
 
 export const pageQuery = graphql`
   query ScreenerPageHtQuery {
@@ -6,4 +6,4 @@ export const pageQuery = graphql`
       ...ScreenerPageFragment
     }
   }
-`
+`;

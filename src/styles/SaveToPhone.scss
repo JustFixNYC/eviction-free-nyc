@@ -1,7 +1,6 @@
 @import "vars";
 
 .SaveToPhone {
-
   // @include gray-lines-bg;
   // border: 1px solid $gray-color-dark;
   background-color: $bg-color-dark;
@@ -49,13 +48,11 @@
   .columns {
     // align-items: center;
   }
-
 }
 
 .react-tel-input {
-
-  input[type=tel].form-control {
-    transition: all .2s ease;
+  input[type="tel"].form-control {
+    transition: all 0.2s ease;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -75,7 +72,7 @@
     width: 100%;
 
     &:focus {
-      box-shadow: 0 0 0 .1rem rgba($third-color, .2);
+      box-shadow: 0 0 0 0.1rem rgba($third-color, 0.2);
       border-color: $third-color;
     }
   }

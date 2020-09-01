@@ -18,7 +18,6 @@
   }
 
   .column:not(:first-child) {
-
     margin-bottom: 16px;
 
     @include for-tablet-landscape-up() {
@@ -30,11 +29,15 @@
     .btn {
       &:nth-child(1) {
         background-color: #3b5998;
-        &:hover { background-color: darken(#3b5998, 5%); }
+        &:hover {
+          background-color: darken(#3b5998, 5%);
+        }
       }
       &:nth-child(2) {
         background-color: #55acee;
-        &:hover { background-color: darken(#55acee, 5%); }
+        &:hover {
+          background-color: darken(#55acee, 5%);
+        }
       }
 
       margin-bottom: 0;

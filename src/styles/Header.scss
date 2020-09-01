@@ -1,7 +1,6 @@
-@import 'vars';
+@import "vars";
 
 .Header {
-
   padding: 8px 0.8rem;
   border-bottom: 1px solid $gray-color-dark;
   background: $secondary-color;
@@ -14,7 +13,8 @@
   a {
     color: #fff;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: #fff;
     }
   }

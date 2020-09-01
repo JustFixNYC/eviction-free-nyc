@@ -1,10 +1,10 @@
-@import 'vars';
+@import "vars";
 
 .AddressSearch {
   width: 100%;
 
   .form-input:focus {
-    box-shadow: 0 0 0 .1rem rgba($third-color, .2);
+    box-shadow: 0 0 0 0.1rem rgba($third-color, 0.2);
     border-color: $third-color;
   }
 
@@ -38,7 +38,6 @@
     }
 
     li {
-
       padding: 0.4rem;
 
       &:first-child {
@@ -61,8 +60,6 @@
     }
 
     li:first-child {
-
-
     }
   }
 }

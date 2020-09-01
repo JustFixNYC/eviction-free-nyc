@@ -1,8 +1,6 @@
-@import 'vars';
-
+@import "vars";
 
 .Footer {
-
   background: $secondary-color;
   color: #fff;
   padding: 48px 32px;
@@ -12,28 +10,27 @@
 
   align-items: flex-end;
 
+  span {
+    max-width: 400px;
+  }
 
-    span {
-      max-width: 400px;
-    }
+  img {
+    max-width: 72px;
+    margin-right: 32px;
+  }
 
-    img {
-      max-width: 72px;
-      margin-right: 32px;
-    }
+  a,
+  a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
 
-    a, a:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
-
-    // img, span {
-    //   display: inline-block;
-    //   vertical-align: middle;
-    // }
+  // img, span {
+  //   display: inline-block;
+  //   vertical-align: middle;
+  // }
 
   .Footer_JustFix {
-
     text-align: right;
 
     img {
@@ -43,7 +40,6 @@
       margin-left: 4px;
       margin-right: 0;
     }
-
   }
 
   .SelectLanguage {
@@ -87,7 +83,6 @@
     }
 
     .Footer_JustFix {
-
       text-align: center;
 
       img {
@@ -96,8 +91,6 @@
         top: 8px;
         margin: 0 auto;
       }
-
     }
   }
-
 }

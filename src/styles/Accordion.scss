@@ -1,4 +1,4 @@
-@import 'vars';
+@import "vars";
 
 // This is a TERRIBLE HACK. The embedded Google Map
 // in step 1 of the housing court page, which has
@@ -26,8 +26,7 @@
 // the map is already loaded if/when the user decides
 // to print.
 @media screen {
-  section.HousingCourtPage
-  #accordion__body-0.accordion__body--hidden {
+  section.HousingCourtPage #accordion__body-0.accordion__body--hidden {
     display: block;
     position: absolute;
     left: -10000px;
@@ -49,7 +48,6 @@
 }
 
 .accordion__item {
-
   .Accordion__title {
     max-width: 80%;
 
@@ -64,8 +62,6 @@
       margin-bottom: 0;
     }
   }
-
-
 
   .accordion__body {
     margin-top: 16px;
@@ -86,11 +82,13 @@
   // [role='tab']:focus {
   //   outline: none;
   // }
-  [role='tab'], [role='button'] {
+  [role="tab"],
+  [role="button"] {
     padding: 24px 0;
   }
 
-  [role='tab']:hover, [role='button']:hover {
+  [role="tab"]:hover,
+  [role="button"]:hover {
     cursor: pointer;
 
     h5 {
@@ -101,8 +99,8 @@
   .icon-minus {
     display: none;
   }
-  [aria-selected='true'],[aria-expanded='true'] {
-
+  [aria-selected="true"],
+  [aria-expanded="true"] {
     padding-bottom: 0;
 
     .icon-plus {

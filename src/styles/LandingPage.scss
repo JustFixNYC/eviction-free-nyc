@@ -1,7 +1,6 @@
-@import 'vars';
+@import "vars";
 
 .LandingPage {
-
   margin-top: 0;
 
   .LandingPage__Hero {
@@ -17,10 +16,10 @@
     position: relative;
 
     .LandingPage__HeroContent {
-
       margin-bottom: 0.5rem;
 
-      h2, h4 {
+      h2,
+      h4 {
         font-weight: 200;
         letter-spacing: 1px;
 
@@ -36,7 +35,6 @@
       }
 
       .LandingPage__HeroTitle {
-
         margin: 1rem 0;
         font-size: 2.1rem;
 
@@ -47,7 +45,6 @@
       }
 
       .LandingPage__HeroSubtitle {
-
         margin-bottom: 1.5rem;
 
         @include for-phone-only() {
@@ -72,7 +69,7 @@
           // language buttons on mobile
           @include for-phone-only() {
             font-size: 0.8rem;
-            padding: .4em;
+            padding: 0.4em;
             height: 1.9rem;
             width: 40%;
             display: inline-block;
@@ -82,7 +79,6 @@
       }
 
       .LandingPage__LangSwitches {
-
         @include for-tablet-portrait-up() {
           display: flex;
           .btn + .btn {
@@ -96,7 +92,6 @@
       }
 
       @include for-tablet-landscape-up() {
-
         // copied from grid-md
         max-width: 932px;
         position: static;
@@ -104,7 +99,6 @@
         .btn {
           margin: 16px 0;
         }
-
       }
     }
 
@@ -123,17 +117,14 @@
       @include for-tablet-portrait-up() {
         display: none;
       }
-
     }
   }
 
   .LandingPage__Content {
-
     margin-top: 64px;
     min-height: 600px;
     margin-bottom: 64px;
     position: relative;
-
 
     .LandingPage__ContentFAQ {
       order: 2;
@@ -173,8 +164,6 @@
       .LandingPage__ContentImage2 {
         position: inherit;
       }
-
-
     }
 
     @include for-tablet-portrait-up() {
@@ -186,7 +175,5 @@
         margin-bottom: 32px;
       }
     }
-
-
   }
 }

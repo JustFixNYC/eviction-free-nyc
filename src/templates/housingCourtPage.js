@@ -1,48 +1,53 @@
-import React from 'react';
-import * as PropTypes from 'prop-types';
-import { injectIntl, FormattedMessage as Trans } from 'react-intl';
-import { addCallButtons } from '../utils/text';
+import React from "react";
+import * as PropTypes from "prop-types";
+import { injectIntl, FormattedMessage as Trans } from "react-intl";
+import { addCallButtons } from "../utils/text";
 
 import CourtPage from "../containers/CourtPage";
 
 const propTypes = {
   data: PropTypes.object.isRequired,
-  qualifiedType: PropTypes.oneOf(['qualified', 'notQualified', 'qualifiedAdmin']),
-}
+  qualifiedType: PropTypes.oneOf([
+    "qualified",
+    "notQualified",
+    "qualifiedAdmin",
+  ]),
+};
 
 class PageTemplate extends React.Component {
   constructor(props) {
     super(props);
 
-    const casetype = props.location.pathname.split('/')[4];
+    const casetype = props.location.pathname.split("/")[4];
 
     this.data = {};
-    
-    if (casetype.substr(casetype.length - 3) === 'rtc') {
-      this.data.qualifiedType = 'qualified';
+
+    if (casetype.substr(casetype.length - 3) === "rtc") {
+      this.data.qualifiedType = "qualified";
     } else {
-      this.data.qualifiedType = 'notQualified';
+      this.data.qualifiedType = "notQualified";
     }
 
-    const contentfulData = props.data.allContentfulHousingCourtPage.edges[0].node;
+    const contentfulData =
+      props.data.allContentfulHousingCourtPage.edges[0].node;
 
-    switch(casetype) {
-      case 'nonpay':
+    switch (casetype) {
+      case "nonpay":
         this.data.steps = contentfulData.stepsNonpayDoesntQualify;
         break;
-      case 'nonpayrtc':
+      case "nonpayrtc":
         this.data.steps = contentfulData.stepsNonpayQualifies;
         break;
-      case 'holdover':
+      case "holdover":
         this.data.steps = contentfulData.stepsHoldoverDoesntQualify;
         break;
-      case 'holdoverrtc':
+      case "holdoverrtc":
         this.data.steps = contentfulData.holdoverQualifySteps;
         break;
-      case 'nychartc':
+      case "nychartc":
         this.data.steps = contentfulData.stepsNychaQualifies;
         break;
-      case 'general':
+      case "general":
         this.data.steps = contentfulData.stepsGeneral;
         break;
       default:
@@ -51,26 +56,32 @@ class PageTemplate extends React.Component {
     }
 
     this.data.steps = this.data.steps.map((step, i) => ({
-        title: step.title,
-        html: addCallButtons(step.childContentfulHousingCourtActionStepContentTextNode.childMarkdownRemark.html)
+      title: step.title,
+      html: addCallButtons(
+        step.childContentfulHousingCourtActionStepContentTextNode
+          .childMarkdownRemark.html
+      ),
     }));
 
-    if(contentfulData.additionalResources) {
-      this.data.additionalResources = contentfulData.additionalResources.map((step, i) => ({
+    if (contentfulData.additionalResources) {
+      this.data.additionalResources = contentfulData.additionalResources.map(
+        (step, i) => ({
           title: step.title,
-          html: addCallButtons(step.childContentfulHousingCourtActionStepContentTextNode.childMarkdownRemark.html)
-      }));
+          html: addCallButtons(
+            step.childContentfulHousingCourtActionStepContentTextNode
+              .childMarkdownRemark.html
+          ),
+        })
+      );
     }
 
-    this.data.providers = this.data.qualified ? contentfulData.providers.filter(p => p.acceptsRtcCases) : contentfulData.providers;
-
+    this.data.providers = this.data.qualified
+      ? contentfulData.providers.filter((p) => p.acceptsRtcCases)
+      : contentfulData.providers;
   }
 
-
   render() {
-    return (
-      <CourtPage { ...this.data } intl={this.props.intl} />
-    );
+    return <CourtPage {...this.data} intl={this.props.intl} />;
   }
 }
 
@@ -80,15 +91,15 @@ export default injectIntl(PageTemplate);
 
 export const pageQuery = graphql`
   query contentfulHousingCourtPageQuery(
-    $id: String!,
-    $stepsHoldover: Boolean!,
-  	$stepsHoldoverRTC: Boolean!,
-  	$stepsNonpay: Boolean!,
-  	$stepsNonpayRTC: Boolean!,
-  	$stepsNychaRTC: Boolean!,
-  	$stepsGeneral: Boolean!
+    $id: String!
+    $stepsHoldover: Boolean!
+    $stepsHoldoverRTC: Boolean!
+    $stepsNonpay: Boolean!
+    $stepsNonpayRTC: Boolean!
+    $stepsNychaRTC: Boolean!
+    $stepsGeneral: Boolean!
   ) {
-    allContentfulHousingCourtPage(filter: { id: { eq: $id }}) {
+    allContentfulHousingCourtPage(filter: { id: { eq: $id } }) {
       edges {
         node {
           id
@@ -132,7 +143,7 @@ export const pageQuery = graphql`
               }
             }
           }
-          stepsGeneral @include(if: $stepsGeneral)  {
+          stepsGeneral @include(if: $stepsGeneral) {
             title
             childContentfulHousingCourtActionStepContentTextNode {
               childMarkdownRemark {
@@ -170,4 +181,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
