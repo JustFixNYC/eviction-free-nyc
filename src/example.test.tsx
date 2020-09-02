@@ -8,7 +8,7 @@ describe("Test suite", () => {
   });
   it("works with tsx components too", () => {
     const { container } = render(
-      <ButtonStep stepFn={() => {}}>Boop</ButtonStep>,
+      <ButtonStep stepFn={() => {}}>Boop</ButtonStep>
     );
     const span = container.querySelector("button");
     expect(span?.textContent).toBe("Boop");

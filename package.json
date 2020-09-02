@@ -72,6 +72,7 @@
     "prod": "npm run build; npm run build:lambda",
     "start": "gatsby serve",
     "test": "yarn prettier:check && jest",
+    "test:watch": "jest --watch",
     "start:lambda": "netlify-lambda serve functions",
     "build:lambda": "netlify-lambda build functions"
   },
