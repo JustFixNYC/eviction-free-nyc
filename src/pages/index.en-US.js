@@ -1,4 +1,5 @@
-export default from "../containers/LandingPage";
+import Page from "../containers/LandingPage";
+export default Page;
 
 export const pageQuery = graphql`
   query LandingPageEnUsQuery {
