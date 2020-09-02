@@ -27,7 +27,6 @@
     "intl": "^1.2.5",
     "invariant": "^2.2.4",
     "isomorphic-fetch": "^2.2.1",
-    "jest": "^26.4.2",
     "lodash": "^4.16.4",
     "netlify-lambda": "^1.6.0",
     "node-sass": "4.5.2",
@@ -50,6 +49,7 @@
     "slash": "^1.0.0",
     "spectre.css": "^0.5.1",
     "twilio": "^3.14.0",
+    "typescript": "^4.0.2",
     "typography": "^0.15.8",
     "typography-breakpoint-constants": "^0.14.0",
     "widont": "^0.3.3"
@@ -67,7 +67,7 @@
     "prettier:fix": "prettier \"**/*.{ts,tsx,js,scss}\" --write",
     "prod": "npm run build; npm run build:lambda",
     "start": "gatsby serve",
-    "test": "yarn prettier:check",
+    "test": "yarn prettier:check && jest",
     "start:lambda": "netlify-lambda serve functions",
     "build:lambda": "netlify-lambda build functions"
   },
@@ -76,5 +76,9 @@
     "IE > 10",
     "last 2 versions"
   ],
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0"
+  }
 }
