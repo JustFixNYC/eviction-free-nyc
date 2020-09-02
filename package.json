@@ -71,6 +71,7 @@
     "prettier:fix": "prettier \"**/*.{ts,tsx,js,scss}\" --write",
     "prod": "npm run build; npm run build:lambda",
     "start": "gatsby serve",
+    "typecheck": "tsc --noEmit",
     "test": "yarn prettier:check && jest",
     "test:watch": "jest --watch",
     "start:lambda": "netlify-lambda serve functions",

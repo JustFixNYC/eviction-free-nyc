@@ -1,4 +1,5 @@
-export default from "../containers/ScreenerPage";
+import Page from "../containers/ScreenerPage";
+export default Page;
 
 export const pageQuery = graphql`
   query ScreenerPageEsQuery {

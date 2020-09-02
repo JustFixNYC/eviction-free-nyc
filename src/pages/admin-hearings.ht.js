@@ -1,4 +1,5 @@
-export default from "../containers/AdminHearingPage";
+import Page from "../containers/AdminHearingPage";
+export default Page;
 
 export const pageQuery = graphql`
   query AdminHearingPageHtQuery {

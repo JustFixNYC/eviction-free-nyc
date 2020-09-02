@@ -18,5 +18,5 @@ jobs: # a collection of steps
             - ./node_modules
       - run: # run tests
           name: test
-          command: yarn test
+          command: yarn typecheck && yarn test
       # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples 
