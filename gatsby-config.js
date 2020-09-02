@@ -38,6 +38,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-typescript`,
     {
       resolve: "custom-sass-loader",
       options: {

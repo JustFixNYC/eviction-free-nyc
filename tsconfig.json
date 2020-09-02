@@ -20,5 +20,5 @@
     "downlevelIteration": true,
     "resolveJsonModule": true
   },
-  "include": ["src/**/*", "tsdeclarations/*"]
+  "include": ["src/**/*"]
 }
