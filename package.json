@@ -69,13 +69,11 @@
     "prettier": "prettier",
     "prettier:check": "prettier \"**/*.{ts,tsx,js,scss}\" --check",
     "prettier:fix": "prettier \"**/*.{ts,tsx,js,scss}\" --write",
-    "prod": "npm run build; npm run build:lambda",
+    "prod": "npm run build",
     "start": "gatsby serve",
     "typecheck": "tsc --noEmit",
     "test": "yarn prettier:check && jest",
-    "test:watch": "jest --watch",
-    "start:lambda": "netlify-lambda serve functions",
-    "build:lambda": "netlify-lambda build functions"
+    "test:watch": "jest --watch"
   },
   "browserlist": [
     "> 1%",
