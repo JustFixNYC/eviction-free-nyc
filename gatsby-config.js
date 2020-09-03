@@ -1,5 +1,5 @@
-const languages = require('./src/data/languages');
-const autoprefixer = require('autoprefixer');
+const languages = require("./src/data/languages");
+const autoprefixer = require("autoprefixer");
 
 const ENV_PATH = `.env.${process.env.NODE_ENV}`;
 
@@ -7,11 +7,10 @@ require("dotenv").config({
   path: ENV_PATH,
 });
 
-if (!process.env.CONTENTFUL_SPACE_ID ||
-    !process.env.CONTENTFUL_TOKEN) {
+if (!process.env.CONTENTFUL_SPACE_ID || !process.env.CONTENTFUL_TOKEN) {
   console.log(
     `Please define CONTENTFUL_SPACE_ID and ` +
-    `CONTENTFUL_TOKEN in ${ENV_PATH}.`
+      `CONTENTFUL_TOKEN in ${ENV_PATH}.`
   );
   process.exit(1);
 }
@@ -19,7 +18,7 @@ if (!process.env.CONTENTFUL_SPACE_ID ||
 module.exports = {
   siteMetadata: {
     title: `Gatsby with Contentful`,
-    languages
+    languages,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,24 +30,25 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-i18n',
+      resolve: "gatsby-plugin-i18n",
       options: {
-        langKeyForNull: 'any',
+        langKeyForNull: "any",
         langKeyDefault: languages.defaultLangKey,
-        useLangKeyLayout: false
-      }
+        useLangKeyLayout: false,
+      },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-typescript`,
     {
-      resolve: 'custom-sass-loader',
+      resolve: "custom-sass-loader",
       options: {
         postCssPlugins: [
           autoprefixer({
-            browsers: ['last 2 versions'],
-          })
-        ]
-      }
-    }
+            browsers: ["last 2 versions"],
+          }),
+        ],
+      },
+    },
     // ,
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
@@ -59,5 +59,5 @@ module.exports = {
     //   }
     // },
     // `gatsby-plugin-offline`
-  ]
+  ],
 };

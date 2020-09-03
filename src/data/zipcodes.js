@@ -5,7 +5,7 @@ module.exports = {
     10027,
     10025,
     10031,
-    10029, 
+    10029,
     10034,
 
     // Bronx:
@@ -15,7 +15,7 @@ module.exports = {
     10462,
     10453,
 
-    // Brooklyn: 
+    // Brooklyn:
     11216,
     11221,
     11225,
@@ -29,11 +29,10 @@ module.exports = {
     11385,
     11691,
 
-    // Staten Island: 
+    // Staten Island:
     10302,
     10303,
     10314,
-    10310
-
-  ]
-}
+    10310,
+  ],
+};

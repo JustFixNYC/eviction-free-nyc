@@ -1,11 +1,17 @@
-const _ = require(`lodash`)
-const Promise = require(`bluebird`)
-const path = require(`path`)
+const _ = require(`lodash`);
+const Promise = require(`bluebird`);
+const path = require(`path`);
 
-const CASETYPES = ['nonpay', 'nonpayrtc', 'holdover', 'holdoverrtc', 'nychartc', 'general'];
+const CASETYPES = [
+  "nonpay",
+  "nonpayrtc",
+  "holdover",
+  "holdoverrtc",
+  "nychartc",
+  "general",
+];
 
 exports.create = (graphql, createPage) => {
-
   const pageTemplate = path.resolve(`./src/templates/housingCourtPage.js`);
 
   return new Promise((resolve, reject) => {
@@ -17,39 +23,35 @@ exports.create = (graphql, createPage) => {
       `
         {
           allContentfulHousingCourtPage {
-          	edges {
-          		node {
+            edges {
+              node {
                 node_locale
                 id
                 boroughKey
-          		}
-          	}
+              }
+            }
           }
         }
       `
-    )
-    .then(result => {
-
+    ).then((result) => {
       if (result.errors) {
         reject(result.errors);
       }
 
       // Create Page pages
       // Each edge is a housing court location in a particular language
-      _.each(result.data.allContentfulHousingCourtPage.edges, edge => {
-
-        _.each(CASETYPES, casetype => {
-
+      _.each(result.data.allContentfulHousingCourtPage.edges, (edge) => {
+        _.each(CASETYPES, (casetype) => {
           const pagePath = `/${edge.node.node_locale}/guide/${edge.node.boroughKey}/${casetype}`;
 
           const pageContext = {
             id: edge.node.id,
-            stepsHoldover: casetype === 'holdover',
-            stepsHoldoverRTC: casetype === 'holdoverrtc',
-            stepsNonpay: casetype === 'nonpay',
-            stepsNonpayRTC: casetype === 'nonpayrtc',
-            stepsNychaRTC: casetype === 'nychartc',
-            stepsGeneral: casetype === 'general'
+            stepsHoldover: casetype === "holdover",
+            stepsHoldoverRTC: casetype === "holdoverrtc",
+            stepsNonpay: casetype === "nonpay",
+            stepsNonpayRTC: casetype === "nonpayrtc",
+            stepsNychaRTC: casetype === "nychartc",
+            stepsGeneral: casetype === "general",
           };
 
           // Gatsby uses Redux to manage its internal state.
@@ -64,12 +66,10 @@ exports.create = (graphql, createPage) => {
             component: pageTemplate,
             context: pageContext,
           });
-
         });
-
       });
 
       resolve();
     });
   });
-}
+};

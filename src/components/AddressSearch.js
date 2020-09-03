@@ -1,16 +1,15 @@
-import React from 'react';
-import Geosuggest from 'react-geosuggest';
-import { FormattedMessage as Trans } from 'react-intl';
+import React from "react";
+import Geosuggest from "react-geosuggest";
+import { FormattedMessage as Trans } from "react-intl";
 
-
-import '../styles/AddressSearch.scss';
+import "../styles/AddressSearch.scss";
 
 class AddressSearch extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      error: false
+      error: false,
     };
 
     this.geosuggestBounds = null;
@@ -22,38 +21,39 @@ class AddressSearch extends React.Component {
     }
   }
 
-
-
   handleGeosuggest = (suggest) => {
-
-    if(suggest && suggest.gmaps) {
+    if (suggest && suggest.gmaps) {
       const components = suggest.gmaps.address_components;
-      let zip = components.filter(e => e.types.indexOf('postal_code') !== -1)[0];
-      if(zip) {
+      let zip = components.filter(
+        (e) => e.types.indexOf("postal_code") !== -1
+      )[0];
+      if (zip) {
         zip = zip.long_name;
       } else {
         Rollbar.error("Missing zipcode", components);
         this.setState({ error: true });
       }
 
-      let boro = components.filter(e => e.types.indexOf('sublocality_level_1') !== -1)[0];
-      if(boro) {
+      let boro = components.filter(
+        (e) => e.types.indexOf("sublocality_level_1") !== -1
+      )[0];
+      if (boro) {
         boro = boro.long_name.toUpperCase();
         this.setState({ error: false });
         this.props.onFormSubmit({ zip, boro });
-      } else if (['MANHATTAN', 'STATEN ISLAND', 'BROOKLYN', 'QUEENS', 'BRONX'].indexOf(boro) === -1) {
+      } else if (
+        ["MANHATTAN", "STATEN ISLAND", "BROOKLYN", "QUEENS", "BRONX"].indexOf(
+          boro
+        ) === -1
+      ) {
         Rollbar.error("Address / borough mismatch", components);
         this.setState({ error: true });
       } else {
         Rollbar.error("No borough found", components);
         this.setState({ error: true });
       }
-
-
-
-
     }
-  }
+  };
 
   render() {
     return (
@@ -61,15 +61,19 @@ class AddressSearch extends React.Component {
         <Geosuggest
           bounds={this.geosuggestBounds}
           onSuggestSelect={this.handleGeosuggest}
-          inputClassName={`form-input input-lg ${this.state.error ? 'is-error' : ''}`}
+          inputClassName={`form-input input-lg ${
+            this.state.error ? "is-error" : ""
+          }`}
           placeholder={this.props.placeholder}
-          />
-        {this.state.error && <p className="mt-2 text-bold text-error"><Trans id="addrError" /></p>}
+        />
+        {this.state.error && (
+          <p className="mt-2 text-bold text-error">
+            <Trans id="addrError" />
+          </p>
+        )}
       </div>
     );
   }
-
-
 }
 
 export default AddressSearch;

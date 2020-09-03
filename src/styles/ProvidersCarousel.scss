@@ -1,7 +1,6 @@
 @import "vars";
 
 .ProvidersCarousel {
-
   // margin-top: 20px;
   margin-bottom: 32px;
 
@@ -22,7 +21,6 @@
   }
 
   .carousel__slide {
-
     // min-height: 375px;
     height: auto;
     padding-bottom: 0 !important;
@@ -40,7 +38,6 @@
   }
 
   .carousel__inner-slide {
-
     position: static;
     height: auto;
 
@@ -52,8 +49,12 @@
   .pagination {
     justify-content: center;
 
-    .page-item.col-mr-auto { margin-right: auto; }
-    .page-item.col-ml-auto { margin-left: auto; }
+    .page-item.col-mr-auto {
+      margin-right: auto;
+    }
+    .page-item.col-ml-auto {
+      margin-left: auto;
+    }
 
     .page-dots {
       display: none;
@@ -61,11 +62,11 @@
       @include for-tablet-portrait-up() {
         display: list-item;
       }
-     }
+    }
 
     .btn.carousel__dot--selected {
       color: $primary-color;
-      opacity: 1.0;
+      opacity: 1;
     }
 
     .btn {
@@ -85,7 +86,8 @@
           height: 0.9rem;
         }
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           text-decoration: none;
         }
 

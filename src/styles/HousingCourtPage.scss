@@ -1,4 +1,4 @@
-@import 'vars';
+@import "vars";
 
 .HousingCourtPage {
   // margin: 32px auto;
@@ -6,8 +6,6 @@
   @include for-tablet-portrait-up() {
     margin-top: 64px;
   }
-
-
 
   .HousingCourtPage_Header {
     h2 {
@@ -29,9 +27,7 @@
         display: none;
       }
     }
-
-   }
-
+  }
 
   h6 {
     // background-color: $third-color;
@@ -64,13 +60,11 @@
     }
 
     .accordion__body:not(.accordion__body--groups) {
-
       @include for-tablet-portrait-up() {
         width: 80%;
         margin-left: 32px;
         // margin: 0 auto;
       }
-
     }
   }
 }

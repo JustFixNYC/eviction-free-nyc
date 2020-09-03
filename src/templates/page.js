@@ -1,9 +1,9 @@
-import React from "react"
-import * as PropTypes from "prop-types"
+import React from "react";
+import * as PropTypes from "prop-types";
 
 const propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
 class PageTemplate extends React.Component {
   render() {
@@ -37,4 +37,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
