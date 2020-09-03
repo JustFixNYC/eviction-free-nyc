@@ -30,7 +30,7 @@
     "invariant": "^2.2.4",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.19",
-    "node-sass": "4.5.2",
+    "node-sass": "4.13.1",
     "prettier": "^2.1.1",
     "prop-types": "^15.7.2",
     "pure-react-carousel": "^1.12.1",
