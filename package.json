@@ -72,7 +72,7 @@
   "main": "n/a",
   "scripts": {
     "netlify": "netlify",
-    "netlify:develop": "concurrently -k \"netlify dev --port 8001\" \"yarn watch-serverless\"",
+    "netlify:develop": "yarn build-serverless && concurrently -k \"netlify dev --port 8001\" \"yarn watch-serverless\"",
     "develop": "gatsby develop",
     "build": "gatsby build",
     "build-serverless": "rollup -c",
