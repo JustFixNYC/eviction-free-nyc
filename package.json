@@ -9,6 +9,10 @@
     "npm": ">=6.0.0"
   },
   "dependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
     "@types/node": "^14.6.3",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
@@ -68,7 +72,7 @@
     "prod": "npm run build",
     "start": "gatsby serve",
     "typecheck": "tsc --noEmit",
-    "test": "yarn prettier:check && jest",
+    "test": "jest",
     "test:watch": "jest --watch"
   },
   "browserlist": [
@@ -79,7 +83,7 @@
   "devDependencies": {
     "@testing-library/react": "^10.4.9",
     "@types/jest": "^26.0.13",
-    "jest": "^26.4.2",
-    "ts-jest": "^26.3.0"
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.2"
   }
 }
