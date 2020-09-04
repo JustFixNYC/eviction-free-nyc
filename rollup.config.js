@@ -9,6 +9,7 @@ const config = {
     format: "cjs",
     sourcemap: "inline",
   },
+  external: ["path", "fs"],
   plugins: [
     nodeResolve(),
     commonjs(),

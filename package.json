@@ -72,9 +72,11 @@
   "main": "n/a",
   "scripts": {
     "netlify": "netlify",
+    "netlify:develop": "concurrently -k \"netlify dev --port 8001\" \"yarn watch-serverless\"",
     "develop": "gatsby develop",
     "build": "gatsby build",
     "build-serverless": "rollup -c",
+    "watch-serverless": "yarn rollup --watch --no-watch.clearScreen -c",
     "prettier": "prettier",
     "prettier:check": "prettier \"**/*.{ts,tsx,js,scss}\" --check",
     "prettier:fix": "prettier \"**/*.{ts,tsx,js,scss}\" --write",
@@ -93,6 +95,7 @@
     "@testing-library/react": "^10.4.9",
     "@types/jest": "^26.0.13",
     "babel-jest": "^26.3.0",
+    "concurrently": "^5.3.0",
     "jest": "^26.4.2",
     "netlify-cli": "^2.61.0"
   }
