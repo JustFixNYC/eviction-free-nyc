@@ -71,6 +71,7 @@
   "license": "GNU General Public License v3.0",
   "main": "n/a",
   "scripts": {
+    "netlify": "netlify",
     "develop": "gatsby develop",
     "build": "gatsby build",
     "build-serverless": "rollup -c",
@@ -92,6 +93,7 @@
     "@testing-library/react": "^10.4.9",
     "@types/jest": "^26.0.13",
     "babel-jest": "^26.3.0",
-    "jest": "^26.4.2"
+    "jest": "^26.4.2",
+    "netlify-cli": "^2.61.0"
   }
 }
