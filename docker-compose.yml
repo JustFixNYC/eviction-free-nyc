@@ -5,9 +5,11 @@ services:
     volumes:
       - .:/app:delegated
       - node_modules:/app/node_modules
+      - yarn_cache:/usr/local/share/.cache/yarn
     working_dir: /app
     command: gatsby develop --port 8000 --host 0.0.0.0
     ports:
       - 8000:8000
 volumes:
   node_modules:
+  yarn_cache:
