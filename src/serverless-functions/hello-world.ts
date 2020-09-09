@@ -1,7 +1,7 @@
 import "source-map-support/register";
 
 import { upperCase } from "lodash";
-import { APIGatewayProxyHandler } from "aws-lambda";
+import { serverlessRollbarHandler } from "../utils/serverless-util";
 
 async function wait(seconds: number) {
   return new Promise((resolve) => {
@@ -9,18 +9,18 @@ async function wait(seconds: number) {
   });
 }
 
-export const handler: APIGatewayProxyHandler = async (event) => {
+export const handler = serverlessRollbarHandler(async (event) => {
   const kaboom =
     event.queryStringParameters && event.queryStringParameters.kaboom;
+
+  await wait(1);
 
   if (kaboom) {
     throw new Error("Kaboom!");
   }
 
-  await wait(3);
-
   return {
     statusCode: 200,
     body: upperCase("umm hi again yup"),
   };
-};
+});

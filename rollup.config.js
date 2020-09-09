@@ -1,6 +1,7 @@
 import babel from "@rollup/plugin-babel";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
+import json from "@rollup/plugin-json";
 
 const config = {
   input: "src/serverless-functions/hello-world.ts",
@@ -9,9 +10,10 @@ const config = {
     format: "cjs",
     sourcemap: "inline",
   },
-  external: ["path", "fs"],
+  external: ["path", "fs", "util", "url", "os", "http", "https"],
   plugins: [
-    nodeResolve(),
+    json(),
+    nodeResolve({ extensions: [".js", ".ts"] }),
     commonjs(),
     babel({
       babelHelpers: "bundled",
