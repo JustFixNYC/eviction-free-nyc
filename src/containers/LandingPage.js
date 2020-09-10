@@ -7,9 +7,9 @@ import Img from "gatsby-image";
 import ButtonLink from "../components/ButtonLink";
 import Accordion from "../components/Accordion";
 
-var widont = require("widont");
-
 import "../styles/LandingPage.scss";
+
+var widont = require("widont");
 
 const propTypes = {
   data: PropTypes.object.isRequired,

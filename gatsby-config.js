@@ -39,15 +39,6 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-typescript`,
-    {
-      resolve: "custom-sass-loader",
-      options: {
-        postCssPlugins: [
-          autoprefixer({
-            browsers: ["last 2 versions"],
-          }),
-        ],
-      },
-    },
+    `gatsby-plugin-sass`,
   ],
 };
