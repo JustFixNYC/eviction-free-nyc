@@ -24,20 +24,21 @@ node on your computer, or via Docker.
 
 #### Option 1: Developing with your local installation of node
 
-Make sure that you have `node >= v10` and `yarn >= 1.17` running. In a terminal window, type `node --version` and hit ENTER, then `yarn --version` and hit ENTER to get this info. You'll then need to install gatsby:
-
-```
-yarn global add gatsby-cli
-```
+Make sure that you have `node >= v10` and `yarn >= 1.17` running. In a terminal window, type `node --version` and hit ENTER, then `yarn --version` and hit ENTER to get this info.
 
 Once your environment is setup, you'll need to download libraries (make sure you're in the root directory):
+
 ```
 yarn install
 ```
-then simply use the Gatsby CLI to start your dev environment!
+
+Then run the following to start your dev environment!
+
 ```
-gatsby develop
+yarn netlify:develop
 ```
+
+You should be able to access your development server at http://localhost:8001/.
 
 #### Option 2: Developing with Docker
 
@@ -48,7 +49,7 @@ docker-compose run app yarn
 docker-compose up
 ```
 
-Then visit http://localhost:8000/ in your browser and you
+Then visit http://localhost:8001/ in your browser and you
 should be good to go.
 
 [Docker]: https://docker.com/
