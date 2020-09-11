@@ -58,6 +58,14 @@ should be good to go.
 
 See the [deploy instructions](https://www.gatsbyjs.org/tutorial/part-one/#deploying-gatsbyjs-websites) on the GatsbyJS site to decide what's best for you!
 
+### Serverless functionality
+
+The files in `src/serverless-functions` are accessible as
+[Netlify Functions][], both during development and in production.
+For instance, this means that a file at `src/serverless-functions/foo.ts` can be accessed at `/.netlify/functions/foo`.
+
+[Netlify Functions]: https://docs.netlify.com/functions/overview/
+
 ### Attribution
 
 The starter for this site was [gatsby-contentful-i18n](https://github.com/mccrodp/gatsby-contentful-i18n), built by [mccrodp](https://github.com/mccrodp)! Many thanks!
