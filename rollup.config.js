@@ -1,10 +1,15 @@
+import fs from "fs";
 import babel from "@rollup/plugin-babel";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import json from "@rollup/plugin-json";
 
-const config = {
-  input: "src/serverless-functions/hello-world.ts",
+const filenames = fs
+  .readdirSync("src/serverless-functions")
+  .filter((filename) => !filename.includes(".test."));
+
+const config = filenames.map((filename) => ({
+  input: `src/serverless-functions/${filename}`,
   output: {
     dir: "functions-build",
     format: "cjs",
@@ -20,6 +25,6 @@ const config = {
       extensions: [".ts"],
     }),
   ],
-};
+}));
 
 export default config;
