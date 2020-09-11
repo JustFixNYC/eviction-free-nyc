@@ -4,12 +4,15 @@ import { ConversationResponse, ConversationStatus } from "./conversation";
 
 export async function runChatbotInConsole() {
   const io = new ConsoleIO();
-  let state = '';
-  let input = '';
+  let state = "";
+  let input = "";
   let ended = false;
 
   while (!ended) {
-    const response: ConversationResponse = await handleConversation(input, state);
+    const response: ConversationResponse = await handleConversation(
+      input,
+      state
+    );
     state = response.state;
     io.writeLine(response.text);
     if (response.conversationStatus === ConversationStatus.End) {
@@ -17,7 +20,7 @@ export async function runChatbotInConsole() {
     } else if (response.conversationStatus === ConversationStatus.Loop) {
       // Do nothing, just loop.
     } else if (response.conversationStatus === ConversationStatus.Ask) {
-      input = await io.question('> ');
+      input = await io.question("> ");
     }
   }
 

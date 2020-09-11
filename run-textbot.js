@@ -1,6 +1,6 @@
 require("@babel/register")({
   ignore: [],
-  extensions: ['.ts', '.js'],
+  extensions: [".ts", ".js"],
 });
 require("./src/textbot/run-in-console")
   .runChatbotInConsole()
