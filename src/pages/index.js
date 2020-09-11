@@ -1,6 +1,7 @@
 import React from "react";
 // import graphql from 'graphql';
 import { getUserLangKey } from "ptz-i18n";
+import { Link } from "gatsby";
 import { withPrefix } from "gatsby-link";
 
 class RedirectIndex extends React.PureComponent {
@@ -19,12 +20,18 @@ class RedirectIndex extends React.PureComponent {
       // But Gatsby Redirects are static, they need to be specified at build time,
       // This redirect is dynamic, It needs to know the user browser language.
       // Any ideias? Join the issue: https://github.com/angeloocana/gatsby-starter-default-i18n/issues/4
-      window.___history.replace(homeUrl);
+      // This doesn't work in Gatsby v2 because window.__history is undefined, so I'm commenting it out. -AV
+      // window.___history.replace(homeUrl);
     }
   }
 
   render() {
-    return <div />;
+    return (
+      <div>
+        TODO: We still need to re-implement locale redirection logic for Gatsby
+        v2! For now, manually go to <Link to={"/en-US/"}>/en-US/</Link>.
+      </div>
+    );
   }
 }
 
