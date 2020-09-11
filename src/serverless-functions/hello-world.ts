@@ -9,6 +9,12 @@ async function wait(ms: number) {
   });
 }
 
+/**
+ * This is a sample function that returns the text "HELLO WORLD".
+ *
+ * If "kaboom=on" is passed as a querystring argument, an exception will
+ * be thrown (and logged to Rollbar if it's configured).
+ */
 export const handler = serverlessRollbarHandler(async (event) => {
   const kaboom =
     event.queryStringParameters && event.queryStringParameters.kaboom;
