@@ -1,7 +1,8 @@
-import { APIGatewayProxyHandler, APIGatewayProxyResult } from "aws-lambda";
+import { APIGatewayProxyResult } from "aws-lambda";
 import { handleConversation } from "../textbot/conversation-handlers";
+import { serverlessRollbarHandler } from "../utils/serverless-util";
 
-export const handler: APIGatewayProxyHandler = async (event) => {
+export const handler = serverlessRollbarHandler(async (event) => {
   const query = event.queryStringParameters;
   const input = query ? query.input : undefined;
   const state = query ? query.state : undefined;
@@ -11,4 +12,4 @@ export const handler: APIGatewayProxyHandler = async (event) => {
   };
 
   return response;
-};
+});
