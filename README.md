@@ -68,7 +68,7 @@ For instance, this means that a file at `src/serverless-functions/foo.ts` can be
 
 ### Textbot
 
-A EFNYC textbot based off [texit-webhook-fun][] is in the `src/textbot` directory. It can be run in the terminal with:
+A EFNYC textbot based off [textit-webhook-fun][] is in the `src/textbot` directory. It can be run in the terminal with:
 
 ```
 node run-textbot.js
