@@ -1,0 +1,346 @@
+{
+  "version": "13",
+  "site": "https://textit.in",
+  "flows": [
+    {
+      "_ui": {
+        "nodes": {
+          "3801bf68-53dc-4f10-a051-ecfeddbbad03": {
+            "position": {
+              "left": 60,
+              "top": 20
+            },
+            "type": "execute_actions"
+          },
+          "22a9bda7-f6a2-451c-a060-45b8fef7ac14": {
+            "config": {
+              "cases": {}
+            },
+            "position": {
+              "left": 860,
+              "top": 220
+            },
+            "type": "wait_for_response"
+          },
+          "3e259a94-cd67-4de4-9520-282928e6a018": {
+            "type": "split_by_webhook",
+            "position": {
+              "left": 140,
+              "top": 240
+            },
+            "config": {}
+          },
+          "9138f262-b265-428b-8358-907a106988b4": {
+            "position": {
+              "left": 480,
+              "top": 580
+            },
+            "type": "execute_actions"
+          },
+          "e7d4e58d-eb87-45c6-900c-29781fcc139a": {
+            "position": {
+              "left": 60,
+              "top": 600
+            },
+            "type": "execute_actions"
+          },
+          "1e5c0531-0b6f-4830-b4d8-a1a4650edde9": {
+            "config": {
+              "cases": {}
+            },
+            "position": {
+              "left": 40,
+              "top": 860
+            },
+            "type": "split_by_expression"
+          },
+          "513e6079-2cc7-4dd7-9ea6-8c1dd6efc848": {
+            "position": {
+              "left": 120,
+              "top": 1060
+            },
+            "type": "execute_actions"
+          }
+        }
+      },
+      "expire_after_minutes": 10080,
+      "language": "base",
+      "localization": {},
+      "metadata": {
+        "revision": 4
+      },
+      "name": "PROTOTYPE: eviction free nyc",
+      "nodes": [
+        {
+          "actions": [
+            {
+              "category": "",
+              "name": "previnput",
+              "type": "set_run_result",
+              "uuid": "a2d351a6-4b8a-4a34-8ca2-1a96d37bd4f5",
+              "value": ""
+            },
+            {
+              "category": "",
+              "name": "prevstate",
+              "type": "set_run_result",
+              "uuid": "a3abb422-a7c8-4a6c-944b-ebb4e6767115",
+              "value": ""
+            }
+          ],
+          "exits": [
+            {
+              "destination_uuid": "3e259a94-cd67-4de4-9520-282928e6a018",
+              "uuid": "2286b6a9-c011-4860-bb69-d890f7d8cf11"
+            }
+          ],
+          "uuid": "3801bf68-53dc-4f10-a051-ecfeddbbad03"
+        },
+        {
+          "actions": [],
+          "exits": [
+            {
+              "destination_uuid": "3e259a94-cd67-4de4-9520-282928e6a018",
+              "uuid": "55926b63-41c7-4eab-aaba-752a6e4da01d"
+            }
+          ],
+          "router": {
+            "cases": [],
+            "categories": [
+              {
+                "exit_uuid": "55926b63-41c7-4eab-aaba-752a6e4da01d",
+                "name": "All Responses",
+                "uuid": "694c7a71-3af6-4e7c-9b44-bafe1ee00e76"
+              }
+            ],
+            "default_category_uuid": "694c7a71-3af6-4e7c-9b44-bafe1ee00e76",
+            "operand": "@input.text",
+            "result_name": "previnput",
+            "type": "switch",
+            "wait": {
+              "type": "msg"
+            }
+          },
+          "uuid": "22a9bda7-f6a2-451c-a060-45b8fef7ac14"
+        },
+        {
+          "uuid": "3e259a94-cd67-4de4-9520-282928e6a018",
+          "actions": [
+            {
+              "uuid": "a24a1fdf-d851-4069-b45d-71e6c260e0a1",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "type": "call_webhook",
+              "url": "https://www.evictionfreenyc.org/.netlify/functions/textbot?input=@(url_encode(results.previnput))&state=@(url_encode(results.prevstate))",
+              "method": "GET",
+              "result_name": "webhookResult"
+            }
+          ],
+          "router": {
+            "type": "switch",
+            "operand": "@results.webhookresult.category",
+            "cases": [
+              {
+                "arguments": [
+                  "Success"
+                ],
+                "category_uuid": "e8b9a8ba-a7aa-44d4-9887-72fe1136e1cd",
+                "type": "has_only_text",
+                "uuid": "f7b42248-4761-4f2b-8828-a6abce1475dc"
+              }
+            ],
+            "categories": [
+              {
+                "exit_uuid": "49d15ebd-24e1-4469-a371-1a9c9bf44aa4",
+                "name": "Success",
+                "uuid": "e8b9a8ba-a7aa-44d4-9887-72fe1136e1cd"
+              },
+              {
+                "exit_uuid": "9b2c798f-4a1c-42bd-a0ae-f8399672c465",
+                "name": "Failure",
+                "uuid": "0df9f70a-b6af-4adb-8a1d-47272551b7db"
+              }
+            ],
+            "default_category_uuid": "0df9f70a-b6af-4adb-8a1d-47272551b7db"
+          },
+          "exits": [
+            {
+              "destination_uuid": "e7d4e58d-eb87-45c6-900c-29781fcc139a",
+              "uuid": "49d15ebd-24e1-4469-a371-1a9c9bf44aa4"
+            },
+            {
+              "destination_uuid": "9138f262-b265-428b-8358-907a106988b4",
+              "uuid": "9b2c798f-4a1c-42bd-a0ae-f8399672c465"
+            }
+          ]
+        },
+        {
+          "actions": [
+            {
+              "attachments": [],
+              "quick_replies": [],
+              "text": "Ooooops something messed up.",
+              "type": "send_msg",
+              "uuid": "d326d838-e9d8-407c-85ef-0beddbcb06f6"
+            }
+          ],
+          "exits": [
+            {
+              "destination_uuid": null,
+              "uuid": "4610707a-84b4-4c22-b459-5e33eae1dfbb"
+            }
+          ],
+          "uuid": "9138f262-b265-428b-8358-907a106988b4"
+        },
+        {
+          "actions": [
+            {
+              "attachments": [],
+              "quick_replies": [],
+              "text": "@webhook.text",
+              "type": "send_msg",
+              "uuid": "ecd0fedd-5065-4c65-8fe0-870d8600ae1b"
+            },
+            {
+              "category": "",
+              "name": "prevstate",
+              "type": "set_run_result",
+              "uuid": "9b9f1f78-8363-4a90-b7bd-a91075f91475",
+              "value": "@webhook.state"
+            }
+          ],
+          "exits": [
+            {
+              "destination_uuid": "1e5c0531-0b6f-4830-b4d8-a1a4650edde9",
+              "uuid": "f90ca566-3a0b-4e76-ad0c-e6d7d7c5f9c9"
+            }
+          ],
+          "uuid": "e7d4e58d-eb87-45c6-900c-29781fcc139a"
+        },
+        {
+          "actions": [],
+          "exits": [
+            {
+              "uuid": "c009d8ff-4298-458e-ae92-78234b9ac22e"
+            },
+            {
+              "destination_uuid": "22a9bda7-f6a2-451c-a060-45b8fef7ac14",
+              "uuid": "12294428-7610-4e41-b8ae-085540c80968"
+            },
+            {
+              "destination_uuid": "513e6079-2cc7-4dd7-9ea6-8c1dd6efc848",
+              "uuid": "4c902856-29ef-4421-bfad-78f54c7fc09c"
+            },
+            {
+              "destination_uuid": "9138f262-b265-428b-8358-907a106988b4",
+              "uuid": "9ff61433-ff51-465b-ba60-c98b6d7bcd04"
+            }
+          ],
+          "router": {
+            "cases": [
+              {
+                "arguments": [
+                  "end"
+                ],
+                "category_uuid": "e6920241-2889-42f1-a9b9-e28370046d21",
+                "type": "has_any_word",
+                "uuid": "552e7a2c-3618-4e22-9ef5-b58af9d26b86"
+              },
+              {
+                "arguments": [
+                  "ask"
+                ],
+                "category_uuid": "1ad7f85b-ed1c-4f6f-8635-68d4a6708c0d",
+                "type": "has_any_word",
+                "uuid": "f67f2e39-8916-4263-bd99-f126358cc355"
+              },
+              {
+                "arguments": [
+                  "loop"
+                ],
+                "category_uuid": "895c394d-5235-42d6-8e2d-352b4bd927f4",
+                "type": "has_any_word",
+                "uuid": "8665f53c-6fb5-4672-9b00-ef2014a9cef3"
+              }
+            ],
+            "categories": [
+              {
+                "exit_uuid": "c009d8ff-4298-458e-ae92-78234b9ac22e",
+                "name": "End",
+                "uuid": "e6920241-2889-42f1-a9b9-e28370046d21"
+              },
+              {
+                "exit_uuid": "12294428-7610-4e41-b8ae-085540c80968",
+                "name": "Ask",
+                "uuid": "1ad7f85b-ed1c-4f6f-8635-68d4a6708c0d"
+              },
+              {
+                "exit_uuid": "4c902856-29ef-4421-bfad-78f54c7fc09c",
+                "name": "Loop",
+                "uuid": "895c394d-5235-42d6-8e2d-352b4bd927f4"
+              },
+              {
+                "exit_uuid": "9ff61433-ff51-465b-ba60-c98b6d7bcd04",
+                "name": "Other",
+                "uuid": "4e6937e4-e919-41c7-92a8-089ee8c7376d"
+              }
+            ],
+            "default_category_uuid": "4e6937e4-e919-41c7-92a8-089ee8c7376d",
+            "operand": "@webhook.conversationStatus",
+            "type": "switch"
+          },
+          "uuid": "1e5c0531-0b6f-4830-b4d8-a1a4650edde9"
+        },
+        {
+          "actions": [
+            {
+              "category": "",
+              "name": "previnput",
+              "type": "set_run_result",
+              "uuid": "9ea26df4-067a-4e27-aade-6b3a1ef1eaff",
+              "value": ""
+            }
+          ],
+          "exits": [
+            {
+              "destination_uuid": "3e259a94-cd67-4de4-9520-282928e6a018",
+              "uuid": "654db647-49d0-4062-83d8-14f1185f8283"
+            }
+          ],
+          "uuid": "513e6079-2cc7-4dd7-9ea6-8c1dd6efc848"
+        }
+      ],
+      "revision": 5,
+      "spec_version": "13.1.0",
+      "type": "messaging",
+      "uuid": "5e9b3526-86d8-44b3-a50e-701a4bf27cdf",
+      "version": "13.0.0"
+    }
+  ],
+  "campaigns": [],
+  "triggers": [
+    {
+      "trigger_type": "K",
+      "keyword": "efnyc",
+      "flow": {
+        "uuid": "5e9b3526-86d8-44b3-a50e-701a4bf27cdf",
+        "name": "PROTOTYPE: eviction free nyc"
+      },
+      "groups": [],
+      "channel": null
+    },
+    {
+      "trigger_type": "K",
+      "keyword": "eviction",
+      "flow": {
+        "uuid": "5e9b3526-86d8-44b3-a50e-701a4bf27cdf",
+        "name": "PROTOTYPE: eviction free nyc"
+      },
+      "groups": [],
+      "channel": null
+    }
+  ],
+  "fields": [],
+  "groups": []
+}

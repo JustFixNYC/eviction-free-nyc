@@ -66,6 +66,18 @@ For instance, this means that a file at `src/serverless-functions/foo.ts` can be
 
 [Netlify Functions]: https://docs.netlify.com/functions/overview/
 
+### Textbot
+
+A EFNYC textbot based off [texit-webhook-fun][] is in the `src/textbot` directory. It can be run in the terminal with:
+
+```
+node run-textbot.js
+```
+
+For production, it's exposed via a serverless function at `/.netlify/functions/textbot`.  Because we currently use RapidPro/TextIt as our primary SMS gateway, the RapidPro flow in `src/textbot/sample-rapidpro-textbot-flow.json` needs to be imported in order to interface with it.
+
+[textit-webhook-fun]: https://github.com/JustFixNYC/textit-webhook-fun
+
 ### Attribution
 
 The starter for this site was [gatsby-contentful-i18n](https://github.com/mccrodp/gatsby-contentful-i18n), built by [mccrodp](https://github.com/mccrodp)! Many thanks!
