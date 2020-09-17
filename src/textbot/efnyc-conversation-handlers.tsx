@@ -18,10 +18,7 @@ const INVALID_YES_OR_NO = `Sorry, I didn't understand that. Please respond with 
 type EfnycState = Partial<RtcInfo> & BaseConversationState;
 
 /**
- * The methods that start with `handler_` map conversation handler names
- * to actual conversation handlers to effectively form a finite state
- * machine (FSM).
- *
+ * The methods that start with `handler_` are conversation handlers.
  * Because the names of these handlers are stored in the conversation state,
  * care should be taken in renaming/changing them, since existing
  * conversations that are in that state may misbehave.
