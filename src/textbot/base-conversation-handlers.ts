@@ -7,23 +7,43 @@ import {
 import { convertToText, TextType } from "./text-type";
 
 export type BaseConversationState = {
+  /**
+   * The handler to call when processing the current state
+   * and its input. It should either start with `handler_` or
+   * be the special value `END`, which indicates that the
+   * conversation is over.
+   */
   handlerName: string;
 };
 
+/**
+ * A method that performs some action based on the current
+ * state of the conversation and returns a response.
+ */
 type ConversationHandlerMethod = () =>
   | ConversationResponse
   | Promise<ConversationResponse>;
 
 type ResponseOptions<State extends BaseConversationState> = {
+  /**
+   * Optional updates to make to the conversation state.
+   */
   stateUpdates?: Partial<State>;
 };
 
 export abstract class BaseConversationHandlers<
   State extends BaseConversationState
 > {
+  /** The current state of the conversation. */
   readonly state: State;
 
-  constructor(state?: State | string, readonly input: string = "") {
+  /**
+   * The text that the user recently sent the textbot, or the empty
+   * string if nothing was sent.
+   */
+  readonly input: string;
+
+  constructor(state?: State | string, input: string = "") {
     if (typeof state === "string" || typeof state === "undefined") {
       state = deserializeConversationState<State>(
         state,
@@ -31,10 +51,16 @@ export abstract class BaseConversationHandlers<
       );
     }
     this.state = state;
+    this.input = input;
   }
 
+  /** Return the initial state of the conversation. */
   abstract getInitialState(): State;
 
+  /**
+   * Handle the current state of the conversation, calling the
+   * appropriate conversation handler as needed.
+   */
   async handle(): Promise<ConversationResponse> {
     const { handlerName } = this.state;
     if (!handlerName.startsWith("handle_")) {
@@ -74,6 +100,11 @@ export abstract class BaseConversationHandlers<
     };
   }
 
+  /**
+   * Say something to the user (i.e., send them a text message)
+   * without waiting for any further input from them, and
+   * advance to the given conversation handler.
+   */
   say(
     text: TextType,
     nextHandler: ConversationHandlerMethod,
@@ -87,6 +118,11 @@ export abstract class BaseConversationHandlers<
     );
   }
 
+  /**
+   * Ask the user a question, awaiting input from them. The
+   * given conversation handler will be called once they
+   * respond.
+   */
   ask(
     text: TextType,
     nextHandler: ConversationHandlerMethod,
@@ -100,6 +136,9 @@ export abstract class BaseConversationHandlers<
     );
   }
 
+  /**
+   * Send the user the given text and end the conversation.
+   */
   end(text: TextType): ConversationResponse {
     return this.response(text, "END", ConversationStatus.End);
   }
