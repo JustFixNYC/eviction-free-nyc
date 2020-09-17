@@ -1,15 +1,22 @@
 import { ConsoleIO } from "./console-io";
-import { EfnycConversationHandlers } from "./efnyc-conversation-handlers";
 import { ConversationResponse, ConversationStatus } from "./conversation";
+import {
+  BaseConversationHandlers,
+  BaseConversationOptions,
+} from "./base-conversation-handlers";
 
-export async function runChatbotInConsole() {
+export async function runChatbotInConsole(
+  factory: (
+    options: BaseConversationOptions<any>
+  ) => BaseConversationHandlers<any>
+) {
   const io = new ConsoleIO();
   let state = "";
   let input = "";
   let ended = false;
 
   while (!ended) {
-    const handlers = new EfnycConversationHandlers(state, input);
+    const handlers = factory({ state, input });
     const response: ConversationResponse = await handlers.handle();
     state = response.state;
     io.writeLine(response.text);

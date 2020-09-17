@@ -6,6 +6,11 @@ import {
 } from "./conversation";
 import { convertToText, TextType } from "./text-type";
 
+export type BaseConversationOptions<State> = {
+  state?: State | string;
+  input?: string;
+};
+
 export type BaseConversationState = {
   /**
    * The handler to call when processing the current state
@@ -43,7 +48,7 @@ export abstract class BaseConversationHandlers<
    */
   readonly input: string;
 
-  constructor(state?: State | string, input: string = "") {
+  constructor({ state, input }: BaseConversationOptions<State>) {
     if (typeof state === "string" || typeof state === "undefined") {
       state = deserializeConversationState<State>(
         state,
@@ -51,7 +56,7 @@ export abstract class BaseConversationHandlers<
       );
     }
     this.state = state;
-    this.input = input;
+    this.input = input || "";
   }
 
   /** Return the initial state of the conversation. */
