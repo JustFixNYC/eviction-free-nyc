@@ -1,5 +1,5 @@
 import { ConsoleIO } from "./console-io";
-import { handleConversation } from "./conversation-handlers";
+import { EfnycConversationHandlers } from "./conversation-handlers";
 import { ConversationResponse, ConversationStatus } from "./conversation";
 
 export async function runChatbotInConsole() {
@@ -9,10 +9,8 @@ export async function runChatbotInConsole() {
   let ended = false;
 
   while (!ended) {
-    const response: ConversationResponse = await handleConversation(
-      input,
-      state
-    );
+    const handlers = new EfnycConversationHandlers(state, input);
+    const response: ConversationResponse = await handlers.handle();
     state = response.state;
     io.writeLine(response.text);
     if (response.conversationStatus === ConversationStatus.End) {
