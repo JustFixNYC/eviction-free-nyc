@@ -11,6 +11,10 @@ export type BaseConversationOptions<State> = {
   input?: string;
 };
 
+export type ConversationFactory<T extends BaseConversationState> = (
+  options: BaseConversationOptions<T>
+) => BaseConversationHandlers<T>;
+
 export type BaseConversationState = {
   /**
    * The handler to call when processing the current state
