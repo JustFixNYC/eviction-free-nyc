@@ -2,7 +2,10 @@ import React from "react";
 import { geoSearch } from "@justfixnyc/geosearch-requester";
 import { RtcInfo, EvictionType, getRtcHelp, ensureRtcInfo } from "./rtc";
 import fetch from "node-fetch";
-import { BaseConversationHandlers, BaseConversationState } from "./base-conversation-handlers";
+import {
+  BaseConversationHandlers,
+  BaseConversationState,
+} from "./base-conversation-handlers";
 import { isNo, isYes, parseYesOrNo } from "./parsing";
 
 const INVALID_YES_OR_NO = `Sorry, I didn't understand that. Please respond with Yes or No.`;
@@ -25,7 +28,9 @@ type EfnycState = Partial<RtcInfo> & BaseConversationState;
  *
  * Note that each handler must start with `handle_`.
  */
-export class EfnycConversationHandlers extends BaseConversationHandlers<EfnycState> {
+export class EfnycConversationHandlers extends BaseConversationHandlers<
+  EfnycState
+> {
   getInitialState() {
     return { handlerName: "handle_start" };
   }

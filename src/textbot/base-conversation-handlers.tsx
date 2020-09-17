@@ -45,12 +45,17 @@ function convertToText(text: TextType): string {
   }
 }
 
-export abstract class BaseConversationHandlers<State extends BaseConversationState> {
+export abstract class BaseConversationHandlers<
+  State extends BaseConversationState
+> {
   readonly state: State;
 
   constructor(state?: State | string, readonly input: string = "") {
     if (typeof state === "string" || typeof state === "undefined") {
-      state = deserializeConversationState<State>(state, this.getInitialState());
+      state = deserializeConversationState<State>(
+        state,
+        this.getInitialState()
+      );
     }
     this.state = state;
   }

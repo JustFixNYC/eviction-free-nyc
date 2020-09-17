@@ -1,5 +1,5 @@
 import { ConsoleIO } from "./console-io";
-import { EfnycConversationHandlers } from "./conversation-handlers";
+import { EfnycConversationHandlers } from "./efnyc-conversation-handlers";
 import { ConversationResponse, ConversationStatus } from "./conversation";
 
 export async function runChatbotInConsole() {

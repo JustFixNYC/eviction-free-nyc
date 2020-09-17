@@ -1,4 +1,4 @@
-import { EfnycConversationHandlers } from "../textbot/conversation-handlers";
+import { EfnycConversationHandlers } from "../textbot/efnyc-conversation-handlers";
 import { serverlessRollbarHandler } from "../utils/serverless-util";
 
 export const handler = serverlessRollbarHandler(async (event) => {
