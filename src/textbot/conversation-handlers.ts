@@ -11,7 +11,9 @@ import fetch from "node-fetch";
 
 const INVALID_YES_OR_NO = `Sorry, I didn't understand that. Please respond with Yes or No.`;
 
-type ConversationHandlerName = keyof ConversationHandlers;
+type ConversationHandlerName = {
+  [k in keyof ConversationHandlers]: ConversationHandlers[k] extends Handler ? k : never;
+}[keyof ConversationHandlers];
 
 /**
  * This is the internal state used by our conversation handlers. Care
