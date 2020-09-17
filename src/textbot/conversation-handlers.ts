@@ -23,6 +23,10 @@ type ConversationHandlerMethod = () =>
   | ConversationResponse
   | Promise<ConversationResponse>;
 
+type ResponseOptions = {
+  stateUpdates?: Partial<State>;
+};
+
 abstract class BaseConversationHandlers {
   readonly state: State;
 
@@ -80,27 +84,27 @@ abstract class BaseConversationHandlers {
     };
   }
 
-  say(options: {
-    text: string | string[];
-    nextHandler: ConversationHandlerMethod;
-    stateUpdates?: Partial<State>;
-  }): ConversationResponse {
+  say(
+    text: string | string[],
+    nextHandler: ConversationHandlerMethod,
+    options: ResponseOptions = {}
+  ): ConversationResponse {
     return this.response(
-      options.text,
-      options.nextHandler.name,
+      text,
+      nextHandler.name,
       ConversationStatus.Loop,
       options.stateUpdates
     );
   }
 
-  ask(options: {
-    text: string | string[];
-    nextHandler: ConversationHandlerMethod;
-    stateUpdates?: Partial<State>;
-  }): ConversationResponse {
+  ask(
+    text: string | string[],
+    nextHandler: ConversationHandlerMethod,
+    options: ResponseOptions = {}
+  ): ConversationResponse {
     return this.response(
-      options.text,
-      options.nextHandler.name,
+      text,
+      nextHandler.name,
       ConversationStatus.Ask,
       options.stateUpdates
     );
@@ -124,52 +128,54 @@ abstract class BaseConversationHandlers {
  */
 export class EfnycConversationHandlers extends BaseConversationHandlers {
   handle_start() {
-    return this.say({
-      text: `
+    return this.say(
+      `
         Right to Counsel is a new law in NYC that provides free legal representation for eligible tenants. You may qualify based on:
         - where you live in NYC
         - income and household size
         - your eviction notice
       `,
-      nextHandler: this.handle_intro2,
-    });
+      this.handle_intro2
+    );
   }
 
   handle_intro2() {
-    return this.ask({
-      text: `Let's see if you have the right to a free attorney! To start, what is your address and borough? Example: 654 Park Place, Brooklyn`,
-      nextHandler: this.handle_receiveContactAddress,
-    });
+    return this.ask(
+      `Let's see if you have the right to a free attorney! To start, what is your address and borough? Example: 654 Park Place, Brooklyn`,
+      this.handle_receiveContactAddress
+    );
   }
 
   async handle_receiveContactAddress() {
     const results = await geoSearch(this.input, { fetch: fetch as any });
     if (!results.features.length) {
-      return this.ask({
-        text: `Hmm, we couldn't understand that address. Can you try being more specific?`,
-        nextHandler: this.handle_receiveContactAddress,
-      });
+      return this.ask(
+        `Hmm, we couldn't understand that address. Can you try being more specific?`,
+        this.handle_receiveContactAddress
+      );
     }
     const props = results.features[0].properties;
-    return this.ask({
-      text: `
+    return this.ask(
+      `
         Is this your address?
         ${props.label}
         Please reply with either Yes or No.
       `,
-      nextHandler: this.handle_confirmAddress,
-      stateUpdates: {
-        boroughGid: props.borough_gid,
-        zip: props.postalcode,
-        bbl: props.pad_bbl,
-      },
-    });
+      this.handle_confirmAddress,
+      {
+        stateUpdates: {
+          boroughGid: props.borough_gid,
+          zip: props.postalcode,
+          bbl: props.pad_bbl,
+        },
+      }
+    );
   }
 
   handle_confirmAddress() {
     if (isYes(this.input)) {
-      return this.ask({
-        text: `
+      return this.ask(
+        `
           Your eligibility depends on your household size and annual income:
           
           Household Size / Annual Income
@@ -182,18 +188,12 @@ export class EfnycConversationHandlers extends BaseConversationHandlers {
 
           Do you think you are income eligible? Please reply with either Yes or No.
         `,
-        nextHandler: this.handle_receiveIncomeAnswer,
-      });
+        this.handle_receiveIncomeAnswer
+      );
     } else if (isNo(this.input)) {
-      return this.say({
-        text: "Oops, let's try again!",
-        nextHandler: this.handle_intro2,
-      });
+      return this.say("Oops, let's try again!", this.handle_intro2);
     } else {
-      return this.ask({
-        text: INVALID_YES_OR_NO,
-        nextHandler: this.handle_confirmAddress,
-      });
+      return this.ask(INVALID_YES_OR_NO, this.handle_confirmAddress);
     }
   }
 
@@ -201,19 +201,18 @@ export class EfnycConversationHandlers extends BaseConversationHandlers {
     const isIncomeEligible = parseYesOrNo(this.input);
 
     if (isIncomeEligible === undefined) {
-      return this.ask({
-        text: INVALID_YES_OR_NO,
-        nextHandler: this.handle_receiveIncomeAnswer,
-      });
+      return this.ask(INVALID_YES_OR_NO, this.handle_receiveIncomeAnswer);
     }
 
-    return this.ask({
-      text: `Last question: what type of eviction notice did you receive? Please answer Nonpayment, Holdover, or Other.`,
-      nextHandler: this.handle_receiveEvictionType,
-      stateUpdates: {
-        isIncomeEligible,
-      },
-    });
+    return this.ask(
+      `Last question: what type of eviction notice did you receive? Please answer Nonpayment, Holdover, or Other.`,
+      this.handle_receiveEvictionType,
+      {
+        stateUpdates: {
+          isIncomeEligible,
+        },
+      }
+    );
   }
 
   handle_receiveEvictionType() {
@@ -226,11 +225,10 @@ export class EfnycConversationHandlers extends BaseConversationHandlers {
     } else if (/other/i.test(this.input)) {
       evictionType = "general";
     } else {
-      return this.ask({
-        text:
-          "Sorry, I didn't understand that. Please respond with Nonpayment, Holdover, or Other.",
-        nextHandler: this.handle_receiveEvictionType,
-      });
+      return this.ask(
+        "Sorry, I didn't understand that. Please respond with Nonpayment, Holdover, or Other.",
+        this.handle_receiveEvictionType
+      );
     }
 
     const help = getRtcHelp(ensureRtcInfo({ ...this.state, evictionType }));
