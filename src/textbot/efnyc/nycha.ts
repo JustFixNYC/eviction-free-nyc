@@ -1,6 +1,6 @@
 // The following JSON file is taken from:
 // https://github.com/JustFixNYC/who-owns-what/blob/master/client/src/data/nycha_bbls.json
-import nychaBBLs from "../data/nycha_bbls.json";
+import nychaBBLs from "../../data/nycha_bbls.json";
 
 type NychaInfo = {
   bbl: number;

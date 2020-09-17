@@ -1,10 +1,14 @@
+// @ts-check
+
 require("@babel/register")({
   ignore: [],
-  extensions: [".ts", ".js"],
+  extensions: [".ts", ".tsx", ".js"],
 });
-require("./src/textbot/run-in-console")
-  .runChatbotInConsole()
-  .catch((e) => {
-    console.error(e);
-    process.exit(1);
-  });
+
+const {
+  EfnycConversationHandlers,
+} = require("./src/textbot/efnyc/conversation-handlers");
+
+require("./src/textbot/run-in-console").runTextbotInConsole(
+  (options) => new EfnycConversationHandlers(options)
+);

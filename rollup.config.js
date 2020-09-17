@@ -18,11 +18,11 @@ const config = filenames.map((filename) => ({
   external: ["path", "fs", "util", "url", "os", "http", "https"],
   plugins: [
     json(),
-    nodeResolve({ extensions: [".js", ".ts"] }),
+    nodeResolve({ extensions: [".js", ".ts", ".tsx"] }),
     commonjs(),
     babel({
       babelHelpers: "bundled",
-      extensions: [".ts"],
+      extensions: [".ts", ".tsx"],
     }),
   ],
 }));

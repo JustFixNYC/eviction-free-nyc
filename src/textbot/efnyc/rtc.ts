@@ -1,6 +1,6 @@
 import { GeoSearchBoroughGid } from "@justfixnyc/geosearch-requester";
 import { getNychaInfo } from "./nycha";
-import { ZIPCODES } from "../data/zipcodes";
+import { ZIPCODES } from "../../data/zipcodes";
 
 const EFNYC_HOST = process.env.EFNYC_HOST || "www.evictionfreenyc.org";
 

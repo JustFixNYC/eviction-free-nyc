@@ -1,18 +1,16 @@
 import { ConsoleIO } from "./console-io";
-import { handleConversation } from "./conversation-handlers";
 import { ConversationResponse, ConversationStatus } from "./conversation";
+import { ConversationFactory } from "./base-conversation-handlers";
 
-export async function runChatbotInConsole() {
+async function asyncRunTextbotInConsole(factory: ConversationFactory<any>) {
   const io = new ConsoleIO();
   let state = "";
   let input = "";
   let ended = false;
 
   while (!ended) {
-    const response: ConversationResponse = await handleConversation(
-      input,
-      state
-    );
+    const handlers = factory({ state, input });
+    const response: ConversationResponse = await handlers.handle();
     state = response.state;
     io.writeLine(response.text);
     if (response.conversationStatus === ConversationStatus.End) {
@@ -25,4 +23,11 @@ export async function runChatbotInConsole() {
   }
 
   io.close();
+}
+
+export function runTextbotInConsole(factory: ConversationFactory<any>) {
+  asyncRunTextbotInConsole(factory).catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
 }
