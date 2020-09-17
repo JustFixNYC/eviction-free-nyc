@@ -1,13 +1,9 @@
 import React from "react";
 import { geoSearch } from "@justfixnyc/geosearch-requester";
-import {
-  ConversationStatus,
-  ConversationResponse,
-  deserializeConversationState,
-  serializeConversationState,
-} from "./conversation";
 import { RtcInfo, EvictionType, getRtcHelp, ensureRtcInfo } from "./rtc";
 import fetch from "node-fetch";
+import { BaseConversationHandlers, BaseConversationState } from "./base-conversation-handlers";
+import { isNo, isYes, parseYesOrNo } from "./parsing";
 
 const INVALID_YES_OR_NO = `Sorry, I didn't understand that. Please respond with Yes or No.`;
 
@@ -16,128 +12,7 @@ const INVALID_YES_OR_NO = `Sorry, I didn't understand that. Please respond with 
  * should be taken in changing its schema, since in-progress
  * conversations may end up using old versions of its schema.
  */
-type State = Partial<RtcInfo> & {
-  handlerName: string;
-};
-
-type ConversationHandlerMethod = () =>
-  | ConversationResponse
-  | Promise<ConversationResponse>;
-
-type ResponseOptions = {
-  stateUpdates?: Partial<State>;
-};
-
-type TextType = string | string[] | JSX.Element;
-
-function convertToText(text: TextType): string {
-  if (typeof text === "string") {
-    return text;
-  }
-  if (Array.isArray(text)) {
-    return text.join("\n");
-  } else {
-    const chunks: string[] = [];
-    for (let child of React.Children.toArray(text.props.children)) {
-      if (typeof child === "string") {
-        chunks.push(child);
-      } else if (typeof child === "object" && "key" in child) {
-        if (child.type === "br") {
-          chunks.push("\n");
-        } else {
-          console.log(`Not sure how to render <${child.type.toString()}>.`);
-        }
-      } else {
-        console.log(`Not sure how to render "${child.toString()}".`);
-      }
-    }
-    return chunks.join("");
-  }
-}
-
-abstract class BaseConversationHandlers {
-  readonly state: State;
-
-  constructor(state?: State | string, readonly input: string = "") {
-    if (typeof state === "string" || typeof state === "undefined") {
-      state = deserializeConversationState<State>(state, {
-        handlerName: "handle_start",
-      });
-    }
-    this.state = state;
-  }
-
-  abstract handle_start(): ConversationResponse | Promise<ConversationResponse>;
-
-  async handle(): Promise<ConversationResponse> {
-    const { handlerName } = this.state;
-    if (!handlerName.startsWith("handle_")) {
-      throw new Error(
-        `Handler name '${handlerName}' must start with 'handle_'`
-      );
-    }
-    const handlerMethod: ConversationHandlerMethod = this[handlerName];
-    if (!(typeof handlerMethod === "function")) {
-      throw new Error(`Handler '${handlerName}' does not exist`);
-    }
-    return handlerMethod.call(this);
-  }
-
-  private response(
-    text: TextType,
-    nextStateHandler: string,
-    status: ConversationStatus,
-    stateUpdates?: Partial<State>
-  ): ConversationResponse {
-    if (
-      !(nextStateHandler.startsWith("handle_") || nextStateHandler === "END")
-    ) {
-      throw new Error(`Invalid state handler name: ${nextStateHandler}`);
-    }
-
-    const nextState: State = {
-      ...this.state,
-      ...stateUpdates,
-      handlerName: nextStateHandler,
-    };
-
-    return {
-      text: convertToText(text),
-      conversationStatus: status,
-      state: serializeConversationState(nextState),
-    };
-  }
-
-  say(
-    text: TextType,
-    nextHandler: ConversationHandlerMethod,
-    options: ResponseOptions = {}
-  ): ConversationResponse {
-    return this.response(
-      text,
-      nextHandler.name,
-      ConversationStatus.Loop,
-      options.stateUpdates
-    );
-  }
-
-  ask(
-    text: TextType,
-    nextHandler: ConversationHandlerMethod,
-    options: ResponseOptions = {}
-  ): ConversationResponse {
-    return this.response(
-      text,
-      nextHandler.name,
-      ConversationStatus.Ask,
-      options.stateUpdates
-    );
-  }
-
-  end(text: TextType): ConversationResponse {
-    return this.response(text, "END", ConversationStatus.End);
-  }
-}
+type EfnycState = Partial<RtcInfo> & BaseConversationState;
 
 /**
  * This maps conversation handler "names" to actual conversation handlers
@@ -150,7 +25,11 @@ abstract class BaseConversationHandlers {
  *
  * Note that each handler must start with `handle_`.
  */
-export class EfnycConversationHandlers extends BaseConversationHandlers {
+export class EfnycConversationHandlers extends BaseConversationHandlers<EfnycState> {
+  getInitialState() {
+    return { handlerName: "handle_start" };
+  }
+
   /** The beginning of the textbot flow! */
   handle_start() {
     return this.say(
@@ -307,18 +186,4 @@ export class EfnycConversationHandlers extends BaseConversationHandlers {
       </>
     );
   }
-}
-
-function isYes(text: string): boolean {
-  return text.toLowerCase().startsWith("y");
-}
-
-function isNo(text: string): boolean {
-  return text.toLowerCase().startsWith("n");
-}
-
-function parseYesOrNo(text: string): boolean | undefined {
-  if (isYes(text)) return true;
-  if (isNo(text)) return false;
-  return undefined;
 }
