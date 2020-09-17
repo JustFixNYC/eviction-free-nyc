@@ -1,15 +1,8 @@
 import { ConsoleIO } from "./console-io";
 import { ConversationResponse, ConversationStatus } from "./conversation";
-import {
-  BaseConversationHandlers,
-  BaseConversationOptions,
-} from "./base-conversation-handlers";
+import { ConversationFactory } from "./base-conversation-handlers";
 
-export async function runChatbotInConsole(
-  factory: (
-    options: BaseConversationOptions<any>
-  ) => BaseConversationHandlers<any>
-) {
+async function asyncRunChatbotInConsole(factory: ConversationFactory<any>) {
   const io = new ConsoleIO();
   let state = "";
   let input = "";
@@ -30,4 +23,11 @@ export async function runChatbotInConsole(
   }
 
   io.close();
+}
+
+export function runChatbotInConsole(factory: ConversationFactory<any>) {
+  asyncRunChatbotInConsole(factory).catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });
 }
