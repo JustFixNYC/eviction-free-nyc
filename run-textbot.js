@@ -5,7 +5,7 @@ require("@babel/register")({
 
 const {
   EfnycConversationHandlers,
-} = require("./src/textbot/efnyc-conversation-handlers");
+} = require("./src/textbot/efnyc/conversation-handlers");
 
 require("./src/textbot/run-in-console")
   .runChatbotInConsole((options) => new EfnycConversationHandlers(options))

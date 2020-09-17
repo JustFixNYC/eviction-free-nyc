@@ -5,8 +5,8 @@ import fetch from "node-fetch";
 import {
   BaseConversationHandlers,
   BaseConversationState,
-} from "./base-conversation-handlers";
-import { isNo, isYes, parseYesOrNo } from "./parsing";
+} from "../base-conversation-handlers";
+import { isNo, isYes, parseYesOrNo } from "../parsing";
 
 const INVALID_YES_OR_NO = `Sorry, I didn't understand that. Please respond with Yes or No.`;
 
