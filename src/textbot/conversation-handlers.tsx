@@ -1,3 +1,4 @@
+import React from "react";
 import { geoSearch } from "@justfixnyc/geosearch-requester";
 import {
   ConversationStatus,
@@ -26,6 +27,33 @@ type ConversationHandlerMethod = () =>
 type ResponseOptions = {
   stateUpdates?: Partial<State>;
 };
+
+type TextType = string | string[] | JSX.Element;
+
+function convertToText(text: TextType): string {
+  if (typeof text === "string") {
+    return text;
+  }
+  if (Array.isArray(text)) {
+    return text.join("\n");
+  } else {
+    const chunks: string[] = [];
+    for (let child of React.Children.toArray(text.props.children)) {
+      if (typeof child === "string") {
+        chunks.push(child);
+      } else if (typeof child === "object" && "key" in child) {
+        if (child.type === "br") {
+          chunks.push("\n");
+        } else {
+          console.log(`Not sure how to render <${child.type.toString()}>.`);
+        }
+      } else {
+        console.log(`Not sure how to render "${child.toString()}".`);
+      }
+    }
+    return chunks.join("");
+  }
+}
 
 abstract class BaseConversationHandlers {
   readonly state: State;
@@ -56,7 +84,7 @@ abstract class BaseConversationHandlers {
   }
 
   private response(
-    text: string | string[],
+    text: TextType,
     nextStateHandler: string,
     status: ConversationStatus,
     stateUpdates?: Partial<State>
@@ -73,19 +101,15 @@ abstract class BaseConversationHandlers {
       handlerName: nextStateHandler,
     };
 
-    if (Array.isArray(text)) {
-      text = text.join("\n");
-    }
-
     return {
-      text,
+      text: convertToText(text),
       conversationStatus: status,
       state: serializeConversationState(nextState),
     };
   }
 
   say(
-    text: string | string[],
+    text: TextType,
     nextHandler: ConversationHandlerMethod,
     options: ResponseOptions = {}
   ): ConversationResponse {
@@ -98,7 +122,7 @@ abstract class BaseConversationHandlers {
   }
 
   ask(
-    text: string | string[],
+    text: TextType,
     nextHandler: ConversationHandlerMethod,
     options: ResponseOptions = {}
   ): ConversationResponse {
@@ -110,7 +134,7 @@ abstract class BaseConversationHandlers {
     );
   }
 
-  end(text: string | string[]): ConversationResponse {
+  end(text: TextType): ConversationResponse {
     return this.response(text, "END", ConversationStatus.End);
   }
 }
@@ -127,40 +151,54 @@ abstract class BaseConversationHandlers {
  * Note that each handler must start with `handle_`.
  */
 export class EfnycConversationHandlers extends BaseConversationHandlers {
+  /** The beginning of the textbot flow! */
   handle_start() {
     return this.say(
-      `
-        Right to Counsel is a new law in NYC that provides free legal representation for eligible tenants. You may qualify based on:
+      <>
+        Right to Counsel is a new law in NYC that provides free legal
+        representation for eligible tenants. You may qualify based on:
+        <br />
         - where you live in NYC
+        <br />
         - income and household size
-        - your eviction notice
-      `,
+        <br />- your eviction notice
+      </>,
       this.handle_intro2
     );
   }
 
+  /** Ask for the user's address. */
   handle_intro2() {
     return this.ask(
-      `Let's see if you have the right to a free attorney! To start, what is your address and borough? Example: 654 Park Place, Brooklyn`,
+      <>
+        Let's see if you have the right to a free attorney! To start, what is
+        your address and borough? Example: 654 Park Place, Brooklyn
+      </>,
       this.handle_receiveContactAddress
     );
   }
 
+  /** Geocode the user's address and see if it's what they think it is. */
   async handle_receiveContactAddress() {
     const results = await geoSearch(this.input, { fetch: fetch as any });
     if (!results.features.length) {
       return this.ask(
-        `Hmm, we couldn't understand that address. Can you try being more specific?`,
+        <>
+          Hmm, we couldn't understand that address. Can you try being more
+          specific?
+        </>,
         this.handle_receiveContactAddress
       );
     }
     const props = results.features[0].properties;
     return this.ask(
-      `
+      <>
         Is this your address?
-        ${props.label}
+        <br />
+        {props.label}
+        <br />
         Please reply with either Yes or No.
-      `,
+      </>,
       this.handle_confirmAddress,
       {
         stateUpdates: {
@@ -172,22 +210,35 @@ export class EfnycConversationHandlers extends BaseConversationHandlers {
     );
   }
 
+  /**
+   * If the user confirmed their address, ask them about their household
+   * size/income.
+   */
   handle_confirmAddress() {
     if (isYes(this.input)) {
       return this.ask(
-        `
+        <>
           Your eligibility depends on your household size and annual income:
-          
+          <br />
+          <br />
           Household Size / Annual Income
+          <br />
           1 person / $24,120
+          <br />
           2 people / $32,480
+          <br />
           3 people / $40,840
+          <br />
           4 people / $49,200
+          <br />
           5 people / $57,560
+          <br />
           6 people / $65,920
-
-          Do you think you are income eligible? Please reply with either Yes or No.
-        `,
+          <br />
+          <br />
+          Do you think you are income eligible? Please reply with either Yes or
+          No.
+        </>,
         this.handle_receiveIncomeAnswer
       );
     } else if (isNo(this.input)) {
@@ -197,6 +248,10 @@ export class EfnycConversationHandlers extends BaseConversationHandlers {
     }
   }
 
+  /**
+   * Once the user provides a valid household size/income answer, ask
+   * them about their eviction notice type.
+   */
   handle_receiveIncomeAnswer() {
     const isIncomeEligible = parseYesOrNo(this.input);
 
@@ -205,7 +260,10 @@ export class EfnycConversationHandlers extends BaseConversationHandlers {
     }
 
     return this.ask(
-      `Last question: what type of eviction notice did you receive? Please answer Nonpayment, Holdover, or Other.`,
+      <>
+        Last question: what type of eviction notice did you receive? Please
+        answer Nonpayment, Holdover, or Other.
+      </>,
       this.handle_receiveEvictionType,
       {
         stateUpdates: {
@@ -215,6 +273,10 @@ export class EfnycConversationHandlers extends BaseConversationHandlers {
     );
   }
 
+  /**
+   * Once the user has answered their eviction notice type, give them
+   * some basic help text with a URL to EFYNC.
+   */
   handle_receiveEvictionType() {
     let evictionType: EvictionType;
 
@@ -226,18 +288,24 @@ export class EfnycConversationHandlers extends BaseConversationHandlers {
       evictionType = "general";
     } else {
       return this.ask(
-        "Sorry, I didn't understand that. Please respond with Nonpayment, Holdover, or Other.",
+        <>
+          Sorry, I didn't understand that. Please respond with Nonpayment,
+          Holdover, or Other.
+        </>,
         this.handle_receiveEvictionType
       );
     }
 
     const help = getRtcHelp(ensureRtcInfo({ ...this.state, evictionType }));
 
-    return this.end(`
-      ${help.title}
-
-      Visit ${help.url} for next steps.
-    `);
+    return this.end(
+      <>
+        {help.title}
+        <br />
+        <br />
+        Visit {help.url} for next steps.
+      </>
+    );
   }
 }
 
