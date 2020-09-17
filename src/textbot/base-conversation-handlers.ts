@@ -62,7 +62,15 @@ export abstract class BaseConversationHandlers<
    * appropriate conversation handler as needed.
    */
   async handle(): Promise<ConversationResponse> {
-    const { handlerName } = this.state;
+    const handlerMethod = this.getHandlerMethod(this.state.handlerName);
+    return handlerMethod.call(this);
+  }
+
+  /**
+   * Return the handler method with the given name, raising an exception
+   * if it's invalid.
+   */
+  private getHandlerMethod(handlerName: string): ConversationHandlerMethod {
     if (!handlerName.startsWith("handle_")) {
       throw new Error(
         `Handler name '${handlerName}' must start with 'handle_'`
@@ -72,7 +80,7 @@ export abstract class BaseConversationHandlers<
     if (!(typeof handlerMethod === "function")) {
       throw new Error(`Handler '${handlerName}' does not exist`);
     }
-    return handlerMethod.call(this);
+    return handlerMethod;
   }
 
   private response(
