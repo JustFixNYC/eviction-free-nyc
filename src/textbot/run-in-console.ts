@@ -2,7 +2,7 @@ import { ConsoleIO } from "./console-io";
 import { ConversationResponse, ConversationStatus } from "./conversation";
 import { ConversationFactory } from "./base-conversation-handlers";
 
-async function asyncRunChatbotInConsole(factory: ConversationFactory<any>) {
+async function asyncRunTextbotInConsole(factory: ConversationFactory<any>) {
   const io = new ConsoleIO();
   let state = "";
   let input = "";
@@ -25,8 +25,8 @@ async function asyncRunChatbotInConsole(factory: ConversationFactory<any>) {
   io.close();
 }
 
-export function runChatbotInConsole(factory: ConversationFactory<any>) {
-  asyncRunChatbotInConsole(factory).catch((e) => {
+export function runTextbotInConsole(factory: ConversationFactory<any>) {
+  asyncRunTextbotInConsole(factory).catch((e) => {
     console.error(e);
     process.exit(1);
   });

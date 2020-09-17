@@ -1,7 +1,7 @@
 import { APIGatewayProxyHandler } from "aws-lambda";
 import { ConversationFactory } from "./base-conversation-handlers";
 
-export function createServerlessHandlerForConversation(
+export function createServerlessHandlerForTextbot(
   factory: ConversationFactory<any>
 ): APIGatewayProxyHandler {
   const handler: APIGatewayProxyHandler = async (event) => {
