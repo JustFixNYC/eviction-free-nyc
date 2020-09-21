@@ -15,7 +15,17 @@ const config = filenames.map((filename) => ({
     format: "cjs",
     sourcemap: "inline",
   },
-  external: ["path", "fs", "util", "url", "os", "http", "https"],
+  external: [
+    "path",
+    "fs",
+    "util",
+    "url",
+    "os",
+    "http",
+    "https",
+    "stream",
+    "zlib",
+  ],
   plugins: [
     json(),
     nodeResolve({ extensions: [".js", ".ts", ".tsx"] }),
