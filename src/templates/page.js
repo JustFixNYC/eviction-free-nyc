@@ -12,14 +12,14 @@ class PageTemplate extends React.Component {
 
     return (
       <TemplateWrapper>
-      <section className="Page container grid-md">
-        <h2>{title}</h2>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: pageContent.childMarkdownRemark.html,
-          }}
-        />
-      </section>
+        <section className="Page container grid-md">
+          <h2>{title}</h2>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: pageContent.childMarkdownRemark.html,
+            }}
+          />
+        </section>
       </TemplateWrapper>
     );
   }

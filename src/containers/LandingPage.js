@@ -8,6 +8,8 @@ import ButtonLink from "../components/ButtonLink";
 import Accordion from "../components/Accordion";
 
 import "../styles/LandingPage.scss";
+import TemplateWrapper from "../layouts";
+import { useStaticQuery } from "gatsby";
 
 var widont = require("widont");
 
@@ -104,7 +106,34 @@ class LandingPage extends React.Component {
 
 LandingPage.propTypes = propTypes;
 
-export default injectIntl(LandingPage);
+const LandingPageWithIntl = injectIntl(LandingPage);
+
+const Blah = () => {
+  // TODO: Actually make this not hard-code en-US and other stuff.
+  const data = useStaticQuery(graphql`
+    query BlahQuery {
+      langs: site {
+        siteMetadata {
+          languages {
+            langs
+          }
+        }
+      }
+      content: allContentfulLandingPage(
+        filter: { node_locale: { eq: "en-US" } }
+      ) {
+        ...LandingPageFragment
+      }
+    }
+  `);
+  return (
+    <TemplateWrapper>
+      <LandingPageWithIntl data={data} />
+    </TemplateWrapper>
+  );
+};
+
+export default Blah;
 
 export const landingPageFragment = graphql`
   fragment LandingPageFragment on ContentfulLandingPageConnection {

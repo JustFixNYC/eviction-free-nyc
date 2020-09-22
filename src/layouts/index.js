@@ -15,8 +15,9 @@ import metaPhoto from "../assets/img/EFNYC_photo.jpg";
 
 // Styles
 import "../styles/main.scss";
+import { useLocation } from "@reach/router";
 
-const TemplateWrapper = ({ children, location }) => {
+const TemplateWrapper = ({ children }) => {
   const data = useStaticQuery(graphql`
     query Layout {
       site {
@@ -29,6 +30,7 @@ const TemplateWrapper = ({ children, location }) => {
       }
     }
   `);
+  const location = useLocation();
   const url = location.pathname;
   const { langs, defaultLangKey } = data.site.siteMetadata.languages;
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
@@ -95,7 +97,7 @@ const TemplateWrapper = ({ children, location }) => {
         </Helmet>
 
         <Header langs={langsMenu} />
-        <main>{children()}</main>
+        <main>{children}</main>
         <Footer langs={langsMenu} />
       </div>
     </IntlProvider>
