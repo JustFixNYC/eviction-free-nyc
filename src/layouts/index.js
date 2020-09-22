@@ -1,4 +1,5 @@
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { getCurrentLangKey, getLangs, getUrlForLang } from "ptz-i18n";
@@ -15,7 +16,19 @@ import metaPhoto from "../assets/img/EFNYC_photo.jpg";
 // Styles
 import "../styles/main.scss";
 
-const TemplateWrapper = ({ children, data, location }) => {
+const TemplateWrapper = ({ children, location }) => {
+  const data = useStaticQuery(graphql`
+    query Layout {
+      site {
+        siteMetadata {
+          languages {
+            defaultLangKey
+            langs
+          }
+        }
+      }
+    }
+  `);
   const url = location.pathname;
   const { langs, defaultLangKey } = data.site.siteMetadata.languages;
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
@@ -30,14 +43,6 @@ const TemplateWrapper = ({ children, data, location }) => {
   return (
     <IntlProvider locale={langKey} key={langKey} messages={i18nMessages}>
       <div>
-        {/*
-          // title="Eviction Free NYC"
-          // meta={[
-          //   { name: 'description', content: 'Are you facing an eviction? You may have the right to a free lawyer!' },
-          //   { name: 'keywords', content: 'lawyer, legal aid, housing, tenants, tenants rights, help, assistance, legal services, eviction, evicted' },
-          // ]}
-
-           */}
         <Helmet>
           <title>
             Respond to an Eviction Notice and Get Free Legal Help | Eviction
@@ -102,16 +107,3 @@ TemplateWrapper.propTypes = {
 };
 
 export default TemplateWrapper;
-
-export const query = graphql`
-  query Layout {
-    site {
-      siteMetadata {
-        languages {
-          defaultLangKey
-          langs
-        }
-      }
-    }
-  }
-`;

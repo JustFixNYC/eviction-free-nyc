@@ -15,4 +15,4 @@ const ht = {
   },
 };
 
-addLocaleData([...en, ...es, ...fr, ...ht]);
+addLocaleData([...en, ...es, ...fr, ht]);

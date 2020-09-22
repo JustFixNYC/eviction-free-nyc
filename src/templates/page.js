@@ -1,5 +1,6 @@
 import React from "react";
 import * as PropTypes from "prop-types";
+import TemplateWrapper from "../layouts";
 
 const propTypes = {
   data: PropTypes.object.isRequired,
@@ -10,6 +11,7 @@ class PageTemplate extends React.Component {
     const { title, pageContent } = this.props.data.contentfulPage;
 
     return (
+      <TemplateWrapper>
       <section className="Page container grid-md">
         <h2>{title}</h2>
         <div
@@ -18,6 +20,7 @@ class PageTemplate extends React.Component {
           }}
         />
       </section>
+      </TemplateWrapper>
     );
   }
 }
