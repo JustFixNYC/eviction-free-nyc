@@ -47,23 +47,21 @@ function createFormattedTel(tel) {
   }
 }
 
-export default {
-  createFormattedTel(tel) {
-    return createFormattedTel(tel);
-  },
+export function createFormattedTel(tel) {
+  return createFormattedTel(tel);
+}
 
-  addCallButtons(htmlString) {
-    // replace the actual capture group with the button
-    const replacer = (_, p1) => {
-      // filter out any non-numeric stuff
-      p1 = p1.replace(/\D/g, "");
-      return `<a class="btn btn-success" href="tel:${p1}">${createFormattedTel(
-        p1
-      )}</a>`;
-    };
+export function addCallButtons(htmlString) {
+  // replace the actual capture group with the button
+  const replacer = (_, p1) => {
+    // filter out any non-numeric stuff
+    p1 = p1.replace(/\D/g, "");
+    return `<a class="btn btn-success" href="tel:${p1}">${createFormattedTel(
+      p1
+    )}</a>`;
+  };
 
-    htmlString = htmlString.replace(/{(.*)}/g, replacer);
+  htmlString = htmlString.replace(/{(.*)}/g, replacer);
 
-    return htmlString;
-  },
-};
+  return htmlString;
+}
