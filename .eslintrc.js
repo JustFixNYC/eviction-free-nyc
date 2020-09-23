@@ -1,10 +1,20 @@
 module.exports = {
   globals: {
     Rollbar: "readonly",
-    require: "readonly",
     process: "readonly",
+    // This is a global in Gatsby v1.
     graphql: "readonly",
+    // Some of our code uses CommonJS globals.
+    require: "readonly",
     module: "readonly",
+    // Jest globals
+    describe: "readonly",
+    expect: "readonly",
+    it: "readonly",
+    test: "readonly",
+    // TypeScript globals (so weird that we have to define these here but whatever)
+    JSX: "readonly",
+    NodeJS: "readonly",
   },
   settings: {
     react: {
@@ -15,7 +25,11 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["eslint:recommended", "plugin:react/recommended"],
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
@@ -24,9 +38,16 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ["react", "@typescript-eslint", "react-hooks"],
   rules: {
+    // This just makes our code harder to read.
+    "react/no-unescaped-entities": "off",
+    // This is ostensibly useful but has a billion edge cases that
+    // make it pointless.
+    "no-unused-vars": "off",
+    // The legacy codebase only partly uses this, so disable.
     "react/prop-types": "off",
+    // TODO: We should enable this eventually.
     "react/jsx-no-target-blank": "off",
   },
 };
