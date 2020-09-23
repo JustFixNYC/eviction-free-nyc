@@ -1,5 +1,4 @@
 import React from "react";
-import Select from "react-select";
 import APIClient from "./APIClient";
 import {
   FormattedMessage as Trans,

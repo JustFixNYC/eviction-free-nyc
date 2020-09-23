@@ -1,13 +1,11 @@
 import React from "react";
 import Helmet from "react-helmet";
-import * as PropTypes from "prop-types";
-import { injectIntl, FormattedMessage as Trans } from "react-intl";
+import { FormattedMessage as Trans } from "react-intl";
 import {
   AccordionItem,
   AccordionItemTitle,
   AccordionItemBody,
 } from "react-accessible-accordion";
-import { addCallButtons } from "../utils/text";
 import { getParameterByName } from "../utils/browser";
 
 import Accordion from "../components/Accordion";
@@ -22,7 +20,6 @@ const CourtPage = ({
   steps,
   additionalResources,
   providers,
-  intl,
 }) => {
   const userZip = getParameterByName("zip");
 

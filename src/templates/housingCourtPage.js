@@ -1,6 +1,6 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-import { injectIntl, FormattedMessage as Trans } from "react-intl";
+import { injectIntl } from "react-intl";
 import { addCallButtons } from "../utils/text";
 
 import CourtPage from "../containers/CourtPage";
@@ -55,7 +55,7 @@ class PageTemplate extends React.Component {
         break;
     }
 
-    this.data.steps = this.data.steps.map((step, i) => ({
+    this.data.steps = this.data.steps.map((step) => ({
       title: step.title,
       html: addCallButtons(
         step.childContentfulHousingCourtActionStepContentTextNode
@@ -65,7 +65,7 @@ class PageTemplate extends React.Component {
 
     if (contentfulData.additionalResources) {
       this.data.additionalResources = contentfulData.additionalResources.map(
-        (step, i) => ({
+        (step) => ({
           title: step.title,
           html: addCallButtons(
             step.childContentfulHousingCourtActionStepContentTextNode

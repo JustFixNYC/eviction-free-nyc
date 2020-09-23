@@ -76,12 +76,15 @@
   "license": "GNU General Public License v3.0",
   "main": "n/a",
   "scripts": {
+    "eslint": "eslint",
     "netlify": "netlify",
     "netlify:develop": "yarn build-serverless && concurrently -k \"netlify dev --port 8001\" \"yarn watch-serverless\"",
     "develop": "gatsby develop",
     "build": "gatsby build",
     "build-serverless": "rollup -c",
     "watch-serverless": "yarn rollup --watch --no-watch.clearScreen -c",
+    "lint": "eslint src && yarn typecheck && yarn prettier:check",
+    "lint:fix": "eslint src && yarn typecheck && yarn prettier:fix",
     "prettier": "prettier",
     "prettier:check": "prettier \"**/*.{ts,tsx,js,scss}\" --check",
     "prettier:fix": "prettier \"**/*.{ts,tsx,js,scss}\" --write",
@@ -100,8 +103,12 @@
     "@babel/register": "^7.11.5",
     "@testing-library/react": "^10.4.9",
     "@types/jest": "^26.0.13",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
     "babel-jest": "^26.3.0",
     "concurrently": "^5.3.0",
+    "eslint": "^7.9.0",
+    "eslint-plugin-react": "^7.21.0",
     "jest": "^26.4.2",
     "netlify-cli": "^2.61.0"
   }

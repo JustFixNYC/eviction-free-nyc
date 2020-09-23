@@ -6,13 +6,7 @@ function sendSMS(phone, message) {
   );
 }
 
-function get(url) {
-  return fetch(url, { accept: "application/json" })
-    .then(checkStatus)
-    .then(parseJSON);
-}
-
-function post(url, body, cb) {
+function post(url, body) {
   return fetch(url, {
     headers: {
       Accept: "application/json",

@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "gatsby-link";
 import { FormattedMessage as Trans } from "react-intl";
 import { FacebookButton, TwitterButton, EmailButton } from "react-social";
 
@@ -8,7 +7,7 @@ import "../styles/GetInvolved.scss";
 import fbIcon from "../assets/img/fb.svg";
 import twitterIcon from "../assets/img/twitter.svg";
 
-const GetInvolved = (props) => (
+const GetInvolved = () => (
   <div className="GetInvolved">
     <div className="container grid-lg">
       <div className="columns">

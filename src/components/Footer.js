@@ -1,11 +1,7 @@
 import React from "react";
-import Link from "gatsby-link";
 import SelectLanguage from "./SelectLanguage";
 import GetInvolved from "./GetInvolved";
-import {
-  FormattedMessage as Trans,
-  FormattedHTMLMessage as HTMLTrans,
-} from "react-intl";
+import { FormattedHTMLMessage as HTMLTrans } from "react-intl";
 
 import "../styles/Footer.scss";
 import rtcLogo from "../assets/img/RTC_logo.png";

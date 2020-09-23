@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { getCurrentLangKey, getLangs, getUrlForLang } from "ptz-i18n";
 import { IntlProvider } from "react-intl";
-import Link from "gatsby-link";
 import "intl";
 import "../utils/locales";
 

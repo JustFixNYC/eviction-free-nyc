@@ -1,6 +1,5 @@
 import React from "react";
 import Select from "react-select";
-import { FormattedMessage as Trans } from "react-intl";
 
 import "react-select/dist/react-select.css";
 

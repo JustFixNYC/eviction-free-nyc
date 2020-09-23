@@ -1,5 +1,5 @@
 import React from "react";
-import { injectIntl, FormattedMessage as Trans } from "react-intl";
+import { FormattedMessage as Trans } from "react-intl";
 
 const ModalIncomeEligible = ({ content, nextFn }) => (
   <div>

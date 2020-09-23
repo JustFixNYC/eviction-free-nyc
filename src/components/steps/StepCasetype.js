@@ -1,5 +1,4 @@
 import React from "react";
-import ButtonStep from "../ButtonStep";
 import { injectIntl, FormattedMessage as Trans } from "react-intl";
 import {
   Accordion,

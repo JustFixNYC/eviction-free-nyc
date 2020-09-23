@@ -1,7 +1,7 @@
 import React from "react";
-import { injectIntl, FormattedMessage as Trans } from "react-intl";
+import { FormattedMessage as Trans } from "react-intl";
 
-const ModalAreaEligible = ({ content, nycha, zip, nextFn }) => (
+const ModalAreaEligible = ({ content, zip, nextFn }) => (
   <div>
     {zip && (
       <div className="modal-header">
