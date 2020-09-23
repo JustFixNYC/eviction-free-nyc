@@ -27,8 +27,10 @@ module.exports = {
   },
   extends: [
     "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -42,12 +44,13 @@ module.exports = {
   rules: {
     // This just makes our code harder to read.
     "react/no-unescaped-entities": "off",
-    // This is ostensibly useful but has a billion edge cases that
-    // make it pointless.
-    "no-unused-vars": "off",
     // The legacy codebase only partly uses this, so disable.
     "react/prop-types": "off",
     // TODO: We should enable this eventually.
     "react/jsx-no-target-blank": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/ban-types": "off",
   },
 };
