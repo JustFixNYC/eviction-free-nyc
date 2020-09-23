@@ -1,5 +1,5 @@
 // utility function to create friendly looking phone numbers
-function createFormattedTel(tel) {
+export function createFormattedTel(tel) {
   if (!tel) {
     return "";
   }
@@ -45,10 +45,6 @@ function createFormattedTel(tel) {
   } else {
     return "(" + city;
   }
-}
-
-export function createFormattedTel(tel) {
-  return createFormattedTel(tel);
 }
 
 export function addCallButtons(htmlString) {
