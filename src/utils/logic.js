@@ -1,6 +1,5 @@
 import { ZIPCODES } from "../data/zipcodes";
-import { navigateTo } from "gatsby-link";
-import { array } from "lodash";
+import _ from "lodash";
 
 export function isLocationEligible(zipString) {
   const zip = parseInt(zipString, 10);

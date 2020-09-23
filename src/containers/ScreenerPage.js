@@ -1,6 +1,6 @@
 import React from "react";
 import * as PropTypes from "prop-types";
-import { injectIntl, FormattedMessage as Trans } from "react-intl";
+import { injectIntl } from "react-intl";
 
 import {
   isLocationEligible,

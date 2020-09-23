@@ -19,7 +19,7 @@ export class ConsoleIO {
   }
 
   question(query: string): Promise<string> {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       this.rl.question(query, (answer) => {
         resolve(answer);
       });

@@ -16,7 +16,7 @@ export function createFormattedTel(tel) {
     return tel;
   }
 
-  var country, city, number;
+  var city, number;
 
   switch (value.length) {
     case 1:
@@ -32,16 +32,12 @@ export function createFormattedTel(tel) {
   if (number) {
     if (number.length > 3) {
       number = number.slice(0, 3) + "-" + number.slice(3, 7);
-    } else {
-      number = number;
     }
 
     var phone = "(" + city + ") " + number;
 
     if (ext) return (phone + " ext. " + ext).trim();
     else return phone.trim();
-
-    return ("(" + city + ") " + number).trim();
   } else {
     return "(" + city;
   }

@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
 import { injectIntl } from "react-intl";
-import SelectLanguage from "./SelectLanguage";
 import { FacebookButton, TwitterButton, EmailButton } from "react-social";
 
 import "../styles/Header.scss";

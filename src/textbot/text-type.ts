@@ -10,7 +10,7 @@ export function convertToText(text: TextType): string {
     return text.join("\n");
   } else {
     const chunks: string[] = [];
-    for (let child of React.Children.toArray(text.props.children)) {
+    for (const child of React.Children.toArray(text.props.children)) {
       if (typeof child === "string") {
         chunks.push(child);
       } else if (typeof child === "object" && "key" in child) {

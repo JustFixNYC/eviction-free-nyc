@@ -20,7 +20,7 @@ class CommunityGroups extends React.Component {
   fetchGroupsContent = (zip) => {
     ContentfulClient.fetchCommunityGroups(zip, this.props.intl.locale)
       .then((response) => {
-        const groups = response.items.map((r, _) => r.fields);
+        const groups = response.items.map((r) => r.fields);
         this.setState({
           contentfulResponse: true,
           groups: groups,

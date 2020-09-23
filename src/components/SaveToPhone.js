@@ -1,19 +1,19 @@
 import React from "react";
-import Select from "react-select";
 import APIClient from "./APIClient";
 import {
   FormattedMessage as Trans,
   FormattedHTMLMessage as HTMLTrans,
 } from "react-intl";
 
+import "../styles/SaveToPhone.scss";
+
 // Wrap the require in check for window
 // Needed for gatsby builds that don't have references to document
 let ReactPhoneInput;
 if (typeof document !== "undefined") {
+  // eslint-disable-next-line
   ReactPhoneInput = require("react-phone-input-2").default;
 }
-
-import "../styles/SaveToPhone.scss";
 
 class SaveToPhone extends React.Component {
   constructor(props) {
