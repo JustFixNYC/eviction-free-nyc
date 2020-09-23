@@ -6,9 +6,7 @@ import Link from "gatsby-link";
 import Img from "gatsby-image";
 import ButtonLink from "../components/ButtonLink";
 import Accordion from "../components/Accordion";
-
-var widont = require("widont");
-
+import widont from "widont";
 import "../styles/LandingPage.scss";
 
 const propTypes = {

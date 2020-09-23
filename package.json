@@ -76,7 +76,7 @@
   "license": "GNU General Public License v3.0",
   "main": "n/a",
   "scripts": {
-    "eslint": "eslint src --ext .ts,.tsx",
+    "eslint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "netlify": "netlify",
     "netlify:develop": "yarn build-serverless && concurrently -k \"netlify dev --port 8001\" \"yarn watch-serverless\"",
     "develop": "gatsby develop",
