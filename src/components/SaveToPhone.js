@@ -4,16 +4,9 @@ import {
   FormattedMessage as Trans,
   FormattedHTMLMessage as HTMLTrans,
 } from "react-intl";
+import ReactPhoneInput from "react-phone-input-2";
 
 import "../styles/SaveToPhone.scss";
-
-// Wrap the require in check for window
-// Needed for gatsby builds that don't have references to document
-let ReactPhoneInput;
-if (typeof document !== "undefined") {
-  // eslint-disable-next-line
-  ReactPhoneInput = require("react-phone-input-2").default;
-}
 
 class SaveToPhone extends React.Component {
   constructor(props) {
@@ -122,15 +115,12 @@ Follow this link for assistance in your eviction case: ${page}
             </div>
             <div className="column col-md-12 col-6">
               <div className="input-group">
-                {/* See above  */}
-                {typeof ReactPhoneInput !== "undefined" && (
-                  <ReactPhoneInput
-                    className="input-group"
-                    country={"us"}
-                    value={this.state.phone}
-                    onChange={this.handleOnChange}
-                  />
-                )}
+                <ReactPhoneInput
+                  className="input-group"
+                  country={"us"}
+                  value={this.state.phone}
+                  onChange={this.handleOnChange}
+                />
                 {button}
               </div>
               {this.state.error ? (
