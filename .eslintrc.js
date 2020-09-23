@@ -12,9 +12,6 @@ module.exports = {
     expect: "readonly",
     it: "readonly",
     test: "readonly",
-    // TypeScript globals (so weird that we have to define these here but whatever)
-    JSX: "readonly",
-    NodeJS: "readonly",
   },
   settings: {
     react: {
