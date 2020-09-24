@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { getCurrentLangKey, getLangs, getUrlForLang } from "ptz-i18n";
 import { IntlProvider } from "react-intl";
-import Link from "gatsby-link";
 import "intl";
 import "../utils/locales";
 
@@ -25,6 +24,7 @@ const TemplateWrapper = ({ children, data, location }) => {
   // get the appropriate message file based on langKey
   // at the moment this assumes that langKey will provide us
   // with the appropriate language code
+  // eslint-disable-next-line
   const i18nMessages = require(`../data/messages/${langKey}`);
 
   return (
