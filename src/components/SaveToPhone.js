@@ -8,9 +8,8 @@ import ReactPhoneInput from "react-phone-input-2";
 import "../styles/SaveToPhone.scss";
 
 function sendSMS(phone, path) {
-  const cleanPhoneNumber = "+" + phone.replace(/\D/g, "");
   return fetch(
-    `/.netlify/functions/send-to-phone?userPhone=${cleanPhoneNumber}&userPath=${path}`
+    `/.netlify/functions/send-to-phone?userPhone=${phone}&userPath=${path}`
   );
 }
 
@@ -33,21 +32,21 @@ class SaveToPhone extends React.Component {
     let path = "";
     // Needed for gatsby builds that don't have references to window
     if (typeof window !== "undefined") {
-      path = window.location.pathname;
+      path = window.location.pathname + window.location.search;
     }
 
     this.setState({ button: "loading" });
 
     sendSMS(this.state.phone, path).then((res) => {
-      if (res.status >= 400) {
-        this.setState({
-          button: "error",
-          error: res.body.message,
-        });
-      } else {
+      if (res.ok) {
         this.setState({
           button: "success",
           error: null,
+        });
+      } else {
+        this.setState({
+          button: "error",
+          error: res.body.message,
         });
       }
     });
