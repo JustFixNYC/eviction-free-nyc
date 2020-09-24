@@ -8,9 +8,20 @@ import ReactPhoneInput from "react-phone-input-2";
 import "../styles/SaveToPhone.scss";
 
 function sendSMS(phone, path) {
-  return fetch(
-    `/.netlify/functions/send-to-phone?userPhone=${phone}&userPath=${path}`
-  );
+  const url = `/.netlify/functions/send-to-phone`;
+  const body = {
+    userPhone: phone,
+    resultsPagePath: path,
+  };
+  return fetch(url, {
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    method: "POST",
+    mode: "cors",
+    body: JSON.stringify(body),
+  });
 }
 
 class SaveToPhone extends React.Component {

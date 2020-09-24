@@ -10,7 +10,7 @@ const validatePhoneNumber = (phone: string) => {
   } else return false;
 };
 
-const validatePath = (path: string) => (path.slice(1) === "/" ? path : null);
+const validatePath = (path: string) => (path.slice(0, 1) === "/" ? path : null);
 
 export const handler = serverlessRollbarHandler(async (event) => {
   const {
@@ -18,12 +18,12 @@ export const handler = serverlessRollbarHandler(async (event) => {
     TWILIO_AUTH_TOKEN,
     TWILIO_PHONE_NUMBER,
   } = process.env;
+
   if (!(TWILIO_ACCOUNT_SID && TWILIO_AUTH_TOKEN && TWILIO_PHONE_NUMBER)) {
     throw new Error("Twilio credentials are not in environment!");
   }
 
-  const userPhone =
-    event.queryStringParameters && event.queryStringParameters.userPhone;
+  const userPhone = event.body && JSON.parse(event.body).userPhone;
 
   if (!userPhone) {
     return {
@@ -41,8 +41,7 @@ export const handler = serverlessRollbarHandler(async (event) => {
     };
   }
 
-  const resultsPagePath =
-    event.queryStringParameters && event.queryStringParameters.userPath;
+  const resultsPagePath = event.body && JSON.parse(event.body).resultsPagePath;
 
   if (resultsPagePath && !validatePath(resultsPagePath)) {
     return {
