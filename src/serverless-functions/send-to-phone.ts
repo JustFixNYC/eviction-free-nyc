@@ -26,7 +26,7 @@ export const handler = serverlessRollbarHandler(async (event) => {
     };
   }
 
-  let client = new Twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
+  const client = new Twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
 
   await client.messages.create({
     body: `Eviction Free NYC! Follow this link for assistance in your eviction case: https://${EFNYC_HOST}${
