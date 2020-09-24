@@ -1,10 +1,11 @@
 import React from "react";
 import Select from "react-select";
-import APIClient from "./APIClient";
 import {
   FormattedMessage as Trans,
   FormattedHTMLMessage as HTMLTrans,
 } from "react-intl";
+
+import "../styles/SaveToPhone.scss";
 
 // Wrap the require in check for window
 // Needed for gatsby builds that don't have references to document
@@ -13,7 +14,12 @@ if (typeof document !== "undefined") {
   ReactPhoneInput = require("react-phone-input-2").default;
 }
 
-import "../styles/SaveToPhone.scss";
+function sendSMS(phone, path) {
+  const cleanPhoneNumber = "+" + phone.replace(/\D/g, "");
+  return fetch(
+    `/.netlify/functions/send-to-phone?userPhone=${cleanPhoneNumber}&userPath=${path}`
+  );
+}
 
 class SaveToPhone extends React.Component {
   constructor(props) {
@@ -31,20 +37,16 @@ class SaveToPhone extends React.Component {
   };
 
   handleOnSubmit = () => {
-    let page;
+    let path = "";
     // Needed for gatsby builds that don't have references to window
     if (typeof window !== "undefined") {
-      page = window.location.href;
+      path = window.location.pathname;
     }
-    const message = `Eviction Free NYC!
-
-Follow this link for assistance in your eviction case: ${page}
-    `;
 
     this.setState({ button: "loading" });
 
-    APIClient.sendSMS(this.state.phone, message).then((res) => {
-      if (res.statusCode >= 400) {
+    sendSMS(this.state.phone, path).then((res) => {
+      if (res.status >= 400) {
         this.setState({
           button: "error",
           error: res.body.message,

@@ -16,6 +16,9 @@ export const handler = serverlessRollbarHandler(async (event) => {
   const userPhone =
     event.queryStringParameters && event.queryStringParameters.userPhone;
 
+  const resultsPagePath =
+    event.queryStringParameters && event.queryStringParameters.userPath;
+
   if (!userPhone) {
     return {
       statusCode: 400,
@@ -26,8 +29,9 @@ export const handler = serverlessRollbarHandler(async (event) => {
   var client = new Twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
 
   await client.messages.create({
-    body:
-      "Hi Mr. Atul...",
+    body: `Eviction Free NYC! Follow this link for assistance in your eviction case: https://demo-efnyc.netlify.app${
+      resultsPagePath || ""
+    }`,
     to: userPhone, // Text this number
     from: TWILIO_PHONE_NUMBER, // From a valid Twilio number
   });
