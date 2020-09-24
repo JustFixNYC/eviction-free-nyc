@@ -8,6 +8,9 @@ if (process.env.NODE_ENV !== "production" && process.env.NODE_ENV !== "test") {
   });
 }
 
+export const EFNYC_HOST =
+  process.env.GATSBY_EFNYC_HOST || "www.evictionfreenyc.org";
+
 export const serverlessRollbar = new Rollbar({
   accessToken: process.env.ROLLBAR_POST_SERVER_ITEM_ACCESS_TOKEN,
   captureUncaught: true,

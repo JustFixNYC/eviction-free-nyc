@@ -1,6 +1,6 @@
 import "source-map-support/register";
 
-import { serverlessRollbarHandler } from "../utils/serverless-util";
+import { EFNYC_HOST, serverlessRollbarHandler } from "../utils/serverless-util";
 import { Twilio } from "twilio";
 
 export const handler = serverlessRollbarHandler(async (event) => {
@@ -29,7 +29,7 @@ export const handler = serverlessRollbarHandler(async (event) => {
   var client = new Twilio(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN);
 
   await client.messages.create({
-    body: `Eviction Free NYC! Follow this link for assistance in your eviction case: https://demo-efnyc.netlify.app${
+    body: `Eviction Free NYC! Follow this link for assistance in your eviction case: https://${EFNYC_HOST}${
       resultsPagePath || ""
     }`,
     to: userPhone, // Text this number
