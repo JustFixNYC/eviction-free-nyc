@@ -19,7 +19,6 @@ function sendSMS(phone, path) {
       "Content-Type": "application/json",
     },
     method: "POST",
-    mode: "cors",
     body: JSON.stringify(body),
   });
 }
