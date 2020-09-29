@@ -3,14 +3,15 @@ import "source-map-support/register";
 import { EFNYC_HOST, serverlessRollbarHandler } from "../utils/serverless-util";
 import { Twilio } from "twilio";
 
-const validatePhoneNumber = (phone: string) => {
+export const validatePhoneNumber = (phone: string) => {
   const phoneDigits = phone.replace(/\D/g, "");
   if (phoneDigits.length === 11) {
     return "+" + phoneDigits;
   } else return false;
 };
 
-const validatePath = (path: string) => (path.slice(0, 1) === "/" ? path : null);
+export const validatePath = (path: string) =>
+  path.slice(0, 1) === "/" ? path : null;
 
 export const handler = serverlessRollbarHandler(async (event) => {
   const {
