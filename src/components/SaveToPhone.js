@@ -1,5 +1,4 @@
 import React from "react";
-import APIClient from "./APIClient";
 import {
   FormattedMessage as Trans,
   FormattedHTMLMessage as HTMLTrans,
@@ -7,6 +6,22 @@ import {
 import ReactPhoneInput from "react-phone-input-2";
 
 import "../styles/SaveToPhone.scss";
+
+function sendSMS(phone, path) {
+  const url = `/.netlify/functions/send-to-phone`;
+  const body = {
+    userPhone: phone,
+    resultsPagePath: path,
+  };
+  return fetch(url, {
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    method: "POST",
+    body: JSON.stringify(body),
+  });
+}
 
 class SaveToPhone extends React.Component {
   constructor(props) {
@@ -24,28 +39,24 @@ class SaveToPhone extends React.Component {
   };
 
   handleOnSubmit = () => {
-    let page;
+    let path = "";
     // Needed for gatsby builds that don't have references to window
     if (typeof window !== "undefined") {
-      page = window.location.href;
+      path = window.location.pathname + window.location.search;
     }
-    const message = `Eviction Free NYC!
-
-Follow this link for assistance in your eviction case: ${page}
-    `;
 
     this.setState({ button: "loading" });
 
-    APIClient.sendSMS(this.state.phone, message).then((res) => {
-      if (res.statusCode >= 400) {
-        this.setState({
-          button: "error",
-          error: res.body.message,
-        });
-      } else {
+    sendSMS(this.state.phone, path).then((res) => {
+      if (res.ok) {
         this.setState({
           button: "success",
           error: null,
+        });
+      } else {
+        this.setState({
+          button: "error",
+          error: res.body.message,
         });
       }
     });
