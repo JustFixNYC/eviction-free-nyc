@@ -64,8 +64,11 @@ function addMessage(
 }
 
 const TextbotPage: React.FC<RouteComponentProps<any>> = (props) => {
-  const params = new URLSearchParams(props.location.search);
-  const debug = !!params.get("debug");
+  let debug = false;
+  if (typeof URLSearchParams !== "undefined") {
+    const params = new URLSearchParams(props.location.search);
+    debug = !!params.get("debug");
+  }
   const inputRef = useRef<HTMLInputElement>(null);
   const [currInput, setCurrInput] = useState("");
   const [lastResponse, setLastResponse] = useState<ConversationResponse | null>(
