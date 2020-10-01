@@ -11,6 +11,11 @@ import { ConversationResponse } from "../textbot/conversation";
 
 type CallTextbotOptions = { state?: string; input?: string };
 
+function friendlyState(state: string) {
+  if (state.length < 60) return state;
+  return JSON.stringify(JSON.parse(state), null, 2);
+}
+
 function callTextbot({
   state,
   input,
@@ -86,7 +91,7 @@ const TextbotPage: React.FC<RouteComponentProps<any>> = (props) => {
           and{" "}
           {options.state ? (
             <>
-              state <code>{options.state}</code>
+              state <code>{friendlyState(options.state)}</code>
             </>
           ) : (
             <>no state</>
@@ -117,7 +122,7 @@ const TextbotPage: React.FC<RouteComponentProps<any>> = (props) => {
           <>
             Textbot responded with conversation status{" "}
             <code>{lastResponse.conversationStatus}</code> and state{" "}
-            <code>{lastResponse.state}</code>.
+            <code>{friendlyState(lastResponse.state)}</code>.
           </>
         ),
       });
