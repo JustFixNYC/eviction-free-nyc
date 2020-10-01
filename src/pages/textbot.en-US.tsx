@@ -1,4 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, {
+  Dispatch,
+  SetStateAction,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { RouteComponentProps } from "react-router-dom";
 import "../styles/TextbotPage.scss";
 import { ConversationResponse } from "../textbot/conversation";
@@ -45,6 +51,13 @@ function scrollElementIntoView(el: HTMLElement) {
   }, 10);
 }
 
+function addMessage(
+  setMessages: Dispatch<SetStateAction<Message[]>>,
+  message: Message
+) {
+  setMessages((messages) => [...messages, message]);
+}
+
 const TextbotPage: React.FC<RouteComponentProps<any>> = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const [currInput, setCurrInput] = useState("");
@@ -58,18 +71,14 @@ const TextbotPage: React.FC<RouteComponentProps<any>> = () => {
     setIsThinking(true);
     callTextbot(options)
       .then((res) => {
-        const text = options.input;
-        if (text) {
-          setMessages((messages) => [...messages, { kind: "user", text }]);
+        if (options.input) {
+          addMessage(setMessages, { kind: "user", text: options.input });
         }
         setCurrInput("");
         setLastResponse(res);
       })
       .catch((e) => {
-        setMessages((messages) => [
-          ...messages,
-          { kind: "error", text: e.toString() },
-        ]);
+        addMessage(setMessages, { kind: "error", text: e.toString() });
       })
       .finally(() => setIsThinking(false));
   };
@@ -79,10 +88,7 @@ const TextbotPage: React.FC<RouteComponentProps<any>> = () => {
   useEffect(() => {
     if (lastResponse && lastResponse !== prevLastResponse) {
       if (lastResponse.text) {
-        setMessages((messages) => [
-          ...messages,
-          { kind: "textbot", text: lastResponse.text },
-        ]);
+        addMessage(setMessages, { kind: "textbot", text: lastResponse.text });
       }
       if (lastResponse.conversationStatus === "loop") {
         cycleTextbot({ state: lastResponse.state });
