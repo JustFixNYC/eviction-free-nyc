@@ -74,6 +74,15 @@ const TextbotPage: React.FC<RouteComponentProps<any>> = (props) => {
   const prevLastResponse = usePrevious(lastResponse);
   const [messages, setMessages] = useState<Message[]>([]);
   const isActive = lastResponse && lastResponse.conversationStatus !== "end";
+  const setDebug = (value: boolean) => {
+    const params = new URLSearchParams(props.location.search);
+    if (value) {
+      params.set("debug", "on");
+    } else {
+      params.delete("debug");
+    }
+    props.history.replace(`?${params.toString()}`);
+  };
   const cycleTextbot = (options: CallTextbotOptions) => {
     setIsThinking(true);
     addMessage(setMessages, {
@@ -135,6 +144,15 @@ const TextbotPage: React.FC<RouteComponentProps<any>> = (props) => {
 
   return (
     <section className="Page TextbotPage">
+      <label htmlFor="debug">
+        <input
+          type="checkbox"
+          id="debug"
+          checked={debug}
+          onChange={(e) => setDebug(e.target.checked)}
+        />{" "}
+        Debug mode
+      </label>
       {messages
         .filter((message) => (message.kind === "debug" ? debug : true))
         .map((message, i) => {
