@@ -24,6 +24,11 @@ function callTextbot({
   );
 }
 
+type Message = {
+  kind: "textbot" | "user" | "error";
+  text: string;
+};
+
 // https://reactjs.org/docs/hooks-faq.html#how-to-get-the-previous-props-or-state
 function usePrevious<T>(value: T): T | undefined {
   const ref = useRef<T>();
@@ -47,17 +52,24 @@ const TextbotPage: React.FC<RouteComponentProps<any>> = () => {
     null
   );
   const prevLastResponse = usePrevious(lastResponse);
-  const [messages, setMessages] = useState<string[]>([]);
+  const [messages, setMessages] = useState<Message[]>([]);
   const isActive = lastResponse && lastResponse.conversationStatus !== "end";
   const cycleTextbot = (options: CallTextbotOptions) => {
     setIsThinking(true);
     callTextbot(options)
       .then((res) => {
+        const text = options.input;
+        if (text) {
+          setMessages((messages) => [...messages, { kind: "user", text }]);
+        }
         setCurrInput("");
         setLastResponse(res);
       })
       .catch((e) => {
-        setMessages((messages) => [...messages, `ERROR: ${e}`]);
+        setMessages((messages) => [
+          ...messages,
+          { kind: "error", text: e.toString() },
+        ]);
       })
       .finally(() => setIsThinking(false));
   };
@@ -67,7 +79,10 @@ const TextbotPage: React.FC<RouteComponentProps<any>> = () => {
   useEffect(() => {
     if (lastResponse && lastResponse !== prevLastResponse) {
       if (lastResponse.text) {
-        setMessages((messages) => [...messages, lastResponse.text]);
+        setMessages((messages) => [
+          ...messages,
+          { kind: "textbot", text: lastResponse.text },
+        ]);
       }
       if (lastResponse.conversationStatus === "loop") {
         cycleTextbot({ state: lastResponse.state });
@@ -80,8 +95,8 @@ const TextbotPage: React.FC<RouteComponentProps<any>> = () => {
     <section className="Page TextbotPage">
       {messages.map((message, i) => {
         return (
-          <div key={i} style={{ whiteSpace: "pre-wrap" }}>
-            {message}
+          <div key={i} className={`Message Message-${message.kind}`}>
+            <div className="content">{message.text}</div>
           </div>
         );
       })}
