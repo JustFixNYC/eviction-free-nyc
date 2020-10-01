@@ -53,3 +53,7 @@
 form {
   text-align: right;
 }
+
+form.disabled {
+  visibility: hidden;
+}

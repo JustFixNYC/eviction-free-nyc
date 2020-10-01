@@ -31,8 +31,8 @@ function callTextbot({
 }
 
 type Message = {
-  kind: "textbot" | "user" | "error";
-  text: string;
+  kind: "textbot" | "user" | "error" | "debug";
+  text: string | JSX.Element;
 };
 
 // https://reactjs.org/docs/hooks-faq.html#how-to-get-the-previous-props-or-state
@@ -58,7 +58,9 @@ function addMessage(
   setMessages((messages) => [...messages, message]);
 }
 
-const TextbotPage: React.FC<RouteComponentProps<any>> = () => {
+const TextbotPage: React.FC<RouteComponentProps<any>> = (props) => {
+  const params = new URLSearchParams(props.location.search);
+  const debug = !!params.get("debug");
   const inputRef = useRef<HTMLInputElement>(null);
   const [currInput, setCurrInput] = useState("");
   const [lastResponse, setLastResponse] = useState<ConversationResponse | null>(
@@ -69,14 +71,33 @@ const TextbotPage: React.FC<RouteComponentProps<any>> = () => {
   const isActive = lastResponse && lastResponse.conversationStatus !== "end";
   const cycleTextbot = (options: CallTextbotOptions) => {
     setIsThinking(true);
+    addMessage(setMessages, {
+      kind: "debug",
+      text: (
+        <>
+          Communicating with textbot with{" "}
+          {options.input ? (
+            <>
+              input <code>{options.input}</code>
+            </>
+          ) : (
+            <>no input</>
+          )}{" "}
+          and{" "}
+          {options.state ? (
+            <>
+              state <code>{options.state}</code>
+            </>
+          ) : (
+            <>no state</>
+          )}
+          .
+        </>
+      ),
+    });
+    setCurrInput("");
     callTextbot(options)
-      .then((res) => {
-        if (options.input) {
-          addMessage(setMessages, { kind: "user", text: options.input });
-        }
-        setCurrInput("");
-        setLastResponse(res);
-      })
+      .then(setLastResponse)
       .catch((e) => {
         addMessage(setMessages, { kind: "error", text: e.toString() });
       })
@@ -90,6 +111,16 @@ const TextbotPage: React.FC<RouteComponentProps<any>> = () => {
       if (lastResponse.text) {
         addMessage(setMessages, { kind: "textbot", text: lastResponse.text });
       }
+      addMessage(setMessages, {
+        kind: "debug",
+        text: (
+          <>
+            Textbot responded with conversation status{" "}
+            <code>{lastResponse.conversationStatus}</code> and state{" "}
+            <code>{lastResponse.state}</code>.
+          </>
+        ),
+      });
       if (lastResponse.conversationStatus === "loop") {
         cycleTextbot({ state: lastResponse.state });
       }
@@ -99,19 +130,23 @@ const TextbotPage: React.FC<RouteComponentProps<any>> = () => {
 
   return (
     <section className="Page TextbotPage">
-      {messages.map((message, i) => {
-        return (
-          <div key={i} className={`Message Message-${message.kind}`}>
-            <div className="content">{message.text}</div>
-          </div>
-        );
-      })}
+      {messages
+        .filter((message) => (message.kind === "debug" ? debug : true))
+        .map((message, i) => {
+          return (
+            <div key={i} className={`Message Message-${message.kind}`}>
+              <div className="content">{message.text}</div>
+            </div>
+          );
+        })}
       {isActive && (
         <form
+          className={isThinking ? "disabled" : ""}
           onSubmit={(e) => {
             e.preventDefault();
             const input = currInput;
             const state = lastResponse ? lastResponse.state : undefined;
+            addMessage(setMessages, { kind: "user", text: input });
             cycleTextbot({ input, state });
           }}
         >
