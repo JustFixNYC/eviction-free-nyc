@@ -5,21 +5,24 @@ import { ConversationResponse } from "../textbot/conversation";
 
 type CallTextbotOptions = { state?: string; input?: string };
 
-const callTextbot = async ({ state, input }: CallTextbotOptions = {}) => {
+function callTextbot({
+  state,
+  input,
+}: CallTextbotOptions): Promise<ConversationResponse> {
   const params = new URLSearchParams();
   if (state) {
     params.set("state", state);
   }
   params.set("input", input || "");
-  const response = await fetch(
-    `/.netlify/functions/textbot?${params.toString()}`
+  return fetch(`/.netlify/functions/textbot?${params.toString()}`).then(
+    (response) => {
+      if (!response.ok) {
+        throw new Error(`Serverless handler returned HTTP ${response.status}`);
+      }
+      return response.json();
+    }
   );
-  if (!response.ok) {
-    throw new Error(`Serverless handler returned HTTP ${response.status}`);
-  }
-  const result: ConversationResponse = await response.json();
-  return result;
-};
+}
 
 // https://reactjs.org/docs/hooks-faq.html#how-to-get-the-previous-props-or-state
 function usePrevious<T>(value: T): T | undefined {
@@ -46,7 +49,7 @@ const TextbotPage: React.FC<RouteComponentProps<any>> = () => {
   const prevLastResponse = usePrevious(lastResponse);
   const [messages, setMessages] = useState<string[]>([]);
   const isActive = lastResponse && lastResponse.conversationStatus !== "end";
-  const cycleTextbot = (options?: CallTextbotOptions) => {
+  const cycleTextbot = (options: CallTextbotOptions) => {
     setIsThinking(true);
     callTextbot(options)
       .then((res) => {
@@ -60,7 +63,7 @@ const TextbotPage: React.FC<RouteComponentProps<any>> = () => {
   };
   const [isThinking, setIsThinking] = useState(false);
 
-  useEffect(cycleTextbot, []);
+  useEffect(() => cycleTextbot({}), []);
   useEffect(() => {
     if (lastResponse && lastResponse !== prevLastResponse) {
       if (lastResponse.text) {
