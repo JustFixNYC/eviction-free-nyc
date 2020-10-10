@@ -13,6 +13,27 @@ const propTypes = {
   data: PropTypes.object.isRequired,
 };
 
+const HcaPhone = () => (
+  <a
+    href="tel:12129624795"
+    target="_blank"
+    className="text-bold"
+    rel="noopener noreferrer"
+  >
+    212-962-4795
+  </a>
+);
+const RtcEmail = () => (
+  <a
+    href="mailto:p.estupinan@newsettlement.org"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-bold"
+  >
+    p.estupinan@newsettlement.org
+  </a>
+);
+
 class LandingPage extends React.Component {
   constructor(props) {
     super(props);
@@ -40,50 +61,50 @@ class LandingPage extends React.Component {
   };
 
   render() {
-    const c = this.content;
+    const isSpanish = this.props.intl.locale === "es";
     return (
       <section className="Page LandingPage bg-secondary">
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent  container grid-md">
             <h2 className="LandingPage__HeroTitle">
-              The moratorium protecting New Yorkers from eviction has expired.
+              {isSpanish
+                ? "La moratoria que protegía a los inquilinos de Nueva York ha terminado."
+                : "The moratorium protecting New Yorkers from eviction has expired."}
             </h2>
             <h4 className="LandingPage__HeroSubtitle">
-              All eviction cases can move forward starting October 12.
+              {isSpanish
+                ? "Todos los casos de desalojo comenzarán el 12 de Octubre."
+                : "All eviction cases can move forward starting October 12."}
             </h4>
             <ButtonLink
               to="https://www.righttocounselnyc.org/organizing_covid19"
               type="primary"
               size="large"
             >
-              Read Latest Updates
+              {isSpanish ? "Lea Noticias Recientes" : "Read Latest Updates"}
               <i className="icon icon-forward ml-2"></i>
             </ButtonLink>
             <br />
-            <p>
-              Call the Housing Court Answers hotline at{" "}
-              <a
-                href="tel:12129624795"
-                target="_blank"
-                className="text-bold"
-                rel="noopener noreferrer"
-              >
-                212-962-4795
-              </a>{" "}
-              for legal questions or email{" "}
-              <a
-                href="mailto:p.estupinan@newsettlement.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-bold"
-              >
-                p.estupinan@newsettlement.org
-              </a>{" "}
-              for more information or resources on how to fight evictions.
-            </p>
+            {isSpanish ? (
+              <p>
+                Llame a la línea de asistencia Housing Court Answers en el{" "}
+                <HcaPhone /> con preguntas legales o mande un email a{" "}
+                <RtcEmail /> para recibir más información y recursos para luchar
+                contra el desalojo.
+              </p>
+            ) : (
+              <p>
+                Call the Housing Court Answers hotline at <HcaPhone /> for legal
+                questions or email <RtcEmail /> for more information or
+                resources on how to fight evictions.
+              </p>
+            )}
             <div className="LandingPage__LangSwitches">
-              <Link to={`/es`} key="es" className="btn btn-block btn-default">
-                <Trans id={`switch_es`} />
+              <Link
+                to={isSpanish ? "en-US" : "es"}
+                className="btn btn-block btn-default"
+              >
+                <Trans id={isSpanish ? "switch_en-US" : "switch_es"} />
               </Link>
             </div>
             <br />
