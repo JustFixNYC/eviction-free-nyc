@@ -76,14 +76,15 @@ class LandingPage extends React.Component {
                 ? "Todos los casos de desalojo comenzarán el 12 de Octubre."
                 : "All eviction cases can move forward starting October 12."}
             </h4>
-            <ButtonLink
-              to="https://www.righttocounselnyc.org/organizing_covid19"
-              type="primary"
-              size="large"
+            <a
+              href="https://www.righttocounselnyc.org/organizing_covid19"
+              target="_blank"
+              className="btn btn-block btn-primary btn-large"
+              rel="noopener noreferrer"
             >
               {isSpanish ? "Lea Noticias Recientes" : "Read Latest Updates"}
               <i className="icon icon-forward ml-2"></i>
-            </ButtonLink>
+            </a>
             <br />
             {isSpanish ? (
               <p>
@@ -101,7 +102,7 @@ class LandingPage extends React.Component {
             )}
             <div className="LandingPage__LangSwitches">
               <Link
-                to={isSpanish ? "en-US" : "es"}
+                to={isSpanish ? "/en-US" : "/es"}
                 className="btn btn-block btn-default"
               >
                 <Trans id={isSpanish ? "switch_en-US" : "switch_es"} />
