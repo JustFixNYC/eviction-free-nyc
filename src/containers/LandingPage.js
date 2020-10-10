@@ -42,57 +42,51 @@ class LandingPage extends React.Component {
   render() {
     const c = this.content;
     return (
-      <section className="Page LandingPage">
+      <section className="Page LandingPage bg-secondary">
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent  container grid-md">
-            <div
-              className="LandingPage__WarningBanner toast toast-warning text-left"
-              dangerouslySetInnerHTML={{
-                __html: widont(
-                  c.moratoriumBanner.childMarkdownRemark.html,
-                  "html"
-                ),
-              }}
-            />
-            <h2 className="LandingPage__HeroTitle">{c.heroTitle}</h2>
-            <h4 className="LandingPage__HeroSubtitle">{c.heroSubTitle}</h4>
-            <ButtonLink to={`/questions`} type="primary">
-              {c.heroButtonText}
+            <h2 className="LandingPage__HeroTitle">
+              The moratorium protecting New Yorkers from eviction has expired.
+            </h2>
+            <h4 className="LandingPage__HeroSubtitle">
+              All eviction cases can move forward starting October 12.
+            </h4>
+            <ButtonLink
+              to="https://www.righttocounselnyc.org/organizing_covid19"
+              type="primary"
+              size="large"
+            >
+              Read Latest Updates
               <i className="icon icon-forward ml-2"></i>
             </ButtonLink>
+            <br />
+            <p>
+              Call the Housing Court Answers hotline at{" "}
+              <a
+                href="tel:12129624795"
+                target="_blank"
+                className="text-bold"
+                rel="noopener noreferrer"
+              >
+                212-962-4795
+              </a>{" "}
+              for legal questions or email{" "}
+              <a
+                href="mailto:p.estupinan@newsettlement.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-bold"
+              >
+                p.estupinan@newsettlement.org
+              </a>{" "}
+              for more information or resources on how to fight evictions.
+            </p>
             <div className="LandingPage__LangSwitches">
-              {this.otherLangs.map((lang, idx) => (
-                <Link
-                  to={`/${lang}`}
-                  key={idx}
-                  className="btn btn-block btn-default"
-                >
-                  <Trans id={`switch_${lang}`} />
-                  <i className="icon icon-forward ml-2"></i>
-                </Link>
-              ))}
+              <Link to={`/es`} key="es" className="btn btn-block btn-default">
+                <Trans id={`switch_es`} />
+              </Link>
             </div>
-            <div className="LandingPage__HeroLearnMore">
-              <div>{c.learnMoreTitle}</div>
-              <i className="icon icon-arrow-down"></i>
-            </div>
-          </div>
-        </div>
-        <div id="faq" className="LandingPage__Content container grid-md">
-          <div className="columns clearfix">
-            <div className="LandingPage__ContentFAQ column col-mr-auto col-sm-12 col-7">
-              <h3>{c.learnMoreTitle}:</h3>
-              <Accordion content={this.faq} />
-            </div>
-            <div className="LandingPage__ContentImage1 column col-ml-auto col-sm-12 col-4">
-              <Img alt={c.heroImage.title} sizes={c.heroImage.sizes} />
-            </div>
-            <div className="LandingPage__ContentImage2 column col-sm-12 col-4">
-              <Img
-                alt={c.secondaryImage.title}
-                sizes={c.secondaryImage.sizes}
-              />
-            </div>
+            <br />
           </div>
         </div>
       </section>
