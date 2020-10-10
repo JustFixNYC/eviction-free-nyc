@@ -85,7 +85,7 @@ class LandingPage extends React.Component {
               {isSpanish ? "Lea Noticias Recientes" : "Read Latest Updates"}
               <i className="icon icon-forward ml-2"></i>
             </a>
-            <br />
+            {isSpanish ? <p>(Solo en inglés)</p> : <br />}
             {isSpanish ? (
               <p>
                 Llame a la línea de asistencia Housing Court Answers en el{" "}
