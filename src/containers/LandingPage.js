@@ -13,6 +13,27 @@ const propTypes = {
   data: PropTypes.object.isRequired,
 };
 
+const HcaPhone = () => (
+  <a
+    href="tel:12129624795"
+    target="_blank"
+    className="text-bold"
+    rel="noopener noreferrer"
+  >
+    212-962-4795
+  </a>
+);
+const RtcEmail = () => (
+  <a
+    href="mailto:p.estupinan@newsettlement.org"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-bold"
+  >
+    p.estupinan@newsettlement.org
+  </a>
+);
+
 class LandingPage extends React.Component {
   constructor(props) {
     super(props);
@@ -40,59 +61,54 @@ class LandingPage extends React.Component {
   };
 
   render() {
-    const c = this.content;
+    const isSpanish = this.props.intl.locale === "es";
     return (
-      <section className="Page LandingPage">
+      <section className="Page LandingPage bg-secondary">
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent  container grid-md">
-            <div
-              className="LandingPage__WarningBanner toast toast-warning text-left"
-              dangerouslySetInnerHTML={{
-                __html: widont(
-                  c.moratoriumBanner.childMarkdownRemark.html,
-                  "html"
-                ),
-              }}
-            />
-            <h2 className="LandingPage__HeroTitle">{c.heroTitle}</h2>
-            <h4 className="LandingPage__HeroSubtitle">{c.heroSubTitle}</h4>
-            <ButtonLink to={`/questions`} type="primary">
-              {c.heroButtonText}
+            <h2 className="LandingPage__HeroTitle">
+              {isSpanish
+                ? "La moratoria que protegía a los inquilinos de Nueva York ha terminado."
+                : "The moratorium protecting New Yorkers from eviction has expired."}
+            </h2>
+            <h4 className="LandingPage__HeroSubtitle">
+              {isSpanish
+                ? "Todos los casos de desalojo comenzarán el 12 de Octubre."
+                : "All eviction cases can move forward starting October 12."}
+            </h4>
+            <a
+              href="https://www.righttocounselnyc.org/organizing_covid19"
+              target="_blank"
+              className="btn btn-block btn-primary btn-large"
+              rel="noopener noreferrer"
+            >
+              {isSpanish ? "Lea Noticias Recientes" : "Read Latest Updates"}
               <i className="icon icon-forward ml-2"></i>
-            </ButtonLink>
+            </a>
+            {isSpanish ? <p>(Solo en inglés)</p> : <br />}
+            {isSpanish ? (
+              <p>
+                Llame a la línea de asistencia Housing Court Answers en el{" "}
+                <HcaPhone /> con preguntas legales o mande un email a{" "}
+                <RtcEmail /> para recibir más información y recursos para luchar
+                contra el desalojo.
+              </p>
+            ) : (
+              <p>
+                Call the Housing Court Answers hotline at <HcaPhone /> for legal
+                questions or email <RtcEmail /> for more information or
+                resources on how to fight evictions.
+              </p>
+            )}
             <div className="LandingPage__LangSwitches">
-              {this.otherLangs.map((lang, idx) => (
-                <Link
-                  to={`/${lang}`}
-                  key={idx}
-                  className="btn btn-block btn-default"
-                >
-                  <Trans id={`switch_${lang}`} />
-                  <i className="icon icon-forward ml-2"></i>
-                </Link>
-              ))}
+              <Link
+                to={isSpanish ? "/en-US" : "/es"}
+                className="btn btn-block btn-default"
+              >
+                <Trans id={isSpanish ? "switch_en-US" : "switch_es"} />
+              </Link>
             </div>
-            <div className="LandingPage__HeroLearnMore">
-              <div>{c.learnMoreTitle}</div>
-              <i className="icon icon-arrow-down"></i>
-            </div>
-          </div>
-        </div>
-        <div id="faq" className="LandingPage__Content container grid-md">
-          <div className="columns clearfix">
-            <div className="LandingPage__ContentFAQ column col-mr-auto col-sm-12 col-7">
-              <h3>{c.learnMoreTitle}:</h3>
-              <Accordion content={this.faq} />
-            </div>
-            <div className="LandingPage__ContentImage1 column col-ml-auto col-sm-12 col-4">
-              <Img alt={c.heroImage.title} sizes={c.heroImage.sizes} />
-            </div>
-            <div className="LandingPage__ContentImage2 column col-sm-12 col-4">
-              <Img
-                alt={c.secondaryImage.title}
-                sizes={c.secondaryImage.sizes}
-              />
-            </div>
+            <br />
           </div>
         </div>
       </section>
