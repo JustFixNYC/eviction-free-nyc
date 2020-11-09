@@ -67,6 +67,18 @@ class LandingPage extends React.Component {
       <section className="Page LandingPage bg-secondary">
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent  container grid-md">
+          <h2 className="LandingPage__HeroTitle">{this.content.hotlineTitle}</h2>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: this.content.hotlineCta.childMarkdownRemark.html,
+              }}
+            />
+            <div
+              dangerouslySetInnerHTML={{
+                __html: this.content.hotlineDescription.childMarkdownRemark.html,
+              }}
+            />
+            <br /> 
             <h2 className="LandingPage__HeroTitle">{this.content.heroTitle}</h2>
             <div
               className="LandingPage__HeroSubtitle"
@@ -80,24 +92,10 @@ class LandingPage extends React.Component {
               className="btn btn-block btn-primary btn-large"
               rel="noopener noreferrer"
             >
-              {isSpanish ? "Lea Noticias Recientes" : "Read Latest Updates"}
+              {this.content.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
             </a>
-            {isSpanish ? <p>(Solo en inglés)</p> : <br />}
-            {isSpanish ? (
-              <p>
-                Llame a la línea de asistencia Housing Court Answers en el{" "}
-                <HcaPhone /> con preguntas legales o mande un email a{" "}
-                <RtcEmail /> para recibir más información y recursos para luchar
-                contra el desalojo.
-              </p>
-            ) : (
-              <p>
-                Call the Housing Court Answers hotline at <HcaPhone /> for legal
-                questions or email <RtcEmail /> for more information or
-                resources on how to fight evictions.
-              </p>
-            )}
+            <br />
             <div className="LandingPage__LangSwitches">
               <Link
                 to={isSpanish ? "/en-US" : "/es"}
