@@ -8,6 +8,7 @@ import ButtonLink from "../components/ButtonLink";
 import Accordion from "../components/Accordion";
 import widont from "widont";
 import "../styles/LandingPage.scss";
+import CommunityGroups from "../components/CommunityGroups";
 
 const propTypes = {
   data: PropTypes.object.isRequired,
@@ -66,16 +67,13 @@ class LandingPage extends React.Component {
       <section className="Page LandingPage bg-secondary">
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent  container grid-md">
-            <h2 className="LandingPage__HeroTitle">
-              {isSpanish
-                ? "La moratoria que protegía a los inquilinos de Nueva York ha terminado."
-                : "The moratorium protecting New Yorkers from eviction has expired."}
-            </h2>
-            <h4 className="LandingPage__HeroSubtitle">
-              {isSpanish
-                ? "Todos los casos de desalojo comenzarán el 12 de Octubre."
-                : "All eviction cases can move forward starting October 12."}
-            </h4>
+            <h2 className="LandingPage__HeroTitle">{this.content.heroTitle}</h2>
+            <div
+              className="LandingPage__HeroSubtitle"
+              dangerouslySetInnerHTML={{
+                __html: this.content.heroContent.childMarkdownRemark.html,
+              }}
+            />
             <a
               href="https://www.righttocounselnyc.org/organizing_covid19"
               target="_blank"
@@ -109,6 +107,14 @@ class LandingPage extends React.Component {
               </Link>
             </div>
             <br />
+            <div>
+              <h6>
+                <Trans id="additionalResources" />
+              </h6>
+              <div className="accordion__item">
+                <CommunityGroups />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -134,6 +140,11 @@ export const landingPageFragment = graphql`
         }
         heroTitle
         heroSubTitle
+        heroContent {
+          childMarkdownRemark {
+            html
+          }
+        }
         heroButtonText
         heroImage {
           title
@@ -142,6 +153,17 @@ export const landingPageFragment = graphql`
             sizes
             src
             srcSet
+          }
+        }
+        hotlineTitle
+        hotlineCta {
+          childMarkdownRemark {
+            html
+          }
+        }
+        hotlineDescription {
+          childMarkdownRemark {
+            html
           }
         }
         learnMoreTitle
