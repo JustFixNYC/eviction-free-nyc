@@ -67,7 +67,9 @@ class LandingPage extends React.Component {
       <section className="Page LandingPage bg-secondary">
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent  container grid-md">
-          <h2 className="LandingPage__HeroTitle">{this.content.hotlineTitle}</h2>
+            <h2 className="LandingPage__HeroTitle">
+              {this.content.hotlineTitle}
+            </h2>
             <div
               dangerouslySetInnerHTML={{
                 __html: this.content.hotlineCta.childMarkdownRemark.html,
@@ -75,10 +77,11 @@ class LandingPage extends React.Component {
             />
             <div
               dangerouslySetInnerHTML={{
-                __html: this.content.hotlineDescription.childMarkdownRemark.html,
+                __html: this.content.hotlineDescription.childMarkdownRemark
+                  .html,
               }}
             />
-            <br /> 
+            <br />
             <h2 className="LandingPage__HeroTitle">{this.content.heroTitle}</h2>
             <div
               className="LandingPage__HeroSubtitle"
