@@ -3,6 +3,8 @@
 .LandingPage {
   margin-top: 0;
   margin-bottom: 0;
+  // Fix issue with content extending beyond page horizontally
+  overflow-x: hidden;
 
   .LandingPage__Hero {
     padding: 0.75rem 0;
@@ -99,7 +101,8 @@
         }
 
         &.btn-primary {
-          height: 3rem;
+          height: fit-content;
+          white-space: normal;
           padding: 1rem;
           margin: 1.5rem 0;
           font-size: 1rem;

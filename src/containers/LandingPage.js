@@ -70,7 +70,7 @@ class LandingPage extends React.Component {
             <a
               href="https://www.righttocounselnyc.org/organizing_covid19"
               target="_blank"
-              className="btn btn-block btn-primary btn-large"
+              className="btn btn-primary btn-large"
               rel="noopener noreferrer"
             >
               {this.content.heroButtonText}
