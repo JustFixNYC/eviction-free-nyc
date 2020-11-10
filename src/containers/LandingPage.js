@@ -22,23 +22,7 @@ class LandingPage extends React.Component {
     this.otherLangs = this.allLangs.filter((l) => l !== props.intl.locale);
 
     this.content = props.data.content.edges[0].node;
-    this.faq = this.content.faq.map((item) => ({
-      title: item.title,
-      html: this.addGetStartedButton(item.content.childMarkdownRemark.html),
-    }));
   }
-
-  addGetStartedButton = (html) => {
-    const locale = this.props.intl.locale;
-    const buttonText = this.content.heroButtonText;
-    return (html += `
-      <a class="btn btn-block btn-primary" href="/${locale}/questions">
-        ${buttonText}
-        <i class="icon icon-forward ml-2"></i>
-      </a>
-      <br />
-    `);
-  };
 
   render() {
     const isSpanish = this.props.intl.locale === "es";

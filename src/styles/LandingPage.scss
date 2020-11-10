@@ -27,12 +27,6 @@
         font-weight: 200;
         letter-spacing: 1px;
 
-        a {
-          color: inherit;
-          text-decoration: underline;
-          font-weight: bold;
-        }
-
         @include for-tablet-landscape-up() {
           max-width: 90%;
         }
@@ -64,7 +58,28 @@
 
         ol {
           margin-left: 0;
+          list-style-type: none;
+          list-style-position: outside;
           li {
+            border: 1px solid #50596c33;
+            padding: 1rem;
+            margin: 1rem 0;
+            counter-increment: step-counter;
+            line-height: 1.5rem;
+            &::before {
+              content: counter(step-counter);
+              color: $secondary-color;
+              font-weight: bold;
+              padding: 3px 7px;
+              border: 1px solid;
+              border-radius: 100%;
+              margin-right: 0.5rem;
+            }
+            a {
+              color: $secondary-color;
+              text-decoration: underline;
+              font-weight: 400;
+            }
             p:first-child {
               display: inline;
             }
