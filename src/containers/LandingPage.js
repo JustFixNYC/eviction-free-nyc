@@ -33,7 +33,7 @@ class LandingPage extends React.Component {
             <div className="LandingPage__LangSwitches">
               <Link
                 to={isSpanish ? "/en-US" : "/es"}
-                className="btn btn-block btn-default"
+                className="btn btn-link btn-default"
               >
                 <Trans id={isSpanish ? "switch_en-US" : "switch_es"} />
               </Link>

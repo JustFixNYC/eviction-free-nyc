@@ -94,6 +94,10 @@
         margin: 16px auto;
         font-size: 0.8rem;
 
+        &.btn-link {
+          text-decoration: none;
+        }
+
         &.btn-primary {
           height: 3rem;
           padding: 1rem;

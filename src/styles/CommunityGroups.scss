@@ -4,6 +4,7 @@
   .tile {
     padding-top: 24px;
     padding-bottom: 24px;
+    margin: 2rem;
 
     &:not(:last-child) {
       border-bottom: 1px solid $border-color;
