@@ -48,9 +48,6 @@ class CommunityGroups extends React.Component {
   render() {
     return (
       <div className="CommunityGroups">
-        <p className="empty-title h3">
-          <Trans id="groupsSearch" />
-        </p>
         {this.state.groups.length ? (
           <div>
             {this.state.groups.map((group, idx) => (
