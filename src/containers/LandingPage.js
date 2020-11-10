@@ -18,10 +18,10 @@ const HcaPhone = () => (
   <a
     href="tel:12129624795"
     target="_blank"
-    className="text-bold"
+    className="btn btn-block btn-primary btn-large"
     rel="noopener noreferrer"
   >
-    212-962-4795
+    Call the Housing Court Answers hotline at 212-962-4795
   </a>
 );
 const RtcEmail = () => (
@@ -64,17 +64,21 @@ class LandingPage extends React.Component {
   render() {
     const isSpanish = this.props.intl.locale === "es";
     return (
-      <section className="Page LandingPage bg-secondary">
-        <div className="LandingPage__Hero">
+      <section className="Page LandingPage ">
+        <div className="LandingPage__Hero bg-secondary">
           <div className="LandingPage__HeroContent  container grid-md">
+            <div className="LandingPage__LangSwitches">
+              <Link
+                to={isSpanish ? "/en-US" : "/es"}
+                className="btn btn-block btn-default"
+              >
+                <Trans id={isSpanish ? "switch_en-US" : "switch_es"} />
+              </Link>
+            </div>
             <h2 className="LandingPage__HeroTitle">
               {this.content.hotlineTitle}
             </h2>
-            <div
-              dangerouslySetInnerHTML={{
-                __html: this.content.hotlineCta.childMarkdownRemark.html,
-              }}
-            />
+            <HcaPhone />
             <div
               dangerouslySetInnerHTML={{
                 __html: this.content.hotlineDescription.childMarkdownRemark
@@ -82,6 +86,10 @@ class LandingPage extends React.Component {
               }}
             />
             <br />
+          </div>
+        </div>
+        <div className="LandingPage__Hero">
+          <div className="LandingPage__HeroContent  container grid-md">
             <h2 className="LandingPage__HeroTitle">{this.content.heroTitle}</h2>
             <div
               className="LandingPage__HeroSubtitle"
@@ -98,25 +106,10 @@ class LandingPage extends React.Component {
               {this.content.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
             </a>
-            <br />
-            <div className="LandingPage__LangSwitches">
-              <Link
-                to={isSpanish ? "/en-US" : "/es"}
-                className="btn btn-block btn-default"
-              >
-                <Trans id={isSpanish ? "switch_en-US" : "switch_es"} />
-              </Link>
-            </div>
-            <br />
-            <div>
-              <h6>
-                <Trans id="additionalResources" />
-              </h6>
-              <div className="accordion__item">
-                <CommunityGroups />
-              </div>
-            </div>
           </div>
+        </div>
+        <div className="accordion__item">
+          <CommunityGroups />
         </div>
       </section>
     );

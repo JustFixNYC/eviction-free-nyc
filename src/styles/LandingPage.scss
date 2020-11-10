@@ -6,8 +6,10 @@
 
   .LandingPage__Hero {
     padding: 0.75rem 0;
-    background: $secondary-color;
-    color: #fff;
+    &.bg-secondary {
+      background: $secondary-color;
+      color: #fff;
+    }
 
     // margin-bottom: 3rem;
     display: flex;
@@ -24,6 +26,12 @@
       p {
         font-weight: 200;
         letter-spacing: 1px;
+
+        a {
+          color: inherit;
+          text-decoration: underline;
+          font-weight: bold;
+        }
 
         @include for-tablet-landscape-up() {
           max-width: 90%;
@@ -74,8 +82,9 @@
         &.btn-primary {
           height: 3rem;
           padding: 1rem;
+          margin: 1.5rem 0;
           font-size: 1rem;
-          max-width: 260px;
+          max-width: fit-content;
         }
 
         &.btn-default {
