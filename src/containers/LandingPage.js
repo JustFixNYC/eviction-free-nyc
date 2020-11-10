@@ -14,27 +14,6 @@ const propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-const HcaPhone = () => (
-  <a
-    href="tel:12129624795"
-    target="_blank"
-    className="btn btn-block btn-primary btn-large"
-    rel="noopener noreferrer"
-  >
-    Call the Housing Court Answers hotline at 212-962-4795
-  </a>
-);
-const RtcEmail = () => (
-  <a
-    href="mailto:p.estupinan@newsettlement.org"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-bold"
-  >
-    p.estupinan@newsettlement.org
-  </a>
-);
-
 class LandingPage extends React.Component {
   constructor(props) {
     super(props);
@@ -78,7 +57,14 @@ class LandingPage extends React.Component {
             <h2 className="LandingPage__HeroTitle">
               {this.content.hotlineTitle}
             </h2>
-            <HcaPhone />
+            <a
+              href="tel:12129624795"
+              target="_blank"
+              className="btn btn-block btn-primary btn-large"
+              rel="noopener noreferrer"
+            >
+              {this.content.hotlineCta}
+            </a>
             <div
               dangerouslySetInnerHTML={{
                 __html: this.content.hotlineDescription.childMarkdownRemark
@@ -150,11 +136,7 @@ export const landingPageFragment = graphql`
           }
         }
         hotlineTitle
-        hotlineCta {
-          childMarkdownRemark {
-            html
-          }
-        }
+        hotlineCta
         hotlineDescription {
           childMarkdownRemark {
             html
