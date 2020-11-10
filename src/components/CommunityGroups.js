@@ -99,13 +99,13 @@ class CommunityGroups extends React.Component {
           </div>
         ) : this.state.contentfulResponse ? (
           <div className="empty">
-            <p className="empty-title h5">
+            <p className="empty-title h3">
               <Trans id="groupsEmpty" />
             </p>
           </div>
         ) : (
           <div className="empty">
-            <p className="empty-title h5">
+            <p className="empty-title h3">
               <Trans id="groupsSearch" />
             </p>
             <div className="empty-action">
