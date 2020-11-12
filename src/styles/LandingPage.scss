@@ -51,7 +51,7 @@
       }
 
       .LandingPage__HeroSubtitle {
-        margin-bottom: 1.5rem;
+        margin: 2rem 0;
 
         @include for-phone-only() {
           margin-bottom: 0.8rem;
@@ -63,17 +63,18 @@
           list-style-type: none;
           list-style-position: outside;
           li {
-            border: 1px solid #50596c33;
+            border: 1px solid #50596c66;
             padding: 1rem;
             margin: 1rem 0;
             counter-increment: step-counter;
             line-height: 1.5rem;
             &::before {
               content: counter(step-counter);
-              color: $secondary-color;
+              color: white;
+              background-color: $secondary-color;
               font-weight: bold;
               padding: 3px 7px;
-              border: 1px solid;
+              border: 1px solid $secondary-color;
               border-radius: 100%;
               margin-right: 0.5rem;
             }
