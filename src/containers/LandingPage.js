@@ -14,6 +14,10 @@ const propTypes = {
   data: PropTypes.object.isRequired,
 };
 
+const RTC_READ_MORE_LINK =
+  "https://www.righttocounselnyc.org/ny_eviction_moratorium_faq";
+const HCA_HOTLINE_LINK = "tel:12129624795";
+
 class LandingPage extends React.Component {
   constructor(props) {
     super(props);
@@ -42,7 +46,7 @@ class LandingPage extends React.Component {
               {this.content.hotlineTitle}
             </h2>
             <a
-              href="tel:12129624795"
+              href={HCA_HOTLINE_LINK}
               target="_blank"
               className="btn btn-block btn-primary btn-large"
               rel="noopener noreferrer"
@@ -68,7 +72,7 @@ class LandingPage extends React.Component {
               }}
             />
             <a
-              href="https://www.righttocounselnyc.org/organizing_covid19"
+              href={RTC_READ_MORE_LINK}
               target="_blank"
               className="btn btn-primary btn-large"
               rel="noopener noreferrer"
