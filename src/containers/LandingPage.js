@@ -101,51 +101,18 @@ export const landingPageFragment = graphql`
         id
         node_locale
         pageTitle
-        moratoriumBanner {
-          childMarkdownRemark {
-            html
-          }
-        }
         heroTitle
-        heroSubTitle
         heroContent {
           childMarkdownRemark {
             html
           }
         }
         heroButtonText
-        heroImage {
-          title
-          sizes(maxWidth: 613) {
-            aspectRatio
-            sizes
-            src
-            srcSet
-          }
-        }
         hotlineTitle
         hotlineCta
         hotlineDescription {
           childMarkdownRemark {
             html
-          }
-        }
-        learnMoreTitle
-        faq {
-          title
-          content {
-            childMarkdownRemark {
-              html
-            }
-          }
-        }
-        secondaryImage {
-          title
-          sizes(maxWidth: 613) {
-            aspectRatio
-            sizes
-            src
-            srcSet
           }
         }
       }
