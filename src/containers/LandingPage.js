@@ -82,9 +82,11 @@ class LandingPage extends React.Component {
             </a>
           </div>
         </div>
-        <div className="accordion__item">
-          <CommunityGroups />
-        </div>
+        {process.env.GATSBY_ENABLE_COMMUNITY_GROUPS_LOOKUP && (
+          <div className="accordion__item">
+            <CommunityGroups />
+          </div>
+        )}
       </section>
     );
   }
