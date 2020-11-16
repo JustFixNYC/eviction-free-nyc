@@ -14,8 +14,6 @@ const propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-const RTC_READ_MORE_LINK =
-  "https://www.righttocounselnyc.org/ny_eviction_moratorium_faq";
 const HCA_HOTLINE_LINK = "tel:12129624795";
 
 class LandingPage extends React.Component {
@@ -72,7 +70,7 @@ class LandingPage extends React.Component {
               }}
             />
             <a
-              href={RTC_READ_MORE_LINK}
+              href={this.content.heroButtonLink}
               target="_blank"
               className="btn btn-primary btn-large"
               rel="noopener noreferrer"
@@ -110,6 +108,7 @@ export const landingPageFragment = graphql`
           }
         }
         heroButtonText
+        heroButtonLink
         hotlineTitle
         hotlineCta
         hotlineDescription {
