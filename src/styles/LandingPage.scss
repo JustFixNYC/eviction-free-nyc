@@ -3,11 +3,15 @@
 .LandingPage {
   margin-top: 0;
   margin-bottom: 0;
+  // Fix issue with content extending beyond page horizontally
+  overflow-x: hidden;
 
   .LandingPage__Hero {
     padding: 0.75rem 0;
-    background: $secondary-color;
-    color: #fff;
+    &.bg-secondary {
+      background: $secondary-color;
+      color: #fff;
+    }
 
     // margin-bottom: 3rem;
     display: flex;
@@ -26,7 +30,7 @@
         letter-spacing: 1px;
 
         @include for-tablet-landscape-up() {
-          max-width: 75%;
+          max-width: 90%;
         }
       }
 
@@ -47,11 +51,45 @@
       }
 
       .LandingPage__HeroSubtitle {
-        margin-bottom: 1.5rem;
+        margin: 2rem 0;
 
         @include for-phone-only() {
           margin-bottom: 0.8rem;
           font-size: 0.8rem;
+        }
+
+        ol {
+          margin-left: 0;
+          list-style-type: none;
+          list-style-position: outside;
+          li {
+            border: 1px solid #50596c66;
+            padding: 1rem;
+            margin: 1rem 0;
+            counter-increment: step-counter;
+            line-height: 1.5rem;
+            &::before {
+              content: counter(step-counter);
+              color: white;
+              background-color: $secondary-color;
+              font-weight: bold;
+              padding: 3px 7px;
+              border: 1px solid $secondary-color;
+              border-radius: 100%;
+              margin-right: 0.5rem;
+            }
+            a {
+              color: $secondary-color;
+              text-decoration: underline;
+              font-weight: 400;
+            }
+            p:first-child {
+              display: inline;
+            }
+            p:not(:first-child) {
+              margin: 0.5rem 0 1rem 1rem;
+            }
+          }
         }
       }
 
@@ -59,11 +97,17 @@
         margin: 16px auto;
         font-size: 0.8rem;
 
+        &.btn-link {
+          text-decoration: none;
+        }
+
         &.btn-primary {
-          height: 3rem;
+          height: fit-content;
+          white-space: normal;
           padding: 1rem;
+          margin: 1.5rem 0;
           font-size: 1rem;
-          max-width: 260px;
+          max-width: fit-content;
         }
 
         &.btn-default {
