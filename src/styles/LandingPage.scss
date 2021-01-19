@@ -156,11 +156,9 @@
       }
     }
 
-    @include for-tablet-landscape-up() {
-      justify-content: flex-start;
-      text-align: left;
-      padding: 2.5rem 0 1rem 0;
-    }
+    justify-content: flex-start;
+    text-align: left;
+    padding: 2.5rem 0 1rem 0;
 
     .LandingPage__HeroLearnMore {
       text-align: center;
