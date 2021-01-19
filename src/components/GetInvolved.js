@@ -63,7 +63,7 @@ const GetInvolved = () => (
             <script type="text/javascript" defer src="//www.123formbuilder.com/embed/3538714.js" data-role="form" data-default-width="650px"></script> */}
 
             <a
-              href="https://www.righttocounselnyc.org/join#middle"
+              href="https://www.righttocounselnyc.org/sign_up"
               target="_blank"
               className="btn btn-primary btn-block"
             >
@@ -82,7 +82,7 @@ const GetInvolved = () => (
               <Trans id="eventsTitle" />
             </label>
             <a
-              href="https://www.righttocounselnyc.org/upcoming_events#middle"
+              href="https://www.righttocounselnyc.org/blog"
               target="_blank"
               className="btn btn-primary btn-block"
             >
