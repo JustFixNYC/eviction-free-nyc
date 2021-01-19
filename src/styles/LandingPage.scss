@@ -51,7 +51,7 @@
       }
 
       .LandingPage__HeroSubtitle {
-        margin: 2rem 0;
+        margin: 2rem 0 0 0;
 
         @include for-phone-only() {
           margin-bottom: 0.8rem;
