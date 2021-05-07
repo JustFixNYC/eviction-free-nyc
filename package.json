@@ -42,7 +42,7 @@
     "intl": "^1.2.5",
     "invariant": "^2.2.4",
     "isomorphic-fetch": "^2.2.1",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "node-fetch": "^2.6.1",
     "node-sass": "4.13.1",
     "prettier": "^2.1.1",
