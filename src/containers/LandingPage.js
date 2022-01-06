@@ -8,13 +8,31 @@ import ButtonLink from "../components/ButtonLink";
 import Accordion from "../components/Accordion";
 import widont from "widont";
 import "../styles/LandingPage.scss";
-import CommunityGroups from "../components/CommunityGroups";
 
 const propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-const HCA_HOTLINE_LINK = "tel:12129624795";
+const HcaPhone = () => (
+  <a
+    href="tel:12129624795"
+    target="_blank"
+    className="text-bold"
+    rel="noopener noreferrer"
+  >
+    212-962-4795
+  </a>
+);
+const RtcEmail = () => (
+  <a
+    href="mailto:p.estupinan@newsettlement.org"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-bold"
+  >
+    p.estupinan@newsettlement.org
+  </a>
+);
 
 class LandingPage extends React.Component {
   constructor(props) {
@@ -24,67 +42,75 @@ class LandingPage extends React.Component {
     this.otherLangs = this.allLangs.filter((l) => l !== props.intl.locale);
 
     this.content = props.data.content.edges[0].node;
+    this.faq = this.content.faq.map((item) => ({
+      title: item.title,
+      html: this.addGetStartedButton(item.content.childMarkdownRemark.html),
+    }));
   }
+
+  addGetStartedButton = (html) => {
+    const locale = this.props.intl.locale;
+    const buttonText = this.content.heroButtonText;
+    return (html += `
+      <a class="btn btn-block btn-primary" href="/${locale}/questions">
+        ${buttonText}
+        <i class="icon icon-forward ml-2"></i>
+      </a>
+      <br />
+    `);
+  };
 
   render() {
     const isSpanish = this.props.intl.locale === "es";
     return (
-      <section className="Page LandingPage ">
-        <div className="LandingPage__Hero bg-secondary">
+      <section className="Page LandingPage bg-secondary">
+        <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent  container grid-md">
-            <div className="LandingPage__LangSwitches">
-              <Link
-                to={isSpanish ? "/en-US" : "/es"}
-                className="btn btn-link btn-default"
-              >
-                <Trans id={isSpanish ? "switch_en-US" : "switch_es"} />
-              </Link>
-            </div>
             <h2 className="LandingPage__HeroTitle">
-              {this.content.hotlineTitle}
+              {isSpanish
+                ? "La moratoria que protegía a los inquilinos de Nueva York ha terminado."
+                : "The moratorium protecting New Yorkers from eviction has expired."}
             </h2>
+            <h4 className="LandingPage__HeroSubtitle">
+              {isSpanish
+                ? "Todos los casos de desalojo comenzarán el 12 de Octubre."
+                : "All eviction cases can move forward starting October 12."}
+            </h4>
             <a
-              href={HCA_HOTLINE_LINK}
+              href="https://www.righttocounselnyc.org/organizing_covid19"
               target="_blank"
               className="btn btn-block btn-primary btn-large"
               rel="noopener noreferrer"
             >
-              {this.content.hotlineCta}
+              {isSpanish ? "Lea Noticias Recientes" : "Read Latest Updates"}
+              <i className="icon icon-forward ml-2"></i>
             </a>
-            <div
-              dangerouslySetInnerHTML={{
-                __html: this.content.hotlineDescription.childMarkdownRemark
-                  .html,
-              }}
-            />
+            {isSpanish ? <p>(Solo en inglés)</p> : <br />}
+            {isSpanish ? (
+              <p>
+                Llame a la línea de asistencia Housing Court Answers en el{" "}
+                <HcaPhone /> con preguntas legales o mande un email a{" "}
+                <RtcEmail /> para recibir más información y recursos para luchar
+                contra el desalojo.
+              </p>
+            ) : (
+              <p>
+                Call the Housing Court Answers hotline at <HcaPhone /> for legal
+                questions or email <RtcEmail /> for more information or
+                resources on how to fight evictions.
+              </p>
+            )}
+            <div className="LandingPage__LangSwitches">
+              <Link
+                to={isSpanish ? "/en-US" : "/es"}
+                className="btn btn-block btn-default"
+              >
+                <Trans id={isSpanish ? "switch_en-US" : "switch_es"} />
+              </Link>
+            </div>
             <br />
           </div>
         </div>
-        <div className="LandingPage__Hero">
-          <div className="LandingPage__HeroContent  container grid-md">
-            <h2 className="LandingPage__HeroTitle">{this.content.heroTitle}</h2>
-            <div
-              className="LandingPage__HeroSubtitle"
-              dangerouslySetInnerHTML={{
-                __html: this.content.heroContent.childMarkdownRemark.html,
-              }}
-            />
-            <a
-              href={this.content.heroButtonLink}
-              target="_blank"
-              className="btn btn-primary btn-large"
-              rel="noopener noreferrer"
-            >
-              {this.content.heroButtonText}
-              <i className="icon icon-forward ml-2"></i>
-            </a>
-          </div>
-        </div>
-        {process.env.GATSBY_ENABLE_COMMUNITY_GROUPS_LOOKUP && (
-          <div className="accordion__item">
-            <CommunityGroups />
-          </div>
-        )}
       </section>
     );
   }
@@ -101,19 +127,39 @@ export const landingPageFragment = graphql`
         id
         node_locale
         pageTitle
-        heroTitle
-        heroContent {
+        moratoriumBanner {
           childMarkdownRemark {
             html
           }
         }
+        heroTitle
+        heroSubTitle
         heroButtonText
-        heroButtonLink
-        hotlineTitle
-        hotlineCta
-        hotlineDescription {
-          childMarkdownRemark {
-            html
+        heroImage {
+          title
+          sizes(maxWidth: 613) {
+            aspectRatio
+            sizes
+            src
+            srcSet
+          }
+        }
+        learnMoreTitle
+        faq {
+          title
+          content {
+            childMarkdownRemark {
+              html
+            }
+          }
+        }
+        secondaryImage {
+          title
+          sizes(maxWidth: 613) {
+            aspectRatio
+            sizes
+            src
+            srcSet
           }
         }
       }
