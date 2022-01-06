@@ -20,7 +20,7 @@ const Header = ({ intl }) => (
       </Link>
       {isDemoSite && (
         <span className="label label-rounded label-warning ml-2 text-uppercase">
-          Demo Site
+          Archived
         </span>
       )}
     </section>
