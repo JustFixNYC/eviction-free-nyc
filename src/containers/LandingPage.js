@@ -45,15 +45,6 @@ class LandingPage extends React.Component {
       <section className="Page LandingPage">
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent  container grid-md">
-            <div
-              className="LandingPage__WarningBanner toast toast-warning text-left"
-              dangerouslySetInnerHTML={{
-                __html: widont(
-                  c.moratoriumBanner.childMarkdownRemark.html,
-                  "html"
-                ),
-              }}
-            />
             <h2 className="LandingPage__HeroTitle">{c.heroTitle}</h2>
             <h4 className="LandingPage__HeroSubtitle">{c.heroSubTitle}</h4>
             <ButtonLink to={`/questions`} type="primary">
@@ -111,11 +102,6 @@ export const landingPageFragment = graphql`
         id
         node_locale
         pageTitle
-        moratoriumBanner {
-          childMarkdownRemark {
-            html
-          }
-        }
         heroTitle
         heroSubTitle
         heroButtonText
