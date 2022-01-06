@@ -2,7 +2,6 @@
 
 .LandingPage {
   margin-top: 0;
-  margin-bottom: 0;
 
   .LandingPage__Hero {
     padding: 0.75rem 0;
@@ -20,8 +19,7 @@
       margin-bottom: 0.5rem;
 
       h2,
-      h4,
-      p {
+      h4 {
         font-weight: 200;
         letter-spacing: 1px;
 
@@ -94,14 +92,6 @@
 
       .btn {
         margin: 16px auto;
-        font-size: 0.8rem;
-
-        &.btn-primary {
-          height: 3rem;
-          padding: 1rem;
-          font-size: 1rem;
-          max-width: 260px;
-        }
 
         &.btn-default {
           color: #fff;
