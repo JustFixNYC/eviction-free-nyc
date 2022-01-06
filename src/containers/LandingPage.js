@@ -43,6 +43,14 @@ class LandingPage extends React.Component {
             <h2 className="LandingPage__HeroTitle">
               {this.content.hotlineTitle}
             </h2>
+            <a
+              href={HCA_HOTLINE_LINK}
+              target="_blank"
+              className="btn btn-block btn-primary btn-large"
+              rel="noopener noreferrer"
+            >
+              {this.content.hotlineCta}
+            </a>
             <div
               dangerouslySetInnerHTML={{
                 __html: this.content.hotlineDescription.childMarkdownRemark
@@ -70,28 +78,13 @@ class LandingPage extends React.Component {
               {this.content.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
             </a>
-            <br />
-            <br />
-            <h2 className="LandingPage__HeroTitle">
-              {this.content.heroTitle2}
-            </h2>
-            <div
-              className="LandingPage__HeroSubtitle"
-              dangerouslySetInnerHTML={{
-                __html: this.content.heroContent2.childMarkdownRemark.html,
-              }}
-            />
-            <a
-              href={this.content.heroButtonLink2}
-              target="_blank"
-              className="btn btn-primary btn-large"
-              rel="noopener noreferrer"
-            >
-              {this.content.heroButtonText2}
-              <i className="icon icon-forward ml-2"></i>
-            </a>
           </div>
         </div>
+        {process.env.GATSBY_ENABLE_COMMUNITY_GROUPS_LOOKUP && (
+          <div className="accordion__item">
+            <CommunityGroups />
+          </div>
+        )}
       </section>
     );
   }
@@ -116,14 +109,6 @@ export const landingPageFragment = graphql`
         }
         heroButtonText
         heroButtonLink
-        heroTitle2
-        heroContent2 {
-          childMarkdownRemark {
-            html
-          }
-        }
-        heroButtonText2
-        heroButtonLink2
         hotlineTitle
         hotlineCta
         hotlineDescription {
