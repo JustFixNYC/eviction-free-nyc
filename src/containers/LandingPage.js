@@ -8,13 +8,10 @@ import ButtonLink from "../components/ButtonLink";
 import Accordion from "../components/Accordion";
 import widont from "widont";
 import "../styles/LandingPage.scss";
-import CommunityGroups from "../components/CommunityGroups";
 
 const propTypes = {
   data: PropTypes.object.isRequired,
 };
-
-const HCA_HOTLINE_LINK = "tel:12129624795";
 
 class LandingPage extends React.Component {
   constructor(props) {
@@ -24,81 +21,69 @@ class LandingPage extends React.Component {
     this.otherLangs = this.allLangs.filter((l) => l !== props.intl.locale);
 
     this.content = props.data.content.edges[0].node;
+    this.faq = this.content.faq.map((item) => ({
+      title: item.title,
+      html: this.addGetStartedButton(item.content.childMarkdownRemark.html),
+    }));
   }
 
+  addGetStartedButton = (html) => {
+    const locale = this.props.intl.locale;
+    const buttonText = this.content.heroButtonText;
+    return (html += `
+      <a class="btn btn-block btn-primary" href="/${locale}/questions">
+        ${buttonText}
+        <i class="icon icon-forward ml-2"></i>
+      </a>
+      <br />
+    `);
+  };
+
   render() {
-    const isSpanish = this.props.intl.locale === "es";
+    const c = this.content;
     return (
-      <section className="Page LandingPage ">
-        <div className="LandingPage__Hero bg-secondary">
-          <div className="LandingPage__HeroContent  container grid-md">
-            <div className="LandingPage__LangSwitches">
-              <Link
-                to={isSpanish ? "/en-US" : "/es"}
-                className="btn btn-link btn-default"
-              >
-                <Trans id={isSpanish ? "switch_en-US" : "switch_es"} />
-              </Link>
-            </div>
-            <h2 className="LandingPage__HeroTitle">
-              {this.content.hotlineTitle}
-            </h2>
-            <div
-              dangerouslySetInnerHTML={{
-                __html: this.content.hotlineDescription.childMarkdownRemark
-                  .html,
-              }}
-            />
-            <a
-              href={this.content.learnMoreLink}
-              target="_blank"
-              className="btn btn-block btn-primary btn-large"
-              rel="noopener noreferrer"
-            >
-              {this.content.learnMoreTitle}
-              <i className="icon icon-forward ml-2"></i>
-            </a>
-            <br />
-          </div>
-        </div>
+      <section className="Page LandingPage">
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent  container grid-md">
-            <h2 className="LandingPage__HeroTitle">{this.content.heroTitle}</h2>
-            <div
-              className="LandingPage__HeroSubtitle"
-              dangerouslySetInnerHTML={{
-                __html: this.content.heroContent.childMarkdownRemark.html,
-              }}
-            />
-            <a
-              href={this.content.heroButtonLink}
-              target="_blank"
-              className="btn btn-primary btn-large"
-              rel="noopener noreferrer"
-            >
-              {this.content.heroButtonText}
+            <h2 className="LandingPage__HeroTitle">{c.heroTitle}</h2>
+            <h4 className="LandingPage__HeroSubtitle">{c.heroSubTitle}</h4>
+            <ButtonLink to={`/questions`} type="primary">
+              {c.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
-            </a>
-            <br />
-            <br />
-            <h2 className="LandingPage__HeroTitle">
-              {this.content.heroTitle2}
-            </h2>
-            <div
-              className="LandingPage__HeroSubtitle"
-              dangerouslySetInnerHTML={{
-                __html: this.content.heroContent2.childMarkdownRemark.html,
-              }}
-            />
-            <a
-              href={this.content.heroButtonLink2}
-              target="_blank"
-              className="btn btn-primary btn-large"
-              rel="noopener noreferrer"
-            >
-              {this.content.heroButtonText2}
-              <i className="icon icon-forward ml-2"></i>
-            </a>
+            </ButtonLink>
+            <div className="LandingPage__LangSwitches">
+              {this.otherLangs.map((lang, idx) => (
+                <Link
+                  to={`/${lang}`}
+                  key={idx}
+                  className="btn btn-block btn-default"
+                >
+                  <Trans id={`switch_${lang}`} />
+                  <i className="icon icon-forward ml-2"></i>
+                </Link>
+              ))}
+            </div>
+            <div className="LandingPage__HeroLearnMore">
+              <div>{c.learnMoreTitle}</div>
+              <i className="icon icon-arrow-down"></i>
+            </div>
+          </div>
+        </div>
+        <div id="faq" className="LandingPage__Content container grid-md">
+          <div className="columns clearfix">
+            <div className="LandingPage__ContentFAQ column col-mr-auto col-sm-12 col-7">
+              <h3>{c.learnMoreTitle}:</h3>
+              <Accordion content={this.faq} />
+            </div>
+            <div className="LandingPage__ContentImage1 column col-ml-auto col-sm-12 col-4">
+              <Img alt={c.heroImage.title} sizes={c.heroImage.sizes} />
+            </div>
+            <div className="LandingPage__ContentImage2 column col-sm-12 col-4">
+              <Img
+                alt={c.secondaryImage.title}
+                sizes={c.secondaryImage.sizes}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -118,30 +103,35 @@ export const landingPageFragment = graphql`
         node_locale
         pageTitle
         heroTitle
-        heroContent {
-          childMarkdownRemark {
-            html
-          }
-        }
+        heroSubTitle
         heroButtonText
-        heroButtonLink
-        heroTitle2
-        heroContent2 {
-          childMarkdownRemark {
-            html
-          }
-        }
-        heroButtonText2
-        heroButtonLink2
-        hotlineTitle
-        hotlineCta
-        hotlineDescription {
-          childMarkdownRemark {
-            html
+        heroImage {
+          title
+          sizes(maxWidth: 613) {
+            aspectRatio
+            sizes
+            src
+            srcSet
           }
         }
         learnMoreTitle
-        learnMoreLink
+        faq {
+          title
+          content {
+            childMarkdownRemark {
+              html
+            }
+          }
+        }
+        secondaryImage {
+          title
+          sizes(maxWidth: 613) {
+            aspectRatio
+            sizes
+            src
+            srcSet
+          }
+        }
       }
     }
   }

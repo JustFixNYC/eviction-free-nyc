@@ -4,7 +4,6 @@
   .tile {
     padding-top: 24px;
     padding-bottom: 24px;
-    margin: 2rem;
 
     &:not(:last-child) {
       border-bottom: 1px solid $border-color;
@@ -45,11 +44,8 @@
         margin-bottom: 0;
       }
 
-      .btn {
-        margin: 0.5rem 0;
-        &:first-child {
-          margin-right: 8px;
-        }
+      .btn + .btn {
+        margin-left: 8px;
       }
 
       .btn--website {

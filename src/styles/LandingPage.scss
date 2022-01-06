@@ -2,16 +2,11 @@
 
 .LandingPage {
   margin-top: 0;
-  margin-bottom: 0;
-  // Fix issue with content extending beyond page horizontally
-  overflow-x: hidden;
 
   .LandingPage__Hero {
     padding: 0.75rem 0;
-    &.bg-secondary {
-      background: $secondary-color;
-      color: #fff;
-    }
+    background: $secondary-color;
+    color: #fff;
 
     // margin-bottom: 3rem;
     display: flex;
@@ -24,13 +19,12 @@
       margin-bottom: 0.5rem;
 
       h2,
-      h4,
-      p {
+      h4 {
         font-weight: 200;
         letter-spacing: 1px;
 
         @include for-tablet-landscape-up() {
-          max-width: 90%;
+          max-width: 75%;
         }
       }
 
@@ -51,7 +45,7 @@
       }
 
       .LandingPage__HeroSubtitle {
-        margin: 2rem 0 0 0;
+        margin-bottom: 1.5rem;
 
         @include for-phone-only() {
           margin-bottom: 0.8rem;
@@ -98,20 +92,6 @@
 
       .btn {
         margin: 16px auto;
-        font-size: 0.8rem;
-
-        &.btn-link {
-          text-decoration: none;
-        }
-
-        &.btn-primary {
-          height: fit-content;
-          white-space: normal;
-          padding: 1rem;
-          margin: 1.5rem 0;
-          font-size: 1rem;
-          max-width: fit-content;
-        }
 
         &.btn-default {
           color: #fff;
@@ -159,9 +139,11 @@
       }
     }
 
-    justify-content: flex-start;
-    text-align: left;
-    padding: 2.5rem 0 1rem 0;
+    @include for-tablet-landscape-up() {
+      justify-content: flex-start;
+      text-align: left;
+      padding: 2.5rem 0 1rem 0;
+    }
 
     .LandingPage__HeroLearnMore {
       text-align: center;
