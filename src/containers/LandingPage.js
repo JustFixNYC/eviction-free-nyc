@@ -49,15 +49,6 @@ class LandingPage extends React.Component {
                   .html,
               }}
             />
-            <a
-              href={this.content.learnMoreLink}
-              target="_blank"
-              className="btn btn-block btn-primary btn-large"
-              rel="noopener noreferrer"
-            >
-              {this.content.learnMoreTitle}
-              <i className="icon icon-forward ml-2"></i>
-            </a>
             <br />
           </div>
         </div>
@@ -140,8 +131,6 @@ export const landingPageFragment = graphql`
             html
           }
         }
-        learnMoreTitle
-        learnMoreLink
       }
     }
   }
