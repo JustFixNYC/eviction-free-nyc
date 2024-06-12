@@ -21,15 +21,16 @@ class LandingPage extends React.Component {
     this.otherLangs = this.allLangs.filter((l) => l !== props.intl.locale);
 
     this.content = props.data.content.edges[0].node;
+    console.log(this.content)
     this.faq = this.content.faq.map((item) => ({
       title: item.title,
-      html: this.addGetStartedButton(item.content.childMarkdownRemark.html),
+      html: this.addCtaButton(item.content.childMarkdownRemark.html, 
+        item.title.includes("income eligible") ? this.content.heroButtonText2 : this.content.heroButtonText),
     }));
   }
 
-  addGetStartedButton = (html) => {
+  addCtaButton = (html, buttonText) => {
     const locale = this.props.intl.locale;
-    const buttonText = this.content.heroButtonText;
     return (html += `
       <a class="btn btn-block btn-primary" href="/${locale}/questions">
         ${buttonText}
@@ -51,18 +52,6 @@ class LandingPage extends React.Component {
               {c.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
             </ButtonLink>
-            <div className="LandingPage__LangSwitches">
-              {this.otherLangs.map((lang, idx) => (
-                <Link
-                  to={`/${lang}`}
-                  key={idx}
-                  className="btn btn-block btn-default"
-                >
-                  <Trans id={`switch_${lang}`} />
-                  <i className="icon icon-forward ml-2"></i>
-                </Link>
-              ))}
-            </div>
             <div className="LandingPage__HeroLearnMore">
               <div>{c.learnMoreTitle}</div>
               <i className="icon icon-arrow-down"></i>
@@ -105,6 +94,7 @@ export const landingPageFragment = graphql`
         heroTitle
         heroSubTitle
         heroButtonText
+        heroButtonText2
         heroImage {
           title
           sizes(maxWidth: 613) {
