@@ -1,12 +1,10 @@
 import React from "react";
-import { FormattedMessage as Trans, injectIntl } from "react-intl";
+import { FormattedMessage as injectIntl } from "react-intl";
 import * as PropTypes from "prop-types";
 
-import Link from "gatsby-link";
 import Img from "gatsby-image";
 import ButtonLink from "../components/ButtonLink";
 import Accordion from "../components/Accordion";
-import widont from "widont";
 import "../styles/LandingPage.scss";
 
 const propTypes = {
@@ -21,11 +19,14 @@ class LandingPage extends React.Component {
     this.otherLangs = this.allLangs.filter((l) => l !== props.intl.locale);
 
     this.content = props.data.content.edges[0].node;
-    console.log(this.content)
     this.faq = this.content.faq.map((item) => ({
       title: item.title,
-      html: this.addCtaButton(item.content.childMarkdownRemark.html, 
-        item.title.includes("income eligible") ? this.content.heroButtonText2 : this.content.heroButtonText),
+      html: this.addCtaButton(
+        item.content.childMarkdownRemark.html,
+        item.title.includes("income eligible")
+          ? this.content.heroButtonText2
+          : this.content.heroButtonText
+      ),
     }));
   }
 
