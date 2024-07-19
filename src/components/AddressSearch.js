@@ -41,6 +41,7 @@ class AddressSearch extends React.Component {
         boro = boro.long_name.toUpperCase();
         this.setState({ error: false });
         this.props.onFormSubmit({ zip, boro });
+        this.props.showNextBtn();
       } else if (
         ["MANHATTAN", "STATEN ISLAND", "BROOKLYN", "QUEENS", "BRONX"].indexOf(
           boro

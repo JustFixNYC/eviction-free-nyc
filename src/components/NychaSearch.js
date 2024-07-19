@@ -16,7 +16,10 @@ class NychaSearch extends React.Component {
 
   handleChange = (selectedOption) => {
     this.setState({ selectedOption });
-    if (selectedOption) this.props.onFormSubmit(selectedOption);
+    if (selectedOption) {
+      this.props.onFormSubmit(selectedOption);
+      this.props.showNextBtn();
+    }
   };
 
   render() {

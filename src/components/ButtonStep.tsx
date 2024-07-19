@@ -1,10 +1,11 @@
 import React from "react";
 
-const ButtonStep: React.FC<{ stepFn: any; children: React.ReactNode }> = ({
+const ButtonStep: React.FC<{ stepFn: any; isDisabled: boolean; children: React.ReactNode }> = ({
   stepFn,
+  isDisabled,
   children,
 }) => (
-  <button onClick={stepFn} className="btn btn-steps btn-block btn-centered">
+  <button disabled={isDisabled} onClick={stepFn} className="btn btn-steps btn-block btn-centered">
     {children}
   </button>
 );
