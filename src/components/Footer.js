@@ -19,6 +19,13 @@ const Footer = (props) => (
           <a href="https://www.justfix.org/" target="_blank">
             <img width="75" src={justfixLogo} alt={"JustFix"} />
           </a>
+          <br />
+          <a href="https://www.netlify.com" target="_blank" className="hide-sm">
+          <img
+            src="https://www.netlify.com/img/global/badges/netlify-dark.svg"
+            width="75"
+          />
+        </a>
       </div>
     </footer>
   </div>
