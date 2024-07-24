@@ -31,8 +31,7 @@ module.exports = {
   additionalResources: "Additional Resources:",
   attribution:
     'This resource is made for tenants across NYC and is maintained by the <a href="https://www.righttocounselnyc.org/" target="_blank">Right to Counsel NYC Coalition</a>.<br /><br /><a href="https://docs.google.com/forms/d/e/1FAIpQLSfovU5BDMZHaX-EKQmSyVyKdrPvp9y0VuIBx_NlMQHB0NkNng/viewform?usp=sf_link" target="_blank">Click here</a> to provide feedback about the website.',
-  justfixAttribution: "Made by the team at",
-  netlifyAttribution: "Powered by",
+  justfixAttribution: "Made with ♥ by the team at",
   print: "Print",
   getInvolvedTitle: "Get involved with the Right to Counsel movement!",
   shareTitle: "Share this page with your neighbors:",
