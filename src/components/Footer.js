@@ -14,23 +14,11 @@ const Footer = (props) => (
     <footer className="Footer">
       <img src={rtcLogo} alt={`Right to Counsel logo`} />
       <HTMLTrans id="attribution" />
-
       <div className="Footer_JustFix col-ml-auto">
-        <div>
           <HTMLTrans id="justfixAttribution" />
           <a href="https://www.justfix.org/" target="_blank">
             <img width="75" src={justfixLogo} alt={"JustFix"} />
           </a>
-        </div>
-        <div>
-          <HTMLTrans id="netlifyAttribution" />
-          <a href="https://www.netlify.com" target="_blank" className="hide-sm">
-            <img
-              src="https://www.netlify.com/img/global/badges/netlify-light.svg"
-              width="75"
-            />
-          </a>
-        </div>
       </div>
     </footer>
   </div>
