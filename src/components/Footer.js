@@ -5,7 +5,7 @@ import { FormattedHTMLMessage as HTMLTrans } from "react-intl";
 
 import "../styles/Footer.scss";
 import rtcLogo from "../assets/img/RTC_logo.png";
-import justfixLogo from "../assets/img/Justfix_logo.png";
+import justfixLogo from "../assets/img/Justfix_logo.jpg";
 
 const Footer = (props) => (
   <div>
@@ -15,10 +15,9 @@ const Footer = (props) => (
       <HTMLTrans id="attribution" />
 
       <div className="Footer_JustFix col-ml-auto">
-        <SelectLanguage {...props} />
         <HTMLTrans id="justfixAttribution" />
-        <a href="https://www.justfix.nyc/" target="_blank">
-          <img src={justfixLogo} alt={`JustFix.nyc logo`} />
+        <a href="https://www.justfix.org/" target="_blank">
+          <img width="75" src={justfixLogo} alt={"JustFix"} />
         </a>
         <a href="https://www.netlify.com" target="_blank" className="hide-sm">
           <img
