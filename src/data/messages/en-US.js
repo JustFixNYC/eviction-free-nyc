@@ -30,8 +30,9 @@ module.exports = {
   doNow: "Here's what you should do now:",
   additionalResources: "Additional Resources:",
   attribution:
-    'This resource is made "by tenants for tenants" and is maintained by the <a href="https://www.righttocounselnyc.org/" target="_blank">Right to Counsel NYC Coalition</a>.<br /><br /><a href="https://docs.google.com/forms/d/e/1FAIpQLSfovU5BDMZHaX-EKQmSyVyKdrPvp9y0VuIBx_NlMQHB0NkNng/viewform?usp=sf_link" target="_blank">Click here</a> to provide feedback about the website.',
-  justfixAttribution: "Made with NYC ♥ by the team at",
+    'This resource is made for tenants across NYC and is maintained by the <a href="https://www.righttocounselnyc.org/" target="_blank">Right to Counsel NYC Coalition</a>.<br /><br /><a href="https://docs.google.com/forms/d/e/1FAIpQLSfovU5BDMZHaX-EKQmSyVyKdrPvp9y0VuIBx_NlMQHB0NkNng/viewform?usp=sf_link" target="_blank">Click here</a> to provide feedback about the website.',
+  justfixAttribution: "Made by the team at",
+  netlifyAttribution: "Powered by",
   print: "Print",
   getInvolvedTitle: "Get involved with the Right to Counsel movement!",
   shareTitle: "Share this page with your neighbors:",
@@ -54,7 +55,7 @@ module.exports = {
   website: "Website",
   evictionFreeNYC: "Eviction Free NYC",
   textMessageContent: "Follow this link for assistance in your eviction case",
-  groupsTitle: "Connect with a Local Community Group",
+  groupsTitle: "Fight your eviction by contacting a local community group",
   groupsLookMore: "Looking for more? Search the Tenant Assistance Directory",
   groupsEmpty:
     "There are no tenant organizing groups currently working in your area.",
