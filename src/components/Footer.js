@@ -22,7 +22,7 @@ const Footer = (props) => (
           <br />
           <a href="https://www.netlify.com" target="_blank" className="hide-sm">
           <img
-            src="https://www.netlify.com/img/global/badges/netlify-dark.svg"
+            src="https://www.netlify.com/img/global/badges/netlify-light.svg"
             width="75"
           />
         </a>

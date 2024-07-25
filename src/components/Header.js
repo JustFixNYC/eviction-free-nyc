@@ -18,11 +18,6 @@ const Header = ({ intl }) => (
         <img src={rtcLogo} />
         <span>Eviction Free NYC!</span>
       </Link>
-      {isDemoSite && (
-        <span className="label label-rounded label-warning ml-2 text-uppercase">
-          Archived
-        </span>
-      )}
     </section>
     <section className="navbar-section navbar-btns-social">
       <div className="btn-group btns-social">
