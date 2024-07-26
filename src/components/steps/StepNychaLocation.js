@@ -15,12 +15,14 @@ class StepNychaLocation extends React.Component {
   }
 
   showNextBtn = () => {
-    this.setState({isNextDisabled: false});
+    this.setState({ isNextDisabled: false });
   };
 
   render() {
     return (
-      <div className={`ScreenerPage__Location ${this.props.show ? "" : "d-none"}`}>
+      <div
+        className={`ScreenerPage__Location ${this.props.show ? "" : "d-none"}`}
+      >
         <ul className="step">
           <li className="step-item active">
             <a href="#">
@@ -42,14 +44,19 @@ class StepNychaLocation extends React.Component {
         <p>{this.props.content.addressDescription}</p>
         <NychaSearch
           onFormSubmit={this.props.handleNycha}
-          placeholder={this.props.intl.formatMessage({ id: "nychaPlaceholder" })}
+          placeholder={this.props.intl.formatMessage({
+            id: "nychaPlaceholder",
+          })}
           showNextBtn={this.showNextBtn}
         />
-        <ButtonStep isDisabled={this.state.isNextDisabled} stepFn={this.props.stepFn}>
+        <ButtonStep
+          isDisabled={this.state.isNextDisabled}
+          stepFn={this.props.stepFn}
+        >
           <Trans id="continue" />
         </ButtonStep>
-      </div>  
-    )
+      </div>
+    );
   }
 }
 

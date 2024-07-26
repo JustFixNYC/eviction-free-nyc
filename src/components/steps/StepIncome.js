@@ -24,8 +24,8 @@ const StepIncome = ({ content, show, setIncome }) => (
     <p>{content.incomeDescription}</p>
     <p>
       {content.incomeUpdatedList.map((step, i) => (
-          <li key={i}>{step}</li>
-        ))} 
+        <li key={i}>{step}</li>
+      ))}
     </p>
     <p>{content.incomeQuestion}</p>
     <button className="btn btn-steps" onClick={() => setIncome(true)}>

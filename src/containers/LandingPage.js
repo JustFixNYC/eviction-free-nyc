@@ -28,8 +28,8 @@ class LandingPage extends React.Component {
         item.title.includes("income eligible")
           ? this.content.heroButtonText2
           : this.content.heroButtonText
-      ),   
-     }));
+      ),
+    }));
   }
 
   addCtaButton = (html, buttonText) => {
