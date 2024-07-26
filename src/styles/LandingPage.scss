@@ -166,15 +166,17 @@
     .LandingPage__ContentFAQ {
       order: 2;
 
-      p > a,
-      li > a {
-        // add underline to all links for accessibility
-        // btns are hrefs under the hood,so had to specify html attributes p, li
-        text-decoration: underline;
+      a {
+        text-decoration: underline; // add underline to all links for accessibility
+
         &:hover,
         &:focus {
           text-decoration: none;
         }
+      }
+
+      .btn {
+        text-decoration: none;
       }
     }
     .LandingPage__ContentImage1 {
