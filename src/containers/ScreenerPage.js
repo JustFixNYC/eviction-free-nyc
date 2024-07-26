@@ -37,7 +37,6 @@ class ScreenerPage extends React.Component {
         zip: null,
         boro: null,
         nycha: false,
-        areaEligible: null,
         incomeEligible: null,
         caseType: null,
       },
@@ -98,31 +97,26 @@ class ScreenerPage extends React.Component {
     this.closeModalAndGoToNextStep(3);
   };
 
+  // RTC eligibility is no longer determined by zipcode, but the boro logic is still relevant for submission page.
   handleZipcode = ({ zip, boro }) => {
-    let areaEligible = isLocationEligible(zip);
     this.setState({
       user: {
         ...this.state.user,
         zip: zip,
         boro: boro,
         nycha: false,
-        areaEligible: areaEligible,
       },
-      modalType: areaEligible ? "areaEligible" : "areaIneligible",
     });
   };
 
-  handleNycha = ({ zips, boro }) => {
-    let areaEligible = isNychaEligible(zips);
+  handleNycha = ({ boro }) => {
     this.setState({
       user: {
         ...this.state.user,
         zip: null,
         boro: boro,
         nycha: true,
-        areaEligible: areaEligible,
       },
-      modalType: areaEligible ? "areaEligible" : "areaIneligible",
     });
   };
 
@@ -174,12 +168,14 @@ class ScreenerPage extends React.Component {
           show={this.state.currentPage == 1}
           handleZipcode={this.handleZipcode}
           handleNycha={() => this.changeStep(4)}
+          stepFn={() => this.changeStep(2)}
         />
 
         <StepNychaLocation
           content={c}
           show={this.state.currentPage == 4}
           handleNycha={this.handleNycha}
+          stepFn={() => this.changeStep(2)}
         />
 
         <StepIncome
@@ -200,33 +196,6 @@ class ScreenerPage extends React.Component {
           showModal={this.state.modalType !== null}
           onClose={() => this.setState({ modalType: null })}
         >
-          {this.state.modalType === "areaEligible" && (
-            <ModalAreaEligible
-              content={c}
-              nycha={this.state.user.nycha}
-              zip={this.state.user.zip}
-              nextFn={() => {
-                // Special handling here
-                // If they are NYCHA, we shouldn't ask about income
-                // Even if they are areaEligible
-                if (this.state.user.nycha) {
-                  this.skipIncomeStep(true);
-                } else {
-                  this.closeModalAndGoToNextStep(2);
-                }
-              }}
-            />
-          )}
-
-          {this.state.modalType === "areaIneligible" && (
-            <ModalAreaIneligible
-              content={c}
-              nycha={this.state.user.nycha}
-              zip={this.state.user.zip}
-              nextFn={() => this.skipIncomeStep(false)}
-            />
-          )}
-
           {this.state.modalType === "incomeEligible" && (
             <ModalIncomeEligible
               content={c}
@@ -272,6 +241,7 @@ export const screenerPageFragment = graphql`
         incomeDisclaimer
         incomeEligibleText
         incomeOverIncome
+        incomeUpdatedList
         caseTitle
         caseDescription
         caseCourtPapersQuestion

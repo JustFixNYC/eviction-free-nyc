@@ -15,13 +15,12 @@ export function determineResultPage(user, intl) {
   if (
     user.boro === null ||
     user.caseType === null ||
-    user.areaEligible === null ||
     user.incomeEligible === null
   ) {
     throw new Error("Missing a step!");
   }
 
-  const isEligible = user.areaEligible && user.incomeEligible;
+  const isEligible = user.incomeEligible;
 
   let boro = user.boro.toLowerCase();
 
