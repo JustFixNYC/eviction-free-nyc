@@ -57,22 +57,19 @@ const CourtPage = ({
           <Trans id="print" />
         </button>
       </div>
-
-      {/* <SaveToPhone /> */}
-
       <h6>
         <Trans id="doNow" />
       </h6>
       <Accordion content={steps} multiple steps />
 
-      {providers && (
+      {/* {providers && (
         <div>
           <h6>
             <Trans id="connectLSP" />
           </h6>
           <ProvidersCarousel providers={providers} />
         </div>
-      )}
+      )} */}
 
       {additionalResources && (
         <div>
@@ -97,7 +94,6 @@ const CourtPage = ({
           </Accordion>
         </div>
       )}
-
       <SaveToPhone />
     </section>
   );

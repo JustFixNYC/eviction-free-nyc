@@ -7,6 +7,8 @@ import {
   AccordionItemBody,
 } from "react-accessible-accordion";
 
+import "../../styles/ScreenerPage.scss";
+
 class StepcaseType extends React.Component {
   constructor(props) {
     super(props);
@@ -70,7 +72,7 @@ class StepcaseType extends React.Component {
               }`}
               onClick={() => this.handleCaseButtonClick("other")}
             >
-              <Trans id="other" />
+              <Trans id="I'm not sure" />
             </button>
           </div>
         ) : (
@@ -100,7 +102,7 @@ class StepcaseType extends React.Component {
                 this.handleCaseButtonClick("general");
               }}
             >
-              <Trans id="general" />
+              <Trans id="I'm not sure" />
             </button>
           </div>
         )}
@@ -108,11 +110,11 @@ class StepcaseType extends React.Component {
         <Accordion>
           <AccordionItem expanded={this.state.unsure}>
             <AccordionItemTitle className="clearfix">
-              <p className="float-left text-bold">
+              <p className="accordion-title-text text-bold">
                 {content.caseCourtPapersQuestion}
               </p>
-              <i className="icon icon-plus float-right ml-2 mt-1"></i>
-              <i className="icon icon-minus float-right ml-2 mt-1"></i>
+              <i className="icon icon-plus ml-2 mt-1"></i>
+              <i className="icon icon-minus ml-2 mt-1"></i>
             </AccordionItemTitle>
             <AccordionItemBody>
               <ul>

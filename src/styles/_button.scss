@@ -13,11 +13,12 @@
   }
 
   &.btn-link {
+    text-decoration: underline;
+    outline: none;
+    box-shadow: none;
     &:hover,
     &:focus {
-      text-decoration: underline;
-      outline: none;
-      box-shadow: none;
+      text-decoration: none;
     }
   }
 

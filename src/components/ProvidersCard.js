@@ -16,20 +16,18 @@ const ProvidersCard = ({ provider }) => (
       <div className="card-title">
         <h5>{provider.title}</h5>
       </div>
-
-      {/* <div className="card-subtitle text-gray">Software and hardware</div> */}
     </div>
 
     <div className="card-body">
       {provider.hours && (
-        <div className="card-subtitle text-gray">
+        <div className="card-subtitle">
           <i className="icon icon-time mr-2"></i>
           {provider.hours}
         </div>
       )}
       {provider.address &&
         provider.address.map((addr, i) => (
-          <div key={i} className="card-subtitle text-gray">
+          <div key={i} className="card-subtitle">
             <i className="icon icon-location mr-2"></i>
             {addr}
           </div>

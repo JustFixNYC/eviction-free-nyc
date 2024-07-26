@@ -100,12 +100,6 @@
       }
       li:nth-child(2) {
         &:before {
-          background: url("../assets/img/income.svg") no-repeat;
-          background-size: 28px;
-        }
-      }
-      li:nth-child(3) {
-        &:before {
           background: url("../assets/img/document.svg") no-repeat;
           background-size: 100%;
         }
@@ -140,6 +134,11 @@
       .Select-placeholder {
         line-height: 46px;
       }
+    }
+
+    .btn-steps {
+      margin-top: 32px;
+      margin-left: auto;
     }
   }
 
@@ -215,6 +214,24 @@
     .accordion {
       margin: 0 0 16px 0;
 
+      .accordion__item {
+        .accordion-title-text {
+          text-decoration: underline;
+          &:hover,
+          &:focus {
+            text-decoration: none;
+          }
+        }
+        .clearfix {
+          display: flex;
+
+          .icon {
+            float: inline-start;
+            margin-left: -2.5rem;
+          }
+        }
+      }
+      
       .accordion__body {
         ul {
           list-style: none;

@@ -58,7 +58,7 @@ class CommunityGroups extends React.Component {
                 <div className="tile-content">
                   <p className="tile-title">{group.title}</p>
                   {group.address && (
-                    <p className="tile-subtitle text-gray">
+                    <p className="tile-subtitle">
                       <i className="icon icon-location mr-2"></i>
                       <a
                         href={`https://maps.google.com/maps/place/${group.address}`}
@@ -69,12 +69,12 @@ class CommunityGroups extends React.Component {
                     </p>
                   )}
                   {group.intakeInstructions && (
-                    <p className="title-subtitle text-gray">
+                    <p className="title-subtitle">
                       <i className="icon icon-time mr-2"></i>
                       {group.intakeInstructions}
                     </p>
                   )}
-                  <p className="tile-subtitle text-gray">{group.description}</p>
+                  <p className="tile-subtitle">{group.description}</p>
                   <p>
                     <a
                       href={`tel:${group.phoneNumber}`}
