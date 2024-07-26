@@ -159,24 +159,6 @@ export const pageQuery = graphql`
               }
             }
           }
-          providers {
-            title
-            acceptsRtcCases
-            phoneNumber
-            website
-            hours
-            intakeInstructions
-            address
-            logo {
-              resolutions(width: 100, height: 100) {
-                aspectRatio
-                width
-                height
-                src
-                srcSet
-              }
-            }
-          }
         }
       }
     }
