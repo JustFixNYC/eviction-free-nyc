@@ -68,6 +68,14 @@ class StepcaseType extends React.Component {
             </button>
             <button
               className={`btn btn-default ${
+                user.caseType == "termination" ? "active" : ""
+              }`}
+              onClick={() => this.handleCaseButtonClick("termination")}
+            >
+              <Trans id="Termination" />
+            </button>
+            <button
+              className={`btn btn-default ${
                 user.caseType == "other" ? "active" : ""
               }`}
               onClick={() => this.handleCaseButtonClick("other")}

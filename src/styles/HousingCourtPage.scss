@@ -43,16 +43,16 @@
   .Accordion {
     margin-bottom: 32px;
 
-    // .accordion__item {
-    //   &:hover {
-    //     background-color: $bg-color-dark;
-    //     text-decoration: none;
-    //   }
-    //
-    //   &[aria-selected='true'],&[aria-expanded='true'] {
-    //     background-color: #fff;
-    //   }
-    // }
+    .Accordion__title {
+      h5 {
+        text-decoration: underline;
+
+        &:hover,
+          &:focus {
+            text-decoration: none;
+          }
+      }
+    }
 
     .embedly-card {
       max-width: 350px;
