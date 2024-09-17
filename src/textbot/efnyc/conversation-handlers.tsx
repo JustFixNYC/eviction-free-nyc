@@ -15,7 +15,7 @@ const INVALID_YES_OR_NO = `Sorry, I didn't understand that. Please respond with 
  * should be taken in changing its schema, since in-progress
  * conversations may end up using old versions of its schema.
  */
-type EfnycState = Partial<RtcInfo> & BaseConversationState;
+export type EfnycState = Partial<RtcInfo> & BaseConversationState;
 
 /**
  * The methods that start with `handler_` are conversation handlers.
