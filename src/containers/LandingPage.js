@@ -49,7 +49,11 @@ class LandingPage extends React.Component {
       <section className="Page LandingPage">
         <div className="LandingPage__Hero">
           <div className="LandingPage__HeroContent  container grid-md">
-            <h2 className="LandingPage__HeroTitle">{c.heroTitle}</h2>
+            <h2 className="LandingPage__HeroTitle">
+              {/* Hard coding title bc it's more of a pain to code a line break via Contentful*/}
+              Are you facing an eviction in NYC? <br /> You may have a right to
+              a free lawyer!
+            </h2>
             <h4 className="LandingPage__HeroSubtitle">{c.heroSubTitle}</h4>
             <ButtonLink to={`/questions`} type="primary">
               {c.heroButtonText}
@@ -65,6 +69,10 @@ class LandingPage extends React.Component {
           <div className="columns clearfix">
             <div className="LandingPage__ContentFAQ column col-mr-auto col-sm-12 col-7">
               <h3>{c.learnMoreTitle}:</h3>
+              <p style={{ "font-style": "italic" }}>
+                This resource is regularly updated by the Right to Counsel
+                Coalition and JustFix as court procedures change.
+              </p>
               <Accordion content={this.faq} />
             </div>
             <div className="LandingPage__ContentImage1 column col-ml-auto col-sm-12 col-4">

@@ -25,9 +25,7 @@ class AdminHearingPage extends React.Component {
     const contentfulData = props.data.content.edges[0].node;
 
     this.data.steps = contentfulData.stepsGeneral.map((step, i) => ({
-      title: `${props.intl.formatMessage({ id: "step" })} ${i + 1}: ${
-        step.title
-      }`,
+      title: `${step.title}`,
       html: addCallButtons(
         step.childContentfulHousingCourtActionStepContentTextNode
           .childMarkdownRemark.html
