@@ -5,6 +5,7 @@ import { FacebookButton, TwitterButton, EmailButton } from "react-social";
 import "../styles/GetInvolved.scss";
 
 import fbIcon from "../assets/img/fb.svg";
+import xTwitterIcon from "../assets/img/xTwitter.svg";
 import twitterIcon from "../assets/img/twitter.svg";
 
 const GetInvolved = () => (
@@ -16,7 +17,7 @@ const GetInvolved = () => (
             <Trans id="getInvolvedTitle" />
           </h3>
         </div>
-        <div className="column col-md-12 col-6">
+        <div className="column col-md-12 col-9">
           <div className="form-group">
             <label className="form-label">
               <Trans id="shareTitle" />
@@ -36,8 +37,12 @@ const GetInvolved = () => (
                 message="If you're being evicted, we can help. Go to Eviction Free NYC today! @RTCNYC @JustFixNYC"
                 windowOptions={["width=400", "height=200"]}
               >
-                <img src={twitterIcon} className="icon mx-1" alt="Twitter" />
-                <span>Twitter</span>
+                <img
+                  src={xTwitterIcon}
+                  className="icon mx-1"
+                  alt="X (Twitter)"
+                />
+                <span>X (Twitter)</span>
               </TwitterButton>
               <EmailButton target="_blank" className="btn btn-steps">
                 <i className="icon icon-mail mx-2" />
@@ -74,20 +79,6 @@ const GetInvolved = () => (
               <input type="text" className="form-input" placeholder="Enter your email" />
               <button className="btn btn-primary input-group-btn">Submit</button>
             </div> */}
-          </div>
-        </div>
-        <div className="column col-md-12 col-3">
-          <div className="form-group">
-            <label className="form-label">
-              <Trans id="eventsTitle" />
-            </label>
-            <a
-              href="https://www.righttocounselnyc.org/"
-              target="_blank"
-              className="btn btn-primary btn-block"
-            >
-              <Trans id="eventsBtn" />
-            </a>
           </div>
         </div>
       </div>
