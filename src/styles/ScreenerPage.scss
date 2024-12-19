@@ -19,7 +19,9 @@
     margin-bottom: 32px;
 
     .step-item {
-      color: #50596c;
+      a {
+        color: #50596c;
+      }
     }
   }
 
