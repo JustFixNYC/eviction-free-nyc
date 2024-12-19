@@ -144,6 +144,9 @@
 
     .Select-control {
       border: 0.05rem solid #50596c;
+      .Select-placeholder {
+        color: #50596c;
+      }
     }
 
     .btn-steps {
