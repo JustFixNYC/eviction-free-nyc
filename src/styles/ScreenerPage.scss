@@ -8,7 +8,7 @@
   }
 
   @include for-desktop-up() {
-    max-width: 30vw;
+    max-width: 58vw;
   }
 
   & > div {
@@ -17,6 +17,12 @@
 
   .step {
     margin-bottom: 32px;
+
+    .step-item {
+      a {
+        color: #50596c;
+      }
+    }
   }
 
   h4 {
@@ -136,6 +142,13 @@
       }
     }
 
+    .Select-control {
+      border: 0.05rem solid #50596c;
+      .Select-placeholder {
+        color: #50596c;
+      }
+    }
+
     .btn-steps {
       margin-top: 32px;
       margin-left: auto;
@@ -146,6 +159,10 @@
     h4:before {
       background: url("../assets/img/income.svg") no-repeat;
       background-size: 100%;
+    }
+
+    .text-aside {
+      color: #50596c;
     }
 
     // ul.ScreenerPage__IncomeList {
