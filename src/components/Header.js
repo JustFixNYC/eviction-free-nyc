@@ -7,7 +7,7 @@ import "../styles/Header.scss";
 
 import rtcLogo from "../assets/img/RTC_logo_scales.svg";
 import fbIcon from "../assets/img/fb.svg";
-import twitterIcon from "../assets/img/twitter.svg";
+import xTwitterIcon from "../assets/img/xTwitter.svg";
 
 const isDemoSite = process.env.GATSBY_DEMO_SITE === "1";
 
@@ -31,10 +31,10 @@ const Header = ({ intl }) => (
         </FacebookButton>
         <TwitterButton
           className="btn btn-link"
-          message="If you're being evicted, we can help. Go to Eviction Free NYC today! @RTCNYC @JustFixNYC"
+          message="If you're being evicted, we can help. Go to Eviction Free NYC today! @RTCNYC @JustFixOrg"
           windowOptions={["width=400", "height=200"]}
         >
-          <img src={twitterIcon} className="icon mx-1" alt="Twitter" />
+          <img src={xTwitterIcon} className="icon mx-1" alt="X (Twitter)" />
         </TwitterButton>
         <EmailButton target="_blank" className="btn btn-link">
           <i className="icon icon-mail mx-2" />

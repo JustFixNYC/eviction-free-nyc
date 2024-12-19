@@ -34,7 +34,7 @@ const GetInvolved = () => (
               </FacebookButton>
               <TwitterButton
                 className="btn btn-steps"
-                message="If you're being evicted, we can help. Go to Eviction Free NYC today! @RTCNYC @JustFixNYC"
+                message="If you're being evicted, we can help. Go to Eviction Free NYC today! @RTCNYC @JustFixOrg"
                 windowOptions={["width=400", "height=200"]}
               >
                 <img
