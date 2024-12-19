@@ -10,6 +10,11 @@
 
   .form-input {
     border-color: #50596c;
+
+    ::placeholder {
+      color: #50596c;
+      opacity: 1;
+    }
   }
 
   ul {
