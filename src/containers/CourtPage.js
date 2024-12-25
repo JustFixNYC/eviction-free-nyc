@@ -51,7 +51,10 @@ const CourtPage = ({
           }
         </h2>
         <button
-          onClick={() => window.print()}
+          onClick={() => {
+            window.print();
+            window.gtag("event", "print-btn-click");
+          }}
           className="btn btn-default float-right"
         >
           <Trans id="print" />

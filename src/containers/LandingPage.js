@@ -32,6 +32,10 @@ class LandingPage extends React.Component {
     }));
   }
 
+  componentDidMount() {
+    window.gtag("event", "landing-page-view");
+  }
+
   addCtaButton = (html, buttonText) => {
     const locale = this.props.intl.locale;
     return (html += `

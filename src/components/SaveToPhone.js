@@ -46,6 +46,7 @@ class SaveToPhone extends React.Component {
     }
 
     this.setState({ button: "loading" });
+    window.gtag("event", "save-to-phone-btn-click");
 
     sendSMS(this.state.phone, path).then((res) => {
       if (res.ok) {
