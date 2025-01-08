@@ -11,6 +11,10 @@
     max-width: 58vw;
   }
 
+  @media (min-width: 600px) and (max-width: 1199px) {
+    max-width: 54vw;
+  }
+
   & > div {
     text-align: center;
   }
