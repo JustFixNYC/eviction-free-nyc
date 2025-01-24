@@ -5,8 +5,9 @@
 
   .LandingPage__Hero {
     padding: 0.75rem 0;
-    background: $secondary-color;
-    color: #fff;
+    background: $NEW_BLUE;
+    color: $OFF_BLACK;
+    border-bottom: 1px solid $OFF_BLACK;
 
     // margin-bottom: 3rem;
     display: flex;
@@ -216,6 +217,7 @@
       }
 
       .LandingPage__ContentFAQ {
+        color: $OFF_BLACK;
         padding-left: 16px;
         padding-right: 16px;
         margin-top: 32px;

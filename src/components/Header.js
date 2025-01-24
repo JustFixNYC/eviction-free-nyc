@@ -15,8 +15,7 @@ const Header = ({ intl }) => (
   <header className="Header navbar">
     <section className="navbar-section">
       <Link className="navbar-brand" to={`/${intl.locale}`}>
-        <img src={rtcLogo} />
-        <span>Eviction Free NYC!</span>
+        <span>Eviction Free NYC</span>
       </Link>
     </section>
     <section className="navbar-section navbar-btns-social">

@@ -5,6 +5,7 @@
 // make all btns large size
 .btn {
   min-width: 100px;
+  border-radius: 2rem;
 
   &:not(.btn-normal):not(.btn-sm) {
     font-size: 0.9rem;
@@ -29,21 +30,34 @@
 }
 
 .btn.btn-default {
-  border-color: $third-color;
+  border-color: $OFF_BLACK;
   border-width: 2px;
-  color: $third-color;
+  color: $WHITE;
 
   &:hover,
   &:focus,
   &:active,
   &.active {
-    background-color: $third-color;
-    border-color: $third-color;
-    color: #fff;
+    background-color: $NEW_BLUE;
+    border-color: $OFF_BLACK;
+    color: $OFF_BLACK;
   }
-
   &:focus {
-    box-shadow: 0 0 0 0.1rem rgba(3, 77, 166, 0.2);
+    box-shadow: 0 0 0 0.1rem $JFCL_SECONDARY_BLUE;
+  }
+}
+
+.btn.btn-primary {
+  background-color: $OFF_BLACK;
+  color: $WHITE;
+  &:hover {
+    background-color: $GREY_700;
+  }
+  &:active {
+    background-color: $GREY_600;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.1rem $JFCL_SECONDARY_BLUE;
   }
 }
 
@@ -52,7 +66,7 @@
 }
 
 .btn.btn-steps {
-  @include button-variant($third-color);
+  @include button-variant($OFF_BLACK);
 }
 
 .btn-block {

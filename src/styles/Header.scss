@@ -2,9 +2,9 @@
 
 .Header {
   padding: 8px 0.8rem;
-  border-bottom: 1px solid $gray-color-dark;
-  background: $secondary-color;
-  color: #fff;
+  border-bottom: 1px solid $OFF_BLACK;
+  background: $NEW_BLUE;
+  color: $OFF_BLACK;
 
   @include for-tablet-landscape-up() {
     padding: 16px 32px;
@@ -44,14 +44,17 @@
       min-width: 0;
       padding: 0.2rem !important;
       margin-bottom: 0;
-      color: #fff;
+      color: $OFF_BLACK;
 
       &:last-child {
         padding-right: 0;
       }
 
       &:hover {
-        color: #fff;
+        background-color: $GREY_700;
+      }
+      &:active {
+        background-color: $GREY_600;
       }
     }
   }
