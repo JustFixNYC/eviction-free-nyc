@@ -35,9 +35,9 @@ header.Header {
       @include for-phone-only {
         font-size: 1rem;
       }
-      
-      &:hover, 
-      &:active, 
+
+      &:hover,
+      &:active,
       &:focus {
         text-decoration: none;
       }
@@ -45,7 +45,6 @@ header.Header {
   }
 
   .navbar-collab {
-
     @include for-tablet-landscape-down {
       display: none;
     }
@@ -82,17 +81,17 @@ header.Header {
         min-width: 0;
         padding: 0.2rem !important;
         margin-bottom: 0;
-        
+
         i {
           color: #fff;
         }
-  
+
         &:hover {
           i {
             color: $GREY_700;
           }
           img {
-            filter: brightness(0.4)
+            filter: brightness(0.4);
           }
         }
         &:active {
@@ -100,7 +99,7 @@ header.Header {
             color: $GREY_600;
           }
           img {
-            filter: brightness(0.5)
+            filter: brightness(0.5);
           }
         }
       }
