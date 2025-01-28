@@ -19,13 +19,19 @@
     .LandingPage__HeroContent {
       margin-bottom: 0.5rem;
 
-      h2,
+      h2 {
+        font-weight: 400;
+        letter-spacing: 0;
+        @include for-tablet-landscape-up() {
+          max-width: 75%;
+        }
+      }
       h4 {
         font-weight: 200;
         letter-spacing: 1px;
 
         @include for-tablet-landscape-up() {
-          max-width: 75%;
+          max-width: 60%;
         }
       }
 
@@ -159,6 +165,7 @@
   }
 
   .LandingPage__Content {
+    color: $OFF_BLACK;
     margin-top: 64px;
     min-height: 600px;
     margin-bottom: 64px;

@@ -14,6 +14,7 @@
   }
 
   &.btn-link {
+    color: $OFF_BLACK;
     text-decoration: underline;
     outline: none;
     box-shadow: none;
@@ -49,6 +50,7 @@
 
 .btn.btn-primary {
   background-color: $OFF_BLACK;
+  border: none;
   color: $WHITE;
   &:hover {
     background-color: $GREY_700;
