@@ -8,7 +8,7 @@ const ButtonStep: React.FC<{
   <button
     disabled={isDisabled}
     onClick={stepFn}
-    className="btn btn-steps btn-block btn-centered"
+    className="btn btn-steps btn-primary btn-block btn-centered"
   >
     {children}
   </button>
