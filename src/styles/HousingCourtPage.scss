@@ -30,14 +30,12 @@
   }
 
   h6 {
-    // background-color: $third-color;
-    // color: #fff;
+    color: $JFCL_DARKER_SECONDARY_BLUE;
+    font-weight: 700;
+    border-bottom: 2px solid $JFCL_DARKER_SECONDARY_BLUE;
     padding: 12px 0;
     text-transform: uppercase;
-    color: $third-color;
     font-weight: bold;
-
-    border-bottom: 2px solid $third-color;
   }
 
   .Accordion {
