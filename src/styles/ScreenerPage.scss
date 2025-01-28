@@ -27,7 +27,7 @@
       a {
         color: $OFF_BLACK;
       }
-      a:before {
+      .active a:before {
         background: #fff;
         border: .1rem solid $OFF_BLACK;
       }
