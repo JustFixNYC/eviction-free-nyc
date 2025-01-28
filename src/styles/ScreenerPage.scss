@@ -27,13 +27,17 @@
       a {
         color: $OFF_BLACK;
       }
-      .active a:before {
-        background: #fff;
-        border: .1rem solid $OFF_BLACK;
+      .active {
+        a:before {
+        //background: #fff;
+        background: .1rem solid $OFF_BLACK;
       }
+    }
       .active:before {
         background: $OFF_BLACK;
       }
+
+      //.step .step-item:not(:first-child):before
     }
 
     // .step-item {
