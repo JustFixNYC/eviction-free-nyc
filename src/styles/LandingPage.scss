@@ -47,7 +47,7 @@
 
         @include for-phone-only() {
           margin-bottom: 0.8rem;
-          font-size: 1.25rem;
+          font-size: 1.7rem;
         }
       }
 
@@ -151,17 +151,6 @@
       text-align: left;
       padding: 2.5rem 0 1rem 0;
     }
-
-    .LandingPage__HeroLearnMore {
-      text-align: center;
-      font-weight: normal;
-      line-height: 1.2;
-      margin-top: 1rem;
-
-      @include for-tablet-portrait-up() {
-        display: none;
-      }
-    }
   }
 
   .LandingPage__Content {
@@ -199,6 +188,9 @@
     }
     .LandingPage__ContentImage1 {
       order: 1;
+      @include for-phone-only() {
+        display: none;
+      }
     }
     .LandingPage__ContentImage2 {
       order: 2;
