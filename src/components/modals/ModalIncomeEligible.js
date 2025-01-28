@@ -7,7 +7,10 @@ const ModalIncomeEligible = ({ content, nextFn }) => (
       <div className="content">{content.incomeEligibleText}</div>
     </div>
     <div className="modal-footer">
-      <button onClick={nextFn} className="btn btn-primary btn-block btn-centered">
+      <button
+        onClick={nextFn}
+        className="btn btn-primary btn-block btn-centered"
+      >
         <Trans id="gotit" />
       </button>
     </div>
