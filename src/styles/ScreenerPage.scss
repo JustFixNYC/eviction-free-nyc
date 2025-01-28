@@ -270,7 +270,6 @@
             padding-left: 36px;
             padding-top: 2px;
             text-align: left;
-
             margin: 16px 0;
 
             &:before {
@@ -283,6 +282,10 @@
               height: 24px;
               top: 2px;
               left: 0;
+            }
+
+            a {
+              color: $OFF_BLACK;
             }
           }
         }
