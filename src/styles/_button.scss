@@ -52,7 +52,7 @@
   background: unset;
   background-color: $OFF_BLACK;
   border: none;
-  color: $WHITE;
+  color: $WHITE !important;
   &:hover {
     background-color: $GREY_700;
   }
