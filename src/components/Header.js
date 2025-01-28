@@ -6,8 +6,8 @@ import { FacebookButton, TwitterButton, EmailButton } from "react-social";
 import "../styles/Header.scss";
 
 import rtcLogo from "../assets/img/RTC_logo_scales.svg";
-import fbIcon from "../assets/img/fb.svg";
-import xTwitterIcon from "../assets/img/xTwitter.svg";
+import fbIcon from "../assets/img/fb_black.svg";
+import xTwitterIcon from "../assets/img/xTwitter_black.svg";
 
 const isDemoSite = process.env.GATSBY_DEMO_SITE === "1";
 

@@ -4,9 +4,8 @@ import { FacebookButton, TwitterButton, EmailButton } from "react-social";
 
 import "../styles/GetInvolved.scss";
 
-import fbIcon from "../assets/img/fb.svg";
-import xTwitterIcon from "../assets/img/xTwitter.svg";
-import twitterIcon from "../assets/img/twitter.svg";
+import fbIcon from "../assets/img/fb_white.svg";
+import xTwitterIcon from "../assets/img/xTwitter_white.svg";
 
 const GetInvolved = () => (
   <div className="GetInvolved">
