@@ -28,7 +28,8 @@
         color: $OFF_BLACK;
       }
       a:before {
-        color: $OFF_BLACK;
+        background: #fff;
+        border: .1rem solid $OFF_BLACK;
       }
       .active:before {
         background: $OFF_BLACK;
@@ -160,7 +161,7 @@
       }
     }
 
-    .btn-steps {
+    .btn-primary {
       margin-top: 32px;
       margin-left: auto;
     }

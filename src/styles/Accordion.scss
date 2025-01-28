@@ -54,7 +54,7 @@
     h4 {
       font-size: 0.7rem;
       font-weight: 700;
-      color: #242323;
+      color: $OFF_BLACK;
       text-transform: uppercase;
     }
 
@@ -65,7 +65,14 @@
 
   .accordion__body {
     margin-top: 16px;
+    a {
+      color: $JFCL_SECONDARY_BLUE;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
 
+    }
     ul {
       margin-left: 0;
     }

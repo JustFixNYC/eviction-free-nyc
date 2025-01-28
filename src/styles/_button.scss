@@ -14,7 +14,7 @@
   }
 
   &.btn-link {
-    color: $OFF_BLACK;
+    color: $JFCL_SECONDARY_BLUE;
     text-decoration: underline;
     outline: none;
     box-shadow: none;
@@ -33,7 +33,7 @@
 .btn.btn-default {
   border-color: $OFF_BLACK;
   border-width: 2px;
-  color: $WHITE;
+  color: $OFF_BLACK;
 
   &:hover,
   &:focus,
