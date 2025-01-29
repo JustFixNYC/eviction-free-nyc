@@ -129,10 +129,12 @@
   }
 
   .ScreenerPage__Location {
-    @include for-tablet-portrait-up {
+    @include for-phone-only {
       h4 {
         padding: unset;
       }
+    }
+    @include for-tablet-portrait-up {
       h4:before {
         background: url("../assets/img/location.svg") no-repeat;
         background-size: 100%;
@@ -176,10 +178,12 @@
   }
 
   .ScreenerPage__Income {
-    @include for-tablet-portrait-up {
+    @include for-phone-only {
       h4 {
         padding: unset;
       }
+    }
+    @include for-tablet-portrait-up {
       h4:before {
         background: url("../assets/img/income.svg") no-repeat;
         background-size: 100%;
@@ -232,10 +236,12 @@
   }
 
   .ScreenerPage__Case {
-    @include for-tablet-portrait-up {
+    @include for-phone-only {
       h4 {
         padding: unset;
       }
+    }
+    @include for-tablet-portrait-up { 
       h4:before {
         background: url("../assets/img/document.svg") no-repeat;
         background-size: 100%;
