@@ -1,57 +1,113 @@
 @import "vars";
 
-.Header {
-  padding: 8px 0.8rem;
-  border-bottom: 1px solid $gray-color-dark;
-  background: $secondary-color;
-  color: #fff;
-
-  @include for-tablet-landscape-up() {
-    padding: 16px 32px;
-  }
+header.Header {
+  display: flex;
+  width: 100%;
+  background-color: $NEW_BLUE;
+  border-bottom: 1px solid $OFF_BLACK;
+  justify-content: space-between;
+  align-items: center;
+  text-wrap: nowrap;
+  color: $OFF_BLACK;
 
   a {
-    color: #fff;
-
-    &:hover,
-    &:focus {
-      color: #fff;
-    }
+    color: $OFF_BLACK;
   }
 
   .navbar-brand {
-    font-weight: 300;
-    display: flex;
-    align-items: center;
+    border-right: 1px solid $OFF_BLACK;
+    padding: 1.5rem 2.25rem;
+    flex: 0;
 
-    img {
-      height: 35px;
-      margin-right: 8px;
+    @include for-phone-only {
+      padding: 0.5rem;
+      min-width: 200px;
+    }
+
+    h1,
+    a {
+      margin: 0;
+      padding: 4px;
+      font-size: 1.25rem;
+      font-weight: 300;
+      line-height: 100%; /* 1.5rem */
+      letter-spacing: 0.01rem;
+
+      @include for-phone-only {
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .navbar-collab {
+    @include for-tablet-landscape-down {
+      display: none;
+    }
+
+    display: flex;
+    flex: 1;
+    gap: 0.25em;
+    padding: 1.5rem 2.25rem;
+    padding-right: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 100%; /* 1.125rem */
+    letter-spacing: 0.0225rem;
+    a {
+      text-decoration: underline;
+      text-underline-position: under;
+      text-decoration-thickness: 1px;
+      &:hover {
+        color: inherit;
+        text-decoration: none;
+      }
     }
   }
 
   .navbar-btns-social {
-    max-width: 125px;
-  }
+    margin-right: 2.25rem;
+    @include for-phone-only {
+      margin-right: 0.5rem;
+    }
 
-  .label.label-warning {
-    color: #333;
-    font-size: 12px;
-  }
+    .btns-social {
+      flex-wrap: unset;
+      .btn {
+        min-width: 0;
+        padding: 0.2rem !important;
+        margin-bottom: 0;
 
-  .btns-social {
-    .btn {
-      min-width: 0;
-      padding: 0.2rem !important;
-      margin-bottom: 0;
-      color: #fff;
+        i {
+          color: #fff;
+        }
 
-      &:last-child {
-        padding-right: 0;
+        &:hover {
+          i {
+            color: $GREY_700;
+          }
+          img {
+            filter: brightness(0.4);
+          }
+        }
+        &:active {
+          i {
+            color: $GREY_600;
+          }
+          img {
+            filter: brightness(0.5);
+          }
+        }
       }
 
-      &:hover {
-        color: #fff;
+      .icon-mail {
+        color: $OFF_BLACK !important;
       }
     }
   }

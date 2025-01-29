@@ -48,10 +48,10 @@ const StepIncome = ({ content, show, setIncome }) => (
       </tbody>
     </table>
     <p>{content.incomeQuestion}</p>
-    <button className="btn btn-steps" onClick={() => setIncome(true)}>
+    <button className="btn btn-primary" onClick={() => setIncome(true)}>
       <Trans id="yes" />
     </button>
-    <button className="btn btn-steps" onClick={() => setIncome(false)}>
+    <button className="btn btn-primary" onClick={() => setIncome(false)}>
       <Trans id="no" />
     </button>
     <br />

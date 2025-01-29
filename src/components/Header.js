@@ -6,18 +6,31 @@ import { FacebookButton, TwitterButton, EmailButton } from "react-social";
 import "../styles/Header.scss";
 
 import rtcLogo from "../assets/img/RTC_logo_scales.svg";
-import fbIcon from "../assets/img/fb.svg";
-import xTwitterIcon from "../assets/img/xTwitter.svg";
+import fbIcon from "../assets/img/fb_black.svg";
+import xTwitterIcon from "../assets/img/xTwitter_black.svg";
 
 const isDemoSite = process.env.GATSBY_DEMO_SITE === "1";
 
 const Header = ({ intl }) => (
   <header className="Header navbar">
-    <section className="navbar-section">
-      <Link className="navbar-brand" to={`/${intl.locale}`}>
-        <img src={rtcLogo} />
-        <span>Eviction Free NYC!</span>
-      </Link>
+    <section className="navbar-section navbar-brand">
+      <h1>
+        <Link to={`/${intl.locale}`}>Eviction Free NYC</Link>
+      </h1>
+    </section>
+    <section className="navbar-section navbar-collab">
+      By{" "}
+      <a
+        href="https://www.righttocounselnyc.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        the Right to Counsel Coalition
+      </a>{" "}
+      &{" "}
+      <a href="https://justfix.org/" target="_blank" rel="noopener noreferrer">
+        JustFix
+      </a>
     </section>
     <section className="navbar-section navbar-btns-social">
       <div className="btn-group btns-social">

@@ -3,7 +3,7 @@
 .GetInvolved {
   width: 100%;
   padding-top: 32px;
-  // @include gray-lines-bg;
+  color: $OFF_BLACK;
   background-color: $bg-color-dark;
   border-top: 1px solid $gray-color-light;
 
@@ -27,27 +27,24 @@
 
   .btns-social {
     .btn {
-      &:nth-child(1) {
-        background-color: #3b5998;
-        &:hover {
-          background-color: darken(#3b5998, 5%);
-        }
+      border-radius: 2rem;
+      background-color: $OFF_BLACK;
+      color: $WHITE;
+      &:hover {
+        background-color: $GREY_700;
       }
-      &:nth-child(2) {
-        background-color: #000000;
-        &:hover {
-          background-color: #1e1e1e;
-        }
+      &:active {
+        background-color: $GREY_600;
       }
+    }
 
-      margin-bottom: 0;
+    margin-bottom: 0;
 
-      span {
-        display: none;
+    span {
+      display: none;
 
-        @include for-tablet-landscape-up() {
-          display: inline;
-        }
+      @include for-tablet-landscape-up() {
+        display: inline;
       }
     }
   }

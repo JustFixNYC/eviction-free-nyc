@@ -19,7 +19,6 @@ class StepcaseType extends React.Component {
   }
 
   handleCaseButtonClick = (type) => {
-    this.submitButton.focus();
     this.props.setCaseType(type);
   };
 

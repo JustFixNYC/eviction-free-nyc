@@ -5,8 +5,9 @@
 
   .LandingPage__Hero {
     padding: 0.75rem 0;
-    background: $secondary-color;
-    color: #fff;
+    background: $NEW_BLUE;
+    color: $OFF_BLACK;
+    border-bottom: 1px solid $OFF_BLACK;
 
     // margin-bottom: 3rem;
     display: flex;
@@ -18,13 +19,19 @@
     .LandingPage__HeroContent {
       margin-bottom: 0.5rem;
 
-      h2,
+      h2 {
+        font-weight: 400;
+        letter-spacing: 0;
+        @include for-tablet-landscape-up() {
+          max-width: 75%;
+        }
+      }
       h4 {
         font-weight: 200;
         letter-spacing: 1px;
 
         @include for-tablet-landscape-up() {
-          max-width: 75%;
+          max-width: 60%;
         }
       }
 
@@ -40,16 +47,21 @@
 
         @include for-phone-only() {
           margin-bottom: 0.8rem;
-          font-size: 1.25rem;
+          font-size: 1.7rem;
+          text-align: left;
         }
       }
 
       .LandingPage__HeroSubtitle {
         margin-bottom: 1.5rem;
+        font-weight: 300;
+        letter-spacing: 0.4px;
 
         @include for-phone-only() {
           margin-bottom: 0.8rem;
           font-size: 0.8rem;
+          font-weight: 400;
+          text-align: left;
         }
 
         ul li p {
@@ -144,20 +156,10 @@
       text-align: left;
       padding: 2.5rem 0 1rem 0;
     }
-
-    .LandingPage__HeroLearnMore {
-      text-align: center;
-      font-weight: normal;
-      line-height: 1.2;
-      margin-top: 1rem;
-
-      @include for-tablet-portrait-up() {
-        display: none;
-      }
-    }
   }
 
   .LandingPage__Content {
+    color: $OFF_BLACK;
     margin-top: 64px;
     min-height: 600px;
     margin-bottom: 64px;
@@ -191,6 +193,9 @@
     }
     .LandingPage__ContentImage1 {
       order: 1;
+      @include for-phone-only() {
+        display: none;
+      }
     }
     .LandingPage__ContentImage2 {
       order: 2;
@@ -216,6 +221,7 @@
       }
 
       .LandingPage__ContentFAQ {
+        color: $OFF_BLACK;
         padding-left: 16px;
         padding-right: 16px;
         margin-top: 32px;

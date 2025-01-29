@@ -63,10 +63,6 @@ class LandingPage extends React.Component {
               {c.heroButtonText}
               <i className="icon icon-forward ml-2"></i>
             </ButtonLink>
-            <div className="LandingPage__HeroLearnMore">
-              <div>{c.learnMoreTitle}</div>
-              <i className="icon icon-arrow-down"></i>
-            </div>
           </div>
         </div>
         <div id="faq" className="LandingPage__Content container grid-md">

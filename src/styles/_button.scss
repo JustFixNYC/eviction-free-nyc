@@ -5,6 +5,7 @@
 // make all btns large size
 .btn {
   min-width: 100px;
+  border-radius: 2rem;
 
   &:not(.btn-normal):not(.btn-sm) {
     font-size: 0.9rem;
@@ -13,12 +14,15 @@
   }
 
   &.btn-link {
+    color: unset;
+    color: $JFCL_SECONDARY_BLUE;
     text-decoration: underline;
     outline: none;
     box-shadow: none;
     &:hover,
     &:focus {
       text-decoration: none;
+      color: $JFCL_SECONDARY_BLUE;
     }
   }
 
@@ -29,21 +33,37 @@
 }
 
 .btn.btn-default {
-  border-color: $third-color;
+  border-color: $OFF_BLACK;
   border-width: 2px;
-  color: $third-color;
+  color: $OFF_BLACK;
 
   &:hover,
   &:focus,
   &:active,
   &.active {
-    background-color: $third-color;
-    border-color: $third-color;
-    color: #fff;
+    background-color: $NEW_BLUE;
+    border-color: $OFF_BLACK;
+    color: $OFF_BLACK;
   }
-
   &:focus {
-    box-shadow: 0 0 0 0.1rem rgba(3, 77, 166, 0.2);
+    box-shadow: 0 0 0 0.1rem $JFCL_SECONDARY_BLUE;
+  }
+}
+
+.btn.btn-primary {
+  background: unset;
+  background-color: $OFF_BLACK;
+  border: none;
+  color: $WHITE !important;
+  &:hover {
+    background-color: $GREY_700;
+  }
+  &:active {
+    background-color: $GREY_600;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.1rem $JFCL_SECONDARY_BLUE;
+    background-color: $GREY_700 !important;
   }
 }
 
@@ -52,7 +72,7 @@
 }
 
 .btn.btn-steps {
-  @include button-variant($third-color);
+  @include button-variant($OFF_BLACK);
 }
 
 .btn-block {
@@ -61,6 +81,10 @@
 
 .btn-centered {
   margin: 0 auto;
+}
+
+.btn-success {
+  color: white !important;
 }
 
 .btn + .btn {

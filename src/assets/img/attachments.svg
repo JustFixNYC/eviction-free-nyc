@@ -5,21 +5,21 @@
 <g id="Layer_1">
 	<g>
 		
-			<polyline fill="none" stroke="#960048" stroke-width="11.0816" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			<polyline fill="none" stroke="#242323" stroke-width="11.0816" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 			203.7,17.4 203.7,54.7 203.7,223.3 31,223.3 31,17.4 149.2,17.4 		"/>
 		<g>
 			
-				<path fill="none" stroke="#0B1153" stroke-width="11.0816" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				<path fill="none" stroke="#242323" stroke-width="11.0816" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 				M109.7,176.4L210.1,76c15.8-15.8,15.8-41.5,0-57.4c-15.8-15.8-41.5-15.8-57.4,0l-98.9,98.9c-9,9-9,23.6,0,32.6c9,9,23.6,9,32.6,0
 				l70-70"/>
 			
-				<path fill="none" stroke="#0B1153" stroke-width="11.0816" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				<path fill="none" stroke="#242323" stroke-width="11.0816" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 				M108.4,177.7c-23,23-60.2,23-83.2,0c-23-23-23-60.2,0-83.2L115,6.7"/>
 		</g>
 		
-			<line fill="none" stroke="#960048" stroke-width="11.0816" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="31" y1="70" x2="31" y2="203.9"/>
+			<line fill="none" stroke="#242323" stroke-width="11.0816" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="31" y1="70" x2="31" y2="203.9"/>
 		
-			<line fill="none" stroke="#960048" stroke-width="11.0816" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="203.7" y1="105.1" x2="203.7" y2="58"/>
+			<line fill="none" stroke="#242323" stroke-width="11.0816" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="203.7" y1="105.1" x2="203.7" y2="58"/>
 	</g>
 </g>
 <g id="Layer_2">

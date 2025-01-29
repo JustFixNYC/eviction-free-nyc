@@ -1,6 +1,7 @@
 @import "vars";
 
 .ScreenerPage {
+  color: $OFF_BLACK;
   max-width: 90vw;
 
   @include for-tablet-portrait-up() {
@@ -22,10 +23,20 @@
   .step {
     margin-bottom: 32px;
 
-    .step-item {
-      a {
-        color: #50596c;
-      }
+    a {
+      color: $OFF_BLACK;
+    }
+    // The following styles are copy pasted from the inspector
+    .step .step-item.active ~ .step-item a:before {
+      background: #e7e9ed;
+    }
+    .step .step-item.active a:before {
+      background: #fff;
+      border: 0.1rem solid $OFF_BLACK;
+    }
+    .step .step-item a:before {
+      background: $OFF_BLACK;
+      border: 0.1rem solid #fff;
     }
   }
 
@@ -118,9 +129,16 @@
   }
 
   .ScreenerPage__Location {
-    h4:before {
-      background: url("../assets/img/location.svg") no-repeat;
-      background-size: 100%;
+    @include for-phone-only {
+      h4 {
+        padding: unset;
+      }
+    }
+    @include for-tablet-portrait-up {
+      h4:before {
+        background: url("../assets/img/location.svg") no-repeat;
+        background-size: 100%;
+      }
     }
 
     .geosuggest input {
@@ -153,16 +171,23 @@
       }
     }
 
-    .btn-steps {
+    .btn-primary {
       margin-top: 32px;
       margin-left: auto;
     }
   }
 
   .ScreenerPage__Income {
-    h4:before {
-      background: url("../assets/img/income.svg") no-repeat;
-      background-size: 100%;
+    @include for-phone-only {
+      h4 {
+        padding: unset;
+      }
+    }
+    @include for-tablet-portrait-up {
+      h4:before {
+        background: url("../assets/img/income.svg") no-repeat;
+        background-size: 100%;
+      }
     }
 
     .text-aside {
@@ -211,9 +236,16 @@
   }
 
   .ScreenerPage__Case {
-    h4:before {
-      background: url("../assets/img/document.svg") no-repeat;
-      background-size: 100%;
+    @include for-phone-only {
+      h4 {
+        padding: unset;
+      }
+    }
+    @include for-tablet-portrait-up {
+      h4:before {
+        background: url("../assets/img/document.svg") no-repeat;
+        background-size: 100%;
+      }
     }
 
     .ScreenerPage__CaseButtons {
@@ -262,7 +294,6 @@
             padding-left: 36px;
             padding-top: 2px;
             text-align: left;
-
             margin: 16px 0;
 
             &:before {
@@ -275,6 +306,10 @@
               height: 24px;
               top: 2px;
               left: 0;
+            }
+
+            a {
+              color: $OFF_BLACK;
             }
           }
         }
