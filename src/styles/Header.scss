@@ -30,10 +30,11 @@ header.Header {
       font-size: 1.25rem;
       font-weight: 300;
       line-height: 100%; /* 1.5rem */
-      letter-spacing: 0.045rem;
+      letter-spacing: 0.01rem;
 
       @include for-phone-only {
         font-size: 1rem;
+        font-weight: 400;
       }
 
       &:hover,

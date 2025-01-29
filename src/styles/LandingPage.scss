@@ -53,10 +53,12 @@
 
       .LandingPage__HeroSubtitle {
         margin-bottom: 1.5rem;
+        font-weight: 300;
 
         @include for-phone-only() {
           margin-bottom: 0.8rem;
           font-size: 0.8rem;
+          font-weight: 400;
         }
 
         ul li p {
