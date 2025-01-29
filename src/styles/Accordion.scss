@@ -65,6 +65,9 @@
 
   .accordion__body {
     margin-top: 16px;
+    @include for-phone-only {
+      padding-left: 16px;
+    }
     a {
       color: $JFCL_SECONDARY_BLUE;
       text-decoration: underline;

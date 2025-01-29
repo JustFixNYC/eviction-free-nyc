@@ -21,6 +21,7 @@ header.Header {
 
     @include for-phone-only {
       padding: 0.5rem;
+      min-width: 200px;
     }
 
     h1,
