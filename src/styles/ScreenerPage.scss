@@ -129,9 +129,11 @@
   }
 
   .ScreenerPage__Location {
-    h4:before {
-      background: url("../assets/img/location.svg") no-repeat;
-      background-size: 100%;
+    @include for-tablet-portrait-up {
+      h4:before {
+        background: url("../assets/img/location.svg") no-repeat;
+        background-size: 100%;
+      }
     }
 
     .geosuggest input {
@@ -171,9 +173,11 @@
   }
 
   .ScreenerPage__Income {
-    h4:before {
-      background: url("../assets/img/income.svg") no-repeat;
-      background-size: 100%;
+    @include for-tablet-portrait-up {
+      h4:before {
+        background: url("../assets/img/income.svg") no-repeat;
+        background-size: 100%;
+      }
     }
 
     .text-aside {
@@ -222,11 +226,13 @@
   }
 
   .ScreenerPage__Case {
-    h4:before {
-      background: url("../assets/img/document.svg") no-repeat;
-      background-size: 100%;
+    @include for-tablet-portrait-up {
+      h4:before {
+        background: url("../assets/img/document.svg") no-repeat;
+        background-size: 100%;
+      }
     }
-
+    
     .ScreenerPage__CaseButtons {
       display: flex;
       justify-content: center;
