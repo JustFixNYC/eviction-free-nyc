@@ -55,7 +55,7 @@
       .LandingPage__HeroSubtitle {
         margin-bottom: 1.5rem;
         font-weight: 300;
-        letter-spacing: .4px;
+        letter-spacing: 0.4px;
 
         @include for-phone-only() {
           margin-bottom: 0.8rem;
