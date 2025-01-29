@@ -2,6 +2,7 @@
 
 .HousingCourtPage {
   // margin: 32px auto;
+  color: $OFF_BLACK;
 
   @include for-tablet-portrait-up() {
     margin-top: 64px;
