@@ -241,7 +241,7 @@
         padding: unset;
       }
     }
-    @include for-tablet-portrait-up { 
+    @include for-tablet-portrait-up {
       h4:before {
         background: url("../assets/img/document.svg") no-repeat;
         background-size: 100%;
