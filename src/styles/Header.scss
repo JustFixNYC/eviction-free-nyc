@@ -18,7 +18,7 @@ header.Header {
     border-right: 1px solid $OFF_BLACK;
     padding: 1.5rem 2.25rem;
     flex: 0;
-    min-width: 200px;
+    min-width: 300px;
 
     @include for-phone-only {
       padding: 0.5rem;
