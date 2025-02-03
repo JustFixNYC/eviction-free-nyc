@@ -18,6 +18,7 @@ header.Header {
     border-right: 1px solid $OFF_BLACK;
     padding: 1.5rem 2.25rem;
     flex: 0;
+    min-width: 200px;
 
     @include for-phone-only {
       padding: 0.5rem;
@@ -67,6 +68,9 @@ header.Header {
       &:hover {
         color: inherit;
         text-decoration: none;
+      }
+      &:first-child {
+        min-width: 270px;
       }
     }
   }
