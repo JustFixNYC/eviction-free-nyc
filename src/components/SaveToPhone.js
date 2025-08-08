@@ -31,8 +31,8 @@ function uploadToEfnyc(phone) {
     cleanedPhone = cleanedPhone.substring(1);
   }
 
-  const base_url = process.env.TENANTS2_API_BASE_URL;
-  const authToken = process.env.TENANTS2_API_TOKEN;
+  const base_url = process.env.GATSBY_TENANTS2_API_BASE_URL;
+  const authToken = process.env.GATSBY_TENANTS2_API_TOKEN;
 
   const url = `${base_url}/efnyc/upload`;
   const body = {
