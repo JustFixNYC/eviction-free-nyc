@@ -23,6 +23,32 @@ function sendSMS(phone, path) {
   });
 }
 
+function uploadToEfnyc(phone) {
+  let cleanedPhone = phone.replace(/\D/g, "");
+
+  // remove +1 country code
+  if (cleanedPhone.startsWith("1") && cleanedPhone.length === 11) {
+    cleanedPhone = cleanedPhone.substring(1);
+  }
+
+  const base_url = process.env.TENANTS2_API_BASE_URL;
+  const authToken = process.env.TENANTS2_API_TOKEN;
+
+  const url = `${base_url}/efnyc/upload`;
+  const body = {
+    phone_number: cleanedPhone,
+  };
+  return fetch(url, {
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${authToken}`,
+    },
+    method: "POST",
+    body: JSON.stringify(body),
+  });
+}
+
 class SaveToPhone extends React.Component {
   constructor(props) {
     super(props);
@@ -48,19 +74,29 @@ class SaveToPhone extends React.Component {
     this.setState({ button: "loading" });
     window.gtag("event", "save-to-phone-btn-click");
 
-    sendSMS(this.state.phone, path).then((res) => {
-      if (res.ok) {
-        this.setState({
-          button: "success",
-          error: null,
-        });
-      } else {
+    Promise.all([
+      sendSMS(this.state.phone, path),
+      uploadToEfnyc(this.state.phone),
+    ])
+      .then(([smsRes, uploadRes]) => {
+        if (smsRes.ok && uploadRes.ok) {
+          this.setState({
+            button: "success",
+            error: null,
+          });
+        } else {
+          this.setState({
+            button: "error",
+            error: "Failed to send data. Please try again.",
+          });
+        }
+      })
+      .catch((error) => {
         this.setState({
           button: "error",
-          error: res.body.message,
+          error: "Network error. Please try again.",
         });
-      }
-    });
+      });
   };
 
   render() {
