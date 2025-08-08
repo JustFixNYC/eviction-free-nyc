@@ -23,6 +23,32 @@ function sendSMS(phone, path) {
   });
 }
 
+function uploadToEfnyc(phone) {
+  let cleanedPhone = phone.replace(/\D/g, "");
+
+  // remove +1 country code
+  if (cleanedPhone.startsWith("1") && cleanedPhone.length === 11) {
+    cleanedPhone = cleanedPhone.substring(1);
+  }
+
+  const base_url = process.env.GATSBY_TENANTS2_API_BASE_URL;
+  const authToken = process.env.GATSBY_TENANTS2_API_TOKEN;
+
+  const url = `${base_url}/efnyc/upload`;
+  const body = {
+    phone_number: cleanedPhone,
+  };
+  return fetch(url, {
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${authToken}`,
+    },
+    method: "POST",
+    body: JSON.stringify(body),
+  });
+}
+
 class SaveToPhone extends React.Component {
   constructor(props) {
     super(props);
