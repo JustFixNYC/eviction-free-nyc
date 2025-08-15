@@ -24,19 +24,12 @@ function sendSMS(phone, path) {
 }
 
 function uploadToEfnyc(phone) {
-  let cleanedPhone = phone.replace(/\D/g, "");
-
-  // remove +1 country code
-  if (cleanedPhone.startsWith("1") && cleanedPhone.length === 11) {
-    cleanedPhone = cleanedPhone.substring(1);
-  }
-
   const base_url = process.env.GATSBY_TENANTS2_API_BASE_URL;
   const authToken = process.env.GATSBY_TENANTS2_API_TOKEN;
 
   const url = `${base_url}/efnyc/upload`;
   const body = {
-    phone_number: cleanedPhone,
+    phone_number: phone,
   };
   return fetch(url, {
     headers: {
@@ -74,10 +67,21 @@ class SaveToPhone extends React.Component {
     this.setState({ button: "loading" });
     window.gtag("event", "save-to-phone-btn-click");
 
-    Promise.all([
-      sendSMS(this.state.phone, path),
-      uploadToEfnyc(this.state.phone),
-    ])
+    let cleanedPhone = this.state.phone.replace(/\D/g, "");
+    // remove +1 country code
+    if (cleanedPhone.startsWith("1") && cleanedPhone.length === 11) {
+      cleanedPhone = cleanedPhone.substring(1);
+    }
+
+    if (cleanedPhone.length !== 10) {
+      this.setState({
+        button: "error",
+        error: "Please enter a valid phone number.",
+      });
+      return;
+    }
+
+    Promise.all([sendSMS(this.state.phone, path), uploadToEfnyc(cleanedPhone)])
       .then(([smsRes, uploadRes]) => {
         if (smsRes.ok && uploadRes.ok) {
           this.setState({
