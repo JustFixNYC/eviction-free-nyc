@@ -69,7 +69,7 @@ class SaveToPhone extends React.Component {
 
     let cleanedPhone = this.state.phone.replace(/\D/g, "");
     // remove +1 country code
-    if (cleanedPhone.startsWith("1") && cleanedPhone.length === 11) {
+    if (cleanedPhone.startsWith("1")) {
       cleanedPhone = cleanedPhone.substring(1);
     }
 
